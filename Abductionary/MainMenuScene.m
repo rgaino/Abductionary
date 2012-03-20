@@ -52,7 +52,7 @@
 
 -(void) setupVariablesAndObjects
 {
-     AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+     AppController *appDelegate = (AppController*) [[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeMedium];
     
     currentLeaderboardGameMode = kLeaderboardGameModeMedium;
@@ -562,21 +562,21 @@
 
 -(void) startGameEasy
 {
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeEasy];
     [self startGame];
 }
 
 -(void) startGameMedium
 {
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeMedium];
     [self startGame];
 }
 
 -(void) startGameHard
 {
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeHard];
     [self startGame];
 }
@@ -591,7 +591,7 @@
     [mainMenuSoundManager playMainMenuClickSound];
     [mainMenuSoundManager stopBackgroundMusic];
 
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setPlayerScore:0];
     [appDelegate setFailCounterValue:0];
     [appDelegate setPowerUpValue:0];
@@ -611,7 +611,7 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeEasy];
     [gameModeLabel setString:@"EASY"];
  
@@ -627,7 +627,7 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeMedium];
     [gameModeLabel setString:@"MEDIUM"];
 
@@ -643,7 +643,7 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeHard];
     [gameModeLabel setString:@"HARD"];
     

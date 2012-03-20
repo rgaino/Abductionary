@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cocos2d.h"
+#import "Constants.h"
 
 @interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
 {
@@ -20,5 +21,11 @@
 @property (nonatomic, retain) UIWindow *window;
 @property (readonly) UINavigationController *navController;
 @property (readonly) CCDirectorIOS *director;
+
+@property (nonatomic, assign) int64_t playerScore;
+@property (nonatomic, assign) float failCounterValue;
+@property (nonatomic, assign) int powerUpValue;
+@property (nonatomic, assign) kGameMode currentGameMode;
+
 
 @end

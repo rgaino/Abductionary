@@ -7,7 +7,7 @@
 //
 
 #import "PlaytomicManager.h"
-#import "AbductionaryAppDelegate.h"
+#import "AppDelegate.h"
 
 @implementation PlaytomicManager
 
@@ -60,7 +60,7 @@ static PlaytomicManager* _playtomicManager = nil;
     NSLog(@"PLAYTOMIC: logging play");
     [[Playtomic Log] play];
     
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     
     switch ([appDelegate currentGameMode]  ) {
         case kGameModeEasy:
@@ -82,7 +82,7 @@ static PlaytomicManager* _playtomicManager = nil;
 
 -(void) logLevel:(int)level
 {    
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     NSString *gameModeString = @"";
    
     switch ([appDelegate currentGameMode]  ) {
@@ -116,7 +116,7 @@ static PlaytomicManager* _playtomicManager = nil;
 -(void) logGameOverWithScore:(int64_t) score forLevel:(int) level
 {
     NSLog(@"PLAYTOMIC: logging gameOver");
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     
     NSString *gameModeString = @"";
     

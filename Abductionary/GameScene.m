@@ -12,7 +12,6 @@
 #import "Constants.h"
 #import "Dictionary.h"
 #import "LetterSlot.h"
-//#import "AbductionaryAppDelegate.h"
 #import "AppDelegate.h"
 #import "GameCenterManager.h"
 #import "LoadingScene.h"
@@ -78,7 +77,7 @@
 -(void) setupVariablesAndObjects 
 {
     
-    id<UIApplicationDelegate> *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setPlayerScore:0];
     [appDelegate setFailCounterValue:0];
     [appDelegate setPowerUpValue:0];
@@ -948,7 +947,7 @@
     [self setupGameOverSprites];
 
     
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setPlayerScore:score];
     [appDelegate setPowerUpValue:powerUpMeterValue];
     [appDelegate setFailCounterValue:failCounter];

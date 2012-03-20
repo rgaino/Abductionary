@@ -55,6 +55,7 @@
 		535BD5EF15180D5400F782CD /* LeaderboardsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5EE15180D5400F782CD /* LeaderboardsLayer.m */; };
 		535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F215180D7200F782CD /* TutorialLayer.m */; };
 		535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F615180D8F00F782CD /* VolumeKnob.m */; };
+		535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -281,6 +282,8 @@
 		535BD5F215180D7200F782CD /* TutorialLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialLayer.m; sourceTree = "<group>"; };
 		535BD5F515180D8F00F782CD /* VolumeKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeKnob.h; sourceTree = "<group>"; };
 		535BD5F615180D8F00F782CD /* VolumeKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeKnob.m; sourceTree = "<group>"; };
+		535BD6001518EC3100F782CD /* CDXPropertyModifierAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDXPropertyModifierAction.h; sourceTree = "<group>"; };
+		535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDXPropertyModifierAction.m; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1346,6 +1349,8 @@
 		53D81A641517D97D00B63DEC /* CocosDenshion */ = {
 			isa = PBXGroup;
 			children = (
+				535BD6001518EC3100F782CD /* CDXPropertyModifierAction.h */,
+				535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */,
 				53D81A651517D97D00B63DEC /* CDAudioManager.h */,
 				53D81A661517D97D00B63DEC /* CDAudioManager.m */,
 				53D81A681517D97D00B63DEC /* CDConfig.h */,
@@ -1674,6 +1679,7 @@
 				535BD5EF15180D5400F782CD /* LeaderboardsLayer.m in Sources */,
 				535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */,
 				535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */,
+				535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
