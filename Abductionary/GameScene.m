@@ -126,7 +126,7 @@
 	//[gestureRecognizer setDirection:(UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionDown | UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionUp)];
 	[gestureRecognizer setDirection:UISwipeGestureRecognizerDirectionDown];
 	[gestureRecognizer setNumberOfTouchesRequired:2];
-	[[[CCDirector sharedDirector] openGLView] addGestureRecognizer:gestureRecognizer];
+	[[[CCDirector sharedDirector] view] addGestureRecognizer:gestureRecognizer];
 	[gestureRecognizer release];
 }
 
