@@ -7,8 +7,8 @@
 //
 
 #import "LoadingScene.h"
-//#import "Constants.h"
-//#import "GameScene.h"
+#import "Constants.h"
+#import "GameScene.h"
 #import "cocos2d.h"
 
 @implementation LoadingScene
@@ -40,7 +40,7 @@
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
     [[CCTextureCache sharedTextureCache] removeUnusedTextures];
     [[CCDirector sharedDirector] purgeCachedData];
-//    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0f scene:[GameScene scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0f scene:[GameScene scene]]];
 }
          
 - (void) dealloc
