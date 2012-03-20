@@ -11,6 +11,50 @@
 		535BD5591517FD0F00F782CD /* loadingImage-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */; };
 		535BD55A1517FD0F00F782CD /* loadingImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5561517FD0F00F782CD /* loadingImage.plist */; };
 		535BD55B1517FD0F00F782CD /* loadingImage.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5571517FD0F00F782CD /* loadingImage.pvr.ccz */; };
+		535BD55F151803D900F782CD /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD55E151803D900F782CD /* GameScene.m */; };
+		535BD563151803FA00F782CD /* ScrollingLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD562151803FA00F782CD /* ScrollingLetter.m */; };
+		535BD5671518041A00F782CD /* PowerUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5661518041A00F782CD /* PowerUpButton.m */; };
+		535BD56B151807F600F782CD /* GameSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD56A151807F600F782CD /* GameSoundManager.m */; };
+		535BD56F15180AF900F782CD /* LetterSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD56E15180AF900F782CD /* LetterSlot.m */; };
+		535BD57415180B6600F782CD /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD57215180B6600F782CD /* GameCenterManager.m */; };
+		535BD57815180B8F00F782CD /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD57715180B8F00F782CD /* MainMenuScene.m */; };
+		535BD57B15180BBB00F782CD /* GameCenterPlayerScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD57A15180BBB00F782CD /* GameCenterPlayerScore.m */; };
+		535BD58015180BED00F782CD /* TruckSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD57F15180BED00F782CD /* TruckSprite.m */; };
+		535BD58415180C0400F782CD /* FeathersSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD58315180C0400F782CD /* FeathersSprite.m */; };
+		535BD58815180C5B00F782CD /* CloudscapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD58715180C5B00F782CD /* CloudscapeLayer.m */; };
+		535BD58C15180C8F00F782CD /* StarSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD58B15180C8F00F782CD /* StarSprite.m */; };
+		535BD5BF15180CB900F782CD /* Credits.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 535BD58F15180CB900F782CD /* Credits.markdown */; };
+		535BD5C015180CB900F782CD /* JSON LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 535BD59015180CB900F782CD /* JSON LICENSE */; };
+		535BD5C115180CB900F782CD /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59315180CB900F782CD /* NSObject+SBJSON.m */; };
+		535BD5C215180CB900F782CD /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59515180CB900F782CD /* NSString+SBJSON.m */; };
+		535BD5C315180CB900F782CD /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59715180CB900F782CD /* SBJsonBase.m */; };
+		535BD5C415180CB900F782CD /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59915180CB900F782CD /* SBJsonParser.m */; };
+		535BD5C515180CB900F782CD /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59B15180CB900F782CD /* SBJsonWriter.m */; };
+		535BD5C615180CB900F782CD /* Playtomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59D15180CB900F782CD /* Playtomic.m */; };
+		535BD5C715180CB900F782CD /* PlaytomicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD59F15180CB900F782CD /* PlaytomicData.m */; };
+		535BD5C815180CB900F782CD /* PlaytomicEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5A115180CB900F782CD /* PlaytomicEncrypt.m */; };
+		535BD5C915180CB900F782CD /* PlaytomicGameVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5A315180CB900F782CD /* PlaytomicGameVars.m */; };
+		535BD5CA15180CB900F782CD /* PlaytomicGeoIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5A515180CB900F782CD /* PlaytomicGeoIP.m */; };
+		535BD5CB15180CB900F782CD /* PlaytomicLeaderboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5A715180CB900F782CD /* PlaytomicLeaderboards.m */; };
+		535BD5CC15180CB900F782CD /* PlaytomicLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5A915180CB900F782CD /* PlaytomicLevel.m */; };
+		535BD5CD15180CB900F782CD /* PlaytomicLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5AB15180CB900F782CD /* PlaytomicLink.m */; };
+		535BD5CE15180CB900F782CD /* PlaytomicLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5AD15180CB900F782CD /* PlaytomicLog.m */; };
+		535BD5CF15180CB900F782CD /* PlaytomicLogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5AF15180CB900F782CD /* PlaytomicLogRequest.m */; };
+		535BD5D015180CB900F782CD /* PlaytomicPlayerLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5B115180CB900F782CD /* PlaytomicPlayerLevels.m */; };
+		535BD5D115180CB900F782CD /* PlaytomicPrivateLeaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5B315180CB900F782CD /* PlaytomicPrivateLeaderboard.m */; };
+		535BD5D215180CB900F782CD /* PlaytomicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5B515180CB900F782CD /* PlaytomicRequest.m */; };
+		535BD5D315180CB900F782CD /* PlaytomicResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5B715180CB900F782CD /* PlaytomicResponse.m */; };
+		535BD5D415180CB900F782CD /* PlaytomicScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5B915180CB900F782CD /* PlaytomicScore.m */; };
+		535BD5D515180CB900F782CD /* PlaytomicURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5BB15180CB900F782CD /* PlaytomicURLRequest.m */; };
+		535BD5D615180CB900F782CD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5BE15180CB900F782CD /* Reachability.m */; };
+		535BD5DA15180CD400F782CD /* PlaytomicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5D915180CD400F782CD /* PlaytomicManager.m */; };
+		535BD5E115180D0700F782CD /* HumanSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5DE15180D0700F782CD /* HumanSprite.m */; };
+		535BD5E215180D0700F782CD /* HumanSpriteRandomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5E015180D0700F782CD /* HumanSpriteRandomizer.m */; };
+		535BD5E615180D1B00F782CD /* TubeDoorSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5E515180D1B00F782CD /* TubeDoorSprite.m */; };
+		535BD5EB15180D3A00F782CD /* MainMenuSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5EA15180D3A00F782CD /* MainMenuSoundManager.m */; };
+		535BD5EF15180D5400F782CD /* LeaderboardsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5EE15180D5400F782CD /* LeaderboardsLayer.m */; };
+		535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F215180D7200F782CD /* TutorialLayer.m */; };
+		535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F615180D8F00F782CD /* VolumeKnob.m */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -149,6 +193,94 @@
 		535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "loadingImage-hd.pvr.ccz"; path = "Resources/loadingImage-hd.pvr.ccz"; sourceTree = "<group>"; };
 		535BD5561517FD0F00F782CD /* loadingImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = loadingImage.plist; path = Resources/loadingImage.plist; sourceTree = "<group>"; };
 		535BD5571517FD0F00F782CD /* loadingImage.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = loadingImage.pvr.ccz; path = Resources/loadingImage.pvr.ccz; sourceTree = "<group>"; };
+		535BD55D151803D900F782CD /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		535BD55E151803D900F782CD /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		535BD561151803FA00F782CD /* ScrollingLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingLetter.h; sourceTree = "<group>"; };
+		535BD562151803FA00F782CD /* ScrollingLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingLetter.m; sourceTree = "<group>"; };
+		535BD5651518041A00F782CD /* PowerUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerUpButton.h; sourceTree = "<group>"; };
+		535BD5661518041A00F782CD /* PowerUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerUpButton.m; sourceTree = "<group>"; };
+		535BD569151807F600F782CD /* GameSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSoundManager.h; sourceTree = "<group>"; };
+		535BD56A151807F600F782CD /* GameSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSoundManager.m; sourceTree = "<group>"; };
+		535BD56D15180AF900F782CD /* LetterSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterSlot.h; sourceTree = "<group>"; };
+		535BD56E15180AF900F782CD /* LetterSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterSlot.m; sourceTree = "<group>"; };
+		535BD57115180B6600F782CD /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		535BD57215180B6600F782CD /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		535BD57315180B6600F782CD /* GameCenterManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManagerDelegate.h; sourceTree = "<group>"; };
+		535BD57615180B8F00F782CD /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		535BD57715180B8F00F782CD /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
+		535BD57915180BBB00F782CD /* GameCenterPlayerScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterPlayerScore.h; sourceTree = "<group>"; };
+		535BD57A15180BBB00F782CD /* GameCenterPlayerScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterPlayerScore.m; sourceTree = "<group>"; };
+		535BD57E15180BED00F782CD /* TruckSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruckSprite.h; sourceTree = "<group>"; };
+		535BD57F15180BED00F782CD /* TruckSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruckSprite.m; sourceTree = "<group>"; };
+		535BD58215180C0400F782CD /* FeathersSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeathersSprite.h; sourceTree = "<group>"; };
+		535BD58315180C0400F782CD /* FeathersSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeathersSprite.m; sourceTree = "<group>"; };
+		535BD58615180C5B00F782CD /* CloudscapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudscapeLayer.h; sourceTree = "<group>"; };
+		535BD58715180C5B00F782CD /* CloudscapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudscapeLayer.m; sourceTree = "<group>"; };
+		535BD58A15180C8F00F782CD /* StarSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarSprite.h; sourceTree = "<group>"; };
+		535BD58B15180C8F00F782CD /* StarSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarSprite.m; sourceTree = "<group>"; };
+		535BD58F15180CB900F782CD /* Credits.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.markdown; sourceTree = "<group>"; };
+		535BD59015180CB900F782CD /* JSON LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JSON LICENSE"; sourceTree = "<group>"; };
+		535BD59115180CB900F782CD /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		535BD59215180CB900F782CD /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		535BD59315180CB900F782CD /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		535BD59415180CB900F782CD /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		535BD59515180CB900F782CD /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		535BD59615180CB900F782CD /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		535BD59715180CB900F782CD /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		535BD59815180CB900F782CD /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		535BD59915180CB900F782CD /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		535BD59A15180CB900F782CD /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		535BD59B15180CB900F782CD /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		535BD59C15180CB900F782CD /* Playtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playtomic.h; sourceTree = "<group>"; };
+		535BD59D15180CB900F782CD /* Playtomic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playtomic.m; sourceTree = "<group>"; };
+		535BD59E15180CB900F782CD /* PlaytomicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicData.h; sourceTree = "<group>"; };
+		535BD59F15180CB900F782CD /* PlaytomicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicData.m; sourceTree = "<group>"; };
+		535BD5A015180CB900F782CD /* PlaytomicEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicEncrypt.h; sourceTree = "<group>"; };
+		535BD5A115180CB900F782CD /* PlaytomicEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicEncrypt.m; sourceTree = "<group>"; };
+		535BD5A215180CB900F782CD /* PlaytomicGameVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGameVars.h; sourceTree = "<group>"; };
+		535BD5A315180CB900F782CD /* PlaytomicGameVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGameVars.m; sourceTree = "<group>"; };
+		535BD5A415180CB900F782CD /* PlaytomicGeoIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGeoIP.h; sourceTree = "<group>"; };
+		535BD5A515180CB900F782CD /* PlaytomicGeoIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGeoIP.m; sourceTree = "<group>"; };
+		535BD5A615180CB900F782CD /* PlaytomicLeaderboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLeaderboards.h; sourceTree = "<group>"; };
+		535BD5A715180CB900F782CD /* PlaytomicLeaderboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLeaderboards.m; sourceTree = "<group>"; };
+		535BD5A815180CB900F782CD /* PlaytomicLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLevel.h; sourceTree = "<group>"; };
+		535BD5A915180CB900F782CD /* PlaytomicLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLevel.m; sourceTree = "<group>"; };
+		535BD5AA15180CB900F782CD /* PlaytomicLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLink.h; sourceTree = "<group>"; };
+		535BD5AB15180CB900F782CD /* PlaytomicLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLink.m; sourceTree = "<group>"; };
+		535BD5AC15180CB900F782CD /* PlaytomicLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLog.h; sourceTree = "<group>"; };
+		535BD5AD15180CB900F782CD /* PlaytomicLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLog.m; sourceTree = "<group>"; };
+		535BD5AE15180CB900F782CD /* PlaytomicLogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLogRequest.h; sourceTree = "<group>"; };
+		535BD5AF15180CB900F782CD /* PlaytomicLogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLogRequest.m; sourceTree = "<group>"; };
+		535BD5B015180CB900F782CD /* PlaytomicPlayerLevels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPlayerLevels.h; sourceTree = "<group>"; };
+		535BD5B115180CB900F782CD /* PlaytomicPlayerLevels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPlayerLevels.m; sourceTree = "<group>"; };
+		535BD5B215180CB900F782CD /* PlaytomicPrivateLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPrivateLeaderboard.h; sourceTree = "<group>"; };
+		535BD5B315180CB900F782CD /* PlaytomicPrivateLeaderboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPrivateLeaderboard.m; sourceTree = "<group>"; };
+		535BD5B415180CB900F782CD /* PlaytomicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicRequest.h; sourceTree = "<group>"; };
+		535BD5B515180CB900F782CD /* PlaytomicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicRequest.m; sourceTree = "<group>"; };
+		535BD5B615180CB900F782CD /* PlaytomicResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicResponse.h; sourceTree = "<group>"; };
+		535BD5B715180CB900F782CD /* PlaytomicResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicResponse.m; sourceTree = "<group>"; };
+		535BD5B815180CB900F782CD /* PlaytomicScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicScore.h; sourceTree = "<group>"; };
+		535BD5B915180CB900F782CD /* PlaytomicScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicScore.m; sourceTree = "<group>"; };
+		535BD5BA15180CB900F782CD /* PlaytomicURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicURLRequest.h; sourceTree = "<group>"; };
+		535BD5BB15180CB900F782CD /* PlaytomicURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicURLRequest.m; sourceTree = "<group>"; };
+		535BD5BD15180CB900F782CD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		535BD5BE15180CB900F782CD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		535BD5D815180CD400F782CD /* PlaytomicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicManager.h; sourceTree = "<group>"; };
+		535BD5D915180CD400F782CD /* PlaytomicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicManager.m; sourceTree = "<group>"; };
+		535BD5DD15180D0700F782CD /* HumanSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanSprite.h; sourceTree = "<group>"; };
+		535BD5DE15180D0700F782CD /* HumanSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanSprite.m; sourceTree = "<group>"; };
+		535BD5DF15180D0700F782CD /* HumanSpriteRandomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanSpriteRandomizer.h; sourceTree = "<group>"; };
+		535BD5E015180D0700F782CD /* HumanSpriteRandomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanSpriteRandomizer.m; sourceTree = "<group>"; };
+		535BD5E415180D1B00F782CD /* TubeDoorSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeDoorSprite.h; sourceTree = "<group>"; };
+		535BD5E515180D1B00F782CD /* TubeDoorSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubeDoorSprite.m; sourceTree = "<group>"; };
+		535BD5E915180D3A00F782CD /* MainMenuSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuSoundManager.h; sourceTree = "<group>"; };
+		535BD5EA15180D3A00F782CD /* MainMenuSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuSoundManager.m; sourceTree = "<group>"; };
+		535BD5ED15180D5400F782CD /* LeaderboardsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardsLayer.h; sourceTree = "<group>"; };
+		535BD5EE15180D5400F782CD /* LeaderboardsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardsLayer.m; sourceTree = "<group>"; };
+		535BD5F115180D7200F782CD /* TutorialLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialLayer.h; sourceTree = "<group>"; };
+		535BD5F215180D7200F782CD /* TutorialLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialLayer.m; sourceTree = "<group>"; };
+		535BD5F515180D8F00F782CD /* VolumeKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeKnob.h; sourceTree = "<group>"; };
+		535BD5F615180D8F00F782CD /* VolumeKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeKnob.m; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -449,6 +581,273 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		535BD55C151803C000F782CD /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5F015180D6A00F782CD /* Tutorial Layer */,
+				535BD58515180C1A00F782CD /* Cloudscape Layer */,
+				535BD55D151803D900F782CD /* GameScene.h */,
+				535BD55E151803D900F782CD /* GameScene.m */,
+			);
+			name = "Game Scene";
+			sourceTree = "<group>";
+		};
+		535BD560151803F000F782CD /* Scrolling Letter */ = {
+			isa = PBXGroup;
+			children = (
+				535BD561151803FA00F782CD /* ScrollingLetter.h */,
+				535BD562151803FA00F782CD /* ScrollingLetter.m */,
+			);
+			name = "Scrolling Letter";
+			sourceTree = "<group>";
+		};
+		535BD5641518040600F782CD /* PowerUp Button */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5651518041A00F782CD /* PowerUpButton.h */,
+				535BD5661518041A00F782CD /* PowerUpButton.m */,
+			);
+			name = "PowerUp Button";
+			sourceTree = "<group>";
+		};
+		535BD5681518042900F782CD /* Sound Manager */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5E815180D2F00F782CD /* Main Menu Sound Manager */,
+				535BD5E715180D2600F782CD /* Game Sound Manager */,
+			);
+			name = "Sound Manager";
+			sourceTree = "<group>";
+		};
+		535BD56C15180AEC00F782CD /* Letter Slot */ = {
+			isa = PBXGroup;
+			children = (
+				535BD56D15180AF900F782CD /* LetterSlot.h */,
+				535BD56E15180AF900F782CD /* LetterSlot.m */,
+			);
+			name = "Letter Slot";
+			sourceTree = "<group>";
+		};
+		535BD57015180B5300F782CD /* GameCenter Manager */ = {
+			isa = PBXGroup;
+			children = (
+				535BD57C15180BC100F782CD /* GameCenter Player Score */,
+				535BD57115180B6600F782CD /* GameCenterManager.h */,
+				535BD57215180B6600F782CD /* GameCenterManager.m */,
+				535BD57315180B6600F782CD /* GameCenterManagerDelegate.h */,
+			);
+			name = "GameCenter Manager";
+			sourceTree = "<group>";
+		};
+		535BD57515180B7C00F782CD /* Main Menu Scene */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5EC15180D4C00F782CD /* Leaderboards Layer */,
+				535BD57615180B8F00F782CD /* MainMenuScene.h */,
+				535BD57715180B8F00F782CD /* MainMenuScene.m */,
+			);
+			name = "Main Menu Scene";
+			sourceTree = "<group>";
+		};
+		535BD57C15180BC100F782CD /* GameCenter Player Score */ = {
+			isa = PBXGroup;
+			children = (
+				535BD57915180BBB00F782CD /* GameCenterPlayerScore.h */,
+				535BD57A15180BBB00F782CD /* GameCenterPlayerScore.m */,
+			);
+			name = "GameCenter Player Score";
+			sourceTree = "<group>";
+		};
+		535BD57D15180BE000F782CD /* Truck Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				535BD57E15180BED00F782CD /* TruckSprite.h */,
+				535BD57F15180BED00F782CD /* TruckSprite.m */,
+			);
+			name = "Truck Sprite";
+			sourceTree = "<group>";
+		};
+		535BD58115180BF900F782CD /* Feather Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				535BD58215180C0400F782CD /* FeathersSprite.h */,
+				535BD58315180C0400F782CD /* FeathersSprite.m */,
+			);
+			name = "Feather Sprite";
+			sourceTree = "<group>";
+		};
+		535BD58515180C1A00F782CD /* Cloudscape Layer */ = {
+			isa = PBXGroup;
+			children = (
+				535BD58615180C5B00F782CD /* CloudscapeLayer.h */,
+				535BD58715180C5B00F782CD /* CloudscapeLayer.m */,
+			);
+			name = "Cloudscape Layer";
+			sourceTree = "<group>";
+		};
+		535BD58915180C8500F782CD /* Star Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				535BD58A15180C8F00F782CD /* StarSprite.h */,
+				535BD58B15180C8F00F782CD /* StarSprite.m */,
+			);
+			name = "Star Sprite";
+			sourceTree = "<group>";
+		};
+		535BD58D15180CB900F782CD /* Playtomic */ = {
+			isa = PBXGroup;
+			children = (
+				535BD58E15180CB900F782CD /* JSON */,
+				535BD59C15180CB900F782CD /* Playtomic.h */,
+				535BD59D15180CB900F782CD /* Playtomic.m */,
+				535BD59E15180CB900F782CD /* PlaytomicData.h */,
+				535BD59F15180CB900F782CD /* PlaytomicData.m */,
+				535BD5A015180CB900F782CD /* PlaytomicEncrypt.h */,
+				535BD5A115180CB900F782CD /* PlaytomicEncrypt.m */,
+				535BD5A215180CB900F782CD /* PlaytomicGameVars.h */,
+				535BD5A315180CB900F782CD /* PlaytomicGameVars.m */,
+				535BD5A415180CB900F782CD /* PlaytomicGeoIP.h */,
+				535BD5A515180CB900F782CD /* PlaytomicGeoIP.m */,
+				535BD5A615180CB900F782CD /* PlaytomicLeaderboards.h */,
+				535BD5A715180CB900F782CD /* PlaytomicLeaderboards.m */,
+				535BD5A815180CB900F782CD /* PlaytomicLevel.h */,
+				535BD5A915180CB900F782CD /* PlaytomicLevel.m */,
+				535BD5AA15180CB900F782CD /* PlaytomicLink.h */,
+				535BD5AB15180CB900F782CD /* PlaytomicLink.m */,
+				535BD5AC15180CB900F782CD /* PlaytomicLog.h */,
+				535BD5AD15180CB900F782CD /* PlaytomicLog.m */,
+				535BD5AE15180CB900F782CD /* PlaytomicLogRequest.h */,
+				535BD5AF15180CB900F782CD /* PlaytomicLogRequest.m */,
+				535BD5B015180CB900F782CD /* PlaytomicPlayerLevels.h */,
+				535BD5B115180CB900F782CD /* PlaytomicPlayerLevels.m */,
+				535BD5B215180CB900F782CD /* PlaytomicPrivateLeaderboard.h */,
+				535BD5B315180CB900F782CD /* PlaytomicPrivateLeaderboard.m */,
+				535BD5B415180CB900F782CD /* PlaytomicRequest.h */,
+				535BD5B515180CB900F782CD /* PlaytomicRequest.m */,
+				535BD5B615180CB900F782CD /* PlaytomicResponse.h */,
+				535BD5B715180CB900F782CD /* PlaytomicResponse.m */,
+				535BD5B815180CB900F782CD /* PlaytomicScore.h */,
+				535BD5B915180CB900F782CD /* PlaytomicScore.m */,
+				535BD5BA15180CB900F782CD /* PlaytomicURLRequest.h */,
+				535BD5BB15180CB900F782CD /* PlaytomicURLRequest.m */,
+				535BD5BC15180CB900F782CD /* Reachability */,
+			);
+			path = Playtomic;
+			sourceTree = "<group>";
+		};
+		535BD58E15180CB900F782CD /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				535BD58F15180CB900F782CD /* Credits.markdown */,
+				535BD59015180CB900F782CD /* JSON LICENSE */,
+				535BD59115180CB900F782CD /* JSON.h */,
+				535BD59215180CB900F782CD /* NSObject+SBJSON.h */,
+				535BD59315180CB900F782CD /* NSObject+SBJSON.m */,
+				535BD59415180CB900F782CD /* NSString+SBJSON.h */,
+				535BD59515180CB900F782CD /* NSString+SBJSON.m */,
+				535BD59615180CB900F782CD /* SBJsonBase.h */,
+				535BD59715180CB900F782CD /* SBJsonBase.m */,
+				535BD59815180CB900F782CD /* SBJsonParser.h */,
+				535BD59915180CB900F782CD /* SBJsonParser.m */,
+				535BD59A15180CB900F782CD /* SBJsonWriter.h */,
+				535BD59B15180CB900F782CD /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		535BD5BC15180CB900F782CD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5BD15180CB900F782CD /* Reachability.h */,
+				535BD5BE15180CB900F782CD /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		535BD5D715180CC700F782CD /* Playtomic Manager */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5D815180CD400F782CD /* PlaytomicManager.h */,
+				535BD5D915180CD400F782CD /* PlaytomicManager.m */,
+			);
+			name = "Playtomic Manager";
+			sourceTree = "<group>";
+		};
+		535BD5DB15180CDA00F782CD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5D715180CC700F782CD /* Playtomic Manager */,
+				535BD57015180B5300F782CD /* GameCenter Manager */,
+				535BD5681518042900F782CD /* Sound Manager */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		535BD5DC15180CF400F782CD /* Human Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5DD15180D0700F782CD /* HumanSprite.h */,
+				535BD5DE15180D0700F782CD /* HumanSprite.m */,
+				535BD5DF15180D0700F782CD /* HumanSpriteRandomizer.h */,
+				535BD5E015180D0700F782CD /* HumanSpriteRandomizer.m */,
+			);
+			name = "Human Sprite";
+			sourceTree = "<group>";
+		};
+		535BD5E315180D1200F782CD /* Tube Door */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5E415180D1B00F782CD /* TubeDoorSprite.h */,
+				535BD5E515180D1B00F782CD /* TubeDoorSprite.m */,
+			);
+			name = "Tube Door";
+			sourceTree = "<group>";
+		};
+		535BD5E715180D2600F782CD /* Game Sound Manager */ = {
+			isa = PBXGroup;
+			children = (
+				535BD569151807F600F782CD /* GameSoundManager.h */,
+				535BD56A151807F600F782CD /* GameSoundManager.m */,
+			);
+			name = "Game Sound Manager";
+			sourceTree = "<group>";
+		};
+		535BD5E815180D2F00F782CD /* Main Menu Sound Manager */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5E915180D3A00F782CD /* MainMenuSoundManager.h */,
+				535BD5EA15180D3A00F782CD /* MainMenuSoundManager.m */,
+			);
+			name = "Main Menu Sound Manager";
+			sourceTree = "<group>";
+		};
+		535BD5EC15180D4C00F782CD /* Leaderboards Layer */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5ED15180D5400F782CD /* LeaderboardsLayer.h */,
+				535BD5EE15180D5400F782CD /* LeaderboardsLayer.m */,
+			);
+			name = "Leaderboards Layer";
+			sourceTree = "<group>";
+		};
+		535BD5F015180D6A00F782CD /* Tutorial Layer */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5F115180D7200F782CD /* TutorialLayer.h */,
+				535BD5F215180D7200F782CD /* TutorialLayer.m */,
+			);
+			name = "Tutorial Layer";
+			sourceTree = "<group>";
+		};
+		535BD5F415180D8500F782CD /* Volume Knob */ = {
+			isa = PBXGroup;
+			children = (
+				535BD5F515180D8F00F782CD /* VolumeKnob.h */,
+				535BD5F615180D8F00F782CD /* VolumeKnob.m */,
+			);
+			name = "Volume Knob";
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +870,8 @@
 		53A5BCA91517E64600C05FE8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				535BD57515180B7C00F782CD /* Main Menu Scene */,
+				535BD55C151803C000F782CD /* Game Scene */,
 				53A5BCFD1517F1F700C05FE8 /* Intro Video */,
 				53A5BCAE1517E67700C05FE8 /* Super Scene */,
 				53A5BCAA1517E65600C05FE8 /* Loading Scene */,
@@ -516,6 +917,15 @@
 		53A5BCD41517EE3D00C05FE8 /* Sprites and Controls */ = {
 			isa = PBXGroup;
 			children = (
+				535BD5F415180D8500F782CD /* Volume Knob */,
+				535BD5E315180D1200F782CD /* Tube Door */,
+				535BD5DC15180CF400F782CD /* Human Sprite */,
+				535BD58915180C8500F782CD /* Star Sprite */,
+				535BD58115180BF900F782CD /* Feather Sprite */,
+				535BD57D15180BE000F782CD /* Truck Sprite */,
+				535BD56C15180AEC00F782CD /* Letter Slot */,
+				535BD5641518040600F782CD /* PowerUp Button */,
+				535BD560151803F000F782CD /* Scrolling Letter */,
 				53A5BCD51517EE4E00C05FE8 /* Alien Sprite */,
 			);
 			name = "Sprites and Controls";
@@ -666,6 +1076,7 @@
 		53D8193B1517D97800B63DEC /* Abductionary */ = {
 			isa = PBXGroup;
 			children = (
+				535BD5DB15180CDA00F782CD /* Managers */,
 				53A5BCDD1517F05400C05FE8 /* Categories and Extensions */,
 				53A5BCD91517EEDB00C05FE8 /* Dictionary */,
 				53A5BCD41517EE3D00C05FE8 /* Sprites and Controls */,
@@ -700,6 +1111,7 @@
 				53D81A631517D97D00B63DEC /* LICENSE_cocos2d.txt */,
 				53D81A721517D97D00B63DEC /* LICENSE_CocosDenshion.txt */,
 				53D81AA41517D97D00B63DEC /* LICENSE_Kazmath.txt */,
+				535BD58D15180CB900F782CD /* Playtomic */,
 				53D819551517D97900B63DEC /* cocos2d */,
 				53D81A641517D97D00B63DEC /* CocosDenshion */,
 				53D81A731517D97D00B63DEC /* kazmath */,
@@ -1095,6 +1507,8 @@
 				535BD5591517FD0F00F782CD /* loadingImage-hd.pvr.ccz in Resources */,
 				535BD55A1517FD0F00F782CD /* loadingImage.plist in Resources */,
 				535BD55B1517FD0F00F782CD /* loadingImage.pvr.ccz in Resources */,
+				535BD5BF15180CB900F782CD /* Credits.markdown in Resources */,
+				535BD5C015180CB900F782CD /* JSON LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1218,6 +1632,48 @@
 				53A5BCF71517F0BF00C05FE8 /* CCVideoPlayerImplMac.m in Sources */,
 				53A5BCF91517F0BF00C05FE8 /* MyMovieView.m in Sources */,
 				53A5BD031517F28800C05FE8 /* IntroScene.m in Sources */,
+				535BD55F151803D900F782CD /* GameScene.m in Sources */,
+				535BD563151803FA00F782CD /* ScrollingLetter.m in Sources */,
+				535BD5671518041A00F782CD /* PowerUpButton.m in Sources */,
+				535BD56B151807F600F782CD /* GameSoundManager.m in Sources */,
+				535BD56F15180AF900F782CD /* LetterSlot.m in Sources */,
+				535BD57415180B6600F782CD /* GameCenterManager.m in Sources */,
+				535BD57815180B8F00F782CD /* MainMenuScene.m in Sources */,
+				535BD57B15180BBB00F782CD /* GameCenterPlayerScore.m in Sources */,
+				535BD58015180BED00F782CD /* TruckSprite.m in Sources */,
+				535BD58415180C0400F782CD /* FeathersSprite.m in Sources */,
+				535BD58815180C5B00F782CD /* CloudscapeLayer.m in Sources */,
+				535BD58C15180C8F00F782CD /* StarSprite.m in Sources */,
+				535BD5C115180CB900F782CD /* NSObject+SBJSON.m in Sources */,
+				535BD5C215180CB900F782CD /* NSString+SBJSON.m in Sources */,
+				535BD5C315180CB900F782CD /* SBJsonBase.m in Sources */,
+				535BD5C415180CB900F782CD /* SBJsonParser.m in Sources */,
+				535BD5C515180CB900F782CD /* SBJsonWriter.m in Sources */,
+				535BD5C615180CB900F782CD /* Playtomic.m in Sources */,
+				535BD5C715180CB900F782CD /* PlaytomicData.m in Sources */,
+				535BD5C815180CB900F782CD /* PlaytomicEncrypt.m in Sources */,
+				535BD5C915180CB900F782CD /* PlaytomicGameVars.m in Sources */,
+				535BD5CA15180CB900F782CD /* PlaytomicGeoIP.m in Sources */,
+				535BD5CB15180CB900F782CD /* PlaytomicLeaderboards.m in Sources */,
+				535BD5CC15180CB900F782CD /* PlaytomicLevel.m in Sources */,
+				535BD5CD15180CB900F782CD /* PlaytomicLink.m in Sources */,
+				535BD5CE15180CB900F782CD /* PlaytomicLog.m in Sources */,
+				535BD5CF15180CB900F782CD /* PlaytomicLogRequest.m in Sources */,
+				535BD5D015180CB900F782CD /* PlaytomicPlayerLevels.m in Sources */,
+				535BD5D115180CB900F782CD /* PlaytomicPrivateLeaderboard.m in Sources */,
+				535BD5D215180CB900F782CD /* PlaytomicRequest.m in Sources */,
+				535BD5D315180CB900F782CD /* PlaytomicResponse.m in Sources */,
+				535BD5D415180CB900F782CD /* PlaytomicScore.m in Sources */,
+				535BD5D515180CB900F782CD /* PlaytomicURLRequest.m in Sources */,
+				535BD5D615180CB900F782CD /* Reachability.m in Sources */,
+				535BD5DA15180CD400F782CD /* PlaytomicManager.m in Sources */,
+				535BD5E115180D0700F782CD /* HumanSprite.m in Sources */,
+				535BD5E215180D0700F782CD /* HumanSpriteRandomizer.m in Sources */,
+				535BD5E615180D1B00F782CD /* TubeDoorSprite.m in Sources */,
+				535BD5EB15180D3A00F782CD /* MainMenuSoundManager.m in Sources */,
+				535BD5EF15180D5400F782CD /* LeaderboardsLayer.m in Sources */,
+				535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */,
+				535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

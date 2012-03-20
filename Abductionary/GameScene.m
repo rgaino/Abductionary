@@ -12,7 +12,8 @@
 #import "Constants.h"
 #import "Dictionary.h"
 #import "LetterSlot.h"
-#import "AbductionaryAppDelegate.h"
+//#import "AbductionaryAppDelegate.h"
+#import "AppDelegate.h"
 #import "GameCenterManager.h"
 #import "LoadingScene.h"
 #import "TruckSprite.h"
@@ -77,7 +78,7 @@
 -(void) setupVariablesAndObjects 
 {
     
-    AbductionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    id<UIApplicationDelegate> *appDelegate = [[UIApplication sharedApplication] delegate];
     [appDelegate setPlayerScore:0];
     [appDelegate setFailCounterValue:0];
     [appDelegate setPowerUpValue:0];
