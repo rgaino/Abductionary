@@ -151,6 +151,10 @@
 		537AFBD2151A80BE00B78F19 /* gameOverElements-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBCE151A80BE00B78F19 /* gameOverElements-hd.pvr.ccz */; };
 		537AFBD3151A80BE00B78F19 /* gameOverElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBCF151A80BE00B78F19 /* gameOverElements.plist */; };
 		537AFBD4151A80BE00B78F19 /* gameOverElements.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBD0151A80BE00B78F19 /* gameOverElements.pvr.ccz */; };
+		537AFBDA151A814600B78F19 /* gameScreen-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBD6151A814600B78F19 /* gameScreen-hd.plist */; };
+		537AFBDB151A814600B78F19 /* gameScreen-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBD7151A814600B78F19 /* gameScreen-hd.pvr.ccz */; };
+		537AFBDC151A814600B78F19 /* gameScreen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBD8151A814600B78F19 /* gameScreen.plist */; };
+		537AFBDD151A814600B78F19 /* gameScreen.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBD9151A814600B78F19 /* gameScreen.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -478,6 +482,10 @@
 		537AFBCE151A80BE00B78F19 /* gameOverElements-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverElements-hd.pvr.ccz"; path = "Resources/gameOverElements-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFBCF151A80BE00B78F19 /* gameOverElements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverElements.plist; path = Resources/gameOverElements.plist; sourceTree = "<group>"; };
 		537AFBD0151A80BE00B78F19 /* gameOverElements.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverElements.pvr.ccz; path = Resources/gameOverElements.pvr.ccz; sourceTree = "<group>"; };
+		537AFBD6151A814600B78F19 /* gameScreen-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameScreen-hd.plist"; path = "Resources/gameScreen-hd.plist"; sourceTree = "<group>"; };
+		537AFBD7151A814600B78F19 /* gameScreen-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameScreen-hd.pvr.ccz"; path = "Resources/gameScreen-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBD8151A814600B78F19 /* gameScreen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameScreen.plist; path = Resources/gameScreen.plist; sourceTree = "<group>"; };
+		537AFBD9151A814600B78F19 /* gameScreen.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameScreen.pvr.ccz; path = Resources/gameScreen.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1274,9 +1282,21 @@
 			name = "Game Over Elements";
 			sourceTree = "<group>";
 		};
+		537AFBD5151A813600B78F19 /* Game Screen */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBD6151A814600B78F19 /* gameScreen-hd.plist */,
+				537AFBD7151A814600B78F19 /* gameScreen-hd.pvr.ccz */,
+				537AFBD8151A814600B78F19 /* gameScreen.plist */,
+				537AFBD9151A814600B78F19 /* gameScreen.pvr.ccz */,
+			);
+			name = "Game Screen";
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFBD5151A813600B78F19 /* Game Screen */,
 				537AFBCC151A80B400B78F19 /* Game Over Elements */,
 				537AFB9E151A6B4A00B78F19 /* Game Over Background */,
 				537AFB95151A69F200B78F19 /* Game Background */,
@@ -2038,6 +2058,10 @@
 				537AFBD2151A80BE00B78F19 /* gameOverElements-hd.pvr.ccz in Resources */,
 				537AFBD3151A80BE00B78F19 /* gameOverElements.plist in Resources */,
 				537AFBD4151A80BE00B78F19 /* gameOverElements.pvr.ccz in Resources */,
+				537AFBDA151A814600B78F19 /* gameScreen-hd.plist in Resources */,
+				537AFBDB151A814600B78F19 /* gameScreen-hd.pvr.ccz in Resources */,
+				537AFBDC151A814600B78F19 /* gameScreen.plist in Resources */,
+				537AFBDD151A814600B78F19 /* gameScreen.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
