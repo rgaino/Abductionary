@@ -212,6 +212,10 @@
 		537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC57151A8F0C00B78F19 /* Tutorial.plist */; };
 		537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */; };
 		5398260D151A934F00265029 /* smokeParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5398260C151A934F00265029 /* smokeParticles.plist */; };
+		53982612151A941800265029 /* AlienWalking-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5398260E151A941800265029 /* AlienWalking-hd.plist */; };
+		53982613151A941800265029 /* AlienWalking-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5398260F151A941800265029 /* AlienWalking-hd.pvr.ccz */; };
+		53982614151A941800265029 /* AlienWalking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53982610151A941800265029 /* AlienWalking.plist */; };
+		53982615151A941800265029 /* AlienWalking.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53982611151A941800265029 /* AlienWalking.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -499,10 +503,6 @@
 		537AFB77151A4CA400B78F19 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		537AFB7A151A592800B78F19 /* geogtq-bd-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geogtq-bd-webfont.ttf"; sourceTree = "<group>"; };
 		537AFB7B151A592800B78F19 /* InterstateBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = InterstateBlack.ttf; sourceTree = "<group>"; };
-		537AFB7F151A650000B78F19 /* AlienWalking-hd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AlienWalking-hd.plist"; path = "Resources/AlienWalking-hd.plist"; sourceTree = "<group>"; };
-		537AFB80151A650000B78F19 /* AlienWalking-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlienWalking-hd.pvr.ccz"; path = "Resources/AlienWalking-hd.pvr.ccz"; sourceTree = "<group>"; };
-		537AFB81151A650000B78F19 /* AlienWalking.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AlienWalking.plist; path = Resources/AlienWalking.plist; sourceTree = "<group>"; };
-		537AFB82151A650000B78F19 /* AlienWalking.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienWalking.pvr.ccz; path = Resources/AlienWalking.pvr.ccz; sourceTree = "<group>"; };
 		537AFB84151A66F600B78F19 /* alphabet-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "alphabet-hd.plist"; path = "Resources/alphabet-hd.plist"; sourceTree = "<group>"; };
 		537AFB85151A66F600B78F19 /* alphabet-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "alphabet-hd.pvr.ccz"; path = "Resources/alphabet-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFB86151A66F600B78F19 /* alphabet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = alphabet.plist; path = Resources/alphabet.plist; sourceTree = "<group>"; };
@@ -600,6 +600,10 @@
 		537AFC57151A8F0C00B78F19 /* Tutorial.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tutorial.plist; path = Resources/Tutorial.plist; sourceTree = "<group>"; };
 		537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tutorial.pvr.ccz; path = Resources/Tutorial.pvr.ccz; sourceTree = "<group>"; };
 		5398260C151A934F00265029 /* smokeParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smokeParticles.plist; sourceTree = "<group>"; };
+		5398260E151A941800265029 /* AlienWalking-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlienWalking-hd.plist"; path = "Resources/AlienWalking-hd.plist"; sourceTree = "<group>"; };
+		5398260F151A941800265029 /* AlienWalking-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlienWalking-hd.pvr.ccz"; path = "Resources/AlienWalking-hd.pvr.ccz"; sourceTree = "<group>"; };
+		53982610151A941800265029 /* AlienWalking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AlienWalking.plist; path = Resources/AlienWalking.plist; sourceTree = "<group>"; };
+		53982611151A941800265029 /* AlienWalking.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienWalking.pvr.ccz; path = Resources/AlienWalking.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1277,10 +1281,10 @@
 		537AFB7E151A64F800B78F19 /* Alien Animations */ = {
 			isa = PBXGroup;
 			children = (
-				537AFB7F151A650000B78F19 /* AlienWalking-hd.plist */,
-				537AFB80151A650000B78F19 /* AlienWalking-hd.pvr.ccz */,
-				537AFB81151A650000B78F19 /* AlienWalking.plist */,
-				537AFB82151A650000B78F19 /* AlienWalking.pvr.ccz */,
+				5398260E151A941800265029 /* AlienWalking-hd.plist */,
+				5398260F151A941800265029 /* AlienWalking-hd.pvr.ccz */,
+				53982610151A941800265029 /* AlienWalking.plist */,
+				53982611151A941800265029 /* AlienWalking.pvr.ccz */,
 			);
 			name = "Alien Animations";
 			sourceTree = "<group>";
@@ -2418,6 +2422,10 @@
 				537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */,
 				537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */,
 				5398260D151A934F00265029 /* smokeParticles.plist in Resources */,
+				53982612151A941800265029 /* AlienWalking-hd.plist in Resources */,
+				53982613151A941800265029 /* AlienWalking-hd.pvr.ccz in Resources */,
+				53982614151A941800265029 /* AlienWalking.plist in Resources */,
+				53982615151A941800265029 /* AlienWalking.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import "IntroScene.h"
 #import "LoadingScene.h"
-//#import "MainMenuScene.h"
+#import "MainMenuScene.h"
 
 @implementation IntroScene
 
@@ -34,8 +34,8 @@
 - (void) moviePlaybackFinished
 {
 //    [[CCDirector sharedDirector] startAnimation];
-//    [[CCDirector sharedDirector] replaceScene:[MainMenuScene scene]];
-    [[CCDirector sharedDirector] replaceScene:[LoadingScene scene]];
+    [[CCDirector sharedDirector] replaceScene:[MainMenuScene scene]];
+//    [[CCDirector sharedDirector] replaceScene:[LoadingScene scene]];
 }
 
 - (void) movieStartsPlaying

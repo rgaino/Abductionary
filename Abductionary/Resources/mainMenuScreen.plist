@@ -20,7 +20,7 @@
             <key>creditsScreen.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{468,173},{514,698}}</string>
+                <string>{{634,139},{514,698}}</string>
                 <key>offset</key>
                 <string>{-1,2}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>mainMenuLetter_02b.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{386,1},{65,62}}</string>
+                <string>{{581,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +111,7 @@
             <key>mainMenuLetter_04u.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{191,1},{65,62}}</string>
+                <string>{{126,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>mainMenuLetter_05c.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{712,1},{66,62}}</string>
+                <string>{{646,1},{66,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>mainMenuLetter_06t.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{646,1},{66,62}}</string>
+                <string>{{712,1},{66,62}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -150,7 +150,7 @@
             <key>mainMenuLetter_07i.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{516,1},{65,62}}</string>
+                <string>{{386,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +163,7 @@
             <key>mainMenuLetter_08o.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{126,1},{65,62}}</string>
+                <string>{{321,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -176,7 +176,7 @@
             <key>mainMenuLetter_09n.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{451,1},{65,62}}</string>
+                <string>{{191,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -189,7 +189,7 @@
             <key>mainMenuLetter_10a.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{256,1},{65,62}}</string>
+                <string>{{516,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -202,7 +202,7 @@
             <key>mainMenuLetter_11r.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{321,1},{65,62}}</string>
+                <string>{{256,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -215,7 +215,7 @@
             <key>mainMenuLetter_12y.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{581,1},{65,62}}</string>
+                <string>{{451,1},{65,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -228,7 +228,7 @@
             <key>mainMenuPanel.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{982,173},{1024,768}}</string>
+                <string>{{1,837},{1024,768}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -241,7 +241,7 @@
             <key>newGameConsole.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{215,173},{253,330}}</string>
+                <string>{{381,139},{253,330}}</string>
                 <key>offset</key>
                 <string>{2,0}</string>
                 <key>rotated</key>
@@ -267,7 +267,7 @@
             <key>newGameConsoleDoor.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,173},{214,309}}</string>
+                <string>{{167,139},{214,309}}</string>
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
@@ -345,7 +345,7 @@
             <key>volumeKnob.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1876,1},{166,172}}</string>
+                <string>{{1,139},{166,172}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -355,6 +355,19 @@
                 <key>sourceSize</key>
                 <string>{166,172}</string>
             </dict>
+            <key>volumeKnobUpState.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1876,1},{134,138}}</string>
+                <key>offset</key>
+                <string>{-61,59}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{134,138}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -363,9 +376,9 @@
             <key>realTextureFileName</key>
             <string>mainMenuScreen.pvr.ccz</string>
             <key>size</key>
-            <string>{2048,1024}</string>
+            <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:0b0c4297aec62dbae5af4c19414b6319$</string>
+            <string>$TexturePacker:SmartUpdate:40890891e613d77cb250b7378f9e9817$</string>
             <key>textureFileName</key>
             <string>mainMenuScreen.pvr.ccz</string>
         </dict>
