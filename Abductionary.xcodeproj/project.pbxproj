@@ -211,6 +211,7 @@
 		537AFC5A151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC56151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz */; };
 		537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC57151A8F0C00B78F19 /* Tutorial.plist */; };
 		537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */; };
+		5398260D151A934F00265029 /* smokeParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5398260C151A934F00265029 /* smokeParticles.plist */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -598,6 +599,7 @@
 		537AFC56151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tutorial-hd.pvr.ccz"; path = "Resources/Tutorial-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFC57151A8F0C00B78F19 /* Tutorial.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tutorial.plist; path = Resources/Tutorial.plist; sourceTree = "<group>"; };
 		537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tutorial.pvr.ccz; path = Resources/Tutorial.pvr.ccz; sourceTree = "<group>"; };
+		5398260C151A934F00265029 /* smokeParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smokeParticles.plist; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1574,6 +1576,14 @@
 			name = Tutorials;
 			sourceTree = "<group>";
 		};
+		5398260A151A933100265029 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				5398260C151A934F00265029 /* smokeParticles.plist */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -1838,6 +1848,7 @@
 		53D8193C1517D97800B63DEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5398260A151A933100265029 /* Particles */,
 				537AFB79151A590D00B78F19 /* Fonts */,
 				537AFB0E151A4BC100B78F19 /* Sound FX and Music */,
 				537AFAF9151A4B0800B78F19 /* Dictionary */,
@@ -2406,6 +2417,7 @@
 				537AFC5A151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz in Resources */,
 				537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */,
 				537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */,
+				5398260D151A934F00265029 /* smokeParticles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
