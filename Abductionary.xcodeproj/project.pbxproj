@@ -115,6 +115,14 @@
 		537AFB78151A4CA400B78F19 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB77151A4CA400B78F19 /* Icon.png */; };
 		537AFB7C151A592800B78F19 /* geogtq-bd-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB7A151A592800B78F19 /* geogtq-bd-webfont.ttf */; };
 		537AFB7D151A592800B78F19 /* InterstateBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB7B151A592800B78F19 /* InterstateBlack.ttf */; };
+		537AFB88151A66F600B78F19 /* alphabet-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB84151A66F600B78F19 /* alphabet-hd.plist */; };
+		537AFB89151A66F600B78F19 /* alphabet-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB85151A66F600B78F19 /* alphabet-hd.pvr.ccz */; };
+		537AFB8A151A66F600B78F19 /* alphabet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB86151A66F600B78F19 /* alphabet.plist */; };
+		537AFB8B151A66F600B78F19 /* alphabet.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB87151A66F600B78F19 /* alphabet.pvr.ccz */; };
+		537AFB91151A67C400B78F19 /* FeathersAnimation-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB8D151A67C400B78F19 /* FeathersAnimation-hd.plist */; };
+		537AFB92151A67C400B78F19 /* FeathersAnimation-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB8E151A67C400B78F19 /* FeathersAnimation-hd.pvr.ccz */; };
+		537AFB93151A67C400B78F19 /* FeathersAnimation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB8F151A67C400B78F19 /* FeathersAnimation.plist */; };
+		537AFB94151A67C400B78F19 /* FeathersAnimation.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB90151A67C400B78F19 /* FeathersAnimation.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -406,6 +414,14 @@
 		537AFB80151A650000B78F19 /* AlienWalking-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlienWalking-hd.pvr.ccz"; path = "Resources/AlienWalking-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFB81151A650000B78F19 /* AlienWalking.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AlienWalking.plist; path = Resources/AlienWalking.plist; sourceTree = "<group>"; };
 		537AFB82151A650000B78F19 /* AlienWalking.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienWalking.pvr.ccz; path = Resources/AlienWalking.pvr.ccz; sourceTree = "<group>"; };
+		537AFB84151A66F600B78F19 /* alphabet-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "alphabet-hd.plist"; path = "Resources/alphabet-hd.plist"; sourceTree = "<group>"; };
+		537AFB85151A66F600B78F19 /* alphabet-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "alphabet-hd.pvr.ccz"; path = "Resources/alphabet-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFB86151A66F600B78F19 /* alphabet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = alphabet.plist; path = Resources/alphabet.plist; sourceTree = "<group>"; };
+		537AFB87151A66F600B78F19 /* alphabet.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = alphabet.pvr.ccz; path = Resources/alphabet.pvr.ccz; sourceTree = "<group>"; };
+		537AFB8D151A67C400B78F19 /* FeathersAnimation-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FeathersAnimation-hd.plist"; path = "Resources/FeathersAnimation-hd.plist"; sourceTree = "<group>"; };
+		537AFB8E151A67C400B78F19 /* FeathersAnimation-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FeathersAnimation-hd.pvr.ccz"; path = "Resources/FeathersAnimation-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFB8F151A67C400B78F19 /* FeathersAnimation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FeathersAnimation.plist; path = Resources/FeathersAnimation.plist; sourceTree = "<group>"; };
+		537AFB90151A67C400B78F19 /* FeathersAnimation.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = FeathersAnimation.pvr.ccz; path = Resources/FeathersAnimation.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1091,9 +1107,33 @@
 			name = "Alien Animations";
 			sourceTree = "<group>";
 		};
+		537AFB83151A66D800B78F19 /* Alphabet */ = {
+			isa = PBXGroup;
+			children = (
+				537AFB84151A66F600B78F19 /* alphabet-hd.plist */,
+				537AFB85151A66F600B78F19 /* alphabet-hd.pvr.ccz */,
+				537AFB86151A66F600B78F19 /* alphabet.plist */,
+				537AFB87151A66F600B78F19 /* alphabet.pvr.ccz */,
+			);
+			name = Alphabet;
+			sourceTree = "<group>";
+		};
+		537AFB8C151A67AA00B78F19 /* Feathers */ = {
+			isa = PBXGroup;
+			children = (
+				537AFB8D151A67C400B78F19 /* FeathersAnimation-hd.plist */,
+				537AFB8E151A67C400B78F19 /* FeathersAnimation-hd.pvr.ccz */,
+				537AFB8F151A67C400B78F19 /* FeathersAnimation.plist */,
+				537AFB90151A67C400B78F19 /* FeathersAnimation.pvr.ccz */,
+			);
+			name = Feathers;
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFB8C151A67AA00B78F19 /* Feathers */,
+				537AFB83151A66D800B78F19 /* Alphabet */,
 				537AFB7E151A64F800B78F19 /* Alien Animations */,
 				53A5BCA41517E57F00C05FE8 /* Loading */,
 			);
@@ -1814,6 +1854,14 @@
 				537AFB78151A4CA400B78F19 /* Icon.png in Resources */,
 				537AFB7C151A592800B78F19 /* geogtq-bd-webfont.ttf in Resources */,
 				537AFB7D151A592800B78F19 /* InterstateBlack.ttf in Resources */,
+				537AFB88151A66F600B78F19 /* alphabet-hd.plist in Resources */,
+				537AFB89151A66F600B78F19 /* alphabet-hd.pvr.ccz in Resources */,
+				537AFB8A151A66F600B78F19 /* alphabet.plist in Resources */,
+				537AFB8B151A66F600B78F19 /* alphabet.pvr.ccz in Resources */,
+				537AFB91151A67C400B78F19 /* FeathersAnimation-hd.plist in Resources */,
+				537AFB92151A67C400B78F19 /* FeathersAnimation-hd.pvr.ccz in Resources */,
+				537AFB93151A67C400B78F19 /* FeathersAnimation.plist in Resources */,
+				537AFB94151A67C400B78F19 /* FeathersAnimation.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
