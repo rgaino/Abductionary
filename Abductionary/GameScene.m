@@ -422,7 +422,7 @@
     CCMenu *pauseMenu = [CCMenu menuWithItems:nil];
     pauseMenu.position = ccp(0,0);
     
-    tubeDoorButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"tubeDoorButtonNormal.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"tubeDoorButtonUp.png"] target:self selector:@selector(mainMenuButtonPressed)];
+    tubeDoorButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"tubeDoorButtonNormal.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"tubeDoorButtonUp.png"] target:self selector:@selector(mainMenuButtonPressed)];
     [tubeDoorButton setPosition:ccp(614, 1125)];
     [tubeDoorButton setAnchorPoint:ccp(0,0)];
     [pauseMenu addChild:tubeDoorButton z:17];
