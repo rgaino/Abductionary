@@ -203,6 +203,10 @@
 		537AFC48151A8C3300B78F19 /* mainMenuScreen-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC44151A8C3200B78F19 /* mainMenuScreen-hd.pvr.ccz */; };
 		537AFC49151A8C3300B78F19 /* mainMenuScreen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC45151A8C3300B78F19 /* mainMenuScreen.plist */; };
 		537AFC4A151A8C3300B78F19 /* mainMenuScreen.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC46151A8C3300B78F19 /* mainMenuScreen.pvr.ccz */; };
+		537AFC50151A8DA800B78F19 /* TruckAnimation-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC4C151A8DA800B78F19 /* TruckAnimation-hd.plist */; };
+		537AFC51151A8DA800B78F19 /* TruckAnimation-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC4D151A8DA800B78F19 /* TruckAnimation-hd.pvr.ccz */; };
+		537AFC52151A8DA800B78F19 /* TruckAnimation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC4E151A8DA800B78F19 /* TruckAnimation.plist */; };
+		537AFC53151A8DA800B78F19 /* TruckAnimation.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC4F151A8DA800B78F19 /* TruckAnimation.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -582,6 +586,10 @@
 		537AFC44151A8C3200B78F19 /* mainMenuScreen-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mainMenuScreen-hd.pvr.ccz"; path = "Resources/mainMenuScreen-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFC45151A8C3300B78F19 /* mainMenuScreen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = mainMenuScreen.plist; path = Resources/mainMenuScreen.plist; sourceTree = "<group>"; };
 		537AFC46151A8C3300B78F19 /* mainMenuScreen.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = mainMenuScreen.pvr.ccz; path = Resources/mainMenuScreen.pvr.ccz; sourceTree = "<group>"; };
+		537AFC4C151A8DA800B78F19 /* TruckAnimation-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TruckAnimation-hd.plist"; path = "Resources/TruckAnimation-hd.plist"; sourceTree = "<group>"; };
+		537AFC4D151A8DA800B78F19 /* TruckAnimation-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TruckAnimation-hd.pvr.ccz"; path = "Resources/TruckAnimation-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFC4E151A8DA800B78F19 /* TruckAnimation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TruckAnimation.plist; path = Resources/TruckAnimation.plist; sourceTree = "<group>"; };
+		537AFC4F151A8DA800B78F19 /* TruckAnimation.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = TruckAnimation.pvr.ccz; path = Resources/TruckAnimation.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1536,9 +1544,21 @@
 			name = "Main Menu Screen";
 			sourceTree = "<group>";
 		};
+		537AFC4B151A8DA000B78F19 /* Truck Animation */ = {
+			isa = PBXGroup;
+			children = (
+				537AFC4C151A8DA800B78F19 /* TruckAnimation-hd.plist */,
+				537AFC4D151A8DA800B78F19 /* TruckAnimation-hd.pvr.ccz */,
+				537AFC4E151A8DA800B78F19 /* TruckAnimation.plist */,
+				537AFC4F151A8DA800B78F19 /* TruckAnimation.pvr.ccz */,
+			);
+			name = "Truck Animation";
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFC4B151A8DA000B78F19 /* Truck Animation */,
 				537AFC42151A8B0B00B78F19 /* Main Menu Screen */,
 				537AFC39151A8A8B00B78F19 /* Main Menu Background */,
 				537AFC30151A862700B78F19 /* Leaderboards */,
@@ -2358,6 +2378,10 @@
 				537AFC48151A8C3300B78F19 /* mainMenuScreen-hd.pvr.ccz in Resources */,
 				537AFC49151A8C3300B78F19 /* mainMenuScreen.plist in Resources */,
 				537AFC4A151A8C3300B78F19 /* mainMenuScreen.pvr.ccz in Resources */,
+				537AFC50151A8DA800B78F19 /* TruckAnimation-hd.plist in Resources */,
+				537AFC51151A8DA800B78F19 /* TruckAnimation-hd.pvr.ccz in Resources */,
+				537AFC52151A8DA800B78F19 /* TruckAnimation.plist in Resources */,
+				537AFC53151A8DA800B78F19 /* TruckAnimation.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
