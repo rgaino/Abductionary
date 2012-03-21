@@ -127,6 +127,26 @@
 		537AFB9B151A6A0F00B78F19 /* gameBackground-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB97151A6A0F00B78F19 /* gameBackground-hd.pvr.ccz */; };
 		537AFB9C151A6A0F00B78F19 /* gameBackground.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB98151A6A0F00B78F19 /* gameBackground.plist */; };
 		537AFB9D151A6A0F00B78F19 /* gameBackground.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB99151A6A0F00B78F19 /* gameBackground.pvr.ccz */; };
+		537AFBA7151A6B6E00B78F19 /* gameOverBackground_01-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBA3151A6B6E00B78F19 /* gameOverBackground_01-hd.plist */; };
+		537AFBA8151A6B6E00B78F19 /* gameOverBackground_01-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBA4151A6B6E00B78F19 /* gameOverBackground_01-hd.pvr.ccz */; };
+		537AFBA9151A6B6E00B78F19 /* gameOverBackground_01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBA5151A6B6E00B78F19 /* gameOverBackground_01.plist */; };
+		537AFBAA151A6B6E00B78F19 /* gameOverBackground_01.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBA6151A6B6E00B78F19 /* gameOverBackground_01.pvr.ccz */; };
+		537AFBAF151A6C2600B78F19 /* gameOverBackground_02-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBAB151A6C2600B78F19 /* gameOverBackground_02-hd.plist */; };
+		537AFBB0151A6C2600B78F19 /* gameOverBackground_02-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBAC151A6C2600B78F19 /* gameOverBackground_02-hd.pvr.ccz */; };
+		537AFBB1151A6C2600B78F19 /* gameOverBackground_02.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBAD151A6C2600B78F19 /* gameOverBackground_02.plist */; };
+		537AFBB2151A6C2600B78F19 /* gameOverBackground_02.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBAE151A6C2600B78F19 /* gameOverBackground_02.pvr.ccz */; };
+		537AFBB7151A7A3F00B78F19 /* gameOverBackground_03-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBB3151A7A3F00B78F19 /* gameOverBackground_03-hd.plist */; };
+		537AFBB8151A7A3F00B78F19 /* gameOverBackground_03-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBB4151A7A3F00B78F19 /* gameOverBackground_03-hd.pvr.ccz */; };
+		537AFBB9151A7A3F00B78F19 /* gameOverBackground_03.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBB5151A7A3F00B78F19 /* gameOverBackground_03.plist */; };
+		537AFBBA151A7A3F00B78F19 /* gameOverBackground_03.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBB6151A7A3F00B78F19 /* gameOverBackground_03.pvr.ccz */; };
+		537AFBC0151A7EAA00B78F19 /* gameOverBackground_04-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBBC151A7EAA00B78F19 /* gameOverBackground_04-hd.plist */; };
+		537AFBC1151A7EAA00B78F19 /* gameOverBackground_04-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBBD151A7EAA00B78F19 /* gameOverBackground_04-hd.pvr.ccz */; };
+		537AFBC2151A7EAA00B78F19 /* gameOverBackground_04.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBBE151A7EAA00B78F19 /* gameOverBackground_04.plist */; };
+		537AFBC3151A7EAA00B78F19 /* gameOverBackground_04.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBBF151A7EAA00B78F19 /* gameOverBackground_04.pvr.ccz */; };
+		537AFBC8151A7EF700B78F19 /* gameOverBackground_05-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBC4151A7EF700B78F19 /* gameOverBackground_05-hd.plist */; };
+		537AFBC9151A7EF700B78F19 /* gameOverBackground_05-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBC5151A7EF700B78F19 /* gameOverBackground_05-hd.pvr.ccz */; };
+		537AFBCA151A7EF700B78F19 /* gameOverBackground_05.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBC6151A7EF700B78F19 /* gameOverBackground_05.plist */; };
+		537AFBCB151A7EF700B78F19 /* gameOverBackground_05.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFBC7151A7EF700B78F19 /* gameOverBackground_05.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -430,6 +450,26 @@
 		537AFB97151A6A0F00B78F19 /* gameBackground-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameBackground-hd.pvr.ccz"; path = "Resources/gameBackground-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFB98151A6A0F00B78F19 /* gameBackground.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameBackground.plist; path = Resources/gameBackground.plist; sourceTree = "<group>"; };
 		537AFB99151A6A0F00B78F19 /* gameBackground.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameBackground.pvr.ccz; path = Resources/gameBackground.pvr.ccz; sourceTree = "<group>"; };
+		537AFBA3151A6B6E00B78F19 /* gameOverBackground_01-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameOverBackground_01-hd.plist"; path = "Resources/gameOverBackground_01-hd.plist"; sourceTree = "<group>"; };
+		537AFBA4151A6B6E00B78F19 /* gameOverBackground_01-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverBackground_01-hd.pvr.ccz"; path = "Resources/gameOverBackground_01-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBA5151A6B6E00B78F19 /* gameOverBackground_01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverBackground_01.plist; path = Resources/gameOverBackground_01.plist; sourceTree = "<group>"; };
+		537AFBA6151A6B6E00B78F19 /* gameOverBackground_01.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverBackground_01.pvr.ccz; path = Resources/gameOverBackground_01.pvr.ccz; sourceTree = "<group>"; };
+		537AFBAB151A6C2600B78F19 /* gameOverBackground_02-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameOverBackground_02-hd.plist"; path = "Resources/gameOverBackground_02-hd.plist"; sourceTree = "<group>"; };
+		537AFBAC151A6C2600B78F19 /* gameOverBackground_02-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverBackground_02-hd.pvr.ccz"; path = "Resources/gameOverBackground_02-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBAD151A6C2600B78F19 /* gameOverBackground_02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverBackground_02.plist; path = Resources/gameOverBackground_02.plist; sourceTree = "<group>"; };
+		537AFBAE151A6C2600B78F19 /* gameOverBackground_02.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverBackground_02.pvr.ccz; path = Resources/gameOverBackground_02.pvr.ccz; sourceTree = "<group>"; };
+		537AFBB3151A7A3F00B78F19 /* gameOverBackground_03-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameOverBackground_03-hd.plist"; path = "Resources/gameOverBackground_03-hd.plist"; sourceTree = "<group>"; };
+		537AFBB4151A7A3F00B78F19 /* gameOverBackground_03-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverBackground_03-hd.pvr.ccz"; path = "Resources/gameOverBackground_03-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBB5151A7A3F00B78F19 /* gameOverBackground_03.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverBackground_03.plist; path = Resources/gameOverBackground_03.plist; sourceTree = "<group>"; };
+		537AFBB6151A7A3F00B78F19 /* gameOverBackground_03.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverBackground_03.pvr.ccz; path = Resources/gameOverBackground_03.pvr.ccz; sourceTree = "<group>"; };
+		537AFBBC151A7EAA00B78F19 /* gameOverBackground_04-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameOverBackground_04-hd.plist"; path = "Resources/gameOverBackground_04-hd.plist"; sourceTree = "<group>"; };
+		537AFBBD151A7EAA00B78F19 /* gameOverBackground_04-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverBackground_04-hd.pvr.ccz"; path = "Resources/gameOverBackground_04-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBBE151A7EAA00B78F19 /* gameOverBackground_04.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverBackground_04.plist; path = Resources/gameOverBackground_04.plist; sourceTree = "<group>"; };
+		537AFBBF151A7EAA00B78F19 /* gameOverBackground_04.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverBackground_04.pvr.ccz; path = Resources/gameOverBackground_04.pvr.ccz; sourceTree = "<group>"; };
+		537AFBC4151A7EF700B78F19 /* gameOverBackground_05-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameOverBackground_05-hd.plist"; path = "Resources/gameOverBackground_05-hd.plist"; sourceTree = "<group>"; };
+		537AFBC5151A7EF700B78F19 /* gameOverBackground_05-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gameOverBackground_05-hd.pvr.ccz"; path = "Resources/gameOverBackground_05-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFBC6151A7EF700B78F19 /* gameOverBackground_05.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gameOverBackground_05.plist; path = Resources/gameOverBackground_05.plist; sourceTree = "<group>"; };
+		537AFBC7151A7EF700B78F19 /* gameOverBackground_05.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = gameOverBackground_05.pvr.ccz; path = Resources/gameOverBackground_05.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1148,9 +1188,77 @@
 			name = "Game Background";
 			sourceTree = "<group>";
 		};
+		537AFB9E151A6B4A00B78F19 /* Game Over Background */ = {
+			isa = PBXGroup;
+			children = (
+				537AFB9F151A6B5300B78F19 /* 1 */,
+				537AFBA2151A6B6000B78F19 /* 2 */,
+				537AFBA1151A6B5C00B78F19 /* 3 */,
+				537AFBA0151A6B5900B78F19 /* 4 */,
+				537AFBBB151A7A4800B78F19 /* 5 */,
+			);
+			name = "Game Over Background";
+			sourceTree = "<group>";
+		};
+		537AFB9F151A6B5300B78F19 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBA3151A6B6E00B78F19 /* gameOverBackground_01-hd.plist */,
+				537AFBA4151A6B6E00B78F19 /* gameOverBackground_01-hd.pvr.ccz */,
+				537AFBA5151A6B6E00B78F19 /* gameOverBackground_01.plist */,
+				537AFBA6151A6B6E00B78F19 /* gameOverBackground_01.pvr.ccz */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		537AFBA0151A6B5900B78F19 /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBBC151A7EAA00B78F19 /* gameOverBackground_04-hd.plist */,
+				537AFBBD151A7EAA00B78F19 /* gameOverBackground_04-hd.pvr.ccz */,
+				537AFBBE151A7EAA00B78F19 /* gameOverBackground_04.plist */,
+				537AFBBF151A7EAA00B78F19 /* gameOverBackground_04.pvr.ccz */,
+			);
+			name = 4;
+			sourceTree = "<group>";
+		};
+		537AFBA1151A6B5C00B78F19 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBB3151A7A3F00B78F19 /* gameOverBackground_03-hd.plist */,
+				537AFBB4151A7A3F00B78F19 /* gameOverBackground_03-hd.pvr.ccz */,
+				537AFBB5151A7A3F00B78F19 /* gameOverBackground_03.plist */,
+				537AFBB6151A7A3F00B78F19 /* gameOverBackground_03.pvr.ccz */,
+			);
+			name = 3;
+			sourceTree = "<group>";
+		};
+		537AFBA2151A6B6000B78F19 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBAB151A6C2600B78F19 /* gameOverBackground_02-hd.plist */,
+				537AFBAC151A6C2600B78F19 /* gameOverBackground_02-hd.pvr.ccz */,
+				537AFBAD151A6C2600B78F19 /* gameOverBackground_02.plist */,
+				537AFBAE151A6C2600B78F19 /* gameOverBackground_02.pvr.ccz */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
+		537AFBBB151A7A4800B78F19 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				537AFBC4151A7EF700B78F19 /* gameOverBackground_05-hd.plist */,
+				537AFBC5151A7EF700B78F19 /* gameOverBackground_05-hd.pvr.ccz */,
+				537AFBC6151A7EF700B78F19 /* gameOverBackground_05.plist */,
+				537AFBC7151A7EF700B78F19 /* gameOverBackground_05.pvr.ccz */,
+			);
+			name = 5;
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFB9E151A6B4A00B78F19 /* Game Over Background */,
 				537AFB95151A69F200B78F19 /* Game Background */,
 				537AFB8C151A67AA00B78F19 /* Feathers */,
 				537AFB83151A66D800B78F19 /* Alphabet */,
@@ -1886,6 +1994,26 @@
 				537AFB9B151A6A0F00B78F19 /* gameBackground-hd.pvr.ccz in Resources */,
 				537AFB9C151A6A0F00B78F19 /* gameBackground.plist in Resources */,
 				537AFB9D151A6A0F00B78F19 /* gameBackground.pvr.ccz in Resources */,
+				537AFBA7151A6B6E00B78F19 /* gameOverBackground_01-hd.plist in Resources */,
+				537AFBA8151A6B6E00B78F19 /* gameOverBackground_01-hd.pvr.ccz in Resources */,
+				537AFBA9151A6B6E00B78F19 /* gameOverBackground_01.plist in Resources */,
+				537AFBAA151A6B6E00B78F19 /* gameOverBackground_01.pvr.ccz in Resources */,
+				537AFBAF151A6C2600B78F19 /* gameOverBackground_02-hd.plist in Resources */,
+				537AFBB0151A6C2600B78F19 /* gameOverBackground_02-hd.pvr.ccz in Resources */,
+				537AFBB1151A6C2600B78F19 /* gameOverBackground_02.plist in Resources */,
+				537AFBB2151A6C2600B78F19 /* gameOverBackground_02.pvr.ccz in Resources */,
+				537AFBB7151A7A3F00B78F19 /* gameOverBackground_03-hd.plist in Resources */,
+				537AFBB8151A7A3F00B78F19 /* gameOverBackground_03-hd.pvr.ccz in Resources */,
+				537AFBB9151A7A3F00B78F19 /* gameOverBackground_03.plist in Resources */,
+				537AFBBA151A7A3F00B78F19 /* gameOverBackground_03.pvr.ccz in Resources */,
+				537AFBC0151A7EAA00B78F19 /* gameOverBackground_04-hd.plist in Resources */,
+				537AFBC1151A7EAA00B78F19 /* gameOverBackground_04-hd.pvr.ccz in Resources */,
+				537AFBC2151A7EAA00B78F19 /* gameOverBackground_04.plist in Resources */,
+				537AFBC3151A7EAA00B78F19 /* gameOverBackground_04.pvr.ccz in Resources */,
+				537AFBC8151A7EF700B78F19 /* gameOverBackground_05-hd.plist in Resources */,
+				537AFBC9151A7EF700B78F19 /* gameOverBackground_05-hd.pvr.ccz in Resources */,
+				537AFBCA151A7EF700B78F19 /* gameOverBackground_05.plist in Resources */,
+				537AFBCB151A7EF700B78F19 /* gameOverBackground_05.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
