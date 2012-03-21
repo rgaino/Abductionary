@@ -56,6 +56,10 @@
 		535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F215180D7200F782CD /* TutorialLayer.m */; };
 		535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F615180D8F00F782CD /* VolumeKnob.m */; };
 		535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */; };
+		537AFAEB1519655C00B78F19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAEA1519655C00B78F19 /* CFNetwork.framework */; };
+		537AFAEE1519656400B78F19 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAED1519656400B78F19 /* MobileCoreServices.framework */; };
+		537AFAF01519656C00B78F19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */; };
+		537AFAF21519657A00B78F19 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAF11519657A00B78F19 /* libz.1.2.5.dylib */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -284,6 +288,10 @@
 		535BD5F615180D8F00F782CD /* VolumeKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeKnob.m; sourceTree = "<group>"; };
 		535BD6001518EC3100F782CD /* CDXPropertyModifierAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDXPropertyModifierAction.h; sourceTree = "<group>"; };
 		535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDXPropertyModifierAction.m; sourceTree = "<group>"; };
+		537AFAEA1519655C00B78F19 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		537AFAED1519656400B78F19 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		537AFAF11519657A00B78F19 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -568,6 +576,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537AFAF21519657A00B78F19 /* libz.1.2.5.dylib in Frameworks */,
+				537AFAF01519656C00B78F19 /* SystemConfiguration.framework in Frameworks */,
+				537AFAEE1519656400B78F19 /* MobileCoreServices.framework in Frameworks */,
+				537AFAEB1519655C00B78F19 /* CFNetwork.framework in Frameworks */,
 				53A5BCFC1517F10900C05FE8 /* MediaPlayer.framework in Frameworks */,
 				53D8192A1517D97800B63DEC /* QuartzCore.framework in Frameworks */,
 				53D8192C1517D97800B63DEC /* OpenGLES.framework in Frameworks */,
@@ -1045,6 +1057,7 @@
 		53D8191A1517D97800B63DEC = {
 			isa = PBXGroup;
 			children = (
+				537AFAF11519657A00B78F19 /* libz.1.2.5.dylib */,
 				53D8193B1517D97800B63DEC /* Abductionary */,
 				53D819281517D97800B63DEC /* Frameworks */,
 				53D819261517D97800B63DEC /* Products */,
@@ -1062,6 +1075,9 @@
 		53D819281517D97800B63DEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */,
+				537AFAED1519656400B78F19 /* MobileCoreServices.framework */,
+				537AFAEA1519655C00B78F19 /* CFNetwork.framework */,
 				53A5BCFB1517F10900C05FE8 /* MediaPlayer.framework */,
 				53D819291517D97800B63DEC /* QuartzCore.framework */,
 				53D8192B1517D97800B63DEC /* OpenGLES.framework */,
