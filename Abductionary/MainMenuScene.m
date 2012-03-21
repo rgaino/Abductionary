@@ -200,13 +200,13 @@
     
     
     
-    musicVolumeKnobUpState = [CCProgressTimer progressWithFile:@"volumeKnobUpState.png"];
-    [musicVolumeKnobUpState setType:kCCProgressTimerTypeRadialCW];
+    musicVolumeKnobUpState = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"volumeKnobUpState.png"]];
+    [musicVolumeKnobUpState setType:kCCProgressTimerTypeRadial];
     [musicVolumeKnobUpState setPosition:ccp(winSize.width+277, 451)];
     [self addChild:musicVolumeKnobUpState z:5];
     
-    soundFXVolumeKnobUpState = [CCProgressTimer progressWithFile:@"volumeKnobUpState.png"];
-    [soundFXVolumeKnobUpState setType:kCCProgressTimerTypeRadialCW];
+    soundFXVolumeKnobUpState = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"volumeKnobUpState.png"]];
+    [soundFXVolumeKnobUpState setType:kCCProgressTimerTypeRadial];
     [soundFXVolumeKnobUpState setPosition:ccp(winSize.width+745, 451)];
     [self addChild:soundFXVolumeKnobUpState z:5];
     
