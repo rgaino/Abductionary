@@ -331,12 +331,12 @@
 	CCMenu * gameOverMenu = [CCMenu menuWithItems:nil];
     [gameOverMenu setPosition:ccp(0, 0)];
     
-    CCMenuItemImage *gameOverMainMenuButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] target:self selector:@selector(mainMenuButtonPressed)];
+    CCMenuItemImage *gameOverMainMenuButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] target:self selector:@selector(mainMenuButtonPressed)];
     [gameOverMainMenuButton setAnchorPoint:ccp(0, 0)];
     [gameOverMainMenuButton setPosition:ccp(306, -3160)];
     [gameOverMenu addChild:gameOverMainMenuButton];
     
-    CCMenuItemImage *gameOverReplayButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] target:self selector:@selector(replayGame)];	
+    CCMenuItemImage *gameOverReplayButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] target:self selector:@selector(replayGame)];	
     [gameOverReplayButton setAnchorPoint:ccp(0, 0)];
     [gameOverReplayButton setPosition:ccp(150, -2930)];
     [gameOverMenu addChild:gameOverReplayButton];
@@ -380,25 +380,25 @@
 	CCMenu * mainMenu = [CCMenu menuWithItems:nil];
     mainMenu.position = CGPointZero;
 	
-    wordEraseButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"wordEraseButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"wordEraseButton.png"] target:self selector:@selector(cleanWordPanel)];    
+    wordEraseButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"wordEraseButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"wordEraseButton.png"] target:self selector:@selector(cleanWordPanel)];    
 	[wordEraseButton setPosition:ccp(283, 568)];
 	[wordEraseButton setAnchorPoint:ccp(0, 0)];
 	[wordEraseButton setVisible:NO];
 	[mainMenu addChild:wordEraseButton];
     
-	wordCompletedButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"wordCompleteButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"wordCompleteButton.png"] target:self selector:@selector(wordComplete)];
+	wordCompletedButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"wordCompleteButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"wordCompleteButton.png"] target:self selector:@selector(wordComplete)];
 	[wordCompletedButton setPosition:ccp(385, 568)];
 	[wordCompletedButton setAnchorPoint:ccp(0, 0)];
 	[wordCompletedButton setVisible:NO];
 	[mainMenu addChild:wordCompletedButton];
     
     
-	pauseButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"pauseButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"pauseButton.png"] target:self selector:@selector(pauseGame)];
+	pauseButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"pauseButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"pauseButton.png"] target:self selector:@selector(pauseGame)];
     [pauseButton setPosition:ccp(15, 185)];
     [pauseButton setAnchorPoint:ccp(0,0)];
 	[mainMenu addChild:pauseButton];
     
-    resumeButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resumeButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resumeButton.png"] target:self selector:@selector(resumeGame)];
+    resumeButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resumeButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resumeButton.png"] target:self selector:@selector(resumeGame)];
     [resumeButton setPosition:[pauseButton position] ];
     [resumeButton setAnchorPoint:ccp(0,0)];
     [resumeButton setVisible:NO];

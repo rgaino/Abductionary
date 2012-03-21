@@ -238,52 +238,52 @@
     [leaderboardsMenu setPosition:ccp(winSize.width*-1,0)];
     
     
-    leaderboardsEasyButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] target:self selector:@selector(loadEasyLeaderboards)];
+    leaderboardsEasyButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] target:self selector:@selector(loadEasyLeaderboards)];
 	[leaderboardsEasyButton setPosition:ccp(326, 346)];
     [leaderboardsEasyButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsEasyButton];
     
-    leaderboardsMediumButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] target:self selector:@selector(loadMediumLeaderboards)];
+    leaderboardsMediumButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] target:self selector:@selector(loadMediumLeaderboards)];
 	[leaderboardsMediumButton setPosition:ccp(509, 346)];
     [leaderboardsMediumButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsMediumButton];
     
-    leaderboardsHardButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsHardButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsHardButtonUp.png"] target:self selector:@selector(loadHardLeaderboards)];
+    leaderboardsHardButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsHardButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsHardButtonUp.png"] target:self selector:@selector(loadHardLeaderboards)];
     [leaderboardsHardButton setPosition:ccp(690, 346)];
     [leaderboardsHardButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsHardButton];
     
     
     
-    leaderboardsAllTimeButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] target:self selector:@selector(loadAllTimeLeaderboards)];
+    leaderboardsAllTimeButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] target:self selector:@selector(loadAllTimeLeaderboards)];
 	[leaderboardsAllTimeButton setPosition:ccp(117, 608)];
     [leaderboardsAllTimeButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsAllTimeButton];
     
     
-    leaderboardsWeekButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] target:self selector:@selector(loadWeekLeaderboards)];
+    leaderboardsWeekButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] target:self selector:@selector(loadWeekLeaderboards)];
 	[leaderboardsWeekButton setPosition:ccp(117, 555)];
     [leaderboardsWeekButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsWeekButton];
     
-    leaderboardsTodayButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] target:self selector:@selector(loadTodayLeaderboards)];
+    leaderboardsTodayButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] target:self selector:@selector(loadTodayLeaderboards)];
 	[leaderboardsTodayButton setPosition:ccp(117, 503)];
     [leaderboardsTodayButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsTodayButton];
     
     
     
-    leaderboardsGlobalButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] target:self selector:@selector(loadGlobalLeaderboards)];
+    leaderboardsGlobalButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] target:self selector:@selector(loadGlobalLeaderboards)];
 	[leaderboardsGlobalButton setPosition:ccp(900, 607)];
     [leaderboardsGlobalButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsGlobalButton];
     
-    leaderboardsFriendsButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] target:self selector:@selector(loadFriendsLeaderboards)];
+    leaderboardsFriendsButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] target:self selector:@selector(loadFriendsLeaderboards)];
 	[leaderboardsFriendsButton setPosition:ccp(900, 557)];
     [leaderboardsFriendsButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsFriendsButton];
     
-    CCMenuItemImage *leaderboardsDoneButton = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] target:self selector:@selector(doneLeaderboards)];
+    CCMenuItemImage *leaderboardsDoneButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] target:self selector:@selector(doneLeaderboards)];
 	[leaderboardsDoneButton setPosition:ccp(924, 292)];
 	[leaderboardsMenu addChild:leaderboardsDoneButton];
 
@@ -336,20 +336,20 @@
     [newGameMenu addChild:startLabelButton z:20];
 
 
-    startButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"startButtonSelected.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"startButtonSelected.png"] target:self selector:@selector(startGame)];
+    startButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"startButtonSelected.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"startButtonSelected.png"] target:self selector:@selector(startGame)];
     [startButton setPosition:ccp(562, 284-500)];
     [newGameMenu addChild:startButton z:20];
 
-    gameModeSwitchEasy = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchEasy.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchEasy.png"] target:self selector:@selector(switchGameModeEasy)];
+    gameModeSwitchEasy = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchEasy.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchEasy.png"] target:self selector:@selector(switchGameModeEasy)];
     [gameModeSwitchEasy setPosition:ccp(473,122-500)];
     [gameModeSwitchEasy setOpacity:0];
     [newGameMenu addChild:gameModeSwitchEasy z:20];
 
-    gameModeSwitchMedium = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchMedium.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchMedium.png"] target:self selector:@selector(switchGameModeMedium)];
+    gameModeSwitchMedium = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchMedium.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchMedium.png"] target:self selector:@selector(switchGameModeMedium)];
     [gameModeSwitchMedium setPosition:ccp(515,122-500)];
     [newGameMenu addChild:gameModeSwitchMedium z:20];
 
-    gameModeSwitchHard = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchHard.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchHard.png"] target:self selector:@selector(switchGameModeHard)];
+    gameModeSwitchHard = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchHard.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameModeSwitchHard.png"] target:self selector:@selector(switchGameModeHard)];
     [gameModeSwitchHard setPosition:ccp(556,122-500)];
     [gameModeSwitchHard setOpacity:0];
     [newGameMenu addChild:gameModeSwitchHard z:20];
@@ -390,15 +390,15 @@
     [mainMenu addChild:leaderboardsButton];
         
 
-    CCMenuItemImage *settingsDoneButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"settingsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"settingsDoneButton.png"] target:self selector:@selector(doneSettings)];
+    CCMenuItemImage *settingsDoneButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"settingsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"settingsDoneButton.png"] target:self selector:@selector(doneSettings)];
 	[settingsDoneButton setPosition:ccp(winSize.width+90, 289)];
 	[mainMenu addChild:settingsDoneButton];
         
-    CCMenuItemImage *creditsButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"creditsButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"creditsButton.png"] target:self selector:@selector(showHideCredits)];
+    CCMenuItemImage *creditsButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"creditsButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"creditsButton.png"] target:self selector:@selector(showHideCredits)];
 	[creditsButton setPosition:ccp(winSize.width+930, 289)];
 	[mainMenu addChild:creditsButton];
 
-    CCMenuItemImage *resetTutorialsButton = [CCMenuItemImage itemFromNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialUp.png"] target:self selector:@selector(resetTutorial)];
+    CCMenuItemImage *resetTutorialsButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialUp.png"] target:self selector:@selector(resetTutorial)];
 	[resetTutorialsButton setPosition:ccp(winSize.width+(winSize.width/2), 300)];
 	[mainMenu addChild:resetTutorialsButton];
 

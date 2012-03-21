@@ -21,7 +21,7 @@
     
 	NSString *filename = [NSString stringWithFormat:@"powerUp_0%d.png", _powerUpLevel+1];
 	
-    if( (self=[super initFromNormalSprite:[CCSprite spriteWithSpriteFrameName:filename] selectedSprite:[CCSprite spriteWithSpriteFrameName:filename] disabledSprite:[CCSprite spriteWithSpriteFrameName:filename] target:self selector:@selector(activatePowerUp)])) {
+    if( (self=[super initWithNormalSprite:[CCSprite spriteWithSpriteFrameName:filename] selectedSprite:[CCSprite spriteWithSpriteFrameName:filename] disabledSprite:[CCSprite spriteWithSpriteFrameName:filename] target:self selector:@selector(activatePowerUp)])) {
 
         float y = kPowerUpButtonsFirstY + (kPowerUpButtonsYSpacing * (_powerUpLevel));
         
