@@ -42,9 +42,9 @@
     [closeAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"tubeDoorClose_21.png"]];
     [closeAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"tubeDoorClose_23.png"]];
     
-    CCAnimation *closeAnimation = [CCAnimation animationWithFrames:closeAnimFrames delay:0.07f];
+    CCAnimation *closeAnimation = [CCAnimation animationWithSpriteFrames:closeAnimFrames delay:0.07f];
     
-    id closeAction = [CCAnimate actionWithAnimation:closeAnimation restoreOriginalFrame:NO];
+    id closeAction = [CCAnimate actionWithAnimation:closeAnimation];
 
     return closeAction;
 }
@@ -65,9 +65,9 @@
     [lightUpAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"tubeDoorLight_10.png"]];
 
     
-    CCAnimation *lightUpAnimation = [CCAnimation animationWithFrames:lightUpAnimFrames delay:0.04f];
+    CCAnimation *lightUpAnimation = [CCAnimation animationWithSpriteFrames:lightUpAnimFrames delay:0.04f];
     
-    id lightUpAction = [CCAnimate actionWithAnimation:lightUpAnimation restoreOriginalFrame:NO];
+    id lightUpAction = [CCAnimate actionWithAnimation:lightUpAnimation];
 
     return lightUpAction;
 }
@@ -90,9 +90,9 @@
     [openAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"tubeDoorOpen_23.png"]];
     [openAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"tubeDoorOpen_24.png"]];
     
-    CCAnimation *openAnimation = [CCAnimation animationWithFrames:openAnimFrames delay:0.07f];
+    CCAnimation *openAnimation = [CCAnimation animationWithSpriteFrames:openAnimFrames delay:0.07f];
     
-    id openAction = [CCAnimate actionWithAnimation:openAnimation restoreOriginalFrame:NO];
+    id openAction = [CCAnimate actionWithAnimation:openAnimation];
 
     return openAction;
 }

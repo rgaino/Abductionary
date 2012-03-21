@@ -45,10 +45,10 @@
     [rollingFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"truck_rolling_0013.png"]];
     [rollingFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"truck_rolling_0014.png"]];
 
-    CCAnimation *rollingAnimation = [CCAnimation animationWithFrames:rollingFrames delay:0.1f];
+    CCAnimation *rollingAnimation = [CCAnimation animationWithSpriteFrames:rollingFrames delay:0.1f];
     
     id rollingAction = [CCRepeatForever actionWithAction:
-                     [CCAnimate actionWithAnimation:rollingAnimation restoreOriginalFrame:NO]];
+                     [CCAnimate actionWithAnimation:rollingAnimation]];
     
     [self runAction:rollingAction];
 

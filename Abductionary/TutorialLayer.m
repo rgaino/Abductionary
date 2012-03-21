@@ -73,7 +73,7 @@
 -(void) registerWithTouchDispatcher
 {
     NSLog(@"at TutorialLayer.registerWithTouchDispatcher");
-    [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:kCCMenuTouchPriority-1 swallowsTouches:YES];
+    [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:-129 swallowsTouches:YES];
 }
 
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
@@ -136,8 +136,8 @@
 -(void) dealloc
 {
     NSLog(@"on dealloc for Tutorial Scene: %@", self);
- 	[[CCTouchDispatcher sharedDispatcher] removeDelegate:self];
-
+    [[[CCDirector sharedDirector] touchDispatcher] removeDelegate:self];
+    
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"Tutorial.plist"];
     [[CCTextureCache sharedTextureCache] removeTextureForKey:@"Tutorial.pvr.ccz"];
     

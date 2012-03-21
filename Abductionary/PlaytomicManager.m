@@ -145,7 +145,7 @@ static PlaytomicManager* _playtomicManager = nil;
     NSLog(@"PLAYTOMIC: logging score of %lld for level %d", score, level);
     [[Playtomic Log] levelAverageMetricName:@"Score" andLevel:levelLogString andValue:score andUnique:NO];
 
-    NSLog(@"PLAYTOMIC: logging score of %lld for game mode", score, level);
+    NSLog(@"PLAYTOMIC: logging score of %lld for game mode %@", score, gameModeString);
     [[Playtomic Log] levelAverageMetricName:@"Score" andLevel:gameModeString andValue:score andUnique:NO];
 }
 

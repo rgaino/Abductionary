@@ -78,10 +78,10 @@
     [dropFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_drop_011.png", humanId]]];
     [dropFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_drop_012.png", humanId]]];
 
-    CCAnimation *dropAnimation = [CCAnimation animationWithFrames:dropFrames delay:0.05f];
+    CCAnimation *dropAnimation = [CCAnimation animationWithSpriteFrames:dropFrames delay:0.05f];
 
     id delayDropHuman = [CCDelayTime actionWithDuration:1.0f];
-    id dropAction = [CCAnimate actionWithAnimation:dropAnimation restoreOriginalFrame:NO];
+    id dropAction = [CCAnimate actionWithAnimation:dropAnimation];
     
     id sequence =[CCSequence actions:delayDropHuman, dropAction, [CCCallFuncN actionWithTarget:self selector:@selector(fallLoop)], nil];
 
@@ -125,10 +125,10 @@
     [fallFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_fall_002.png", humanId]]];
     [fallFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_fall_001.png", humanId]]];
     
-    CCAnimation *fallAnimation = [CCAnimation animationWithFrames:fallFrames delay:0.02f];
+    CCAnimation *fallAnimation = [CCAnimation animationWithSpriteFrames:fallFrames delay:0.02f];
 
     id fallAction = [CCRepeatForever actionWithAction:
-                     [CCAnimate actionWithAnimation:fallAnimation restoreOriginalFrame:NO]];
+                     [CCAnimate actionWithAnimation:fallAnimation]];
     
 
     [_humanSprite runAction:fallAction];
@@ -143,9 +143,9 @@
     [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_blink_002.png", humanId]]];
     [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_blink_001.png", humanId]]];
     
-    CCAnimation *blinkAnimation = [CCAnimation animationWithFrames:blinkFrames delay:0.08f];
+    CCAnimation *blinkAnimation = [CCAnimation animationWithSpriteFrames:blinkFrames delay:0.08f];
     
-    id blinkAction = [CCAnimate actionWithAnimation:blinkAnimation restoreOriginalFrame:YES];
+    id blinkAction = [CCAnimate actionWithAnimation:blinkAnimation];
     
     [_humanSprite runAction:blinkAction];
 }

@@ -37,9 +37,9 @@
     }
     
     
-    CCAnimation *feathersAnimation = [CCAnimation animationWithFrames:animationFrames delay:0.04f];
+    CCAnimation *feathersAnimation = [CCAnimation animationWithSpriteFrames:animationFrames delay:0.04f];
     
-    id feathersAction = [CCAnimate actionWithAnimation:feathersAnimation restoreOriginalFrame:NO];
+    id feathersAction = [CCAnimate actionWithAnimation:feathersAnimation];
     
     
     [self runAction:feathersAction];
