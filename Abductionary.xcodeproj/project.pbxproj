@@ -187,6 +187,10 @@
 		537AFC24151A837D00B78F19 /* HumanAnimations_008-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC20151A837D00B78F19 /* HumanAnimations_008-hd.pvr.ccz */; };
 		537AFC25151A837D00B78F19 /* HumanAnimations_008.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC21151A837D00B78F19 /* HumanAnimations_008.plist */; };
 		537AFC26151A837D00B78F19 /* HumanAnimations_008.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC22151A837D00B78F19 /* HumanAnimations_008.pvr.ccz */; };
+		537AFC2C151A858500B78F19 /* humanTube-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC28151A858500B78F19 /* humanTube-hd.plist */; };
+		537AFC2D151A858500B78F19 /* humanTube-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC29151A858500B78F19 /* humanTube-hd.pvr.ccz */; };
+		537AFC2E151A858500B78F19 /* humanTube.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC2A151A858500B78F19 /* humanTube.plist */; };
+		537AFC2F151A858500B78F19 /* humanTube.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC2B151A858500B78F19 /* humanTube.pvr.ccz */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -550,6 +554,10 @@
 		537AFC20151A837D00B78F19 /* HumanAnimations_008-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HumanAnimations_008-hd.pvr.ccz"; path = "Resources/HumanAnimations_008-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFC21151A837D00B78F19 /* HumanAnimations_008.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = HumanAnimations_008.plist; path = Resources/HumanAnimations_008.plist; sourceTree = "<group>"; };
 		537AFC22151A837D00B78F19 /* HumanAnimations_008.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = HumanAnimations_008.pvr.ccz; path = Resources/HumanAnimations_008.pvr.ccz; sourceTree = "<group>"; };
+		537AFC28151A858500B78F19 /* humanTube-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "humanTube-hd.plist"; path = "Resources/humanTube-hd.plist"; sourceTree = "<group>"; };
+		537AFC29151A858500B78F19 /* humanTube-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "humanTube-hd.pvr.ccz"; path = "Resources/humanTube-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFC2A151A858500B78F19 /* humanTube.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = humanTube.plist; path = Resources/humanTube.plist; sourceTree = "<group>"; };
+		537AFC2B151A858500B78F19 /* humanTube.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = humanTube.pvr.ccz; path = Resources/humanTube.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1460,9 +1468,21 @@
 			name = 1;
 			sourceTree = "<group>";
 		};
+		537AFC27151A856F00B78F19 /* Human Tube */ = {
+			isa = PBXGroup;
+			children = (
+				537AFC28151A858500B78F19 /* humanTube-hd.plist */,
+				537AFC29151A858500B78F19 /* humanTube-hd.pvr.ccz */,
+				537AFC2A151A858500B78F19 /* humanTube.plist */,
+				537AFC2B151A858500B78F19 /* humanTube.pvr.ccz */,
+			);
+			name = "Human Tube";
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFC27151A856F00B78F19 /* Human Tube */,
 				537AFBDE151A81B800B78F19 /* Human Animations */,
 				537AFBD5151A813600B78F19 /* Game Screen */,
 				537AFBCC151A80B400B78F19 /* Game Over Elements */,
@@ -2262,6 +2282,10 @@
 				537AFC24151A837D00B78F19 /* HumanAnimations_008-hd.pvr.ccz in Resources */,
 				537AFC25151A837D00B78F19 /* HumanAnimations_008.plist in Resources */,
 				537AFC26151A837D00B78F19 /* HumanAnimations_008.pvr.ccz in Resources */,
+				537AFC2C151A858500B78F19 /* humanTube-hd.plist in Resources */,
+				537AFC2D151A858500B78F19 /* humanTube-hd.pvr.ccz in Resources */,
+				537AFC2E151A858500B78F19 /* humanTube.plist in Resources */,
+				537AFC2F151A858500B78F19 /* humanTube.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
