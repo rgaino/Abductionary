@@ -402,6 +402,10 @@
 		537AFB77151A4CA400B78F19 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		537AFB7A151A592800B78F19 /* geogtq-bd-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geogtq-bd-webfont.ttf"; sourceTree = "<group>"; };
 		537AFB7B151A592800B78F19 /* InterstateBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = InterstateBlack.ttf; sourceTree = "<group>"; };
+		537AFB7F151A650000B78F19 /* AlienWalking-hd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AlienWalking-hd.plist"; path = "Resources/AlienWalking-hd.plist"; sourceTree = "<group>"; };
+		537AFB80151A650000B78F19 /* AlienWalking-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlienWalking-hd.pvr.ccz"; path = "Resources/AlienWalking-hd.pvr.ccz"; sourceTree = "<group>"; };
+		537AFB81151A650000B78F19 /* AlienWalking.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AlienWalking.plist; path = Resources/AlienWalking.plist; sourceTree = "<group>"; };
+		537AFB82151A650000B78F19 /* AlienWalking.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienWalking.pvr.ccz; path = Resources/AlienWalking.pvr.ccz; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1076,9 +1080,21 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		537AFB7E151A64F800B78F19 /* Alien Animations */ = {
+			isa = PBXGroup;
+			children = (
+				537AFB7F151A650000B78F19 /* AlienWalking-hd.plist */,
+				537AFB80151A650000B78F19 /* AlienWalking-hd.pvr.ccz */,
+				537AFB81151A650000B78F19 /* AlienWalking.plist */,
+				537AFB82151A650000B78F19 /* AlienWalking.pvr.ccz */,
+			);
+			name = "Alien Animations";
+			sourceTree = "<group>";
+		};
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				537AFB7E151A64F800B78F19 /* Alien Animations */,
 				53A5BCA41517E57F00C05FE8 /* Loading */,
 			);
 			name = SpriteSheets;
