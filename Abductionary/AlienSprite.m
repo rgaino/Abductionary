@@ -68,10 +68,10 @@
     [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0003.png"]];
     [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0004.png"]];
     
-    CCAnimation *walkAnimation = [CCAnimation animationWithFrames:walkAnimFrames delay:0.02f];
+    CCAnimation *walkAnimation = [CCAnimation animationWithSpriteFrames:walkAnimFrames delay:0.02f];
 
     id walkAction = [CCRepeatForever actionWithAction:
-                   [CCAnimate actionWithAnimation:walkAnimation restoreOriginalFrame:NO]];
+                   [CCAnimate actionWithAnimation:walkAnimation]];
     
     [walkAction setTag:alienWalkAnimationTag];
 
@@ -95,9 +95,9 @@
     [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_blink0003.png"]];
     [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_blink0001.png"]];
     
-    CCAnimation *blinkAnimation = [CCAnimation animationWithFrames:blinkAnimFrames delay:0.02f];
+    CCAnimation *blinkAnimation = [CCAnimation animationWithSpriteFrames:blinkAnimFrames delay:0.02f];
     
-    id blinkAction = [CCAnimate actionWithAnimation:blinkAnimation restoreOriginalFrame:NO];
+    id blinkAction = [CCAnimate actionWithAnimation:blinkAnimation];
     
     [_alienSprite runAction:blinkAction];
 }
@@ -152,9 +152,9 @@
     [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_noblink0002.png"]];
     [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_noblink0001.png"]];
     
-    CCAnimation *stanceAnimation = [CCAnimation animationWithFrames:stanceAnimFrames delay:0.02f];
+    CCAnimation *stanceAnimation = [CCAnimation animationWithSpriteFrames:stanceAnimFrames delay:0.02f];
     
-    id stanceAction = [CCAnimate actionWithAnimation:stanceAnimation restoreOriginalFrame:NO];
+    id stanceAction = [CCAnimate actionWithAnimation:stanceAnimation];
     
     [_alienSprite runAction:stanceAction];
 }
@@ -304,9 +304,9 @@
     [streakAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"streakPowerUp_01.png"]];
     [streakAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"streakPowerUpFinished.png"]];
 
-    CCAnimation *streakAnimation = [CCAnimation animationWithFrames:streakAnimFrames delay:3.0f];
+    CCAnimation *streakAnimation = [CCAnimation animationWithSpriteFrames:streakAnimFrames delay:3.0f];
    
-    id streakAction = [CCAnimate actionWithAnimation:streakAnimation restoreOriginalFrame:NO];
+    id streakAction = [CCAnimate actionWithAnimation:streakAnimation];
     id hideAction = [CCCallFunc actionWithTarget:self selector:@selector(hideStreakSpeechBubble)];
     id sequence = [CCSequence actionOne:streakAction two:hideAction];
     
