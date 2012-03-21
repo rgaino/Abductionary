@@ -269,16 +269,16 @@
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];        
     
     
-    powerUpBarProgressTimer = [CCProgressTimer progressWithFile:@"powerUpBar.png"]; 
-    [powerUpBarProgressTimer setType:kCCProgressTimerTypeVerticalBarBT];
+    powerUpBarProgressTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"powerUpBar.png"]]; 
+    [powerUpBarProgressTimer setType:kCCProgressTimerTypeBar];
     [powerUpBarProgressTimer setPosition:ccp(30, 272)];
     [powerUpBarProgressTimer setAnchorPoint:ccp(0, 0)];
     [powerUpBarProgressTimer setPercentage:0.0f];
     [self addChild: powerUpBarProgressTimer z:1]; 
     
     
-    timeMeterProgressTimer = [CCProgressTimer progressWithFile:@"timeMeter.png"]; 
-    [timeMeterProgressTimer setType:kCCProgressTimerTypeHorizontalBarLR];
+    timeMeterProgressTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"timeMeter.png"]]; 
+    [timeMeterProgressTimer setType:kCCProgressTimerTypeBar];
     [timeMeterProgressTimer setPosition:ccp(143, 349)];
     [timeMeterProgressTimer setAnchorPoint:ccp(0, 0)];
     [timeMeterProgressTimer setPercentage:100.0f];
@@ -298,17 +298,17 @@
 	[self addChild:pointsAwardedLabel z:1];
     
     
-    letterDoorTopImage = [CCProgressTimer progressWithFile:@"letterDoorTop.png"]; 
+    letterDoorTopImage = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"letterDoorTop.png"]]; 
     [letterDoorTopImage setPosition:ccp(35, 662)];
     [letterDoorTopImage setAnchorPoint:ccp(0,0)];
-    [letterDoorTopImage setType:kCCProgressTimerTypeVerticalBarTB];
+    [letterDoorTopImage setType:kCCProgressTimerTypeBar];
     [letterDoorTopImage setPercentage:0.0f];
     [self addChild: letterDoorTopImage z:15];
     
-    letterDoorBottomImage = [CCProgressTimer progressWithFile:@"letterDoorBottom.png"]; 
+    letterDoorBottomImage = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"letterDoorBottom.png"]]; 
     [letterDoorBottomImage setPosition:[letterDoorTopImage position]];
     [letterDoorBottomImage setAnchorPoint:ccp(0,0)];
-    [letterDoorBottomImage setType:kCCProgressTimerTypeVerticalBarBT];
+    [letterDoorBottomImage setType:kCCProgressTimerTypeBar];
     [letterDoorBottomImage setPercentage:0.0f];
     [self addChild: letterDoorBottomImage z:15];
     
