@@ -55,7 +55,7 @@
 		535BD5EF15180D5400F782CD /* LeaderboardsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5EE15180D5400F782CD /* LeaderboardsLayer.m */; };
 		535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F215180D7200F782CD /* TutorialLayer.m */; };
 		535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD5F615180D8F00F782CD /* VolumeKnob.m */; };
-		535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */; };
+		535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD6011518EC3100F782CD /* CDXPropertyModifierAction.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		537AFAEB1519655C00B78F19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAEA1519655C00B78F19 /* CFNetwork.framework */; };
 		537AFAEE1519656400B78F19 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAED1519656400B78F19 /* MobileCoreServices.framework */; };
 		537AFAF01519656C00B78F19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */; };
@@ -227,7 +227,7 @@
 		53A5BCDC1517EEE500C05FE8 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCDB1517EEE500C05FE8 /* Dictionary.m */; };
 		53A5BCE31517F08F00C05FE8 /* CCSprite+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCE21517F08F00C05FE8 /* CCSprite+extension.m */; };
 		53A5BCF41517F0BF00C05FE8 /* CCVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCE71517F0BF00C05FE8 /* CCVideoPlayer.m */; };
-		53A5BCF51517F0BF00C05FE8 /* CCVideoPlayerImpliOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCEA1517F0BF00C05FE8 /* CCVideoPlayerImpliOS.m */; };
+		53A5BCF51517F0BF00C05FE8 /* CCVideoPlayerImpliOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCEA1517F0BF00C05FE8 /* CCVideoPlayerImpliOS.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		53A5BCF61517F0BF00C05FE8 /* videoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCEC1517F0BF00C05FE8 /* videoOverlayView.m */; };
 		53A5BCF71517F0BF00C05FE8 /* CCVideoPlayerImplMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCEF1517F0BF00C05FE8 /* CCVideoPlayerImplMac.m */; };
 		53A5BCF81517F0BF00C05FE8 /* CustomVideoView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BCF01517F0BF00C05FE8 /* CustomVideoView.nib */; };
@@ -1855,6 +1855,7 @@
 		53D8193C1517D97800B63DEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53D819511517D97800B63DEC /* Info.plist */,
 				5398260A151A933100265029 /* Particles */,
 				537AFB79151A590D00B78F19 /* Fonts */,
 				537AFB0E151A4BC100B78F19 /* Sound FX and Music */,
@@ -1862,7 +1863,6 @@
 				537AFAF7151A4AFB00B78F19 /* Images */,
 				53A5BD041517F2C800C05FE8 /* Videos */,
 				53A5BCA31517E57400C05FE8 /* SpriteSheets */,
-				53D819511517D97800B63DEC /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2606,8 +2606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Rafael Gaino (X9AKR38L8P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gaino (X9AKR38L8P)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2619,7 +2619,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PROVISIONING_PROFILE = "7FDF914C-FD34-4846-B4D4-35C42798CC98";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9F783081-3DA8-4217-948E-800B4B587413";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -2629,7 +2629,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
