@@ -68,8 +68,7 @@
 -(void) updateScoreLabelsWithScores:(NSMutableArray*) leaderboardResults
 {
 
-    NSLog(@"leaderboards count is");
-    NSLog(@"%d", [leaderboardResults count]); 
+    NSLog(@"leaderboards count is %d", [leaderboardResults count]);
     
     for(int i=0;i<10;i++)
     {

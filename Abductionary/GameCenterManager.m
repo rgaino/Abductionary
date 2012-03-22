@@ -164,18 +164,16 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
     switch( leaderboardGameMode )
     {
         case kLeaderboardGameModeEasy:
-            NSLog(@"retrieving scores for category Easy");
             leaderboardCategory = kLeaderboardCategoryEasy;
             break;
         case kLeaderboardGameModeMedium:
-            NSLog(@"retrieving scores for category Medium");
             leaderboardCategory = kLeaderboardCategoryMedium;
             break;
         case kLeaderboardGameModeHard:
-            NSLog(@"retrieving scores for category Hard");
             leaderboardCategory = kLeaderboardCategoryHard;
             break;     
     }
+    NSLog(@"retrieving scores for category %@", leaderboardCategory);
     
     switch( leaderboardScope )
     {
