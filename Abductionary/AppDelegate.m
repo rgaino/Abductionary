@@ -12,6 +12,9 @@
 #import "IntroScene.h"
 #import "LoadingScene.h"
 #import "GameScene.h"
+#import "CDAudioManager.h"
+#import "PlaytomicManager.h"
+#import "GameCenterManager.h"
 
 @implementation AppController
 
@@ -82,6 +85,49 @@
 	// Assume that PVR images have premultiplied alpha
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 
+    
+    //////////////////////////////////////////
+    /////// CUSTOM ABDUCTIONARY CODE /////////
+    //////////////////////////////////////////
+    
+    //setting up user defaults
+    NSMutableDictionary *userDefaultsDefaults = [[NSMutableDictionary alloc] init];
+    
+    [userDefaultsDefaults setValue:[NSNumber numberWithFloat:1.0f] forKey:kUserDefaultsBackgroundMusicGain];
+    [userDefaultsDefaults setValue:[NSNumber numberWithFloat:1.0f] forKey:kUserDefaultsSFXGain];
+    [userDefaultsDefaults setValue:[NSNumber numberWithBool:NO] forKey:kSkipTutorials];
+    
+    for(int i=1; i <= kNumberOfTutorials; i++)
+    {
+        NSString *tutorialKey = [NSString stringWithFormat:kTutorialDefaultsString, i];
+        NSLog(@"%@", tutorialKey);
+        [userDefaultsDefaults setValue:[NSNumber numberWithBool:NO] forKey:tutorialKey];
+    }
+    
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [userDefaultsDefaults release];
+    
+    
+    //Set Denshion's mode so user can listen to iPod music while playing
+    [[CDAudioManager sharedManager] setMode:kAMM_FxPlusMusicIfNoOtherAudio];
+	[[CDAudioManager sharedManager] setResignBehavior:kAMRBStopPlay autoHandle:YES];
+
+    
+    //Authenticate player on GameCenter
+    [[GameCenterManager getInstance] authenticateLocalPlayer];
+
+    //log view on Playtomic
+    [[PlaytomicManager getInstance] logView];
+
+    //////////////////////////////////////////
+    ///// END CUSTOM ABDUCTIONARY CODE ///////
+    //////////////////////////////////////////
+    
+    
+    
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 	[director_ pushScene: [IntroScene scene]]; 
 //	[director_ pushScene: [LoadingScene scene]]; 
@@ -100,6 +146,8 @@
 // getting a call, pause the game
 -(void) applicationWillResignActive:(UIApplication *)application
 {
+    [[PlaytomicManager getInstance] freeze];
+
 	if( [navController_ visibleViewController] == director_ )
 		[director_ pause];
 }
@@ -107,6 +155,8 @@
 // call got rejected
 -(void) applicationDidBecomeActive:(UIApplication *)application
 {
+    [[PlaytomicManager getInstance] unfreeze];
+
 	if( [navController_ visibleViewController] == director_ )
 		[director_ resume];
 }
