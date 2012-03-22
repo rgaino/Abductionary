@@ -83,7 +83,7 @@ float const kStopCloudscapeSpeed = 0.1f;                      //speed with which
 
 
 //Sounds
-NSString * const kSoundTapLetter = @"tapLetter.wav";
+NSString * const kSoundTapLetter = @"tapLetter.mp3";
 NSString * const kSoundLetterFail = @"swoosh.mp3";
 NSString * const kSoundGameLoop = @"gameLoop1.mp3";
 NSString * const kSoundNewGameConsoleIn = @"newGameConsoleIn.mp3";

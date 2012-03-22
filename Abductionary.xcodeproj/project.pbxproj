@@ -216,6 +216,7 @@
 		53982615151A941800265029 /* AlienWalking.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53982611151A941800265029 /* AlienWalking.pvr.ccz */; };
 		5398261C151A97C200265029 /* geogtq-bd-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5398261A151A97C200265029 /* geogtq-bd-webfont.ttf */; };
 		5398261D151A97C200265029 /* InterstateBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5398261B151A97C200265029 /* InterstateBlack.ttf */; };
+		5398261F151BA39100265029 /* tapLetter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5398261E151BA39100265029 /* tapLetter.mp3 */; };
 		53A5BCAD1517E66C00C05FE8 /* LoadingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */; };
 		53A5BCB41517E80F00C05FE8 /* SuperScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB31517E80F00C05FE8 /* SuperScene.m */; };
 		53A5BCB81517E85F00C05FE8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BCB71517E85F00C05FE8 /* Constants.m */; };
@@ -604,6 +605,7 @@
 		53982611151A941800265029 /* AlienWalking.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlienWalking.pvr.ccz; path = Resources/AlienWalking.pvr.ccz; sourceTree = "<group>"; };
 		5398261A151A97C200265029 /* geogtq-bd-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "geogtq-bd-webfont.ttf"; path = "Resources/geogtq-bd-webfont.ttf"; sourceTree = "<group>"; };
 		5398261B151A97C200265029 /* InterstateBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = InterstateBlack.ttf; path = Resources/InterstateBlack.ttf; sourceTree = "<group>"; };
+		5398261E151BA39100265029 /* tapLetter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapLetter.mp3; sourceTree = "<group>"; };
 		53A5BCAB1517E66C00C05FE8 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingScene.h; sourceTree = "<group>"; };
 		53A5BCAC1517E66C00C05FE8 /* LoadingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingScene.m; sourceTree = "<group>"; };
 		53A5BCB21517E80F00C05FE8 /* SuperScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperScene.h; sourceTree = "<group>"; };
@@ -1224,6 +1226,7 @@
 		537AFB11151A4BCF00B78F19 /* Game Scene */ = {
 			isa = PBXGroup;
 			children = (
+				5398261E151BA39100265029 /* tapLetter.mp3 */,
 				537AFB1A151A4C3400B78F19 /* alienVoice1.mp3 */,
 				537AFB1B151A4C3400B78F19 /* alienVoice2.mp3 */,
 				537AFB1C151A4C3400B78F19 /* alienVoice3.mp3 */,
@@ -2426,6 +2429,7 @@
 				53982615151A941800265029 /* AlienWalking.pvr.ccz in Resources */,
 				5398261C151A97C200265029 /* geogtq-bd-webfont.ttf in Resources */,
 				5398261D151A97C200265029 /* InterstateBlack.ttf in Resources */,
+				5398261F151BA39100265029 /* tapLetter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
