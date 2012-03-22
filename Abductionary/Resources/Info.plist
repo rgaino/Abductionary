@@ -60,5 +60,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>geogtq-bd-webfont.ttf</string>
+		<string>InterstateBlack.ttf</string>
+	</array>
 </dict>
 </plist>

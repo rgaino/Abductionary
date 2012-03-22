@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "IntroScene.h"
 #import "LoadingScene.h"
+#import "GameScene.h"
 
 @implementation AppController
 
@@ -84,6 +85,7 @@
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 	[director_ pushScene: [IntroScene scene]]; 
 //	[director_ pushScene: [LoadingScene scene]]; 
+//	[director_ pushScene: [GameScene scene]]; 
 
 	return YES;
 }

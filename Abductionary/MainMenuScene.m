@@ -77,8 +77,6 @@
     [mainMenuPanelImage setAnchorPoint:ccp(0,0)];
     [self addChild:mainMenuPanelImage z:5];
 
-//    alienSprite = [AlienSprite alienSpriteForScene:self];
-//    [alienSprite setPosition:ccp(100,150)];
     alienSprite = [[AlienSprite alloc] init];
     [alienSprite alienSpriteForScene:self];
     [alienSprite.alienSprite setPosition:ccp(100, 150)];
