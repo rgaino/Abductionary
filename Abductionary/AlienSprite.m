@@ -182,14 +182,27 @@
 
 -(void) showSpeechBubble:(NSString*) speechBubbleSpriteFrameName withText:(NSString*) text
 {    
-    if(hasSpeechBubble) { NSLog(@"hasSpeechBubble, cancel new speech bubble"); return; }
-    if(isShowingStreakSpeechBubble) { NSLog(@"isShowingStreakSpeechBubble, cancel new speech bubble"); return; }
-    if([_alienSprite numberOfRunningActions]>0) { NSLog(@"numberOfRunningActions>0, cancel new speech bubble"); return; }
-    if( text != nil && [[Dictionary getInstance] isProfanity:text] ) { NSLog(@"%@ isProfanity, cancel new speech bubble", text); return; }
+    if(hasSpeechBubble) 
+    { 
+//        NSLog(@"hasSpeechBubble, cancel new speech bubble"); 
+        return; 
+    }
+    if(isShowingStreakSpeechBubble) { 
+//        NSLog(@"isShowingStreakSpeechBubble, cancel new speech bubble"); 
+        return; 
+    }
+    if([_alienSprite numberOfRunningActions]>0) { 
+//        NSLog(@"numberOfRunningActions>0, cancel new speech bubble"); 
+        return; 
+    }
+    if( text != nil && [[Dictionary getInstance] isProfanity:text] ) { 
+//        NSLog(@"%@ isProfanity, cancel new speech bubble", text); 
+        return; 
+    }
     
     hasSpeechBubble = YES;
     
-    NSLog(@"Showing alien speech bubble: %@", speechBubbleSpriteFrameName);
+//    NSLog(@"Showing alien speech bubble: %@", speechBubbleSpriteFrameName);
     
     CGPoint position = _alienSprite.position;
     position.x += 45;
@@ -203,7 +216,7 @@
     
     if(text != nil)
     {
-        NSLog(@"Speech buble spelled word: %@", text);
+//        NSLog(@"Speech buble spelled word: %@", text);
         position = _alienSprite.position;
         position.x += 120;
         position.y += 10;
@@ -226,11 +239,11 @@
     
     if(chance < 50) 
     {
-        NSLog(@"will showSpelledWordSpeechBubble");
+//        NSLog(@"will showSpelledWordSpeechBubble");
         [self showSpelledWordSpeechBubble];
     } else
     {
-        NSLog(@"will showAlienSpeechBubble");
+//        NSLog(@"will showAlienSpeechBubble");
 
         int randomBubbleChance = arc4random() % 7;
 
@@ -243,7 +256,7 @@
 {
     int spelledWordsCount = [[[Dictionary getInstance] spelledWords] count];
     
-    NSLog(@"Spelled words count is %d", spelledWordsCount);
+//    NSLog(@"Spelled words count is %d", spelledWordsCount);
     
     if(spelledWordsCount > 0)
     {
@@ -272,7 +285,7 @@
 
 -(void) showStreakSpeechBubble
 {
-    NSLog(@"About to showStreakSpeechBubble at %@", [NSDate date]);
+//    NSLog(@"About to showStreakSpeechBubble at %@", [NSDate date]);
  
     if([_alienSprite numberOfRunningActions] > 0 ) 
     {
@@ -315,7 +328,7 @@
 
 -(void) hideStreakSpeechBubble
 {
-    NSLog(@"About to hideStreakSpeechBubble at %@", [NSDate date]);
+//    NSLog(@"About to hideStreakSpeechBubble at %@", [NSDate date]);
 
     isShowingStreakSpeechBubble = NO;
     [speechBubbleSprite removeFromParentAndCleanup:YES];
@@ -335,7 +348,7 @@
     
     if( humanWordLabel != nil)
     {
-        NSLog(@"About to remove humanWordLabel");
+//        NSLog(@"About to remove humanWordLabel");
         [humanWordLabel removeFromParentAndCleanup:YES];
         humanWordLabel = nil;
     }

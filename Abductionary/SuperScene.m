@@ -32,12 +32,12 @@
     
     if(chance <= 50) 
     {
-        NSLog(@"alien will blink");
+//        NSLog(@"alien will blink");
         [alienSprite blinkAnimation];
     }
     else if(chance>50 && chance<70 && ![alienSprite isShowingStreakSpeechBubble])
     {
-        NSLog(@"alien will walk");
+//        NSLog(@"alien will walk");
         [alienSprite startWalkAnimation];
         
         CGPoint alienPosition = [self newAlienPosition];
