@@ -61,11 +61,13 @@
     NSLog(@"Moving to LoadingScene...");
 
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];        
-    CGRect posxx = [self boundingBox];
+//    CGRect posxx = [self boundingBox];
+    CGSize screenSize = [[CCDirector sharedDirector] winSize];
     
     CCSprite *loadingImage = [CCSprite spriteWithFile:@"loadingImage.pvr.ccz"];
-    [loadingImage setAnchorPoint:ccp(0,0)];
-    [loadingImage setPosition: ccp(posxx.origin.x , posxx.origin.y-256)];
+//    [loadingImage setAnchorPoint:ccp(0,0)];
+//    [loadingImage setPosition: ccp(posxx.origin.x , posxx.origin.y-256)];
+    [loadingImage setPosition: ccp(screenSize.width/2 , screenSize.height/2)];
     
     if(fade)
     {
