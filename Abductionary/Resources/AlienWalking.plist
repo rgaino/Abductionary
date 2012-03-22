@@ -540,223 +540,223 @@
             <key>speechBubble_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{640,1370},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{784,1370},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{0,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{144,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{288,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{432,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_7.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{576,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_8.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{720,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_angry.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{864,1602},{144,118}}</string>
-                <key>offset</key>
-                <string>{1,-1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
-                <key>sourceSize</key>
-                <string>{152,124}</string>
-            </dict>
-            <key>speechBubble_blank.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{0,1720},{142,114}}</string>
+                <string>{{640,1370},{74,60}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,5},{142,114}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{714,1370},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{788,1370},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{862,1370},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{936,1370},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,1602},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{74,1602},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{148,1602},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_angry.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,1602},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
+            </dict>
+            <key>speechBubble_blank.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{296,1602},{74,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{74,60}}</string>
+                <key>sourceSize</key>
+                <string>{76,62}</string>
             </dict>
             <key>speechBubble_happy.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{142,1720},{144,118}}</string>
+                <string>{{370,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUpFinished.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{286,1720},{144,118}}</string>
+                <string>{{444,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUp_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{430,1720},{144,118}}</string>
+                <string>{{518,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUp_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{574,1720},{144,118}}</string>
+                <string>{{592,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUp_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{718,1720},{144,118}}</string>
+                <string>{{666,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUp_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{862,1720},{144,118}}</string>
+                <string>{{740,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
             <key>streakPowerUp_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,1838},{144,118}}</string>
+                <string>{{814,1602},{74,60}}</string>
                 <key>offset</key>
-                <string>{1,-1}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,4},{144,118}}</string>
+                <string>{{1,1},{74,60}}</string>
                 <key>sourceSize</key>
-                <string>{152,124}</string>
+                <string>{76,62}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -768,7 +768,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:da256d3a45e0ab551708e43c51585b41$</string>
+            <string>$TexturePacker:SmartUpdate:9e15f806736970500419c2161053cf73$</string>
             <key>textureFileName</key>
             <string>AlienWalking.pvr.ccz</string>
         </dict>
