@@ -27,7 +27,6 @@
         return;
     }
     
-    
     chance = arc4random() % 100;
     
     if(chance <= 50) 
