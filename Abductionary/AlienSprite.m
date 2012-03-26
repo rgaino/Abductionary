@@ -67,6 +67,7 @@
     [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0002.png"]];
     [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0003.png"]];
     [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0004.png"]];
+    [walkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0005.png"]];
     
     CCAnimation *walkAnimation = [CCAnimation animationWithSpriteFrames:walkAnimFrames delay:0.02f];
 
@@ -94,6 +95,7 @@
     [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_blink0005.png"]];
     [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_blink0003.png"]];
     [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_blink0001.png"]];
+    [blinkAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0005.png"]];
     
     CCAnimation *blinkAnimation = [CCAnimation animationWithSpriteFrames:blinkAnimFrames delay:0.02f];
     
@@ -151,7 +153,8 @@
     [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_noblink0003.png"]];
     [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_noblink0002.png"]];
     [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_stance_noblink0001.png"]];
-    
+    [stanceAnimFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"alien_walk0005.png"]];
+
     CCAnimation *stanceAnimation = [CCAnimation animationWithSpriteFrames:stanceAnimFrames delay:0.02f];
     
     id stanceAction = [CCAnimate actionWithAnimation:stanceAnimation];
