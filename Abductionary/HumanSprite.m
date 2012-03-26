@@ -142,6 +142,7 @@
     [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_blink_001.png", humanId]]];
     [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_blink_002.png", humanId]]];
     [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_blink_001.png", humanId]]];
+    [blinkFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"human_%03d_standing.png", humanId]]];
     
     CCAnimation *blinkAnimation = [CCAnimation animationWithSpriteFrames:blinkFrames delay:0.08f];
     
