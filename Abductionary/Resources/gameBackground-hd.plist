@@ -7,63 +7,63 @@
             <key>cloudScape.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1426},{2050,126}}</string>
+                <string>{{1,1540},{2050,118}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{2050,126}}</string>
+                <string>{{0,0},{2050,118}}</string>
                 <key>sourceSize</key>
-                <string>{2050,126}</string>
+                <string>{2050,118}</string>
             </dict>
             <key>floorLine.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,1426},{2050,38}}</string>
+                <string>{{120,1540},{2050,41}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{2050,38}}</string>
+                <string>{{0,0},{2050,41}}</string>
                 <key>sourceSize</key>
-                <string>{2050,38}</string>
+                <string>{2050,41}</string>
             </dict>
             <key>gameBackground.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{2050,1424}}</string>
+                <string>{{1,1},{2050,1538}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{2050,1424}}</string>
+                <string>{{0,0},{2050,1538}}</string>
                 <key>sourceSize</key>
-                <string>{2050,1424}</string>
+                <string>{2050,1538}</string>
             </dict>
             <key>letterTubeFrozen.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2052,1094},{1064,1386}}</string>
+                <string>{{2052,1094},{1068,1386}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{1064,1386}}</string>
+                <string>{{0,0},{1068,1386}}</string>
                 <key>sourceSize</key>
-                <string>{1064,1386}</string>
+                <string>{1068,1386}</string>
             </dict>
             <key>letterfallOverlay.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,3820},{976,176}}</string>
+                <string>{{3475,1},{976,176}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{976,176}}</string>
                 <key>sourceSize</key>
@@ -72,7 +72,7 @@
             <key>starBluePlus.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{3812,1},{102,106}}</string>
+                <string>{{3652,1},{102,106}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,11 +85,11 @@
             <key>starBluePlusSmall.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,3997},{62,64}}</string>
+                <string>{{3862,1},{62,64}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{62,64}}</string>
                 <key>sourceSize</key>
@@ -98,11 +98,11 @@
             <key>starSmall.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,4062},{26,18}}</string>
+                <string>{{3970,1},{26,18}}</string>
                 <key>offset</key>
                 <string>{0,-3}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,8},{26,18}}</string>
                 <key>sourceSize</key>
@@ -111,11 +111,11 @@
             <key>starSmallGalaxy.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{64,3997},{42,40}}</string>
+                <string>{{3927,1},{42,40}}</string>
                 <key>offset</key>
                 <string>{0,2}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{42,40}}</string>
                 <key>sourceSize</key>
@@ -124,7 +124,7 @@
             <key>starX.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{3919,1},{102,100}}</string>
+                <string>{{3759,1},{102,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,11 +137,11 @@
             <key>trapDoor.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{150,3477},{342,148}}</string>
+                <string>{{1,3934},{342,148}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{342,148}}</string>
                 <key>sourceSize</key>
@@ -150,7 +150,7 @@
             <key>trapDoorHole.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,3477},{342,148}}</string>
+                <string>{{1,3591},{342,148}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,28 +163,28 @@
             <key>trapDoorPassThrough.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{3469,1},{342,126}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{342,126}}</string>
-                <key>sourceSize</key>
-                <string>{342,126}</string>
-            </dict>
-            <key>tubeDoor.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2052,1},{1092,1416}}</string>
+                <string>{{150,3591},{342,134}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{1092,1416}}</string>
+                <string>{{0,0},{342,134}}</string>
                 <key>sourceSize</key>
-                <string>{1092,1416}</string>
+                <string>{342,134}</string>
+            </dict>
+            <key>tubeDoor.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2052,1},{1092,1422}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{1092,1422}}</string>
+                <key>sourceSize</key>
+                <string>{1092,1422}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -196,7 +196,7 @@
             <key>size</key>
             <string>{4096,4096}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:35a07d3b5f7618aa07ac4a82d16ac773$</string>
+            <string>$TexturePacker:SmartUpdate:f956709df59ef76efc9a50a8864ddd36$</string>
             <key>textureFileName</key>
             <string>gameBackground-hd.pvr.ccz</string>
         </dict>
