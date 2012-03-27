@@ -343,27 +343,6 @@
     
     [self addChild:gameOverMenu z:1];
     
-    CCSprite *gameOverMoon = [CCSprite spriteWithSpriteFrameName:@"gameOverMoon.png"];
-    [gameOverMoon setAnchorPoint:ccp(0,0)];
-    [gameOverMoon setPosition:ccp(30, -2000)];
-    [self addChild:gameOverMoon z:1];
-    
-    CCSprite *gameOverSatellite_01 = [CCSprite spriteWithSpriteFrameName:@"gameOverSatellite_01.png"];
-    [gameOverSatellite_01 setAnchorPoint:ccp(0,0)];
-    [gameOverSatellite_01 setPosition:ccp(800, -500)];
-    [self addChild:gameOverSatellite_01 z:1];
-    
-    CCSprite *gameOverSatellite_02 = [CCSprite spriteWithSpriteFrameName:@"gameOverSatellite_02.png"];
-    [gameOverSatellite_02 setAnchorPoint:ccp(0,0)];
-    [gameOverSatellite_02 setPosition:ccp(75, -750)];
-    [self addChild:gameOverSatellite_02 z:1];
-    
-    CCSprite *gameOverSatellite_03 = [CCSprite spriteWithSpriteFrameName:@"gameOverSatellite_03.png"];
-    [gameOverSatellite_03 setAnchorPoint:ccp(0,0)];
-    [gameOverSatellite_03 setPosition:ccp(300, -1300)];
-    [self addChild:gameOverSatellite_03 z:1];
-    
-    
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];        
     
     gameOverScoreLabel = [CCLabelTTF labelWithString:@"0" dimensions:CGSizeMake(105.0f, 35.0f) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:30];
