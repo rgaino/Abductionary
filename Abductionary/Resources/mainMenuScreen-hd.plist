@@ -316,7 +316,7 @@
                 <key>sourceSize</key>
                 <string>{214,181}</string>
             </dict>
-            <key>startButtonNormal.png</key>
+            <key>startButtonSelected.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{565,2951},{150,152}}</string>
@@ -329,23 +329,10 @@
                 <key>sourceSize</key>
                 <string>{150,152}</string>
             </dict>
-            <key>startButtonSelected.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{716,2951},{150,152}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,152}}</string>
-                <key>sourceSize</key>
-                <string>{150,152}</string>
-            </dict>
             <key>volumeKnob.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{867,2951},{332,344}}</string>
+                <string>{{716,2951},{332,344}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -358,7 +345,7 @@
             <key>volumeKnobUpState.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1200,2951},{516,516}}</string>
+                <string>{{1049,2951},{516,516}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -378,7 +365,7 @@
             <key>size</key>
             <string>{4096,4096}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e558ecb3763aaf4d17cf637ac797f1f7$</string>
+            <string>$TexturePacker:SmartUpdate:9c84d7886aa8196c05baf5043af81098$</string>
             <key>textureFileName</key>
             <string>mainMenuScreen-hd.pvr.ccz</string>
         </dict>
