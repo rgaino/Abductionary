@@ -345,15 +345,15 @@
             <key>volumeKnobUpState.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{535,1481},{260,260}}</string>
+                <string>{{535,1481},{516,516}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{260,260}}</string>
+                <string>{{0,0},{516,516}}</string>
                 <key>sourceSize</key>
-                <string>{260,260}</string>
+                <string>{516,516}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -365,7 +365,7 @@
             <key>size</key>
             <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:8f926b89fb7ee727fd56f0782b02e2e2$</string>
+            <string>$TexturePacker:SmartUpdate:0acd7be17bf225570fd727929f93f1a2$</string>
             <key>textureFileName</key>
             <string>mainMenuScreen.pvr.ccz</string>
         </dict>

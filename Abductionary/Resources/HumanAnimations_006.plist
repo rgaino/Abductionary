@@ -189,7 +189,7 @@
             <key>human_006_fall_001.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{720,178},{144,178}}</string>
+                <string>{{840,0},{144,178}}</string>
                 <key>offset</key>
                 <string>{5,38}</string>
                 <key>rotated</key>
@@ -202,7 +202,7 @@
             <key>human_006_fall_002.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{714,812},{134,178}}</string>
+                <string>{{1004,178},{134,178}}</string>
                 <key>offset</key>
                 <string>{5,38}</string>
                 <key>rotated</key>
@@ -215,7 +215,7 @@
             <key>human_006_fall_003.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{848,804},{128,178}}</string>
+                <string>{{714,812},{128,178}}</string>
                 <key>offset</key>
                 <string>{3,38}</string>
                 <key>rotated</key>
@@ -228,11 +228,11 @@
             <key>human_006_fall_004.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{832,674},{130,178}}</string>
+                <string>{{1122,0},{130,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{56,33},{130,178}}</string>
                 <key>sourceSize</key>
@@ -241,11 +241,11 @@
             <key>human_006_fall_005.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{794,496},{134,178}}</string>
+                <string>{{928,356},{134,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{54,33},{134,178}}</string>
                 <key>sourceSize</key>
@@ -254,11 +254,11 @@
             <key>human_006_fall_006.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{750,356},{140,178}}</string>
+                <string>{{864,178},{140,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{51,33},{140,178}}</string>
                 <key>sourceSize</key>
@@ -267,11 +267,11 @@
             <key>human_006_fall_007.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{572,356},{144,178}}</string>
+                <string>{{720,178},{144,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{49,33},{144,178}}</string>
                 <key>sourceSize</key>
@@ -319,11 +319,11 @@
             <key>human_006_fall_011.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{696,0},{144,178}}</string>
+                <string>{{572,356},{144,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{49,33},{144,178}}</string>
                 <key>sourceSize</key>
@@ -332,11 +332,11 @@
             <key>human_006_fall_012.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{654,500},{140,178}}</string>
+                <string>{{750,356},{140,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{51,33},{140,178}}</string>
                 <key>sourceSize</key>
@@ -345,11 +345,11 @@
             <key>human_006_fall_013.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{654,678},{134,178}}</string>
+                <string>{{796,496},{134,178}}</string>
                 <key>offset</key>
                 <string>{1,38}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{54,33},{134,178}}</string>
                 <key>sourceSize</key>
@@ -358,11 +358,11 @@
             <key>human_006_fall_014.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{982,0},{134,178}}</string>
+                <string>{{654,678},{134,178}}</string>
                 <key>offset</key>
                 <string>{3,38}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{56,33},{134,178}}</string>
                 <key>sourceSize</key>
@@ -371,7 +371,7 @@
             <key>human_006_fall_015.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{864,178},{138,178}}</string>
+                <string>{{984,0},{138,178}}</string>
                 <key>offset</key>
                 <string>{5,38}</string>
                 <key>rotated</key>
@@ -384,13 +384,26 @@
             <key>human_006_fall_016.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{840,0},{142,178}}</string>
+                <string>{{654,500},{142,178}}</string>
                 <key>offset</key>
                 <string>{5,38}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
                 <string>{{54,33},{142,178}}</string>
+                <key>sourceSize</key>
+                <string>{240,320}</string>
+            </dict>
+            <key>human_006_fall_017.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{696,0},{144,178}}</string>
+                <key>offset</key>
+                <string>{5,38}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{53,33},{144,178}}</string>
                 <key>sourceSize</key>
                 <string>{240,320}</string>
             </dict>
@@ -417,7 +430,7 @@
             <key>size</key>
             <string>{2048,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f0045569811cef916aedf30a87602132$</string>
+            <string>$TexturePacker:SmartUpdate:41b1d66b87c8dc947bad63dc9a799d9c$</string>
             <key>textureFileName</key>
             <string>HumanAnimations_006.pvr.ccz</string>
         </dict>

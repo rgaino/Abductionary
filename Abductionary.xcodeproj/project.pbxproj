@@ -348,6 +348,8 @@
 		53D81AA31517D97D00B63DEC /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 53D81AA21517D97D00B63DEC /* vec4.c */; };
 		53D81AA81517D97D00B63DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D81AA71517D97D00B63DEC /* main.m */; };
 		53D81AAB1517D97E00B63DEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D81AAA1517D97E00B63DEC /* AppDelegate.m */; };
+		53F51E9715226D62005F9CD8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F51E9615226D62005F9CD8 /* Icon@2x.png */; };
+		53F51E9A15226DD9005F9CD8 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F51E9915226DD9005F9CD8 /* Default-Landscape@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -883,6 +885,8 @@
 		53D81AA71517D97D00B63DEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53D81AA91517D97D00B63DEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53D81AAA1517D97E00B63DEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53F51E9615226D62005F9CD8 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		53F51E9915226DD9005F9CD8 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1180,7 +1184,9 @@
 		537AFAF7151A4AFB00B78F19 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				53F51E9615226D62005F9CD8 /* Icon@2x.png */,
 				537AFB77151A4CA400B78F19 /* Icon.png */,
+				53F51E9915226DD9005F9CD8 /* Default-Landscape@2x.png */,
 				537AFB74151A4C9A00B78F19 /* Default-Landscape.png */,
 				53D8193F1517D97800B63DEC /* fps_images.png */,
 				53A5BCC01517E93F00C05FE8 /* fps_images-ipad.png */,
@@ -2430,6 +2436,8 @@
 				5398261C151A97C200265029 /* geogtq-bd-webfont.ttf in Resources */,
 				5398261D151A97C200265029 /* InterstateBlack.ttf in Resources */,
 				5398261F151BA39100265029 /* tapLetter.mp3 in Resources */,
+				53F51E9715226D62005F9CD8 /* Icon@2x.png in Resources */,
+				53F51E9A15226DD9005F9CD8 /* Default-Landscape@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
