@@ -7,197 +7,197 @@
             <key>truck_rolling_0000.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,0},{1202,534}}</string>
+                <string>{{0,3440},{1192,528}}</string>
                 <key>offset</key>
-                <string>{5,13}</string>
+                <string>{3,6}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,20},{1202,534}}</string>
+                <string>{{57,30},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1202,534}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0001.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1202,0},{1202,532}}</string>
+                <string>{{0,2912},{1192,528}}</string>
                 <key>offset</key>
-                <string>{5,12}</string>
+                <string>{2,4}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1202,532}}</string>
+                <string>{{56,32},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1202,532}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0002.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,2800},{1200,532}}</string>
+                <string>{{0,1720},{1192,528}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{2,4}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{56,32},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0003.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1062,1600},{1200,530}}</string>
+                <string>{{1580,528},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,11}</string>
+                <string>{1,3}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,24},{1200,530}}</string>
+                <string>{{55,34},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,530}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0004.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1062,2800},{1200,528}}</string>
+                <string>{{2384,528},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,10}</string>
+                <string>{1,3}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,26},{1200,528}}</string>
+                <string>{{55,34},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,528}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0005.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{532,2800},{1200,530}}</string>
+                <string>{{1192,3438},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,11}</string>
+                <string>{1,3}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,24},{1200,530}}</string>
+                <string>{{55,34},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,530}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0006.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,1600},{1200,532}}</string>
+                <string>{{1192,2912},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{2,4}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{56,33},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0007.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,534},{1200,534}}</string>
+                <string>{{0,528},{1192,528}}</string>
                 <key>offset</key>
-                <string>{4,13}</string>
+                <string>{2,5}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,20},{1200,534}}</string>
+                <string>{{56,31},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1200,534}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0008.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1202,532},{1200,534}}</string>
+                <string>{{2384,0},{1192,528}}</string>
                 <key>offset</key>
-                <string>{4,13}</string>
+                <string>{2,5}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,20},{1200,534}}</string>
+                <string>{{56,31},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1200,534}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0009.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2400,1066},{1200,532}}</string>
+                <string>{{1054,1720},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{2,4}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{56,33},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0010.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{0,1068},{1200,532}}</string>
+                <string>{{1054,528},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{1,4}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{55,33},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0011.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{532,1600},{1200,530}}</string>
+                <string>{{528,1720},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,11}</string>
+                <string>{1,3}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,24},{1200,530}}</string>
+                <string>{{55,34},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,530}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0012.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1200,1066},{1200,532}}</string>
+                <string>{{528,528},{1192,526}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{1,3}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{55,34},{1192,526}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,526}</string>
             </dict>
             <key>truck_rolling_0013.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2402,534},{1200,532}}</string>
+                <string>{{1192,0},{1192,528}}</string>
                 <key>offset</key>
-                <string>{4,12}</string>
+                <string>{2,4}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,22},{1200,532}}</string>
+                <string>{{56,32},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1200,532}</string>
+                <string>{1192,528}</string>
             </dict>
             <key>truck_rolling_0014.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2404,0},{1200,534}}</string>
+                <string>{{0,0},{1192,528}}</string>
                 <key>offset</key>
-                <string>{4,13}</string>
+                <string>{2,5}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{54,20},{1200,534}}</string>
+                <string>{{56,31},{1192,528}}</string>
                 <key>sourceSize</key>
-                <string>{1200,534}</string>
+                <string>{1192,528}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -209,7 +209,7 @@
             <key>size</key>
             <string>{4096,4096}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:842ded32b8822f4f604da0d9af412d07$</string>
+            <string>$TexturePacker:SmartUpdate:af334214e0436bbca3fc7114dd4d78bb$</string>
             <key>textureFileName</key>
             <string>TruckAnimation-hd.pvr.ccz</string>
         </dict>
