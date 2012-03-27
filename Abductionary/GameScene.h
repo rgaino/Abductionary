@@ -84,7 +84,6 @@
 -(void) updateLevelTime:(ccTime)deltaTime;
 -(void) increaseLevelSpeed:(ccTime)deltaTime;
 -(void) setupSprites_RGBA4444;
--(void) setupSprites_RGBA8888;
 -(void) setupLayers;
 -(void) setupButtons;
 -(void) setupVariablesAndObjects;

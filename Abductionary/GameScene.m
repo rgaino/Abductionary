@@ -50,7 +50,6 @@
 		[self setIsTouchEnabled:YES];
 		[self setupVariablesAndObjects];
 		[self setupSprites_RGBA4444];
-		[self setupSprites_RGBA8888];
         [self setupLayers];
 		[self setupButtons];
         [self beamUpNewHuman];
@@ -262,22 +261,6 @@
     [temperatureMeterGlow setOpacity:0];
     [self addChild:temperatureMeterGlow z:1];
 
-}
-
--(void) setupSprites_RGBA8888
-{
-    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];        
-    
-    /**
-     *	Midpoint is used to modify the progress start position.
-     *	If you're using radials type then the midpoint changes the center point
-     *	If you're using bar type the the midpoint changes the bar growth
-     *		it expands from the center but clamps to the sprites edge so:
-     *		you want a left to right then set the midpoint all the way to ccp(0,y)
-     *		you want a right to left then set the midpoint all the way to ccp(1,y)
-     *		you want a bottom to top then set the midpoint all the way to ccp(x,0)
-     *		you want a top to bottom then set the midpoint all the way to ccp(x,1)
-     */
     powerUpBarProgressTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"powerUpBar.png"]]; 
     [powerUpBarProgressTimer setType:kCCProgressTimerTypeBar];
     [powerUpBarProgressTimer setMidpoint:ccp(0.5, 0)];
@@ -325,8 +308,6 @@
     [letterDoorBottomImage setPercentage:0.0f];
     [self addChild: letterDoorBottomImage z:15];
     
-    
-
 }
 
 -(void) setupLayers
