@@ -268,9 +268,19 @@
 {
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];        
     
-    
+    /**
+     *	Midpoint is used to modify the progress start position.
+     *	If you're using radials type then the midpoint changes the center point
+     *	If you're using bar type the the midpoint changes the bar growth
+     *		it expands from the center but clamps to the sprites edge so:
+     *		you want a left to right then set the midpoint all the way to ccp(0,y)
+     *		you want a right to left then set the midpoint all the way to ccp(1,y)
+     *		you want a bottom to top then set the midpoint all the way to ccp(x,0)
+     *		you want a top to bottom then set the midpoint all the way to ccp(x,1)
+     */
     powerUpBarProgressTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"powerUpBar.png"]]; 
     [powerUpBarProgressTimer setType:kCCProgressTimerTypeBar];
+    [powerUpBarProgressTimer setMidpoint:ccp(0.5, 0)];
     [powerUpBarProgressTimer setPosition:ccp(30, 272)];
     [powerUpBarProgressTimer setAnchorPoint:ccp(0, 0)];
     [powerUpBarProgressTimer setPercentage:0.0f];
@@ -279,6 +289,7 @@
     
     timeMeterProgressTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"timeMeter.png"]]; 
     [timeMeterProgressTimer setType:kCCProgressTimerTypeBar];
+    [timeMeterProgressTimer setMidpoint:ccp(1, 0.5)];
     [timeMeterProgressTimer setPosition:ccp(143, 349)];
     [timeMeterProgressTimer setAnchorPoint:ccp(0, 0)];
     [timeMeterProgressTimer setPercentage:100.0f];
@@ -302,6 +313,7 @@
     [letterDoorTopImage setPosition:ccp(35, 662)];
     [letterDoorTopImage setAnchorPoint:ccp(0,0)];
     [letterDoorTopImage setType:kCCProgressTimerTypeBar];
+    [letterDoorTopImage setMidpoint:ccp(0.5, 1)];
     [letterDoorTopImage setPercentage:0.0f];
     [self addChild: letterDoorTopImage z:15];
     
@@ -309,6 +321,7 @@
     [letterDoorBottomImage setPosition:[letterDoorTopImage position]];
     [letterDoorBottomImage setAnchorPoint:ccp(0,0)];
     [letterDoorBottomImage setType:kCCProgressTimerTypeBar];
+    [letterDoorBottomImage setMidpoint:ccp(0.5, 0)];
     [letterDoorBottomImage setPercentage:0.0f];
     [self addChild: letterDoorBottomImage z:15];
     
