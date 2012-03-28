@@ -142,6 +142,7 @@ extern NSString * const kSoundShutDown;
 extern NSString * const kSoundTruck;
 extern NSString * const kHumanFallingSound;
 extern NSString * const kTemperatureOverheat;
+extern NSString * const kFallingSound;
 
 
 //Dictionary

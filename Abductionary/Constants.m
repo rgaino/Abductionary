@@ -64,6 +64,7 @@ float const kSpeechBubbleDuration = 3.0f;
 int const kHumanScorePerLevel = 25;
 float const kScorePointsLabelAnimationOffset = 40;
 
+
 //Power Ups
 int const kScrambledWordLength = 5;
 float const kScrollingLettersSpeedModifierPowerUp = 0.4f;
@@ -75,6 +76,7 @@ float const kPowerUpButtonsYSpacing = 52;
 float const kPowerUpsCount = 5;                               //how many power ups we have
 float const kPowerUpBarAnimationDuration = 0.2f;
 int const kTemperatureGaugeBeginOverheat = 14;
+
 
 //Game Over
 float const kPanGameOverAnimationDuration = 5.0f;
@@ -111,6 +113,8 @@ NSString * const kSoundShutDown = @"shutdown.mp3";
 NSString * const kSoundTruck = @"truck.mp3";
 NSString * const kHumanFallingSound = @"humanFall%d.mp3";
 NSString * const kTemperatureOverheat = @"temperatureOverheat.mp3";
+NSString * const kFallingSound = @"fallingSound.mp3";
+
 
 //Dictionary
 int const kMinimumWordLength = 3;							//min letters allowed in the word spelled

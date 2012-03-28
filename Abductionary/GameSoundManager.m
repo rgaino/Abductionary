@@ -38,8 +38,8 @@
     [[SimpleAudioEngine sharedEngine] preloadEffect:kSoundShutDown];
     [[SimpleAudioEngine sharedEngine] preloadEffect:kSoundTruck];
     [[SimpleAudioEngine sharedEngine] preloadEffect:kTemperatureOverheat];
+    [[SimpleAudioEngine sharedEngine] preloadEffect:kFallingSound];
 
-    
     for(int i=1; i<=kMaximumWordLength; i++)
     {
         NSString *soundFileName = [NSString stringWithFormat:kSoundScore, i];
@@ -221,7 +221,8 @@
 - (void) playHumanSoundWithId:(id)sender data:(NSNumber*)humanId
 {
     NSString *humanFallingSound = [NSString stringWithFormat:kHumanFallingSound, [humanId intValue]];
-    [[SimpleAudioEngine sharedEngine] playEffect:humanFallingSound pitch:1.0f pan:0.0f gain:soundFXGain];
+    [[SimpleAudioEngine sharedEngine] playEffect:humanFallingSound pitch:1.0f pan:0.0f gain:soundFXGain*0.65];
+    [[SimpleAudioEngine sharedEngine] playEffect:kFallingSound pitch:1.0f pan:0.0f gain:soundFXGain*0.7];
 }
 
 -(void) startTemperatureOverheatSound
@@ -258,6 +259,7 @@
     [[SimpleAudioEngine sharedEngine] unloadEffect:kSoundShutDown];
     [[SimpleAudioEngine sharedEngine] unloadEffect:kSoundTruck];
     [[SimpleAudioEngine sharedEngine] unloadEffect:kTemperatureOverheat];
+    [[SimpleAudioEngine sharedEngine] unloadEffect:kFallingSound];
 
     [backgroundMusicSoundSource release];
 
