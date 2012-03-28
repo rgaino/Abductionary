@@ -82,20 +82,26 @@
     
     [self setRotation:rotation];
     
-
+    float progressPercentage=0;
 
     if(_type==kVolumeKnobTypeMusic) 
     { 
         [self.mainMenuSoundManager setBackgroundMusicGain:gain]; 
-        [_volumeKnobUpState setPercentage:[self.mainMenuSoundManager backgroundMusicGain]*100];
+        progressPercentage = [self.mainMenuSoundManager backgroundMusicGain]*100;
     }
     
     if(_type==kVolumeKnobTypeSoundFX) 
     { 
         [self.mainMenuSoundManager setSoundFXGain:gain]; 
-        [_volumeKnobUpState setPercentage:[self.mainMenuSoundManager soundFXGain]*100];
+        progressPercentage = [self.mainMenuSoundManager soundFXGain]*100;
     }
     
+    //rounding percentage so it's always increments of 10 degrees
+    NSLog(@"was %.2f", progressPercentage);
+    progressPercentage = roundf(progressPercentage/10)*10;
+    NSLog(@"is %.2f", progressPercentage);
+    
+    [_volumeKnobUpState setPercentage:progressPercentage];
 }
 
 -(void) dealloc
