@@ -53,7 +53,7 @@
         [self setupLayers];
 		[self setupButtons];
         [self beamUpNewHuman];
-        
+
 		[self scheduleUpdate];
         [self schedule:@selector(increaseLevelSpeed:) interval:kScrollingLettersSpeedIncreaseTime];
         [self schedule:@selector(updateLevelTime:) interval:kUpdateLevelTimeFrequency];
@@ -748,21 +748,16 @@
     [tubeDoorSprite runOpenAnimation];
     [tubeDoorSprite performSelector:@selector(release) withObject:nil afterDelay:3.0f];
    
-//    int humanId = [humanSprite getHumanId];
     [humanSprite cleanUp];
     [humanSprite release];
-    
-//    NSString *spriteSheetFileName = [NSString stringWithFormat:@"HumanAnimations_%03d.plist", humanId];
-//    NSLog(@"Removing human spritesheet %@", spriteSheetFileName);
-//    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteSheetFileName];
-//    [[CCTextureCache sharedTextureCache] removeTextureForKey:@"HumanAnimations_%03d.pvr.ccz"];
-
 
     humanSprite = [[HumanSprite alloc] init];
     [humanSprite humanSpriteForScene:self];
     
     [self performSelector:@selector(startNextLevel) withObject:nil afterDelay:kHumanLevelTransitionAnimationDuration];
 }
+
+
 
 -(void) startNextLevel
 {

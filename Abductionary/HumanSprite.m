@@ -35,14 +35,37 @@
     [scene addChild:_humanSprite z:10];
     
     id beamHumanUp = [CCMoveTo actionWithDuration:2.0f position:ccp(390, 400)];
-    [_humanSprite runAction:beamHumanUp];
+    id beamHumanUpEase = [CCEaseSineOut actionWithAction:beamHumanUp];
+    
+    id humanCallback = [CCCallFuncN actionWithTarget:self selector:@selector(makeHumanFloat)];
+        
+    id humanSequence = [CCSequence actionOne:beamHumanUpEase two:humanCallback];
+    
+    [_humanSprite runAction:humanSequence];
 
     NSString *humanFallingSound = [NSString stringWithFormat:kHumanFallingSound, humanId];
     [[SimpleAudioEngine sharedEngine] preloadEffect:humanFallingSound];    
-    
 
     return ;
 }
+
+-(void) makeHumanFloat 
+{
+    float humanFloatOffset = 10.0f;
+    float humanFloatInterval = 2.0f;
+    
+    id floatHumanUp = [CCMoveBy actionWithDuration:humanFloatInterval position:ccp(0, humanFloatOffset)];
+    id floatHumanDown = [CCMoveBy actionWithDuration:humanFloatInterval position:ccp(0, humanFloatOffset*-1)];
+    
+    id floatEaseUp = [CCEaseSineInOut actionWithAction:floatHumanUp];
+    id floatEaseDown = [CCEaseSineInOut actionWithAction:floatHumanDown];
+    
+    id floatSequence = [CCSequence actionOne:floatEaseDown two:floatEaseUp];
+    id floatForever = [CCRepeatForever actionWithAction:floatSequence];
+    
+    [_humanSprite runAction:floatForever];
+}
+
 
 -(CCSprite*) humanSprite 
 {

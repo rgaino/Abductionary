@@ -27,5 +27,6 @@
 -(void) cleanUp;
 -(void) hide;
 -(int) getHumanId;
+-(void) makeHumanFloat;
 
 @end
