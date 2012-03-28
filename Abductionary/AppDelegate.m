@@ -15,6 +15,7 @@
 #import "CDAudioManager.h"
 #import "PlaytomicManager.h"
 #import "GameCenterManager.h"
+#import "IntroAnimationScene.h"
 
 @implementation AppController
 
@@ -129,7 +130,8 @@
     
     
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [IntroScene scene]]; 
+//	[director_ pushScene: [IntroScene scene]]; 
+	[director_ pushScene: [IntroAnimationScene scene]]; 
 //	[director_ pushScene: [LoadingScene scene]]; 
 //	[director_ pushScene: [GameScene scene]]; 
 
