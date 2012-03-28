@@ -1517,6 +1517,8 @@
 
 -(void) activateSlowDownPowerUp
 {    
+    [humanSprite.humanSprite pauseSchedulerAndActions];
+    
     id showHumanTubeFrozen = [CCFadeIn actionWithDuration:1.0f];
     id showLetterTubeFrozen = [CCFadeIn actionWithDuration:1.0f];
     [humanTubeFrozen runAction:showHumanTubeFrozen];
@@ -1540,6 +1542,9 @@
     isSlowDownPowerUpActive = NO;
     [gameSoundManager restoreBackgroundMusic];
     scrollingLettersSpeedModifier = 1.0f;
+    
+    [humanSprite.humanSprite resumeSchedulerAndActions];
+
 }
 
 
