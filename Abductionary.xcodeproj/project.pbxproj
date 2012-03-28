@@ -351,6 +351,11 @@
 		53F51E9715226D62005F9CD8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F51E9615226D62005F9CD8 /* Icon@2x.png */; };
 		53F51E9A15226DD9005F9CD8 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F51E9915226DD9005F9CD8 /* Default-Landscape@2x.png */; };
 		53F51EA015238718005F9CD8 /* fallingSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51E9F15238718005F9CD8 /* fallingSound.mp3 */; };
+		53F51EA51523ABBC005F9CD8 /* IntroAnimationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F51EA41523ABBC005F9CD8 /* IntroAnimationScene.m */; };
+		53F51EAB1523B1F1005F9CD8 /* introAnimation-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EA71523B1F1005F9CD8 /* introAnimation-hd.plist */; };
+		53F51EAC1523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EA81523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz */; };
+		53F51EAD1523B1F1005F9CD8 /* introAnimation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EA91523B1F1005F9CD8 /* introAnimation.plist */; };
+		53F51EAE1523B1F1005F9CD8 /* introAnimation.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EAA1523B1F1005F9CD8 /* introAnimation.pvr.ccz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -889,6 +894,12 @@
 		53F51E9615226D62005F9CD8 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		53F51E9915226DD9005F9CD8 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
 		53F51E9F15238718005F9CD8 /* fallingSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fallingSound.mp3; sourceTree = "<group>"; };
+		53F51EA31523ABBC005F9CD8 /* IntroAnimationScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroAnimationScene.h; sourceTree = "<group>"; };
+		53F51EA41523ABBC005F9CD8 /* IntroAnimationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroAnimationScene.m; sourceTree = "<group>"; };
+		53F51EA71523B1F1005F9CD8 /* introAnimation-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "introAnimation-hd.plist"; path = "Resources/introAnimation-hd.plist"; sourceTree = "<group>"; };
+		53F51EA81523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "introAnimation-hd.pvr.ccz"; path = "Resources/introAnimation-hd.pvr.ccz"; sourceTree = "<group>"; };
+		53F51EA91523B1F1005F9CD8 /* introAnimation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = introAnimation.plist; path = Resources/introAnimation.plist; sourceTree = "<group>"; };
+		53F51EAA1523B1F1005F9CD8 /* introAnimation.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = introAnimation.pvr.ccz; path = Resources/introAnimation.pvr.ccz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1603,6 +1614,7 @@
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				53F51EA61523B090005F9CD8 /* Intro Animation */,
 				537AFC54151A8EE200B78F19 /* Tutorials */,
 				537AFC4B151A8DA000B78F19 /* Truck Animation */,
 				537AFC42151A8B0B00B78F19 /* Main Menu Screen */,
@@ -1636,9 +1648,10 @@
 		53A5BCA91517E64600C05FE8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				53F51EA21523AB69005F9CD8 /* Intro Scene */,
+				53A5BCFD1517F1F700C05FE8 /* Intro Video */,
 				535BD57515180B7C00F782CD /* Main Menu Scene */,
 				535BD55C151803C000F782CD /* Game Scene */,
-				53A5BCFD1517F1F700C05FE8 /* Intro Video */,
 				53A5BCAE1517E67700C05FE8 /* Super Scene */,
 				53A5BCAA1517E65600C05FE8 /* Loading Scene */,
 			);
@@ -2217,6 +2230,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		53F51EA21523AB69005F9CD8 /* Intro Scene */ = {
+			isa = PBXGroup;
+			children = (
+				53F51EA31523ABBC005F9CD8 /* IntroAnimationScene.h */,
+				53F51EA41523ABBC005F9CD8 /* IntroAnimationScene.m */,
+			);
+			name = "Intro Scene";
+			sourceTree = "<group>";
+		};
+		53F51EA61523B090005F9CD8 /* Intro Animation */ = {
+			isa = PBXGroup;
+			children = (
+				53F51EA71523B1F1005F9CD8 /* introAnimation-hd.plist */,
+				53F51EA81523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz */,
+				53F51EA91523B1F1005F9CD8 /* introAnimation.plist */,
+				53F51EAA1523B1F1005F9CD8 /* introAnimation.pvr.ccz */,
+			);
+			name = "Intro Animation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2442,6 +2475,10 @@
 				53F51E9715226D62005F9CD8 /* Icon@2x.png in Resources */,
 				53F51E9A15226DD9005F9CD8 /* Default-Landscape@2x.png in Resources */,
 				53F51EA015238718005F9CD8 /* fallingSound.mp3 in Resources */,
+				53F51EAB1523B1F1005F9CD8 /* introAnimation-hd.plist in Resources */,
+				53F51EAC1523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz in Resources */,
+				53F51EAD1523B1F1005F9CD8 /* introAnimation.plist in Resources */,
+				53F51EAE1523B1F1005F9CD8 /* introAnimation.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2608,6 +2645,7 @@
 				535BD5F315180D7200F782CD /* TutorialLayer.m in Sources */,
 				535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */,
 				535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */,
+				53F51EA51523ABBC005F9CD8 /* IntroAnimationScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

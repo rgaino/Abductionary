@@ -8,6 +8,7 @@
 
 #import "IntroAnimationScene.h"
 #import "MainMenuScene.h"
+#import "MainMenuSoundManager.h"
 
 @implementation IntroAnimationScene
 
@@ -26,6 +27,9 @@
     {
         [self setIsTouchEnabled:YES];
         [self setupSprites];
+        MainMenuSoundManager *mainMenuSoundManager = [[MainMenuSoundManager alloc] init];
+        [mainMenuSoundManager playBackgroundMusic];
+        [mainMenuSoundManager release];
         [self kickOffAnimations];
     }
     
@@ -75,7 +79,6 @@
     [descriptionWindowLayer addChild:descriptionBreak_3 z:1];
 
     [self addChild:descriptionWindowLayer z:1];
-    
 }
 
 -(void) kickOffAnimations
@@ -91,7 +94,8 @@
     
     //description window moves up
     id descriptionWindowMoveUp = [CCMoveBy actionWithDuration:3.0f position:ccp(0, screenSize.height-30)];
-    [descriptionWindowLayer runAction:descriptionWindowMoveUp];
+    id descriptionWindowEaseOut = [CCEaseSineOut actionWithAction:descriptionWindowMoveUp];
+    [descriptionWindowLayer runAction:descriptionWindowEaseOut];
     
     //screen follows alien
     id delayScreenPansUp = [CCDelayTime actionWithDuration:1.0];
@@ -138,7 +142,11 @@
     
     [descriptionBreak_1 runAction:fadeIn_1];
     [descriptionBreak_2 runAction:sequence_2];
-    [descriptionBreak_3 runAction:sequence_3];    
+    [descriptionBreak_3 runAction:sequence_3];
+    
+//    id delayCall = [CCDelayTime actionWithDuration:8.0f];
+//    id callAlienFlyAway = [CCCallFuncN actionWithTarget:self selector:@selector(alienFlyAway)];
+//    [descriptionWindowLayer runAction:[CCSequence actionOne:delayCall two:callAlienFlyAway]];
 }
 
 -(void) alienFlyAway
@@ -155,7 +163,11 @@
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
 {
-    [self moveToMainMenu];
+//    [self moveToMainMenu];
+    id callAlienFlyAway = [CCCallFuncN actionWithTarget:self selector:@selector(alienFlyAway)];
+    id callMainMenu = [CCCallFuncN actionWithTarget:self selector:@selector(moveToMainMenu)];
+    [descriptionWindowLayer runAction:[CCSequence actionOne:callAlienFlyAway two:callMainMenu]];
+
 }
 
 -(void) moveToMainMenu
