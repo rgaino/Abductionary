@@ -458,11 +458,10 @@
 -(void) dropLetterAnimated:(CCSprite*) letterSprite
 {
     id delayAction = [CCDelayTime actionWithDuration:dropLetterAnimatedDelay];
-    id letterDropAction1 = [CCMoveBy actionWithDuration:0.4f position:ccp(0, -200)];
-    id letterDropAction2 = [CCMoveBy actionWithDuration:0.3f position:ccp(0, 80)];
-    id letterDropAction3 = [CCMoveBy actionWithDuration:0.3f position:ccp(0, -20)];
+    id letterDropAction = [CCMoveBy actionWithDuration:3.0f position:ccp(0, -140)];
+    id letterEaseElastic = [CCEaseElasticOut actionWithAction:letterDropAction];
     
-    [letterSprite runAction: [CCSequence actions:delayAction, letterDropAction1, letterDropAction2, letterDropAction3, nil]];
+    [letterSprite runAction: [CCSequence actions:delayAction, letterEaseElastic, nil]];
     
     dropLetterAnimatedDelay+=0.2f;
 }
