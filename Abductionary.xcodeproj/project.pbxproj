@@ -356,6 +356,9 @@
 		53F51EAC1523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EA81523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz */; };
 		53F51EAD1523B1F1005F9CD8 /* introAnimation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EA91523B1F1005F9CD8 /* introAnimation.plist */; };
 		53F51EAE1523B1F1005F9CD8 /* introAnimation.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EAA1523B1F1005F9CD8 /* introAnimation.pvr.ccz */; };
+		53F51EB91523E5E7005F9CD8 /* ship.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB61523E5E7005F9CD8 /* ship.mp3 */; };
+		53F51EBA1523E5E7005F9CD8 /* shipGoing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */; };
+		53F51EBB1523E5E7005F9CD8 /* introMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -900,6 +903,9 @@
 		53F51EA81523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "introAnimation-hd.pvr.ccz"; path = "Resources/introAnimation-hd.pvr.ccz"; sourceTree = "<group>"; };
 		53F51EA91523B1F1005F9CD8 /* introAnimation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = introAnimation.plist; path = Resources/introAnimation.plist; sourceTree = "<group>"; };
 		53F51EAA1523B1F1005F9CD8 /* introAnimation.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = introAnimation.pvr.ccz; path = Resources/introAnimation.pvr.ccz; sourceTree = "<group>"; };
+		53F51EB61523E5E7005F9CD8 /* ship.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ship.mp3; sourceTree = "<group>"; };
+		53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipGoing.mp3; sourceTree = "<group>"; };
+		53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1225,6 +1231,9 @@
 		537AFB0E151A4BC100B78F19 /* Sound FX and Music */ = {
 			isa = PBXGroup;
 			children = (
+				53F51EB61523E5E7005F9CD8 /* ship.mp3 */,
+				53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */,
+				53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */,
 				537AFB10151A4BC900B78F19 /* Main Menu Scene */,
 				537AFB11151A4BCF00B78F19 /* Game Scene */,
 			);
@@ -2479,6 +2488,9 @@
 				53F51EAC1523B1F1005F9CD8 /* introAnimation-hd.pvr.ccz in Resources */,
 				53F51EAD1523B1F1005F9CD8 /* introAnimation.plist in Resources */,
 				53F51EAE1523B1F1005F9CD8 /* introAnimation.pvr.ccz in Resources */,
+				53F51EB91523E5E7005F9CD8 /* ship.mp3 in Resources */,
+				53F51EBA1523E5E7005F9CD8 /* shipGoing.mp3 in Resources */,
+				53F51EBB1523E5E7005F9CD8 /* introMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

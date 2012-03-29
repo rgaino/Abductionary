@@ -20,6 +20,8 @@
     CCSprite *descriptionBreak_1;
     CCSprite *descriptionBreak_2;
     CCSprite *descriptionBreak_3;
+    
+    unsigned int shipSoundID;
 }
 
 +(CCScene *) scene;

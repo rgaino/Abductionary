@@ -8,7 +8,7 @@
 
 #import "IntroAnimationScene.h"
 #import "MainMenuScene.h"
-#import "MainMenuSoundManager.h"
+#import "SimpleAudioEngine.h"
 
 @implementation IntroAnimationScene
 
@@ -27,9 +27,15 @@
     {
         [self setIsTouchEnabled:YES];
         [self setupSprites];
-        MainMenuSoundManager *mainMenuSoundManager = [[MainMenuSoundManager alloc] init];
-        [mainMenuSoundManager playBackgroundMusic];
-        [mainMenuSoundManager release];
+        
+        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"introMusic.mp3"];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"introMusic.mp3" loop:YES];
+        
+        shipSoundID = [[SimpleAudioEngine sharedEngine] playEffect:@"ship.mp3" pitch:1.0f pan:0.0f gain:1.0f];
+        alSourcei(shipSoundID, AL_LOOPING, 1);
+
+        [[SimpleAudioEngine sharedEngine] preloadEffect:@"shipGoing.mp3"];
+        
         [self kickOffAnimations];
     }
     
@@ -99,7 +105,7 @@
     
     //screen follows alien
     id delayScreenPansUp = [CCDelayTime actionWithDuration:1.0];
-    id screenPansUp = [CCMoveBy actionWithDuration:3.5f position:ccp(0, -232)];    
+    id screenPansUp = [CCMoveBy actionWithDuration:10.0f position:ccp(0, -232)];    
     id panScreenSequence = [CCSequence actionOne:delayScreenPansUp two:screenPansUp];
     [introBackgroundBottom runAction:[[panScreenSequence copy] autorelease]];
     [introBackgroundTop runAction:panScreenSequence];
@@ -143,30 +149,27 @@
     [descriptionBreak_1 runAction:fadeIn_1];
     [descriptionBreak_2 runAction:sequence_2];
     [descriptionBreak_3 runAction:sequence_3];
-    
-//    id delayCall = [CCDelayTime actionWithDuration:8.0f];
-//    id callAlienFlyAway = [CCCallFuncN actionWithTarget:self selector:@selector(alienFlyAway)];
-//    [descriptionWindowLayer runAction:[CCSequence actionOne:delayCall two:callAlienFlyAway]];
 }
 
 -(void) alienFlyAway
 {
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [[SimpleAudioEngine sharedEngine] stopEffect:shipSoundID];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"shipGoing.mp3"];
+
     id alienMoveOut = [CCMoveBy actionWithDuration:1.0f position:ccp(100,100)];    
     id alienShrink = [CCScaleBy actionWithDuration:1.0f scale:0.0f];
     id alienFlyAway = [CCSpawn actionOne:alienMoveOut two:alienShrink];
+    [alienShip runAction:alienFlyAway];
+
+    [self performSelector:@selector(moveToMainMenu) withObject:nil afterDelay:1.5f];
     
-    id moveToMainMenu = [CCCallFuncN actionWithTarget:self selector:@selector(moveToMainMenu)];
-    id sequence = [CCSequence actions: alienFlyAway, moveToMainMenu, nil];
-    
-    [alienShip runAction:sequence];
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
 {
 //    [self moveToMainMenu];
-    id callAlienFlyAway = [CCCallFuncN actionWithTarget:self selector:@selector(alienFlyAway)];
-    id callMainMenu = [CCCallFuncN actionWithTarget:self selector:@selector(moveToMainMenu)];
-    [descriptionWindowLayer runAction:[CCSequence actionOne:callAlienFlyAway two:callMainMenu]];
+    [self alienFlyAway];
 
 }
 
@@ -179,6 +182,10 @@
 {
     CCLOG(@"Dealloc IntroAnimationScene: %@", self); 
     
+    [[SimpleAudioEngine sharedEngine] unloadEffect:@"shipGoing.mp3"];
+    [[SimpleAudioEngine sharedEngine] unloadEffect:@"ship.mp3"];
+
+
     [descriptionWindowLayer release];
     
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"introAnimation.plist"];
