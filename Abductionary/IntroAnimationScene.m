@@ -106,7 +106,9 @@
     //screen follows alien
     id delayScreenPansUp = [CCDelayTime actionWithDuration:1.0];
     id screenPansUp = [CCMoveBy actionWithDuration:10.0f position:ccp(0, -232)];    
-    id panScreenSequence = [CCSequence actionOne:delayScreenPansUp two:screenPansUp];
+    id screenFloatCallBack = [CCCallFuncN actionWithTarget:self selector:@selector(screenFloatForever)];
+
+    id panScreenSequence = [CCSequence actions:delayScreenPansUp, screenPansUp, screenFloatCallBack, nil];
     [introBackgroundBottom runAction:[[panScreenSequence copy] autorelease]];
     [introBackgroundTop runAction:panScreenSequence];
     
@@ -132,6 +134,24 @@
     id floatForever = [CCRepeatForever actionWithAction:floatSequence];
     
     [alienShip runAction:floatForever];
+}
+
+-(void) screenFloatForever
+{
+    //screen float
+    float screenFloatOffset = 20.0f;
+    float screenFloatInterval = 2.0f;
+    
+    id floatScreenUp = [CCMoveBy actionWithDuration:screenFloatInterval position:ccp(0, screenFloatOffset)];
+    id floatScreenDown = [CCMoveBy actionWithDuration:screenFloatInterval position:ccp(0, screenFloatOffset*-1)];
+    
+    id floatEaseUp = [CCEaseSineInOut actionWithAction:floatScreenUp];
+    id floatEaseDown = [CCEaseSineInOut actionWithAction:floatScreenDown];
+    
+    id floatSequence = [CCSequence actionOne:floatEaseDown two:floatEaseUp];
+    id floatForever = [CCRepeatForever actionWithAction:floatSequence];
+    
+    [descriptionWindowLayer runAction:floatForever];
 }
 
 -(void) fadeInWords
