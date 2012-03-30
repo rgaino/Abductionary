@@ -14,13 +14,17 @@
     CCSprite *introBackgroundBottom;
     CCSprite *introBackgroundTop;
     CCSprite *alienShip;
-    
-    CCLayer *descriptionWindowLayer;
     CCSprite *descriptionWindow;
     CCSprite *descriptionBreak_1;
     CCSprite *descriptionBreak_2;
     CCSprite *descriptionBreak_3;
     
+    CCLayer *descriptionWindowLayer;
+    CCLayer *alienShipLayer;
+    
+    CCParticleSystemQuad *shipParticles;
+    CCParticleSystemQuad *descriptionWindowParticles;
+
     unsigned int shipSoundID;
 }
 

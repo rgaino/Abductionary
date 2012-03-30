@@ -58,31 +58,46 @@
     [introBackgroundTop setPosition:ccp(0, screenSize.height)];
     [self addChild:introBackgroundTop z:0];
     
+    alienShipLayer = [[CCLayer alloc] init];
+    
     alienShip = [CCSprite spriteWithSpriteFrameName:@"alienShip.png"];
     [alienShip setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2)];
-    [self addChild:alienShip z:1];
+    [alienShipLayer addChild:alienShip z:2];
+
+    shipParticles = [CCParticleSystemQuad particleWithFile:@"alienShipParticles.plist"];
+    [shipParticles setPosition:ccp(alienShip.position.x, alienShip.position.y-30)];
+    [shipParticles setPosVar:ccp(60,20)];
+    [alienShipLayer addChild:shipParticles z:1];
     
-    descriptionWindowLayer = [[CCLayer alloc] init];
     
+    [self addChild:alienShipLayer z:1];
+    
+    
+    descriptionWindowLayer = [[CCLayer alloc] init];    
     
     descriptionWindow = [CCSprite spriteWithSpriteFrameName:@"descriptionWindow.png"];
     [descriptionWindow setPosition:ccp(screenSize.width/2, 0 - screenSize.height/2)];
-    [descriptionWindowLayer addChild:descriptionWindow z:1];
-    
+    [descriptionWindowLayer addChild:descriptionWindow z:2];
+
+    descriptionWindowParticles = [CCParticleSystemQuad particleWithFile:@"alienShipParticles.plist"];
+    [descriptionWindowParticles setPosVar:ccp(140,20)];
+    [descriptionWindowParticles setPosition:ccp(descriptionWindow.position.x, descriptionWindow.position.y-180)];
+    [descriptionWindowLayer addChild:descriptionWindowParticles z:1];
+
     descriptionBreak_1 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_1.png"];
     [descriptionBreak_1 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 + 45)];
-    [descriptionBreak_1 setOpacity:0.0f];
-    [descriptionWindowLayer addChild:descriptionBreak_1 z:1];
+//    [descriptionBreak_1 setOpacity:0.0f];
+    [descriptionWindowLayer addChild:descriptionBreak_1 z:3];
 
     descriptionBreak_2 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_2.png"];
-    [descriptionBreak_2 setOpacity:0.0f];
+//    [descriptionBreak_2 setOpacity:0.0f];
     [descriptionBreak_2 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 - 110)];
-    [descriptionWindowLayer addChild:descriptionBreak_2 z:1];
+    [descriptionWindowLayer addChild:descriptionBreak_2 z:3];
 
     descriptionBreak_3 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_3.png"];
-    [descriptionBreak_3 setOpacity:0.0f];
+//    [descriptionBreak_3 setOpacity:0.0f];
     [descriptionBreak_3 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2+230 - descriptionWindow.contentSize.height/2 - 340)];
-    [descriptionWindowLayer addChild:descriptionBreak_3 z:1];
+    [descriptionWindowLayer addChild:descriptionBreak_3 z:3];
 
     [self addChild:descriptionWindowLayer z:1];
 }
@@ -96,7 +111,7 @@
     id alienMoveUpEaseOut = [CCEaseSineOut actionWithAction:alienMoveUp];
     id alienFloatCallBack = [CCCallFuncN actionWithTarget:self selector:@selector(alienFloatForever)];
     id alienSequence = [CCSequence actionOne:alienMoveUpEaseOut two:alienFloatCallBack];
-    [alienShip runAction:alienSequence];
+    [alienShipLayer runAction:alienSequence];
     
     //description window moves up
     id descriptionWindowMoveUp = [CCMoveBy actionWithDuration:3.5f position:ccp(0, screenSize.height-30)];
@@ -113,9 +128,9 @@
     [introBackgroundTop runAction:panScreenSequence];
     
     //fade-in words
-    id delayFadeInWords = [CCDelayTime actionWithDuration:4.0f];
-    id fadeInWords = [CCCallFuncN actionWithTarget:self selector:@selector(fadeInWords)];
-    [descriptionWindowLayer runAction:[CCSequence actionOne:delayFadeInWords two:fadeInWords]];
+//    id delayFadeInWords = [CCDelayTime actionWithDuration:4.0f];
+//    id fadeInWords = [CCCallFuncN actionWithTarget:self selector:@selector(fadeInWords)];
+//    [descriptionWindowLayer runAction:[CCSequence actionOne:delayFadeInWords two:fadeInWords]];
 }
 
 -(void) alienFloatForever
@@ -133,7 +148,7 @@
     id floatSequence = [CCSequence actionOne:floatEaseDown two:floatEaseUp];
     id floatForever = [CCRepeatForever actionWithAction:floatSequence];
     
-    [alienShip runAction:floatForever];
+    [alienShipLayer runAction:floatForever];
 }
 
 -(void) descriptionWindowFloatForever
@@ -177,12 +192,19 @@
     [[SimpleAudioEngine sharedEngine] stopEffect:shipSoundID];
     [[SimpleAudioEngine sharedEngine] playEffect:@"shipGoing.mp3"];
 
+    [alienShipLayer stopAllActions];
     id alienMoveOut = [CCMoveBy actionWithDuration:1.0f position:ccp(100,100)];    
     id alienShrink = [CCScaleBy actionWithDuration:1.0f scale:0.0f];
     id alienFlyAway = [CCSpawn actionOne:alienMoveOut two:alienShrink];
     [alienShip runAction:alienFlyAway];
+    
+    [shipParticles setVisible:NO];
+    
+//    [descriptionWindowLayer stopAllActions];
+//    id descriptonWindowFallsDown = [CCMoveBy actionWithDuration:20.0f position:ccp(0, -1600)];
+//    [descriptionWindowLayer runAction:descriptonWindowFallsDown];
 
-    [self performSelector:@selector(moveToMainMenu) withObject:nil afterDelay:1.5f];
+    [self performSelector:@selector(moveToMainMenu) withObject:nil afterDelay:1.0f];
     
 }
 
@@ -206,6 +228,7 @@
     [[SimpleAudioEngine sharedEngine] unloadEffect:@"ship.mp3"];
 
 
+    [alienShipLayer release];
     [descriptionWindowLayer release];
     
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"introAnimation.plist"];
