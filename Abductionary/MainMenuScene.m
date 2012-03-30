@@ -200,11 +200,13 @@
     
     musicVolumeKnobUpState = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"volumeKnobUpState.png"]];
     [musicVolumeKnobUpState setType:kCCProgressTimerTypeRadial];
+    [musicVolumeKnobUpState setVisible:NO];
     [musicVolumeKnobUpState setPosition:ccp(winSize.width+277, 453)];
     [musicVolumeKnobUpState setMidpoint:ccp(0.4, 0.4)];
     [self addChild:musicVolumeKnobUpState z:5];
     
     soundFXVolumeKnobUpState = [CCProgressTimer progressWithSprite:[CCSprite spriteWithSpriteFrameName:@"volumeKnobUpState.png"]];
+    [soundFXVolumeKnobUpState setVisible:NO];
     [soundFXVolumeKnobUpState setType:kCCProgressTimerTypeRadial];
     [soundFXVolumeKnobUpState setMidpoint:ccp(0.4, 0.4)];
     [soundFXVolumeKnobUpState setPosition:ccp(winSize.width+745, 453)];
@@ -676,6 +678,8 @@
     id delayPan = [CCDelayTime actionWithDuration:1.0f];
     id panToSettingsAction = [CCMoveTo actionWithDuration:kMainMenuPanSpeed position:ccp(screenSize.width*-1, 0)];
     [self runAction:[CCSequence actions:delayPan, panToSettingsAction, nil]];
+    
+    [self performSelector:@selector(showVolumeKnobsUpstate) withObject:nil afterDelay:3.5f];
 }
 
 -(void) doneSettings
@@ -694,7 +698,23 @@
     
     id panToMainMenuAction = [CCMoveTo actionWithDuration:kMainMenuPanSpeed position:ccp(0, 0)];
     [self runAction:panToMainMenuAction];
+    
+//    [self performSelector:@selector(hideVolumeKnobsUpstate) withObject:nil afterDelay:3.5f];
+    [self hideVolumeKnobsUpstate];
 }
+
+-(void) showVolumeKnobsUpstate 
+{
+    [musicVolumeKnobUpState setVisible:YES];
+    [soundFXVolumeKnobUpState setVisible:YES];
+}
+
+-(void) hideVolumeKnobsUpstate
+{
+    [musicVolumeKnobUpState setVisible:NO];
+    [soundFXVolumeKnobUpState setVisible:NO];
+}
+
 
 -(void) moveToLeaderboards
 {

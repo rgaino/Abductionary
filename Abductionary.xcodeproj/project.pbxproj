@@ -359,6 +359,7 @@
 		53F51EB91523E5E7005F9CD8 /* ship.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB61523E5E7005F9CD8 /* ship.mp3 */; };
 		53F51EBA1523E5E7005F9CD8 /* shipGoing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */; };
 		53F51EBB1523E5E7005F9CD8 /* introMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */; };
+		53F76C22152668D8004D236C /* alienShipParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F76C21152668D8004D236C /* alienShipParticles.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -906,6 +907,7 @@
 		53F51EB61523E5E7005F9CD8 /* ship.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ship.mp3; sourceTree = "<group>"; };
 		53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipGoing.mp3; sourceTree = "<group>"; };
 		53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introMusic.mp3; sourceTree = "<group>"; };
+		53F76C21152668D8004D236C /* alienShipParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = alienShipParticles.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1615,6 +1617,7 @@
 		5398260A151A933100265029 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
+				53F76C21152668D8004D236C /* alienShipParticles.plist */,
 				5398260C151A934F00265029 /* smokeParticles.plist */,
 			);
 			name = Particles;
@@ -2491,6 +2494,7 @@
 				53F51EB91523E5E7005F9CD8 /* ship.mp3 in Resources */,
 				53F51EBA1523E5E7005F9CD8 /* shipGoing.mp3 in Resources */,
 				53F51EBB1523E5E7005F9CD8 /* introMusic.mp3 in Resources */,
+				53F76C22152668D8004D236C /* alienShipParticles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

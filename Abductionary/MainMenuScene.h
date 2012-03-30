@@ -123,6 +123,8 @@
 -(void) loadMediumLeaderboards;
 -(void) loadHardLeaderboards;
 
+-(void) showVolumeKnobsUpstate;
+-(void) hideVolumeKnobsUpstate;
 
 
 //GameCenterManagerDelegate methods
