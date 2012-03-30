@@ -96,9 +96,9 @@
         progressPercentage = [self.mainMenuSoundManager soundFXGain]*100;
     }
     
-    //rounding percentage so it's always increments of 10 degrees
+    //rounding percentage so it's always increments of 4 degrees
     NSLog(@"was %.2f", progressPercentage);
-    progressPercentage = roundf(progressPercentage/10)*10;
+    progressPercentage = roundf(progressPercentage/4)*4;
     NSLog(@"is %.2f", progressPercentage);
     
     [_volumeKnobUpState setPercentage:progressPercentage];
