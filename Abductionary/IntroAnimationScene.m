@@ -99,16 +99,16 @@
     [alienShip runAction:alienSequence];
     
     //description window moves up
-    id descriptionWindowMoveUp = [CCMoveBy actionWithDuration:3.0f position:ccp(0, screenSize.height-30)];
+    id descriptionWindowMoveUp = [CCMoveBy actionWithDuration:3.5f position:ccp(0, screenSize.height-30)];
     id descriptionWindowEaseOut = [CCEaseSineOut actionWithAction:descriptionWindowMoveUp];
-    [descriptionWindowLayer runAction:descriptionWindowEaseOut];
+    id descriptionWindowFloatCallBack = [CCCallFuncN actionWithTarget:self selector:@selector(descriptionWindowFloatForever)];
+    [descriptionWindowLayer runAction:[CCSequence actionOne:descriptionWindowEaseOut two:descriptionWindowFloatCallBack]];
     
     //screen follows alien
     id delayScreenPansUp = [CCDelayTime actionWithDuration:1.0];
-    id screenPansUp = [CCMoveBy actionWithDuration:10.0f position:ccp(0, -232)];    
-    id screenFloatCallBack = [CCCallFuncN actionWithTarget:self selector:@selector(screenFloatForever)];
-
-    id panScreenSequence = [CCSequence actions:delayScreenPansUp, screenPansUp, screenFloatCallBack, nil];
+    id screenPansUp = [CCMoveBy actionWithDuration:20.0f position:ccp(0, -232)];    
+    id screenPansUpEaseOut = [CCEaseSineOut actionWithAction:screenPansUp];
+    id panScreenSequence = [CCSequence actions:delayScreenPansUp, screenPansUpEaseOut, nil];
     [introBackgroundBottom runAction:[[panScreenSequence copy] autorelease]];
     [introBackgroundTop runAction:panScreenSequence];
     
@@ -121,7 +121,7 @@
 -(void) alienFloatForever
 {
     //alien float
-    float alienFloatOffset = 10.0f;
+    float alienFloatOffset = 20.0f;
     float alienFloatInterval = 2.0f;
     
     id floatAlienUp = [CCMoveBy actionWithDuration:alienFloatInterval position:ccp(0, alienFloatOffset)];
@@ -136,7 +136,7 @@
     [alienShip runAction:floatForever];
 }
 
--(void) screenFloatForever
+-(void) descriptionWindowFloatForever
 {
     //screen float
     float screenFloatOffset = 20.0f;

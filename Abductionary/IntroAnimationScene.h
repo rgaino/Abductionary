@@ -30,6 +30,6 @@
 -(void) alienFloatForever;
 -(void) moveToMainMenu;
 -(void) fadeInWords;
--(void) screenFloatForever;
+-(void) descriptionWindowFloatForever;
 
 @end
