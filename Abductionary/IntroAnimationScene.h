@@ -35,5 +35,6 @@
 -(void) moveToMainMenu;
 -(void) fadeInWords;
 -(void) descriptionWindowFloatForever;
+-(void) showTapToToContinue;
 
 @end

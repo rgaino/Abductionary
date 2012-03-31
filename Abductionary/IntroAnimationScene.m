@@ -131,6 +131,10 @@
 //    id delayFadeInWords = [CCDelayTime actionWithDuration:4.0f];
 //    id fadeInWords = [CCCallFuncN actionWithTarget:self selector:@selector(fadeInWords)];
 //    [descriptionWindowLayer runAction:[CCSequence actionOne:delayFadeInWords two:fadeInWords]];
+    
+    
+    
+    [self performSelector:@selector(showTapToToContinue) withObject:nil afterDelay:15.0f];
 }
 
 -(void) alienFloatForever
@@ -206,6 +210,20 @@
 
     [self performSelector:@selector(moveToMainMenu) withObject:nil afterDelay:1.0f];
     
+}
+
+-(void) showTapToToContinue
+{
+    NSLog(@"showing tap to continue");
+    CCLabelTTF *tapToContinue = [CCLabelTTF labelWithString:@"TAP TO CONTINUE" fontName:kCommonFontName fontSize:20];
+    [tapToContinue setColor:ccc3(200, 200, 200)];
+    [tapToContinue setPosition:ccp(900, 30)];
+    [tapToContinue setOpacity:0];
+    [self addChild:tapToContinue z:4];
+    
+    id fadeInMessage = [CCFadeIn actionWithDuration:0.5f];
+    [tapToContinue runAction:fadeInMessage];
+
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
