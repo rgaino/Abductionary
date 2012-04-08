@@ -236,6 +236,7 @@
 		53A5BCFC1517F10900C05FE8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A5BCFB1517F10900C05FE8 /* MediaPlayer.framework */; };
 		53A5BD031517F28800C05FE8 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BD021517F28700C05FE8 /* IntroScene.m */; };
 		53A5BD061517F52700C05FE8 /* abd_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BD051517F52700C05FE8 /* abd_intro.mov */; };
+		53A8D85E153207A100761467 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D85D153207A100761467 /* I18nManager.m */; };
 		53D8192A1517D97800B63DEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D819291517D97800B63DEC /* QuartzCore.framework */; };
 		53D8192C1517D97800B63DEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192B1517D97800B63DEC /* OpenGLES.framework */; };
 		53D8192E1517D97800B63DEC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192D1517D97800B63DEC /* OpenAL.framework */; };
@@ -656,6 +657,8 @@
 		53A5BD011517F23400C05FE8 /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
 		53A5BD021517F28700C05FE8 /* IntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroScene.m; sourceTree = "<group>"; };
 		53A5BD051517F52700C05FE8 /* abd_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = abd_intro.mov; sourceTree = "<group>"; };
+		53A8D85C153207A100761467 /* I18nManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nManager.h; sourceTree = "<group>"; };
+		53A8D85D153207A100761467 /* I18nManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
 		53D819251517D97800B63DEC /* Abductionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abductionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D819291517D97800B63DEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		53D8192B1517D97800B63DEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1140,6 +1143,7 @@
 		535BD5DB15180CDA00F782CD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				53A8D85A1532077200761467 /* i18n Manager */,
 				535BD5D715180CC700F782CD /* Playtomic Manager */,
 				535BD57015180B5300F782CD /* GameCenter Manager */,
 				535BD5681518042900F782CD /* Sound Manager */,
@@ -1843,6 +1847,15 @@
 				53A5BD051517F52700C05FE8 /* abd_intro.mov */,
 			);
 			name = Videos;
+			sourceTree = "<group>";
+		};
+		53A8D85A1532077200761467 /* i18n Manager */ = {
+			isa = PBXGroup;
+			children = (
+				53A8D85C153207A100761467 /* I18nManager.h */,
+				53A8D85D153207A100761467 /* I18nManager.m */,
+			);
+			name = "i18n Manager";
 			sourceTree = "<group>";
 		};
 		53D8191A1517D97800B63DEC = {
@@ -2682,6 +2695,7 @@
 				535BD5F715180D8F00F782CD /* VolumeKnob.m in Sources */,
 				535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */,
 				53F51EA51523ABBC005F9CD8 /* IntroAnimationScene.m in Sources */,
+				53A8D85E153207A100761467 /* I18nManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2727,7 +2741,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "622D654E-C6A8-46E6-A8C0-A42F6448E37B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "622D654E-C6A8-46E6-A8C0-A42F6448E37B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B63EF041-F9D0-473B-8282-5602634F444C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
