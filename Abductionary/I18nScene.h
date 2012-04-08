@@ -9,17 +9,16 @@
 #import "CCLayer.h"
 
 @class CCScene;
-@class CCMenuItemLabel;
+@class CCLabelTTF;
 
-@interface I18nScene : CCLayer {
-
-    CCMenuItemLabel *englishButton;
-    CCMenuItemLabel *spanishButton; 
-    CCMenuItemLabel *portugueseButton;
+@interface I18nScene : CCLayer 
+{
+    CCLabelTTF *messageLabel;
 }
 
 +(CCScene *) scene;
 -(void) setupMenu;
 -(void) switchToLanguage:(id) sender;
+-(void) okButtonPressed;
 
 @end
