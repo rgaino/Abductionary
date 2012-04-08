@@ -325,7 +325,7 @@
     [self addChild:newGameConsoleBottom z:22];
 
     
-	gameModeLabel = [CCLabelTTF labelWithString:@"MEDIUM" dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
+	gameModeLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuMediumString] dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
 	[gameModeLabel setPosition:ccp(510, 180-500)];
     [gameModeLabel setColor:ccc3(255, 255, 255)];
     [self addChild:gameModeLabel z:20];
@@ -333,7 +333,7 @@
     CCMenu *newGameMenu = [CCMenu menuWithItems:nil];
     [newGameMenu setPosition:CGPointZero];
     
-    CCLabelTTF *startLabel = [CCLabelTTF labelWithString:@"START" fontName:kCommonFontName fontSize:20];
+    CCLabelTTF *startLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuStartString] fontName:kCommonFontName fontSize:20];
     startLabelButton = [CCMenuItemLabel itemWithLabel:startLabel target:self selector:@selector(startGame)];
 	[startLabelButton setPosition:ccp(485, 285-500)];
     [startLabelButton setColor:ccc3(232, 98, 51)];
@@ -616,7 +616,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeEasy];
-    [gameModeLabel setString:@"EASY"];
+    [gameModeLabel setString:[i18nManager getMainMenuEasyString]];
  
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchEasy runAction:fadeInAction];
@@ -632,7 +632,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeMedium];
-    [gameModeLabel setString:@"MEDIUM"];
+    [gameModeLabel setString:[i18nManager getMainMenuMediumString]];
 
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchMedium runAction:fadeInAction];
@@ -648,7 +648,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeHard];
-    [gameModeLabel setString:@"HARD"];
+    [gameModeLabel setString:[i18nManager getMainMenuHardString]];
     
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchHard runAction:fadeInAction];

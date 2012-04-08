@@ -27,7 +27,6 @@
 -(NSString*) getMainMenuEasyString;
 -(NSString*) getMainMenuMediumString;
 -(NSString*) getMainMenuHardString;
-
-
+-(NSString*) getMainMenuStartString;
 
 @end

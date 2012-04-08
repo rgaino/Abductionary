@@ -211,5 +211,25 @@ static I18nManager* _i18nManager = nil;
     return @"<ERROR>";
 }
 
+-(NSString*) getMainMenuStartString
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"START";
+            break;
+            
+        case kLanguageSpanish:
+            return @"INICIO";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"INICIAR";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>"; 
+}
 
 @end
