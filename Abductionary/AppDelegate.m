@@ -16,6 +16,7 @@
 #import "PlaytomicManager.h"
 #import "GameCenterManager.h"
 #import "IntroAnimationScene.h"
+#import "I18nScene.h"
 
 @implementation AppController
 
@@ -123,17 +124,25 @@
     //log view on Playtomic
     [[PlaytomicManager getInstance] logView];
 
+    //Reading default language (if none, push language selection screen)
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *userLanguagePrefix = [userDefaults stringForKey:kUserDefaultsLanguage];
+    
+    if(userLanguagePrefix == nil) {
+        [director_ pushScene: [I18nScene scene]]; 
+    } else {
+        [director_ pushScene: [IntroAnimationScene scene]]; 
+    }    
+
+//	[director_ pushScene: [IntroScene scene]]; 
+//	[director_ pushScene: [IntroAnimationScene scene]]; 
+//	[director_ pushScene: [LoadingScene scene]]; 
+//	[director_ pushScene: [GameScene scene]]; 
+
     //////////////////////////////////////////
     ///// END CUSTOM ABDUCTIONARY CODE ///////
     //////////////////////////////////////////
     
-    
-    
-	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-//	[director_ pushScene: [IntroScene scene]]; 
-	[director_ pushScene: [IntroAnimationScene scene]]; 
-//	[director_ pushScene: [LoadingScene scene]]; 
-//	[director_ pushScene: [GameScene scene]]; 
 
 	return YES;
 }
