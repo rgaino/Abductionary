@@ -133,6 +133,7 @@ NSString * const kTenPointLetters = @"qz";
 NSString * const kWildcardString = @"*";
 int const kCheckForRepeteadLettersCount = 10;
 int const kCheckForRepeteadLettersOccurencesAllowed = 3;
+NSString * const kUserDefaultsLanguage = @"kUserDefaultsLanguage";
 
 
 //Game Center

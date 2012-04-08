@@ -162,6 +162,7 @@ extern NSString * const kTenPointLetters;
 extern NSString * const kWildcardString;
 int const kCheckForRepeteadLettersCount;
 int const kCheckForRepeteadLettersOccurencesAllowed;
+extern NSString * const kUserDefaultsLanguage;
 
 
 //Game Center
