@@ -45,7 +45,8 @@ static I18nManager* _i18nManager = nil;
 {
 	self = [super init];
 	if (self != nil) {
-
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        currentLanguage = [userDefaults integerForKey:kUserDefaultsLanguage];
 	}
     
 	return self;
@@ -80,7 +81,133 @@ static I18nManager* _i18nManager = nil;
         default:
             break;
     }
-    
+    return @"<ERROR>";
+}
+
+-(NSString*) getMainMenuNewGameString
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"NEW GAME";
+            break;
+            
+        case kLanguageSpanish:
+            return @"NUEVO JUEGO";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"NOVO JOGO";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";
+}
+
+-(NSString*) getMainMenuSettingsString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"SETTINGS";
+            break;
+            
+        case kLanguageSpanish:
+            return @"CONFIGURACIÓN";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"CONFIGURAÇÃO";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";
+}
+
+-(NSString*) getMainMenuLeaderboardsString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"LEADERBOARDS";
+            break;
+            
+        case kLanguageSpanish:
+            return @"CLASIFICACIONES";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"RANKING";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";
+}
+
+-(NSString*) getMainMenuEasyString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"EASY";
+            break;
+            
+        case kLanguageSpanish:
+            return @"FÁCIL";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"FÁCIL";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";
+}
+
+-(NSString*) getMainMenuMediumString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"MEDIUM";
+            break;
+            
+        case kLanguageSpanish:
+            return @"MEDIO";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"MÉDIO";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";
+}
+
+
+-(NSString*) getMainMenuHardString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"HARD";
+            break;
+            
+        case kLanguageSpanish:
+            return @"DIFÍCIL";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"DIFÍCIL";
+            break;
+            
+        default:
+            break;
+    }
     return @"<ERROR>";
 }
 

@@ -16,6 +16,18 @@
 
 +(I18nManager *) getInstance;
 -(void) setLanguageTo:(kLanguage) languageID;
+
+
 -(NSString*) getLanguageMenuMessageString;
+
+//Main Menu
+-(NSString*) getMainMenuNewGameString;
+-(NSString*) getMainMenuSettingsString;
+-(NSString*) getMainMenuLeaderboardsString;
+-(NSString*) getMainMenuEasyString;
+-(NSString*) getMainMenuMediumString;
+-(NSString*) getMainMenuHardString;
+
+
 
 @end
