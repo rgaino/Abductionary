@@ -18,7 +18,7 @@
 #import "LeaderboardsLayer.h"
 #import "Constants.h"
 #import "VolumeKnob.h"
-
+#import "I18nManager.h"
 
 @implementation MainMenuScene
 
@@ -37,6 +37,8 @@
     {
         mainMenuSoundManager = [[MainMenuSoundManager alloc] init];
         [mainMenuSoundManager playBackgroundMusic];
+        
+        i18nManager = [I18nManager getInstance];
 
         [self setIsTouchEnabled:YES];
         [self setupVariablesAndObjects];
@@ -367,7 +369,7 @@
     CCMenu *mainMenu = [CCMenu menuWithItems:nil];
     [mainMenu setPosition:CGPointZero];
     
-    CCLabelTTF *newGameLabel = [CCLabelTTF labelWithString:@"NEW GAME" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *newGameLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuNewGameString] fontName:kCommonFontName fontSize:30];
     [newGameLabel setColor:ccc3(162, 209, 73)];
     newGameButton = [CCMenuItemLabel itemWithLabel:newGameLabel target:self selector:@selector(animateNewGameConsoleUp)];
     [newGameButton setPosition: ccp(510, 570)];	
@@ -375,7 +377,7 @@
     [newGameButton setOpacity:0];
     [mainMenu addChild:newGameButton];
     
-    CCLabelTTF *settingsLabel = [CCLabelTTF labelWithString:@"SETTINGS" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *settingsLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuSettingsString] fontName:kCommonFontName fontSize:30];
     [settingsLabel setColor:ccc3(136, 117, 82)];
     settingsButton = [CCMenuItemLabel itemWithLabel:settingsLabel target:self selector:@selector(moveToSettings)];
     [settingsButton setPosition: ccp(510, 510)];	
@@ -383,7 +385,7 @@
     [settingsButton setVisible:NO];
     [mainMenu addChild:settingsButton];
     
-    CCLabelTTF *leaderboardsLabel = [CCLabelTTF labelWithString:@"LEADERBOARDS" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *leaderboardsLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuLeaderboardsString] fontName:kCommonFontName fontSize:30];
     [leaderboardsLabel setColor:ccc3(136, 117, 82)];
     leaderboardsButton = [CCMenuItemLabel itemWithLabel:leaderboardsLabel target:self selector:@selector(moveToLeaderboards)];
     [leaderboardsButton setPosition: ccp(510, 445)];	

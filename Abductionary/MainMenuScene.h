@@ -17,10 +17,12 @@
 @class CCProgressTimer;
 @class LeaderboardsLayer;
 @class MainMenuSoundManager;
+@class I18nManager;
 
 @interface MainMenuScene : SuperScene <GameCenterManagerDelegate>
 {
     MainMenuSoundManager *mainMenuSoundManager;
+    I18nManager *i18nManager;
     
     float fadeInButtonDelay;
     float dropLetterAnimatedDelay;
