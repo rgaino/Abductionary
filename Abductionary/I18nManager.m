@@ -7,8 +7,10 @@
 //
 
 #import "I18nManager.h"
+#import "Constants.h"
 
 @implementation I18nManager
+
 
 
 static I18nManager* _i18nManager = nil;
@@ -47,6 +49,39 @@ static I18nManager* _i18nManager = nil;
 	}
     
 	return self;
+}
+
+-(void) setLanguageTo:(kLanguage) languageID
+{
+    currentLanguage = languageID;
+        
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:currentLanguage forKey:kUserDefaultsLanguage];
+}
+
+
+
+//Localized string methods
+-(NSString*) getLanguageMenuMessageString 
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"(you can change the language later\non the SETTINGS menu)";
+            break;
+            
+        case kLanguageSpanish:
+            return @"(puedes cambiar el idioma después\nen el menú CONFIGURACIÓN)";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"(para mudar o idioma acesse\no menu de CONFIGURAÇÃO)";
+            break;
+            
+        default:
+            break;
+    }
+    
+    return @"<ERROR>";
 }
 
 
