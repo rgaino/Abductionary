@@ -237,6 +237,7 @@
 		53A5BD031517F28800C05FE8 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BD021517F28700C05FE8 /* IntroScene.m */; };
 		53A5BD061517F52700C05FE8 /* abd_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BD051517F52700C05FE8 /* abd_intro.mov */; };
 		53A8D85E153207A100761467 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D85D153207A100761467 /* I18nManager.m */; };
+		53A8D862153208BE00761467 /* I18nScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D861153208BE00761467 /* I18nScene.m */; };
 		53D8192A1517D97800B63DEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D819291517D97800B63DEC /* QuartzCore.framework */; };
 		53D8192C1517D97800B63DEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192B1517D97800B63DEC /* OpenGLES.framework */; };
 		53D8192E1517D97800B63DEC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192D1517D97800B63DEC /* OpenAL.framework */; };
@@ -659,6 +660,8 @@
 		53A5BD051517F52700C05FE8 /* abd_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = abd_intro.mov; sourceTree = "<group>"; };
 		53A8D85C153207A100761467 /* I18nManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nManager.h; sourceTree = "<group>"; };
 		53A8D85D153207A100761467 /* I18nManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
+		53A8D860153208BE00761467 /* I18nScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nScene.h; sourceTree = "<group>"; };
+		53A8D861153208BE00761467 /* I18nScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nScene.m; sourceTree = "<group>"; };
 		53D819251517D97800B63DEC /* Abductionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abductionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D819291517D97800B63DEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		53D8192B1517D97800B63DEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1679,6 +1682,7 @@
 		53A5BCA91517E64600C05FE8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				53A8D85F1532088A00761467 /* I18n Screen */,
 				53F51EA21523AB69005F9CD8 /* Intro Scene */,
 				53A5BCFD1517F1F700C05FE8 /* Intro Video */,
 				535BD57515180B7C00F782CD /* Main Menu Scene */,
@@ -1856,6 +1860,15 @@
 				53A8D85D153207A100761467 /* I18nManager.m */,
 			);
 			name = "i18n Manager";
+			sourceTree = "<group>";
+		};
+		53A8D85F1532088A00761467 /* I18n Screen */ = {
+			isa = PBXGroup;
+			children = (
+				53A8D860153208BE00761467 /* I18nScene.h */,
+				53A8D861153208BE00761467 /* I18nScene.m */,
+			);
+			name = "I18n Screen";
 			sourceTree = "<group>";
 		};
 		53D8191A1517D97800B63DEC = {
@@ -2696,6 +2709,7 @@
 				535BD6021518EC3100F782CD /* CDXPropertyModifierAction.m in Sources */,
 				53F51EA51523ABBC005F9CD8 /* IntroAnimationScene.m in Sources */,
 				53A8D85E153207A100761467 /* I18nManager.m in Sources */,
+				53A8D862153208BE00761467 /* I18nScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
