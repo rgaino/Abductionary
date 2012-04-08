@@ -28,5 +28,6 @@
 -(NSString*) getMainMenuMediumString;
 -(NSString*) getMainMenuHardString;
 -(NSString*) getMainMenuStartString;
+-(NSString*) getMainMenuChangeLanguages;
 
 @end

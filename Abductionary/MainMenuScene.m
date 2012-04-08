@@ -19,6 +19,7 @@
 #import "Constants.h"
 #import "VolumeKnob.h"
 #import "I18nManager.h"
+#import "I18nScene.h"
 
 @implementation MainMenuScene
 
@@ -406,6 +407,13 @@
 	[resetTutorialsButton setPosition:ccp(winSize.width+(winSize.width/2), 300)];
 	[mainMenu addChild:resetTutorialsButton];
 
+    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuChangeLanguages] fontName:kCommonFontName fontSize:20];
+    [changeLanguageLabel setColor:ccc3(136, 117, 82)];
+    CCMenuItemLabel *changeLanguageButton = [CCMenuItemLabel itemWithLabel:changeLanguageLabel target:self selector:@selector(pushChangeLanguageScene)];
+    [changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 500)];
+    [mainMenu addChild:changeLanguageButton];
+
+    
     [self addChild:mainMenu z:10];
 }
 
@@ -1028,7 +1036,11 @@
         NSString *tutorialKey = [NSString stringWithFormat:kTutorialDefaultsString, tutorialNumber];
         [prefs setValue:[NSNumber numberWithBool:NO] forKey:tutorialKey];
     }
+}
 
+-(void) pushChangeLanguageScene
+{
+    [[CCDirector sharedDirector] replaceScene:[I18nScene scene]];
 }
 
 - (void) dealloc

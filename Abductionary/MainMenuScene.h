@@ -127,10 +127,7 @@
 
 -(void) showVolumeKnobsUpstate;
 -(void) hideVolumeKnobsUpstate;
+-(void) pushChangeLanguageScene;
 
-
-//GameCenterManagerDelegate methods
-//-(void) didFinishLoadingScores:(NSMutableArray*) leaderboardResults;
-//-(void) errorLoadingScores:(NSError*) error;
 
 @end

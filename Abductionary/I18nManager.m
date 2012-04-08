@@ -232,4 +232,26 @@ static I18nManager* _i18nManager = nil;
     return @"<ERROR>"; 
 }
 
+-(NSString*) getMainMenuChangeLanguages
+{
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"CHANGE LANGUAGE";
+            break;
+            
+        case kLanguageSpanish:
+            return @"CAMBIAR EL IDIOMA";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"MUDAR O IDIOMA";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>"; 
+}
+
+
 @end
