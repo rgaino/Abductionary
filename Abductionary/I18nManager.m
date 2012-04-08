@@ -253,5 +253,30 @@ static I18nManager* _i18nManager = nil;
     return @"<ERROR>"; 
 }
 
+-(NSString*) getScrabbleAlphabet
+{
+    // from http://en.wikipedia.org/wiki/Scrabble_letter_distributions
+    
+    switch (currentLanguage) {
+        case kLanguageEnglish:
+            return @"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz";
+            break;
+            
+        case kLanguageSpanish:
+            return @"aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz";
+            break;
+            
+        case kLanguagePortuguese:
+            return @"aaaaaaaaaaaaaaeeeeeeeeeeeiiiiiiiiiioooooooooossssssssuuuuuuummmmmmrrrrrrtttttdddddlllllccccppppnnnnbbbççffgghhvvjjqxz";
+//            return @"abcdefç";
+            break;
+            
+        default:
+            break;
+    }
+    return @"<ERROR>";    
+}
+
+
 
 @end

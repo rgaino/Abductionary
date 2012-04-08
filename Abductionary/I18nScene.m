@@ -12,6 +12,7 @@
 #import "SimpleAudioEngine.h"
 #import "IntroAnimationScene.h"
 #import "I18nManager.h"
+#import "Dictionary.h"
 
 @implementation I18nScene
 
@@ -103,6 +104,7 @@
 
 -(void) okButtonPressed
 {
+    [[Dictionary getInstance] setup];
     [[CCDirector sharedDirector] replaceScene:[IntroAnimationScene scene]];
 }
 

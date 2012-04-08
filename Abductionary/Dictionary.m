@@ -8,6 +8,7 @@
 
 #import "Dictionary.h"
 #import "Constants.h"
+#import "I18nManager.h"
 
 @implementation Dictionary
 
@@ -47,21 +48,25 @@ static Dictionary *_dictionary = nil;
 -(id) init {
     self = [super init];
 	
-    if ( self ) {
-        [self loadDictionaries];
-		[self loadAlphabet];
-		chosenLetters = [[NSMutableArray alloc] init];
-        [self resetSpelledWords];
-        currentScrambledWord = nil;
-        streakScore = 1;
-        _isStreaking = NO;
-        
-//        [self setDictionaryType:kScrambledWordsAsLetters]; 
-        [self setDictionaryType:kRandomLetters];
+    if ( self ) 
+    {
+        chosenLetters = [[NSMutableArray alloc] init];
+        [self setup];
     }
-
-
     return self;
+}
+
+-(void) setup
+{
+    [self loadDictionaries];
+    [self loadAlphabet];
+	[chosenLetters release];
+    chosenLetters = [[NSMutableArray alloc] init];
+    [self resetSpelledWords];
+    currentScrambledWord = nil;
+    streakScore = 1;
+    _isStreaking = NO;
+    [self setDictionaryType:kRandomLetters];
 }
 
 -(void) resetSpelledWords
@@ -72,138 +77,11 @@ static Dictionary *_dictionary = nil;
         spelledWords = nil;
     }
     spelledWords = [[NSMutableArray alloc] init];
-    
-    
-    
-//    [spelledWords addObject:@"water"];
-//    [spelledWords addObject:@"car"];
-//    [spelledWords addObject:@"bar"];
-//    [spelledWords addObject:@"dog"];
-//    [spelledWords addObject:@"console"];
-//    [spelledWords addObject:@"desk"];
-//    [spelledWords addObject:@"OOOOOOO"];
-//    [spelledWords addObject:@"device"];
-//    [spelledWords addObject:@"screen"];
-//    [spelledWords addObject:@"compute"];
-//    [spelledWords addObject:@"alien"];
-//    [spelledWords addObject:@"human"];
-//    [spelledWords addObject:@"tube"];
-//    [spelledWords addObject:@"movie"];
-//    [spelledWords addObject:@"coffee"];
-//    [spelledWords addObject:@"mug"];
-//    [spelledWords addObject:@"sink"];
-//    [spelledWords addObject:@"ship"];
-//    [spelledWords addObject:@"news"];
-//    [spelledWords addObject:@"perfect"];
-//    [spelledWords addObject:@"damned"];
-//    [spelledWords addObject:@"spell"];
-//    [spelledWords addObject:@"magic"];
-//    [spelledWords addObject:@"teeth"];
-//    [spelledWords addObject:@"gum"];
-//    [spelledWords addObject:@"gun"];
-//    [spelledWords addObject:@"void"];
-//    [spelledWords addObject:@"load"];
-//    [spelledWords addObject:@"button"];
-//    [spelledWords addObject:@"many"];
-//    [spelledWords addObject:@"january"];
-//    [spelledWords addObject:@"month"];
-//    [spelledWords addObject:@"week"];
-//    [spelledWords addObject:@"day"];
-//    [spelledWords addObject:@"months"];
-//    [spelledWords addObject:@"weeks"];
-//    [spelledWords addObject:@"days"];
-//    [spelledWords addObject:@"kart"];
-//    [spelledWords addObject:@"cart"];
-//    [spelledWords addObject:@"tire"];
-//    [spelledWords addObject:@"tea"];
-//    
-//    [spelledWords addObject:@"water"];
-//    [spelledWords addObject:@"car"];
-//    [spelledWords addObject:@"bar"];
-//    [spelledWords addObject:@"dog"];
-//    [spelledWords addObject:@"console"];
-//    [spelledWords addObject:@"desk"];
-//    [spelledWords addObject:@"OOOOOOO"];
-//    [spelledWords addObject:@"device"];
-//    [spelledWords addObject:@"screen"];
-//    [spelledWords addObject:@"compute"];
-//    [spelledWords addObject:@"alien"];
-//    [spelledWords addObject:@"human"];
-//    [spelledWords addObject:@"tube"];
-//    [spelledWords addObject:@"movie"];
-//    [spelledWords addObject:@"coffee"];
-//    [spelledWords addObject:@"mug"];
-//    [spelledWords addObject:@"sink"];
-//    [spelledWords addObject:@"ship"];
-//    [spelledWords addObject:@"news"];
-//    [spelledWords addObject:@"perfect"];
-//    [spelledWords addObject:@"damned"];
-//    [spelledWords addObject:@"spell"];
-//    [spelledWords addObject:@"magic"];
-//    [spelledWords addObject:@"teeth"];
-//    [spelledWords addObject:@"gum"];
-//    [spelledWords addObject:@"gun"];
-//    [spelledWords addObject:@"void"];
-//    [spelledWords addObject:@"load"];
-//    [spelledWords addObject:@"button"];
-//    [spelledWords addObject:@"many"];
-//    [spelledWords addObject:@"january"];
-//    [spelledWords addObject:@"month"];
-//    [spelledWords addObject:@"week"];
-//    [spelledWords addObject:@"day"];
-//    [spelledWords addObject:@"months"];
-//    [spelledWords addObject:@"weeks"];
-//    [spelledWords addObject:@"days"];
-//    [spelledWords addObject:@"kart"];
-//    [spelledWords addObject:@"cart"];
-//    [spelledWords addObject:@"tire"];
-//    [spelledWords addObject:@"tea"];
-//    
-//    [spelledWords addObject:@"water"];
-//    [spelledWords addObject:@"car"];
-//    [spelledWords addObject:@"bar"];
-//    [spelledWords addObject:@"dog"];
-//    [spelledWords addObject:@"console"];
-//    [spelledWords addObject:@"desk"];
-//    [spelledWords addObject:@"OOOOOOO"];
-//    [spelledWords addObject:@"device"];
-//    [spelledWords addObject:@"screen"];
-//    [spelledWords addObject:@"compute"];
-//    [spelledWords addObject:@"alien"];
-//    [spelledWords addObject:@"human"];
-//    [spelledWords addObject:@"tube"];
-//    [spelledWords addObject:@"movie"];
-//    [spelledWords addObject:@"coffee"];
-//    [spelledWords addObject:@"mug"];
-//    [spelledWords addObject:@"sink"];
-//    [spelledWords addObject:@"ship"];
-//    [spelledWords addObject:@"news"];
-//    [spelledWords addObject:@"perfect"];
-//    [spelledWords addObject:@"damned"];
-//    [spelledWords addObject:@"spell"];
-//    [spelledWords addObject:@"magic"];
-//    [spelledWords addObject:@"teeth"];
-//    [spelledWords addObject:@"gum"];
-//    [spelledWords addObject:@"gun"];
-//    [spelledWords addObject:@"void"];
-//    [spelledWords addObject:@"load"];
-//    [spelledWords addObject:@"button"];
-//    [spelledWords addObject:@"many"];
-//    [spelledWords addObject:@"january"];
-//    [spelledWords addObject:@"month"];
-//    [spelledWords addObject:@"week"];
-//    [spelledWords addObject:@"day"];
-//    [spelledWords addObject:@"months"];
-//    [spelledWords addObject:@"weeks"];
-//    [spelledWords addObject:@"days"];
-//    [spelledWords addObject:@"kart"];
-//    [spelledWords addObject:@"cart"];
-//    [spelledWords addObject:@"tire"];
-//    [spelledWords addObject:@"tea"];
 }
 
 -(void) loadAlphabet {	
-	scrabbleAlphabet = [NSString stringWithString:kScrabbleAlphabet];
+    scrabbleAlphabet = [[I18nManager getInstance] getScrabbleAlphabet];
+    NSLog(@"Loaded alphabet is '%@'", scrabbleAlphabet);
 }
 
 -(void) loadDictionaries {
@@ -481,7 +359,6 @@ static Dictionary *_dictionary = nil;
     
     int randomIndex = arc4random() % [words count];
     NSString *word = [words objectAtIndex:randomIndex];
-//    NSLog(@"Random word is %@", word);
     
     return word;
 }
@@ -504,6 +381,8 @@ static Dictionary *_dictionary = nil;
         currentLength--;
     }
     
+    NSLog(@"Random word is '%@', scrambled to '%@'", word, scrambledString);
+
     return scrambledString;
 }
 

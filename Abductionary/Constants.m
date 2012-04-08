@@ -121,7 +121,6 @@ int const kMinimumWordLength = 3;							//min letters allowed in the word spelle
 int const kMaximumWordLength = 7;                         //max letters allowed in the word spelled
 NSString * const kAlphabet = @"abcdefghijklmnopqrstuvwxyz";
 NSString * const kAlphabetScored = @"qzjxkfhvwybcmpdgeaionrtlsu"; //the alphabet from higher points to lower points
-NSString * const kScrabbleAlphabet = @"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz";
 int const kDontRepeatThisManyLastLetters = 1;               //at least this many letters without duplicates
 NSString * const kOnePointLetters = @"eaionrtlsu";
 NSString * const kTwoPointLetters = @"dg";

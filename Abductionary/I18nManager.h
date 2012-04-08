@@ -20,6 +20,8 @@
 
 -(NSString*) getLanguageMenuMessageString;
 
+-(NSString*) getScrabbleAlphabet;
+
 //Main Menu
 -(NSString*) getMainMenuNewGameString;
 -(NSString*) getMainMenuSettingsString;
@@ -29,5 +31,6 @@
 -(NSString*) getMainMenuHardString;
 -(NSString*) getMainMenuStartString;
 -(NSString*) getMainMenuChangeLanguages;
+
 
 @end

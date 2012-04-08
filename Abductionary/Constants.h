@@ -157,7 +157,6 @@ extern int const kMinimumWordLength;
 extern int const kMaximumWordLength;
 extern NSString * const kAlphabet;
 extern NSString * const kAlphabetScored;
-extern NSString * const kScrabbleAlphabet;
 extern int const kDontRepeatThisManyLastLetters;
 extern NSString * const kOnePointLetters;
 extern NSString * const kTwoPointLetters;

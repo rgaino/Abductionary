@@ -31,7 +31,7 @@
 @property (nonatomic, readwrite) BOOL isStreaking;
 
 +(Dictionary *) getInstance;
-
+-(void) setup;
 -(void) loadDictionaries;
 -(void) loadAlphabet;
 -(BOOL) isOnDictionary:(NSString *)word;
