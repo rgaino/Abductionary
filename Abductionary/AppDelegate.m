@@ -126,9 +126,11 @@
 
     //Reading default language (if none, push language selection screen)
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *userLanguagePrefix = [userDefaults stringForKey:kUserDefaultsLanguage];
-    
-    if(userLanguagePrefix == nil) {
+    kLanguage userLanguagePrefix = [userDefaults integerForKey:kUserDefaultsLanguage];
+    NSLog(@"kLanguage is %d",userLanguagePrefix);
+
+    if(userLanguagePrefix == 0) 
+    {
         [director_ pushScene: [I18nScene scene]]; 
     } else {
         [director_ pushScene: [IntroAnimationScene scene]]; 
