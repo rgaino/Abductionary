@@ -259,16 +259,15 @@ static I18nManager* _i18nManager = nil;
     
     switch (currentLanguage) {
         case kLanguageEnglish:
-            return @"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz";
+            return [NSString stringWithUTF8String:"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz"];
             break;
             
         case kLanguageSpanish:
-            return @"aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz";
+            return [NSString stringWithUTF8String:"aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz"];
             break;
             
         case kLanguagePortuguese:
-            return @"aaaaaaaaaaaaaaeeeeeeeeeeeiiiiiiiiiioooooooooossssssssuuuuuuummmmmmrrrrrrtttttdddddlllllccccppppnnnnbbbççffgghhvvjjqxz";
-//            return @"abcdefç";
+            return @"aaaaaaaaaaaaaaeeeeeeeeeeeiiiiiiiiiioooooooooossssssssuuuuuuummmmmmrrrrrrtttttdddddlllllccccppppnnnnbbbççffgghhvvjjqxz";            
             break;
             
         default:
