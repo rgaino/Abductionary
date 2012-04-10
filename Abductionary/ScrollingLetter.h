@@ -20,9 +20,9 @@
 
 @property (nonatomic, readwrite) BOOL scrolling;
 
--(ScrollingLetter *) initWithLetter:(char) letter;
+-(ScrollingLetter *) initWithLetter:(unichar) letter;
 -(ScrollingLetter *) initWithWildcard;
--(ScrollingLetter *) initWithLetter:(char) letter isScrambledWord:(BOOL) scrambledWordFlag indexInWord:(int) indexInWord;
+-(ScrollingLetter *) initWithLetter:(unichar) letter isScrambledWord:(BOOL) scrambledWordFlag indexInWord:(int) indexInWord;
 -(NSString *) getLetter;
 -(void) rememberOriginalPositionOnScrollingArea;
 -(void) returnToOriginalPositionOnScrollingArea:(NSMutableArray *) scrollingLetters;

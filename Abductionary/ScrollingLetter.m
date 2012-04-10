@@ -14,7 +14,7 @@
 @synthesize scrolling = _scrolling;
 
 
--(ScrollingLetter *) initWithLetter:(char) letter {
+-(ScrollingLetter *) initWithLetter:(unichar) letter {
 
     return [self initWithLetter:letter isScrambledWord:NO indexInWord:-1];
 }
@@ -24,7 +24,7 @@
 }
 
 
--(ScrollingLetter *) initWithLetter:(char) letter isScrambledWord:(BOOL) scrambledWordFlag indexInWord:(int) indexInWord 
+-(ScrollingLetter *) initWithLetter:(unichar) letter isScrambledWord:(BOOL) scrambledWordFlag indexInWord:(int) indexInWord 
 {	
 	_letter = letter;
     _indexInWord = indexInWord;
@@ -33,11 +33,11 @@
 	NSString *filename; 
     
     if(_isScrambledWord) {
-        filename = [NSString stringWithFormat:@"%c_special.png", letter];
+        filename = [NSString stringWithFormat:@"%C_special.png", letter];
     } else if(letter == [kWildcardString characterAtIndex:0]) {
         filename = @"wildcard.png";
     } else {
-        filename = [NSString stringWithFormat:@"%c.png", letter];
+        filename = [NSString stringWithFormat:@"%C.png", letter];
     }
     
     
@@ -90,7 +90,7 @@
 
 
 -(NSString *) getLetter {
-	return [NSString stringWithFormat:@"%c", _letter];	
+	return [NSString stringWithFormat:@"%C", _letter];	
 }
 
 -(float) getRandomChuteXPosition {
