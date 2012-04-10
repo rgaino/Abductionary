@@ -693,6 +693,58 @@
                 <key>sourceSize</key>
                 <string>{112,112}</string>
             </dict>
+            <key>ç.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{896,530},{112,106}}</string>
+                <key>offset</key>
+                <string>{0,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{112,106}}</string>
+                <key>sourceSize</key>
+                <string>{112,112}</string>
+            </dict>
+            <key>ç_special.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,636},{112,106}}</string>
+                <key>offset</key>
+                <string>{0,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{112,106}}</string>
+                <key>sourceSize</key>
+                <string>{112,112}</string>
+            </dict>
+            <key>ñ.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{112,636},{112,106}}</string>
+                <key>offset</key>
+                <string>{0,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{112,106}}</string>
+                <key>sourceSize</key>
+                <string>{112,112}</string>
+            </dict>
+            <key>ñ_special.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{224,636},{112,106}}</string>
+                <key>offset</key>
+                <string>{0,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{112,106}}</string>
+                <key>sourceSize</key>
+                <string>{112,112}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -703,7 +755,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:3e48a164bd8d8372a6515b6098926978$</string>
+            <string>$TexturePacker:SmartUpdate:b69b01bea0f8ec62c786be35b1d250e9$</string>
             <key>textureFileName</key>
             <string>alphabet-hd.pvr.ccz</string>
         </dict>
