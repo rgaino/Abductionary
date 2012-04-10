@@ -37,8 +37,8 @@
 -(BOOL) isOnDictionary:(NSString *)word;
 -(BOOL) searchWordInDictionary:(NSString *)word;
 -(int64_t) wordScore:(NSString *)word;
--(char) getNewLetter;
--(char) getRandomLetter;
+-(unichar) getNewLetter;
+-(unichar) getRandomLetter;
 -(int) scrabbleValueForLetter:(unichar) letter;
 -(BOOL) wasWordAlreadySpelled:(NSString *) word;
 -(NSString *) getRandomWordWithLenght:(int) lenght ;
@@ -46,9 +46,9 @@
 -(BOOL) searchWildcardInDictionary:(NSString *) word;
 -(unichar) getLastWildcardCharMatch;
 -(NSString *) getLastWordMatch;
--(BOOL) letterWasRecentlyPicked:(char) newLetter;
--(BOOL) letterRepeatedTooMuch:(char) newLetter;
--(char) getNextLetterOfCurrentScrambledWord;
+-(BOOL) letterWasRecentlyPicked:(unichar) newLetter;
+-(BOOL) letterRepeatedTooMuch:(unichar) newLetter;
+-(unichar) getNextLetterOfCurrentScrambledWord;
 -(NSMutableArray *) spelledWords;
 -(void) resetSpelledWords;
 -(BOOL) isProfanity:(NSString*) word;

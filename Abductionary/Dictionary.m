@@ -159,7 +159,7 @@ static Dictionary *_dictionary = nil;
     
     NSMutableString *searchString = [NSMutableString stringWithString:word];
     
-    [searchString replaceOccurrencesOfString:@"*" withString:@"%c" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [word length]) ];
+    [searchString replaceOccurrencesOfString:@"*" withString:@"%C" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [word length]) ];
     
     for(int i=0; i<[kAlphabetScored length]; i++)
     {
@@ -195,16 +195,16 @@ static Dictionary *_dictionary = nil;
 	return YES;
 }
 
--(char) getRandomLetter {
+-(unichar) getRandomLetter {
 	int randomLetterIndex = arc4random() % [scrabbleAlphabet length];
-	char randomChar = [scrabbleAlphabet characterAtIndex:randomLetterIndex];
+	unichar randomChar = [scrabbleAlphabet characterAtIndex:randomLetterIndex];
 	return randomChar;	
 }
 
 
--(char) getNewLetter {
+-(unichar) getNewLetter {
 
-	char newLetter;
+	unichar newLetter;
 	
     if( [self dictionaryType] == kRandomLetters )
     {
@@ -224,11 +224,11 @@ static Dictionary *_dictionary = nil;
         newLetter = 'x';
     }
     
-    [chosenLetters addObject:[NSString stringWithFormat:@"%c", newLetter]];
+    [chosenLetters addObject:[NSString stringWithFormat:@"%C", newLetter]];
     return newLetter;
 }
 
--(BOOL) letterRepeatedTooMuch:(char) newLetter
+-(BOOL) letterRepeatedTooMuch:(unichar) newLetter
 {
     
     int letterOccurrences = 0;
@@ -241,7 +241,7 @@ static Dictionary *_dictionary = nil;
         
         int index = [chosenLetters count] - 1 - i;
         
-        NSString *newLetterString = [NSString stringWithFormat:@"%c", newLetter];
+        NSString *newLetterString = [NSString stringWithFormat:@"%C", newLetter];
         NSString *pastLetter = [chosenLetters objectAtIndex:index];
         
         if( [newLetterString isEqualToString:pastLetter ] ) {
@@ -256,7 +256,7 @@ static Dictionary *_dictionary = nil;
     return NO;
 }
 
--(BOOL) letterWasRecentlyPicked:(char) newLetter
+-(BOOL) letterWasRecentlyPicked:(unichar) newLetter
 {
     if( [chosenLetters count]<=kDontRepeatThisManyLastLetters ) {
         return NO;
@@ -266,7 +266,7 @@ static Dictionary *_dictionary = nil;
         
         int index = [chosenLetters count] - i;
         
-        NSString *newLetterString = [NSString stringWithFormat:@"%c", newLetter];
+        NSString *newLetterString = [NSString stringWithFormat:@"%C", newLetter];
         NSString *pastLetter = [chosenLetters objectAtIndex:index];
         
         if( [newLetterString isEqualToString:pastLetter ] ) {
@@ -324,7 +324,7 @@ static Dictionary *_dictionary = nil;
 
 -(int) scrabbleValueForLetter:(unichar) charLetter
 {
-    NSString *letter = [NSString stringWithFormat:@"%c", charLetter];
+    NSString *letter = [NSString stringWithFormat:@"%C", charLetter];
     int value=0;
     
     if ([kOnePointLetters rangeOfString:letter].location != NSNotFound)
@@ -386,9 +386,9 @@ static Dictionary *_dictionary = nil;
     return scrambledString;
 }
 
--(char) getNextLetterOfCurrentScrambledWord
+-(unichar) getNextLetterOfCurrentScrambledWord
 {
-    char nextLetter;
+    unichar nextLetter;
     
     if( currentScrambledWord == nil )
     {
