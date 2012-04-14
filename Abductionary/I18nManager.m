@@ -47,7 +47,7 @@ static I18nManager* _i18nManager = nil;
 	if (self != nil) 
     {
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        NSString *currentLanguage = [userDefaults stringForKey:kUserDefaultsLanguage];
+        currentLanguage = [userDefaults stringForKey:kUserDefaultsLanguage];
 
         if(currentLanguage == nil) 
         {
@@ -62,9 +62,10 @@ static I18nManager* _i18nManager = nil;
 
 -(void) setLanguageTo:(NSString*) languageID;
 {        
+    currentLanguage = languageID;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setValue:languageID forKey:kUserDefaultsLanguage];
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:languageID ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:languageID ofType:@"plist" inDirectory:currentLanguage];
     
     if(languageDictionary != nil) 
     {
@@ -73,6 +74,11 @@ static I18nManager* _i18nManager = nil;
     }
     
     languageDictionary = [[NSDictionary dictionaryWithContentsOfFile:plistPath] retain];
+}
+
+-(NSString*) currentLanguage
+{
+    return currentLanguage;
 }
 
 -(NSString *) getLocalizedStringFor:(NSString*) messageString

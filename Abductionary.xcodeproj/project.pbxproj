@@ -60,12 +60,6 @@
 		537AFAEE1519656400B78F19 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAED1519656400B78F19 /* MobileCoreServices.framework */; };
 		537AFAF01519656C00B78F19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */; };
 		537AFAF21519657A00B78F19 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 537AFAF11519657A00B78F19 /* libz.1.2.5.dylib */; };
-		537AFB00151A4B6D00B78F19 /* profanity_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFA151A4B6D00B78F19 /* profanity_list.txt */; };
-		537AFB01151A4B6D00B78F19 /* words_En_03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFB151A4B6D00B78F19 /* words_En_03.txt */; };
-		537AFB02151A4B6D00B78F19 /* words_En_04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFC151A4B6D00B78F19 /* words_En_04.txt */; };
-		537AFB03151A4B6D00B78F19 /* words_En_05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFD151A4B6D00B78F19 /* words_En_05.txt */; };
-		537AFB04151A4B6D00B78F19 /* words_En_06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFE151A4B6D00B78F19 /* words_En_06.txt */; };
-		537AFB05151A4B6D00B78F19 /* words_En_07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 537AFAFF151A4B6D00B78F19 /* words_En_07.txt */; };
 		537AFB16151A4C1000B78F19 /* mainMenuBackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB12151A4C1000B78F19 /* mainMenuBackgroundMusic.mp3 */; };
 		537AFB17151A4C1000B78F19 /* mainMenuClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB13151A4C1000B78F19 /* mainMenuClick.mp3 */; };
 		537AFB18151A4C1000B78F19 /* newGameConsoleIn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 537AFB14151A4C1000B78F19 /* newGameConsoleIn.mp3 */; };
@@ -238,6 +232,7 @@
 		53A5BD061517F52700C05FE8 /* abd_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BD051517F52700C05FE8 /* abd_intro.mov */; };
 		53A8D85E153207A100761467 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D85D153207A100761467 /* I18nManager.m */; };
 		53A8D862153208BE00761467 /* I18nScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D861153208BE00761467 /* I18nScene.m */; };
+		53CB565E1538FBEC003CDB1C /* en in Resources */ = {isa = PBXBuildFile; fileRef = 53CB565D1538FBEC003CDB1C /* en */; };
 		53D8192A1517D97800B63DEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D819291517D97800B63DEC /* QuartzCore.framework */; };
 		53D8192C1517D97800B63DEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192B1517D97800B63DEC /* OpenGLES.framework */; };
 		53D8192E1517D97800B63DEC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192D1517D97800B63DEC /* OpenAL.framework */; };
@@ -367,7 +362,6 @@
 		53F51EBA1523E5E7005F9CD8 /* shipGoing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */; };
 		53F51EBB1523E5E7005F9CD8 /* introMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */; };
 		53F76C22152668D8004D236C /* alienShipParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F76C21152668D8004D236C /* alienShipParticles.plist */; };
-		53F8F1F915375C55007FDA86 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F8F1F815375C55007FDA86 /* en.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -469,12 +463,6 @@
 		537AFAED1519656400B78F19 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		537AFAEF1519656C00B78F19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		537AFAF11519657A00B78F19 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		537AFAFA151A4B6D00B78F19 /* profanity_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = profanity_list.txt; sourceTree = "<group>"; };
-		537AFAFB151A4B6D00B78F19 /* words_En_03.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_En_03.txt; sourceTree = "<group>"; };
-		537AFAFC151A4B6D00B78F19 /* words_En_04.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_En_04.txt; sourceTree = "<group>"; };
-		537AFAFD151A4B6D00B78F19 /* words_En_05.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_En_05.txt; sourceTree = "<group>"; };
-		537AFAFE151A4B6D00B78F19 /* words_En_06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_En_06.txt; sourceTree = "<group>"; };
-		537AFAFF151A4B6D00B78F19 /* words_En_07.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_En_07.txt; sourceTree = "<group>"; };
 		537AFB12151A4C1000B78F19 /* mainMenuBackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainMenuBackgroundMusic.mp3; sourceTree = "<group>"; };
 		537AFB13151A4C1000B78F19 /* mainMenuClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainMenuClick.mp3; sourceTree = "<group>"; };
 		537AFB14151A4C1000B78F19 /* newGameConsoleIn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = newGameConsoleIn.mp3; sourceTree = "<group>"; };
@@ -663,6 +651,7 @@
 		53A8D85D153207A100761467 /* I18nManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
 		53A8D860153208BE00761467 /* I18nScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nScene.h; sourceTree = "<group>"; };
 		53A8D861153208BE00761467 /* I18nScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nScene.m; sourceTree = "<group>"; };
+		53CB565D1538FBEC003CDB1C /* en */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en; path = Languages/en; sourceTree = "<group>"; };
 		53D819251517D97800B63DEC /* Abductionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abductionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D819291517D97800B63DEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		53D8192B1517D97800B63DEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -925,7 +914,6 @@
 		53F51EB71523E5E7005F9CD8 /* shipGoing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipGoing.mp3; sourceTree = "<group>"; };
 		53F51EB81523E5E7005F9CD8 /* introMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introMusic.mp3; sourceTree = "<group>"; };
 		53F76C21152668D8004D236C /* alienShipParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = alienShipParticles.plist; sourceTree = "<group>"; };
-		53F8F1F815375C55007FDA86 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = en.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1239,19 +1227,6 @@
 				53D819431517D97800B63DEC /* fps_images-ipadhd.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		537AFAF9151A4B0800B78F19 /* Dictionaries */ = {
-			isa = PBXGroup;
-			children = (
-				537AFAFA151A4B6D00B78F19 /* profanity_list.txt */,
-				537AFAFB151A4B6D00B78F19 /* words_En_03.txt */,
-				537AFAFC151A4B6D00B78F19 /* words_En_04.txt */,
-				537AFAFD151A4B6D00B78F19 /* words_En_05.txt */,
-				537AFAFE151A4B6D00B78F19 /* words_En_06.txt */,
-				537AFAFF151A4B6D00B78F19 /* words_En_07.txt */,
-			);
-			name = Dictionaries;
 			sourceTree = "<group>";
 		};
 		537AFB0E151A4BC100B78F19 /* Sound FX and Music */ = {
@@ -1932,7 +1907,7 @@
 		53D8193C1517D97800B63DEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				53F8F1F615375C24007FDA86 /* Language Files */,
+				53F8F1F615375C24007FDA86 /* Languages */,
 				53D819511517D97800B63DEC /* Info.plist */,
 				5398260A151A933100265029 /* Particles */,
 				537AFB79151A590D00B78F19 /* Fonts */,
@@ -2305,13 +2280,12 @@
 			name = "Intro Animation";
 			sourceTree = "<group>";
 		};
-		53F8F1F615375C24007FDA86 /* Language Files */ = {
+		53F8F1F615375C24007FDA86 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
-				537AFAF9151A4B0800B78F19 /* Dictionaries */,
-				53F8F1F815375C55007FDA86 /* en.plist */,
+				53CB565D1538FBEC003CDB1C /* en */,
 			);
-			name = "Language Files";
+			name = Languages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2379,12 +2353,6 @@
 				535BD55B1517FD0F00F782CD /* loadingImage.pvr.ccz in Resources */,
 				535BD5BF15180CB900F782CD /* Credits.markdown in Resources */,
 				535BD5C015180CB900F782CD /* JSON LICENSE in Resources */,
-				537AFB00151A4B6D00B78F19 /* profanity_list.txt in Resources */,
-				537AFB01151A4B6D00B78F19 /* words_En_03.txt in Resources */,
-				537AFB02151A4B6D00B78F19 /* words_En_04.txt in Resources */,
-				537AFB03151A4B6D00B78F19 /* words_En_05.txt in Resources */,
-				537AFB04151A4B6D00B78F19 /* words_En_06.txt in Resources */,
-				537AFB05151A4B6D00B78F19 /* words_En_07.txt in Resources */,
 				537AFB16151A4C1000B78F19 /* mainMenuBackgroundMusic.mp3 in Resources */,
 				537AFB17151A4C1000B78F19 /* mainMenuClick.mp3 in Resources */,
 				537AFB18151A4C1000B78F19 /* newGameConsoleIn.mp3 in Resources */,
@@ -2552,7 +2520,7 @@
 				53F3E0E815267F8000C7E685 /* Icon-Small.png in Resources */,
 				53F3E0E915267F8000C7E685 /* iTunesArtwork.png in Resources */,
 				53F3E0EB15267FDA00C7E685 /* Icon-Small@2x.png in Resources */,
-				53F8F1F915375C55007FDA86 /* en.plist in Resources */,
+				53CB565E1538FBEC003CDB1C /* en in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

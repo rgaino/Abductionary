@@ -87,7 +87,7 @@ static Dictionary *_dictionary = nil;
 -(void) loadDictionaries {
     
     profanityList = [[NSArray alloc] initWithArray:
-                      [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"profanity_list" ofType:@"txt"]
+                      [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"profanity_list" ofType:@"txt" inDirectory:[[I18nManager getInstance] currentLanguage]]
                                                  encoding:NSMacOSRomanStringEncoding 
                                                     error:NULL] 
                        componentsSeparatedByString:@","]];
@@ -106,9 +106,9 @@ static Dictionary *_dictionary = nil;
         NSString *fileName = [NSString stringWithFormat:@"words_En_%02d", i];
         
         NSArray *words = [[NSArray alloc] initWithArray:
-                            [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"]
-                                                 encoding:NSMacOSRomanStringEncoding 
-                                                    error:NULL] 
+                                        [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:@"txt" inDirectory:[[I18nManager getInstance] currentLanguage]]
+                                          encoding:NSMacOSRomanStringEncoding 
+                                          error:NULL] 
                        componentsSeparatedByString:@"\n"]];
         
         [dictionaries addObject:words];

@@ -11,6 +11,7 @@
 @interface I18nManager : NSObject
 {
     NSDictionary *languageDictionary;
+    NSString *currentLanguage;
 }
 
 
@@ -18,7 +19,6 @@
 -(void) setLanguageTo:(NSString*) languageID;
 -(NSString*) getLocalizedStringFor:(NSString*) messageString;
 -(NSString*) getScrabbleAlphabet;
-
-
+-(NSString*) currentLanguage;
 
 @end
