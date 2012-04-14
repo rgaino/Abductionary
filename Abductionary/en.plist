@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New Game</key>
+	<string>NEW GAME</string>
+	<key>Settings</key>
+	<string>SETTINGS</string>
+	<key>Leaderboards</key>
+	<string>LEADERBOARDS</string>
+	<key>you can change the language later on the SETTINGS menu</key>
+	<string>(you can change the language later\non the SETTINGS menu)</string>
+	<key>scrabble alphabet</key>
+	<string>eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz</string>
+	<key>Medium</key>
+	<string>MEDIUM</string>
+	<key>Easy</key>
+	<string>EASY</string>
+	<key>Hard</key>
+	<string>HARD</string>
+	<key>Start</key>
+	<string>START</string>
+	<key>Change Language</key>
+	<string>CHANGE LANGUAGE</string>
+</dict>
+</plist>
