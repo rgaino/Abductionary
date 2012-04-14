@@ -10,27 +10,15 @@
 
 @interface I18nManager : NSObject
 {
-    kLanguage currentLanguage;
+    NSDictionary *languageDictionary;
 }
 
 
 +(I18nManager *) getInstance;
--(void) setLanguageTo:(kLanguage) languageID;
-
-
--(NSString*) getLanguageMenuMessageString;
-
+-(void) setLanguageTo:(NSString*) languageID;
+-(NSString*) getLocalizedStringFor:(NSString*) messageString;
 -(NSString*) getScrabbleAlphabet;
 
-//Main Menu
--(NSString*) getMainMenuNewGameString;
--(NSString*) getMainMenuSettingsString;
--(NSString*) getMainMenuLeaderboardsString;
--(NSString*) getMainMenuEasyString;
--(NSString*) getMainMenuMediumString;
--(NSString*) getMainMenuHardString;
--(NSString*) getMainMenuStartString;
--(NSString*) getMainMenuChangeLanguages;
 
 
 @end

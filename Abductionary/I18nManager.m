@@ -44,23 +44,54 @@ static I18nManager* _i18nManager = nil;
 -(id)init 
 {
 	self = [super init];
-	if (self != nil) {
+	if (self != nil) 
+    {
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        currentLanguage = [userDefaults integerForKey:kUserDefaultsLanguage];
+        NSString *currentLanguage = [userDefaults stringForKey:kUserDefaultsLanguage];
+
+        if(currentLanguage == nil) 
+        {
+            currentLanguage = @"en";
+        }
+        
+        [self setLanguageTo:currentLanguage];
 	}
     
 	return self;
 }
 
--(void) setLanguageTo:(kLanguage) languageID
-{
-    currentLanguage = languageID;
-        
+-(void) setLanguageTo:(NSString*) languageID;
+{        
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setInteger:currentLanguage forKey:kUserDefaultsLanguage];
+    [userDefaults setValue:languageID forKey:kUserDefaultsLanguage];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:languageID ofType:@"plist"];
+    
+    if(languageDictionary != nil) 
+    {
+        [languageDictionary release];
+        languageDictionary = nil;
+    }
+    
+    languageDictionary = [[NSDictionary dictionaryWithContentsOfFile:plistPath] retain];
+}
+
+-(NSString *) getLocalizedStringFor:(NSString*) messageString
+{
+    NSString *localizedString = [languageDictionary objectForKey:messageString];
+    
+    if(localizedString == nil) {
+        localizedString = @"<ERROR>";
+    }
+    
+    return localizedString;
 }
 
 
+
+
+
+
+/*
 
 //Localized string methods
 -(NSString*) getLanguageMenuMessageString 
@@ -104,6 +135,8 @@ static I18nManager* _i18nManager = nil;
     }
     return @"<ERROR>";
 }
+
+
 
 -(NSString*) getMainMenuSettingsString 
 {
@@ -252,30 +285,41 @@ static I18nManager* _i18nManager = nil;
     }
     return @"<ERROR>"; 
 }
+ */
+
 
 -(NSString*) getScrabbleAlphabet
 {
     // from http://en.wikipedia.org/wiki/Scrabble_letter_distributions
     
-    switch (currentLanguage) {
-        case kLanguageEnglish:
-            return [NSString stringWithUTF8String:"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz"];
-            break;
-            
-        case kLanguageSpanish:
-            return [NSString stringWithUTF8String:"aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz"];
-            break;
-            
-        case kLanguagePortuguese:
-            return @"aaaaaaaaaaaaaaeeeeeeeeeeeiiiiiiiiiioooooooooossssssssuuuuuuummmmmmrrrrrrtttttdddddlllllccccppppnnnnbbbççffgghhvvjjqxz";            
-            break;
-            
-        default:
-            break;
-    }
-    return @"<ERROR>";    
+    return [self getLocalizedStringFor:@"scrabble alphabet"];
+    
+//    switch (currentLanguage) {
+//        case kLanguageEnglish:
+//            return [NSString stringWithUTF8String:"eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz"];
+//            break;
+//            
+//        case kLanguageSpanish:
+//            return [NSString stringWithUTF8String:"aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz"];
+//            break;
+//            
+//        case kLanguagePortuguese:
+//            return @"aaaaaaaaaaaaaaeeeeeeeeeeeiiiiiiiiiioooooooooossssssssuuuuuuummmmmmrrrrrrtttttdddddlllllccccppppnnnnbbbççffgghhvvjjqxz";            
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    return @"<ERROR>";    
 }
 
 
+-(void) dealloc
+{
+    [languageDictionary release];
+    languageDictionary = nil;
+
+    [super dealloc];
+}
 
 @end
