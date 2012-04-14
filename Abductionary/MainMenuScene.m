@@ -326,7 +326,7 @@
     [self addChild:newGameConsoleBottom z:22];
 
     
-	gameModeLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuMediumString] dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
+	gameModeLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Medium"] dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
 	[gameModeLabel setPosition:ccp(510, 180-500)];
     [gameModeLabel setColor:ccc3(255, 255, 255)];
     [self addChild:gameModeLabel z:20];
@@ -334,7 +334,7 @@
     CCMenu *newGameMenu = [CCMenu menuWithItems:nil];
     [newGameMenu setPosition:CGPointZero];
     
-    CCLabelTTF *startLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuStartString] fontName:kCommonFontName fontSize:20];
+    CCLabelTTF *startLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Start"] fontName:kCommonFontName fontSize:20];
     startLabelButton = [CCMenuItemLabel itemWithLabel:startLabel target:self selector:@selector(startGame)];
 	[startLabelButton setPosition:ccp(485, 285-500)];
     [startLabelButton setColor:ccc3(232, 98, 51)];
@@ -370,7 +370,7 @@
     CCMenu *mainMenu = [CCMenu menuWithItems:nil];
     [mainMenu setPosition:CGPointZero];
     
-    CCLabelTTF *newGameLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuNewGameString] fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *newGameLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"New Game"] fontName:kCommonFontName fontSize:30];
     [newGameLabel setColor:ccc3(162, 209, 73)];
     newGameButton = [CCMenuItemLabel itemWithLabel:newGameLabel target:self selector:@selector(animateNewGameConsoleUp)];
     [newGameButton setPosition: ccp(510, 570)];	
@@ -378,7 +378,7 @@
     [newGameButton setOpacity:0];
     [mainMenu addChild:newGameButton];
     
-    CCLabelTTF *settingsLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuSettingsString] fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *settingsLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Settings"] fontName:kCommonFontName fontSize:30];
     [settingsLabel setColor:ccc3(136, 117, 82)];
     settingsButton = [CCMenuItemLabel itemWithLabel:settingsLabel target:self selector:@selector(moveToSettings)];
     [settingsButton setPosition: ccp(510, 510)];	
@@ -386,7 +386,7 @@
     [settingsButton setVisible:NO];
     [mainMenu addChild:settingsButton];
     
-    CCLabelTTF *leaderboardsLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuLeaderboardsString] fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *leaderboardsLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Leaderboards"] fontName:kCommonFontName fontSize:30];
     [leaderboardsLabel setColor:ccc3(136, 117, 82)];
     leaderboardsButton = [CCMenuItemLabel itemWithLabel:leaderboardsLabel target:self selector:@selector(moveToLeaderboards)];
     [leaderboardsButton setPosition: ccp(510, 445)];	
@@ -407,7 +407,7 @@
 	[resetTutorialsButton setPosition:ccp(winSize.width+(winSize.width/2), 300)];
 	[mainMenu addChild:resetTutorialsButton];
 
-    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[i18nManager getMainMenuChangeLanguages] fontName:kCommonFontName fontSize:20];
+    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Change Language"] fontName:kCommonFontName fontSize:20];
     [changeLanguageLabel setColor:ccc3(136, 117, 82)];
     CCMenuItemLabel *changeLanguageButton = [CCMenuItemLabel itemWithLabel:changeLanguageLabel target:self selector:@selector(pushChangeLanguageScene)];
     [changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 500)];
@@ -624,7 +624,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeEasy];
-    [gameModeLabel setString:[i18nManager getMainMenuEasyString]];
+    [gameModeLabel setString:[i18nManager getLocalizedStringFor:@"Easy"]];
  
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchEasy runAction:fadeInAction];
@@ -640,7 +640,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeMedium];
-    [gameModeLabel setString:[i18nManager getMainMenuMediumString]];
+    [gameModeLabel setString:[i18nManager getLocalizedStringFor:@"Medium"]];
 
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchMedium runAction:fadeInAction];
@@ -656,7 +656,7 @@
 
     AppController *appDelegate = (AppController*)[[UIApplication sharedApplication] delegate];
     [appDelegate setCurrentGameMode:kGameModeHard];
-    [gameModeLabel setString:[i18nManager getMainMenuHardString]];
+    [gameModeLabel setString:[i18nManager getLocalizedStringFor:@"Hard"]];
     
     id fadeInAction = [CCFadeIn actionWithDuration:kGameModeSwitchAnimationDuration];
     [gameModeSwitchHard runAction:fadeInAction];
