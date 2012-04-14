@@ -51,20 +51,20 @@
     [englishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *englishButton = [CCMenuItemLabel itemWithLabel:englishLabel target:self selector:@selector(switchToLanguage:)];
     [englishButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
-    [englishButton setTag:kLanguageEnglish];
+    [englishButton setTag:1];
     [languagesMenu addChild:englishButton];
 
     CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" fontName:kCommonFontName fontSize:30];
     [spanishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *spanishButton = [CCMenuItemLabel itemWithLabel:spanishLabel target:self selector:@selector(switchToLanguage:)];
     [spanishButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
-    [spanishButton setTag:kLanguageSpanish];
+    [spanishButton setTag:2];
     [languagesMenu addChild:spanishButton];
 
     CCLabelTTF *portugueseLabel = [CCLabelTTF labelWithString:@"PORTUGUÊS" fontName:kCommonFontName fontSize:30];
     [portugueseLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *portugueseButton = [CCMenuItemLabel itemWithLabel:portugueseLabel target:self selector:@selector(switchToLanguage:)];
-    [portugueseButton setTag:kLanguagePortuguese];
+    [portugueseButton setTag:3];
     [portugueseButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
     [languagesMenu addChild:portugueseButton];
 
@@ -97,9 +97,25 @@
     CCMenuItemLabel *senderButton = (CCMenuItemLabel*) sender;
     [[SimpleAudioEngine sharedEngine] playEffect:kSoundMainMenuClick];
     
-    [[I18nManager getInstance] setLanguageTo:senderButton.tag];
+    NSString *language;
+    switch(senderButton.tag)
+    {
+        case 1:
+            language = @"en";
+            break;
+        case 2:
+            language = @"es";
+            break;
+        case 3:
+            language = @"pt";
+            break;
+        default:
+            language = @"en";
+    }
     
-    [messageLabel setString:[[I18nManager getInstance] getLanguageMenuMessageString]];    
+    [[I18nManager getInstance] setLanguageTo:language];
+    
+    [messageLabel setString:[[I18nManager getInstance] getLocalizedStringFor:@"you can change the language later on the SETTINGS menu"]];    
 }
 
 -(void) okButtonPressed
