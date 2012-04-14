@@ -41,12 +41,7 @@ typedef enum {
     kLeaderboardTimePeriodToday
 } kLeaderboardTimePeriod;
 
-typedef enum {
-    kLanguageNone = 0,
-    kLanguageEnglish,
-    kLanguageSpanish,
-    kLanguagePortuguese,
-} kLanguage;
+
 
 extern float const kScrollingLettersInitialSpeedEasy;
 extern float const kScrollingLettersInitialSpeedMedium;
