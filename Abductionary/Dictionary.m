@@ -103,7 +103,7 @@ static Dictionary *_dictionary = nil;
     
     for(int i=kMinimumWordLength; i<=kMaximumWordLength; i++) 
     {
-        NSString *fileName = [NSString stringWithFormat:@"words_En_%02d", i];
+        NSString *fileName = [NSString stringWithFormat:@"words_%02d", i];
         
         NSArray *words = [[NSArray alloc] initWithArray:
                                         [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:@"txt" inDirectory:[[I18nManager getInstance] currentLanguage]]
