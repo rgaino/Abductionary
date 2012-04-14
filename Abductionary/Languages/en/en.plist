@@ -22,5 +22,7 @@
 	<string>START</string>
 	<key>Change Language</key>
 	<string>CHANGE LANGUAGE</string>
+	<key>Tap to Continue</key>
+	<string>TAP TO CONTINUE</string>
 </dict>
 </plist>

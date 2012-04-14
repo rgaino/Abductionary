@@ -9,6 +9,7 @@
 #import "IntroAnimationScene.h"
 #import "MainMenuScene.h"
 #import "SimpleAudioEngine.h"
+#import "I18nManager.h"
 
 @implementation IntroAnimationScene
 
@@ -204,18 +205,13 @@
     
     [shipParticles setVisible:NO];
     
-//    [descriptionWindowLayer stopAllActions];
-//    id descriptonWindowFallsDown = [CCMoveBy actionWithDuration:20.0f position:ccp(0, -1600)];
-//    [descriptionWindowLayer runAction:descriptonWindowFallsDown];
-
     [self performSelector:@selector(moveToMainMenu) withObject:nil afterDelay:1.0f];
     
 }
 
 -(void) showTapToToContinue
 {
-    NSLog(@"showing tap to continue");
-    CCLabelTTF *tapToContinue = [CCLabelTTF labelWithString:@"TAP TO CONTINUE" fontName:kCommonFontName fontSize:20];
+    CCLabelTTF *tapToContinue = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Tap to Continue"] fontName:kCommonFontName fontSize:20];
     [tapToContinue setColor:ccc3(200, 200, 200)];
     [tapToContinue setPosition:ccp(900, 30)];
     [tapToContinue setOpacity:0];
