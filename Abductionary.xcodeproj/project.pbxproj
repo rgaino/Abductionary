@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530E3992153DF3E5002A732C /* particleTexture-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 530E398E153DF3E5002A732C /* particleTexture-hd.png */; };
+		530E3993153DF3E5002A732C /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 530E398F153DF3E5002A732C /* particleTexture.png */; };
+		530E3994153DF3E5002A732C /* smokeParticles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530E3990153DF3E5002A732C /* smokeParticles-hd.plist */; };
+		530E3995153DF3E5002A732C /* smokeParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530E3991153DF3E5002A732C /* smokeParticles.plist */; };
 		535BD5581517FD0F00F782CD /* loadingImage-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5541517FD0F00F782CD /* loadingImage-hd.plist */; };
 		535BD5591517FD0F00F782CD /* loadingImage-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */; };
 		535BD55A1517FD0F00F782CD /* loadingImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5561517FD0F00F782CD /* loadingImage.plist */; };
@@ -203,7 +207,6 @@
 		537AFC5A151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC56151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz */; };
 		537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC57151A8F0C00B78F19 /* Tutorial.plist */; };
 		537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */; };
-		5398260D151A934F00265029 /* smokeParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5398260C151A934F00265029 /* smokeParticles.plist */; };
 		53982612151A941800265029 /* AlienWalking-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5398260E151A941800265029 /* AlienWalking-hd.plist */; };
 		53982613151A941800265029 /* AlienWalking-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5398260F151A941800265029 /* AlienWalking-hd.pvr.ccz */; };
 		53982614151A941800265029 /* AlienWalking.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53982610151A941800265029 /* AlienWalking.plist */; };
@@ -365,6 +368,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530E398E153DF3E5002A732C /* particleTexture-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particleTexture-hd.png"; sourceTree = "<group>"; };
+		530E398F153DF3E5002A732C /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
+		530E3990153DF3E5002A732C /* smokeParticles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "smokeParticles-hd.plist"; sourceTree = "<group>"; };
+		530E3991153DF3E5002A732C /* smokeParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smokeParticles.plist; sourceTree = "<group>"; };
 		535BD5541517FD0F00F782CD /* loadingImage-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "loadingImage-hd.plist"; path = "Resources/loadingImage-hd.plist"; sourceTree = "<group>"; };
 		535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "loadingImage-hd.pvr.ccz"; path = "Resources/loadingImage-hd.pvr.ccz"; sourceTree = "<group>"; };
 		535BD5561517FD0F00F782CD /* loadingImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = loadingImage.plist; path = Resources/loadingImage.plist; sourceTree = "<group>"; };
@@ -606,7 +613,6 @@
 		537AFC56151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tutorial-hd.pvr.ccz"; path = "Resources/Tutorial-hd.pvr.ccz"; sourceTree = "<group>"; };
 		537AFC57151A8F0C00B78F19 /* Tutorial.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tutorial.plist; path = Resources/Tutorial.plist; sourceTree = "<group>"; };
 		537AFC58151A8F0C00B78F19 /* Tutorial.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tutorial.pvr.ccz; path = Resources/Tutorial.pvr.ccz; sourceTree = "<group>"; };
-		5398260C151A934F00265029 /* smokeParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smokeParticles.plist; sourceTree = "<group>"; };
 		5398260E151A941800265029 /* AlienWalking-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlienWalking-hd.plist"; path = "Resources/AlienWalking-hd.plist"; sourceTree = "<group>"; };
 		5398260F151A941800265029 /* AlienWalking-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlienWalking-hd.pvr.ccz"; path = "Resources/AlienWalking-hd.pvr.ccz"; sourceTree = "<group>"; };
 		53982610151A941800265029 /* AlienWalking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AlienWalking.plist; path = Resources/AlienWalking.plist; sourceTree = "<group>"; };
@@ -941,6 +947,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530E3996153DF4E0002A732C /* Smoke */ = {
+			isa = PBXGroup;
+			children = (
+				530E398E153DF3E5002A732C /* particleTexture-hd.png */,
+				530E398F153DF3E5002A732C /* particleTexture.png */,
+				530E3990153DF3E5002A732C /* smokeParticles-hd.plist */,
+				530E3991153DF3E5002A732C /* smokeParticles.plist */,
+			);
+			name = Smoke;
+			sourceTree = "<group>";
+		};
+		530E3997153DF4E8002A732C /* Alien Ship */ = {
+			isa = PBXGroup;
+			children = (
+				53F76C21152668D8004D236C /* alienShipParticles.plist */,
+			);
+			name = "Alien Ship";
+			sourceTree = "<group>";
+		};
 		535BD55C151803C000F782CD /* Game Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -1616,8 +1641,8 @@
 		5398260A151A933100265029 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				53F76C21152668D8004D236C /* alienShipParticles.plist */,
-				5398260C151A934F00265029 /* smokeParticles.plist */,
+				530E3997153DF4E8002A732C /* Alien Ship */,
+				530E3996153DF4E0002A732C /* Smoke */,
 			);
 			name = Particles;
 			sourceTree = "<group>";
@@ -2496,7 +2521,6 @@
 				537AFC5A151A8F0C00B78F19 /* Tutorial-hd.pvr.ccz in Resources */,
 				537AFC5B151A8F0C00B78F19 /* Tutorial.plist in Resources */,
 				537AFC5C151A8F0C00B78F19 /* Tutorial.pvr.ccz in Resources */,
-				5398260D151A934F00265029 /* smokeParticles.plist in Resources */,
 				53982612151A941800265029 /* AlienWalking-hd.plist in Resources */,
 				53982613151A941800265029 /* AlienWalking-hd.pvr.ccz in Resources */,
 				53982614151A941800265029 /* AlienWalking.plist in Resources */,
@@ -2521,6 +2545,10 @@
 				53F3E0E915267F8000C7E685 /* iTunesArtwork.png in Resources */,
 				53F3E0EB15267FDA00C7E685 /* Icon-Small@2x.png in Resources */,
 				53CB565E1538FBEC003CDB1C /* en in Resources */,
+				530E3992153DF3E5002A732C /* particleTexture-hd.png in Resources */,
+				530E3993153DF3E5002A732C /* particleTexture.png in Resources */,
+				530E3994153DF3E5002A732C /* smokeParticles-hd.plist in Resources */,
+				530E3995153DF3E5002A732C /* smokeParticles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
