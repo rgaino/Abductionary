@@ -15,9 +15,6 @@
     CCSprite *introBackgroundTop;
     CCSprite *alienShip;
     CCSprite *descriptionWindow;
-    CCSprite *descriptionBreak_1;
-    CCSprite *descriptionBreak_2;
-    CCSprite *descriptionBreak_3;
     
     CCLayer *descriptionWindowLayer;
     CCLayer *alienShipLayer;
@@ -33,7 +30,6 @@
 -(void) kickOffAnimations;
 -(void) alienFloatForever;
 -(void) moveToMainMenu;
--(void) fadeInWords;
 -(void) descriptionWindowFloatForever;
 -(void) showTapToToContinue;
 

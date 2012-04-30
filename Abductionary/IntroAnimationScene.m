@@ -84,22 +84,44 @@
     [descriptionWindowParticles setPosVar:ccp(140,20)];
     [descriptionWindowParticles setPosition:ccp(descriptionWindow.position.x, descriptionWindow.position.y-180)];
     [descriptionWindowLayer addChild:descriptionWindowParticles z:1];
+    
+    
+    float fontSize = 25;
+    CGSize maxSize = { 500, 2000 };
+    NSString *message_1 = [[I18nManager getInstance] getLocalizedStringFor:@"IntroMessageLine1"];
+    NSString *message_2 = [[I18nManager getInstance] getLocalizedStringFor:@"IntroMessageLine2"];
+    
 
-    descriptionBreak_1 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_1.png"];
-    [descriptionBreak_1 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 + 45)];
-//    [descriptionBreak_1 setOpacity:0.0f];
-    [descriptionWindowLayer addChild:descriptionBreak_1 z:3];
+    float shadowOffset = 2.0f;
+    CGSize actualSize_1 = [message_1 sizeWithFont:[UIFont fontWithName:kCommonFontName size:fontSize] constrainedToSize:maxSize lineBreakMode:UILineBreakModeWordWrap];
+    CGSize containerSize_1 = { actualSize_1.width, actualSize_1.height };
+    
+    CCLabelTTF *descriptionMessage_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    [descriptionMessage_1 setColor:ccc3(107, 205, 255)];
+    [descriptionMessage_1 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 + 45)];
+    [descriptionWindowLayer addChild:descriptionMessage_1 z:3];
 
-    descriptionBreak_2 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_2.png"];
-//    [descriptionBreak_2 setOpacity:0.0f];
-    [descriptionBreak_2 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 - 110)];
-    [descriptionWindowLayer addChild:descriptionBreak_2 z:3];
+    CCLabelTTF *shadow_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    [shadow_1 setColor:ccc3(0, 0, 0)];
+    [shadow_1 setOpacity:191];
+    [shadow_1 setPosition:ccp(descriptionMessage_1.position.x+shadowOffset, descriptionMessage_1.position.y-shadowOffset)];
+    [descriptionWindowLayer addChild:shadow_1 z:2];
 
-    descriptionBreak_3 = [CCSprite spriteWithSpriteFrameName:@"descriptionBreak_3.png"];
-//    [descriptionBreak_3 setOpacity:0.0f];
-    [descriptionBreak_3 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2+230 - descriptionWindow.contentSize.height/2 - 340)];
-    [descriptionWindowLayer addChild:descriptionBreak_3 z:3];
 
+    CGSize actualSize_2 = [message_2 sizeWithFont:[UIFont fontWithName:kCommonFontName size:fontSize] constrainedToSize:maxSize lineBreakMode:UILineBreakModeWordWrap];
+    CGSize containerSize_2 = { actualSize_2.width, actualSize_2.height };
+    
+    CCLabelTTF *descriptionMessage_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    [descriptionMessage_2 setColor:ccc3(107, 205, 255)];
+    [descriptionMessage_2 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 - 110)];
+    [descriptionWindowLayer addChild:descriptionMessage_2 z:3];
+                                        
+    CCLabelTTF *shadow_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    [shadow_2 setColor:ccc3(0, 0, 0)];
+    [shadow_2 setOpacity:191];
+    [shadow_2 setPosition:ccp(descriptionMessage_2.position.x+shadowOffset, descriptionMessage_2.position.y-shadowOffset)];
+    [descriptionWindowLayer addChild:shadow_2 z:2];
+    
     [self addChild:descriptionWindowLayer z:1];
 }
 
@@ -127,12 +149,6 @@
     id panScreenSequence = [CCSequence actions:delayScreenPansUp, screenPansUpEaseOut, nil];
     [introBackgroundBottom runAction:[[panScreenSequence copy] autorelease]];
     [introBackgroundTop runAction:panScreenSequence];
-    
-    //fade-in words
-//    id delayFadeInWords = [CCDelayTime actionWithDuration:4.0f];
-//    id fadeInWords = [CCCallFuncN actionWithTarget:self selector:@selector(fadeInWords)];
-//    [descriptionWindowLayer runAction:[CCSequence actionOne:delayFadeInWords two:fadeInWords]];
-    
     
     
     [self performSelector:@selector(showTapToToContinue) withObject:nil afterDelay:15.0f];
@@ -172,23 +188,6 @@
     id floatForever = [CCRepeatForever actionWithAction:floatSequence];
     
     [descriptionWindowLayer runAction:floatForever];
-}
-
--(void) fadeInWords
-{
-    id fadeIn_1 = [CCFadeIn actionWithDuration:0.5f];
-
-    id delay_2 = [CCDelayTime actionWithDuration:2.0];
-    id fadeIn_2 = [CCFadeIn actionWithDuration:0.5f];
-    id sequence_2 = [CCSequence actionOne:delay_2 two:fadeIn_2];
-    
-    id delay_3 = [CCDelayTime actionWithDuration:5.0];
-    id fadeIn_3 = [CCFadeIn actionWithDuration:0.5f];
-    id sequence_3 = [CCSequence actionOne:delay_3 two:fadeIn_3];
-    
-    [descriptionBreak_1 runAction:fadeIn_1];
-    [descriptionBreak_2 runAction:sequence_2];
-    [descriptionBreak_3 runAction:sequence_3];
 }
 
 -(void) alienFlyAway
