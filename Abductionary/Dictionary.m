@@ -88,7 +88,7 @@ static Dictionary *_dictionary = nil;
     
     profanityList = [[NSArray alloc] initWithArray:
                       [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"profanity_list" ofType:@"txt" inDirectory:[[I18nManager getInstance] currentLanguage]]
-                                                 encoding:NSMacOSRomanStringEncoding 
+                                                 encoding:NSUTF8StringEncoding 
                                                     error:NULL] 
                        componentsSeparatedByString:@","]];
 
@@ -107,11 +107,14 @@ static Dictionary *_dictionary = nil;
         
         NSArray *words = [[NSArray alloc] initWithArray:
                                         [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:@"txt" inDirectory:[[I18nManager getInstance] currentLanguage]]
-                                          encoding:NSMacOSRomanStringEncoding 
+                                          encoding:NSUTF8StringEncoding 
                                           error:NULL] 
                        componentsSeparatedByString:@"\n"]];
         
         [dictionaries addObject:words];
+        
+        NSLog(@"Loaded %d words with lenght %d", [words count], i);
+        
         [words release];
     }
     
@@ -145,7 +148,7 @@ static Dictionary *_dictionary = nil;
 -(BOOL) searchWordInDictionary:(NSString *)word; 
 {
     NSArray *words = [dictionaries objectAtIndex:[word length]];
-    
+
 	if( [words indexOfObject:word] != NSNotFound ) 
     {
         lastWordMatch = word;
