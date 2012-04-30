@@ -24,5 +24,9 @@
 	<string>CHANGE LANGUAGE</string>
 	<key>Tap to Continue</key>
 	<string>TAP TO CONTINUE</string>
+	<key>IntroMessageLine1</key>
+	<string>Flutuando em algum lugar perto da Terra, o maligno imperador alienígena conta os dias para iniciar a invasão da Terra. A única coisa entre ele e a escravidão total da raça humana é a barreira do idioma.</string>
+	<key>IntroMessageLine2</key>
+	<string>The newly patented Language Extractor 6000™ is about to take probing to the next level. Making learning the language easy and the total destruction of Earth - imminent.</string>
 </dict>
 </plist>

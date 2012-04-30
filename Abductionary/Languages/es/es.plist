@@ -24,5 +24,9 @@
 	<string>CAMBIAR IDIOMA</string>
 	<key>Tap to Continue</key>
 	<string>TOQUE PARA CONTINUAR</string>
+	<key>IntroMessageLine1</key>
+	<string>Floating somewhere not far from Earth, the evil alien overlord counts down the days until he can begin his invasion of Earth. The only thing standing between him and total human enslavement is the language barrier.</string>
+	<key>IntroMessageLine2</key>
+	<string>The newly patented Language Extractor 6000™ is about to take probing to the next level. Making learning the language easy and the total destruction of Earth - imminent.</string>
 </dict>
 </plist>
