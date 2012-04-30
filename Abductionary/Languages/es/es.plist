@@ -11,7 +11,7 @@
 	<key>you can change the language later on the SETTINGS menu</key>
 	<string>(puedes cambiar el idioma después en el menú CONFIGURACIÓN)</string>
 	<key>scrabble alphabet</key>
-	<string>aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxz</string>
+	<string>aaaaaaaaaaaaeeeeeeeeeeeeoooooooooiiiiiissssssnnnnnllllrrrrruuuuuttttdddddggccccbbmmpphhfvychqjllñrrxzkw</string>
 	<key>Medium</key>
 	<string>MEDIO</string>
 	<key>Easy</key>
@@ -25,8 +25,22 @@
 	<key>Tap to Continue</key>
 	<string>TOQUE PARA CONTINUAR</string>
 	<key>IntroMessageLine1</key>
-	<string>Floating somewhere not far from Earth, the evil alien overlord counts down the days until he can begin his invasion of Earth. The only thing standing between him and total human enslavement is the language barrier.</string>
+	<string>Flotando en algún sitio no muy lejos de la tierra, el maligno emperador extraterrestre contaba los días antes de que empezara su invasión a la tierra. La única cosa que se interponía entre él y la total esclavitud humana era el idioma.</string>
 	<key>IntroMessageLine2</key>
-	<string>The newly patented Language Extractor 6000™ is about to take probing to the next level. Making learning the language easy and the total destruction of Earth - imminent.</string>
+	<string>El recién patentado Language Extractor 6000™ pronto está para tomar sagazmente el siguiente nivel. Haciendo el aprendizaje del idioma fácil y la total destrucción de la tierra inminente.</string>
+	<key>OnePointLetters</key>
+	<string>aeoisnlrut</string>
+	<key>TwoPointLetters</key>
+	<string>dg</string>
+	<key>ThreePointLetters</key>
+	<string>cbmp</string>
+	<key>FourPointLetters</key>
+	<string>hfvy</string>
+	<key>FivePointLetters</key>
+	<string>q</string>
+	<key>EightPointLetters</key>
+	<string>jñx</string>
+	<key>TenPointLetters</key>
+	<string>z</string>
 </dict>
 </plist>
