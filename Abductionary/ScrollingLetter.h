@@ -13,7 +13,7 @@
 
 	BOOL _scrolling;
     BOOL _isScrambledWord;
-	char _letter;
+	unichar _letter;
     int _indexInWord;
 	CGPoint _originalPositionOnScrollingArea;
 }
