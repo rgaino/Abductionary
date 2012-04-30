@@ -28,5 +28,19 @@
 	<string>Flutuando em algum lugar perto da Terra, o maligno imperador alienígena conta os dias para iniciar a invasão da Terra. A única coisa entre ele e a escravidão total da raça humana é a barreira do idioma.</string>
 	<key>IntroMessageLine2</key>
 	<string>O recém-patenteado Extrator de Idiomas 6000™ está pronto para remover a língua Portuguesa de humanos abduzidos. Com ele será simples aprender o idioma humano e a destruição da Terra é iminente.</string>
+	<key>OnePointLetters</key>
+	<string>aeiosumrt</string>
+	<key>TwoPointLetters</key>
+	<string>dlcp</string>
+	<key>ThreePointLetters</key>
+	<string>nbç</string>
+	<key>FourPointLetters</key>
+	<string>fghv</string>
+	<key>FivePointLetters</key>
+	<string>j</string>
+	<key>SixPointLetters</key>
+	<string>q</string>
+	<key>EightPointLetters</key>
+	<string>xz</string>
 </dict>
 </plist>
