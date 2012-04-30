@@ -11,6 +11,8 @@
 		530E3993153DF3E5002A732C /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 530E398F153DF3E5002A732C /* particleTexture.png */; };
 		530E3994153DF3E5002A732C /* smokeParticles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530E3990153DF3E5002A732C /* smokeParticles-hd.plist */; };
 		530E3995153DF3E5002A732C /* smokeParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530E3991153DF3E5002A732C /* smokeParticles.plist */; };
+		531884A3154F0B14004A4C5E /* es in Resources */ = {isa = PBXBuildFile; fileRef = 531884A1154F0B14004A4C5E /* es */; };
+		531884A4154F0B14004A4C5E /* pt in Resources */ = {isa = PBXBuildFile; fileRef = 531884A2154F0B14004A4C5E /* pt */; };
 		535BD5581517FD0F00F782CD /* loadingImage-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5541517FD0F00F782CD /* loadingImage-hd.plist */; };
 		535BD5591517FD0F00F782CD /* loadingImage-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */; };
 		535BD55A1517FD0F00F782CD /* loadingImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535BD5561517FD0F00F782CD /* loadingImage.plist */; };
@@ -372,6 +374,8 @@
 		530E398F153DF3E5002A732C /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
 		530E3990153DF3E5002A732C /* smokeParticles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "smokeParticles-hd.plist"; sourceTree = "<group>"; };
 		530E3991153DF3E5002A732C /* smokeParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smokeParticles.plist; sourceTree = "<group>"; };
+		531884A1154F0B14004A4C5E /* es */ = {isa = PBXFileReference; lastKnownFileType = folder; name = es; path = Languages/es; sourceTree = "<group>"; };
+		531884A2154F0B14004A4C5E /* pt */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pt; path = Languages/pt; sourceTree = "<group>"; };
 		535BD5541517FD0F00F782CD /* loadingImage-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "loadingImage-hd.plist"; path = "Resources/loadingImage-hd.plist"; sourceTree = "<group>"; };
 		535BD5551517FD0F00F782CD /* loadingImage-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "loadingImage-hd.pvr.ccz"; path = "Resources/loadingImage-hd.pvr.ccz"; sourceTree = "<group>"; };
 		535BD5561517FD0F00F782CD /* loadingImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = loadingImage.plist; path = Resources/loadingImage.plist; sourceTree = "<group>"; };
@@ -2308,6 +2312,8 @@
 		53F8F1F615375C24007FDA86 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
+				531884A1154F0B14004A4C5E /* es */,
+				531884A2154F0B14004A4C5E /* pt */,
 				53CB565D1538FBEC003CDB1C /* en */,
 			);
 			name = Languages;
@@ -2549,6 +2555,8 @@
 				530E3993153DF3E5002A732C /* particleTexture.png in Resources */,
 				530E3994153DF3E5002A732C /* smokeParticles-hd.plist in Resources */,
 				530E3995153DF3E5002A732C /* smokeParticles.plist in Resources */,
+				531884A3154F0B14004A4C5E /* es in Resources */,
+				531884A4154F0B14004A4C5E /* pt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
