@@ -60,7 +60,8 @@
     }
 }
 
--(CGPoint) getRandomPosition {
+-(CGPoint) getRandomPosition 
+{
     
     CGSize screenSize = [[CCDirector sharedDirector] winSize];
     float y = screenSize.height + (kLetterHeight/2);
@@ -89,50 +90,33 @@
 }
 
 
--(NSString *) getLetter {
+-(NSString *) getLetter 
+{
 	return [NSString stringWithFormat:@"%C", _letter];	
 }
 
--(float) getRandomChuteXPosition {
+-(float) getRandomChuteXPosition 
+{
     int randomIndex = arc4random() % kLetterChuteCount;
     return kLetterChuteXPositions[ randomIndex ];
 
 }
 
--(void) rememberOriginalPositionOnScrollingArea {
+-(void) rememberOriginalPositionOnScrollingArea 
+{
 	_originalPositionOnScrollingArea = [self position];
 }
 
--(void) returnToOriginalPositionOnScrollingArea:(NSMutableArray *) scrollingLetters {
-    
-    /*
-    // For now, letters will return to their original position as if they kept scrolling,
-    // so there's no risk of overlapping when they return. If that changes, the code
-    // below must be reviewed because it doesn't really work.
-     
-    CGRect originalFrame = CGRectMake(_originalPositionOnScrollingArea.x, _originalPositionOnScrollingArea.y, self.boundingBox.size.width, self.boundingBox.size.height);
-    
-    int i=0;
-    while(	[self hasOverlappingFrame:originalFrame inArray:scrollingLetters] ) {
-		
-        if(i >= kLetterChuteCount) {
-            break;
-        }
-        
-        float startingX = kLetterChuteXPositions[i];
-        _originalPositionOnScrollingArea = CGPointMake(startingX, originalFrame.origin.y);
-        originalFrame = CGRectMake(_originalPositionOnScrollingArea.x, _originalPositionOnScrollingArea.y, self.boundingBox.size.width, self.boundingBox.size.height);
-
-        i++;
-	}
-    */
+-(void) returnToOriginalPositionOnScrollingArea:(NSMutableArray *) scrollingLetters 
+{
 
 	id moveToAction = [CCMoveTo actionWithDuration:kMoveLetterToSlotAnimationSpeed position:_originalPositionOnScrollingArea];
 	[self runAction:moveToAction];
 	[self setScrolling:YES];
 }
 
--(BOOL) hasOverlappingFrame:(CGRect) frame inArray:(NSMutableArray *) scrollingLetters {
+-(BOOL) hasOverlappingFrame:(CGRect) frame inArray:(NSMutableArray *) scrollingLetters 
+{
 	
 	for(ScrollingLetter *scrollingLetter in scrollingLetters) {
 		if( scrollingLetter != self ) {
@@ -148,7 +132,8 @@
 }
 
 
--(BOOL) isScrambledWord {
+-(BOOL) isScrambledWord 
+{
     return _isScrambledWord;
 }
 
