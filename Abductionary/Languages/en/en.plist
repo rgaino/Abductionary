@@ -60,5 +60,7 @@
 	<string>GLOBAL</string>
 	<key>Friends</key>
 	<string>FRIENDS</string>
+	<key>ResetTutorial</key>
+	<string>RESET TUTORIAL</string>
 </dict>
 </plist>

@@ -129,17 +129,18 @@
     NSString *userLanguage = [userDefaults stringForKey:kUserDefaultsLanguage];
     NSLog(@"user language is %@",userLanguage);
 
-    if(userLanguage == nil) 
-    {
-        [director_ pushScene: [I18nScene scene]]; 
-    } else {
-        [director_ pushScene: [IntroAnimationScene scene]]; 
-    }    
+//    if(userLanguage == nil) 
+//    {
+//        [director_ pushScene: [I18nScene scene]]; 
+//    } else {
+//        [director_ pushScene: [IntroAnimationScene scene]]; 
+//    }    
 
 //	[director_ pushScene: [IntroScene scene]]; 
 //	[director_ pushScene: [IntroAnimationScene scene]]; 
 //	[director_ pushScene: [LoadingScene scene]]; 
 //	[director_ pushScene: [GameScene scene]]; 
+	[director_ pushScene: [MainMenuScene scene]]; 
 
     //////////////////////////////////////////
     ///// END CUSTOM ABDUCTIONARY CODE ///////

@@ -341,8 +341,6 @@
     [leaderboardsFriendsMenuItemLabel setColor:ccc3(255, 188, 12)];
 	[leaderboardsMenu addChild:leaderboardsFriendsMenuItemLabel];
 
-
-
     
     
     CCMenuItemImage *leaderboardsDoneButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] target:self selector:@selector(doneLeaderboards)];
@@ -463,6 +461,14 @@
     CCMenuItemImage *resetTutorialsButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialUp.png"] target:self selector:@selector(resetTutorial)];
 	[resetTutorialsButton setPosition:ccp(winSize.width+(winSize.width/2), 300)];
 	[mainMenu addChild:resetTutorialsButton];
+    
+    CCLabelTTF *resetTutorialsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"ResetTutorial"] dimensions:CGSizeMake(107, 18) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
+    CCMenuItemLabel *resetTutorialsMenuItemLabel = [CCMenuItemLabel itemWithLabel:resetTutorialsLabel target:self selector:@selector(loadFriendsLeaderboards)];
+	[resetTutorialsMenuItemLabel setPosition:ccp(winSize.width+(winSize.width/2)+20, 298)];
+    [resetTutorialsMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[mainMenu addChild:resetTutorialsMenuItemLabel];
+
+    
 
     CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Change Language"] fontName:kCommonFontName fontSize:20];
     [changeLanguageLabel setColor:ccc3(136, 117, 82)];
