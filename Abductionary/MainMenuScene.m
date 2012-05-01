@@ -278,34 +278,72 @@
 	[leaderboardsMenu addChild:leaderboardsHardButton];
     
     
-    
+    float labelFontSize = 20;
+
+    //ALL TIME
     leaderboardsAllTimeButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsAllTimeButtonUp.png"] target:self selector:@selector(loadAllTimeLeaderboards)];
 	[leaderboardsAllTimeButton setPosition:ccp(117, 608)];
     [leaderboardsAllTimeButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsAllTimeButton];
     
+    CCLabelTTF *leaderboardsAllTimeLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"AllTime"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCMenuItemLabel *leaderboardsAllTimeMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsAllTimeLabel target:self selector:@selector(loadAllTimeLeaderboards)];
+	[leaderboardsAllTimeMenuItemLabel setPosition:ccp(95, 604)];
+    [leaderboardsAllTimeMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[leaderboardsMenu addChild:leaderboardsAllTimeMenuItemLabel];
     
+    //WEEK
     leaderboardsWeekButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsWeekButtonUp.png"] target:self selector:@selector(loadWeekLeaderboards)];
 	[leaderboardsWeekButton setPosition:ccp(117, 555)];
     [leaderboardsWeekButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsWeekButton];
-    
+
+    CCLabelTTF *leaderboardsWeekLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Week"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCMenuItemLabel *leaderboardsWeekMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsWeekLabel target:self selector:@selector(loadWeekLeaderboards)];
+	[leaderboardsWeekMenuItemLabel setPosition:ccp(95, 553)];
+    [leaderboardsWeekMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[leaderboardsMenu addChild:leaderboardsWeekMenuItemLabel];
+
+    //TODAY
     leaderboardsTodayButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsTodayButtonUp.png"] target:self selector:@selector(loadTodayLeaderboards)];
 	[leaderboardsTodayButton setPosition:ccp(117, 503)];
     [leaderboardsTodayButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsTodayButton];
     
+    CCLabelTTF *leaderboardsTodayLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Today"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCMenuItemLabel *leaderboardsTodayMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsTodayLabel target:self selector:@selector(loadTodayLeaderboards)];
+	[leaderboardsTodayMenuItemLabel setPosition:ccp(95, 503)];
+    [leaderboardsTodayMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[leaderboardsMenu addChild:leaderboardsTodayMenuItemLabel];
     
     
+    //GLOBAL
     leaderboardsGlobalButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsGlobalButtonUp.png"] target:self selector:@selector(loadGlobalLeaderboards)];
 	[leaderboardsGlobalButton setPosition:ccp(900, 607)];
     [leaderboardsGlobalButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsGlobalButton];
     
+    CCLabelTTF *leaderboardsGlobalLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Global"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCMenuItemLabel *leaderboardsGlobalMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsGlobalLabel target:self selector:@selector(loadGlobalLeaderboards)];
+	[leaderboardsGlobalMenuItemLabel setPosition:ccp(922, 604)];
+    [leaderboardsGlobalMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[leaderboardsMenu addChild:leaderboardsGlobalMenuItemLabel];
+
+    //FRIENDS
     leaderboardsFriendsButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsFriendsButtonUp.png"] target:self selector:@selector(loadFriendsLeaderboards)];
 	[leaderboardsFriendsButton setPosition:ccp(900, 557)];
     [leaderboardsFriendsButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsFriendsButton];
+    
+    CCLabelTTF *leaderboardsFriendsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Friends"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCMenuItemLabel *leaderboardsFriendsMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsFriendsLabel target:self selector:@selector(loadFriendsLeaderboards)];
+	[leaderboardsFriendsMenuItemLabel setPosition:ccp(922, 553)];
+    [leaderboardsFriendsMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[leaderboardsMenu addChild:leaderboardsFriendsMenuItemLabel];
+
+
+
+    
     
     CCMenuItemImage *leaderboardsDoneButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsDoneButton.png"] target:self selector:@selector(doneLeaderboards)];
 	[leaderboardsDoneButton setPosition:ccp(924, 292)];

@@ -50,5 +50,15 @@
 	<string>DATA</string>
 	<key>Score</key>
 	<string>PONTOS</string>
+	<key>AllTime</key>
+	<string>SEMPRE</string>
+	<key>Week</key>
+	<string>SEMANA</string>
+	<key>Today</key>
+	<string>HOJE</string>
+	<key>Global</key>
+	<string>GLOBAL</string>
+	<key>Friends</key>
+	<string>AMIGOS</string>
 </dict>
 </plist>
