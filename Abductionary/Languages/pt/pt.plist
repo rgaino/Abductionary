@@ -42,5 +42,13 @@
 	<string>q</string>
 	<key>EightPointLetters</key>
 	<string>xz</string>
+	<key>Rank</key>
+	<string>#</string>
+	<key>Name</key>
+	<string>NOME</string>
+	<key>Date</key>
+	<string>DATA</string>
+	<key>Score</key>
+	<string>PONTOS</string>
 </dict>
 </plist>

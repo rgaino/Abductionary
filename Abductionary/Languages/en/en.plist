@@ -42,5 +42,13 @@
 	<string>jx</string>
 	<key>TenPointLetters</key>
 	<string>qz</string>
+	<key>Rank</key>
+	<string>#</string>
+	<key>Name</key>
+	<string>NAME</string>
+	<key>Date</key>
+	<string>DATE</string>
+	<key>Score</key>
+	<string>SCORE</string>
 </dict>
 </plist>

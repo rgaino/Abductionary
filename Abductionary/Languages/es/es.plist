@@ -15,7 +15,7 @@
 	<key>Medium</key>
 	<string>MEDIO</string>
 	<key>Easy</key>
-	<string>FACIL</string>
+	<string>FÁCIL</string>
 	<key>Hard</key>
 	<string>DIFÍCIL</string>
 	<key>Start</key>
@@ -42,5 +42,13 @@
 	<string>jñx</string>
 	<key>TenPointLetters</key>
 	<string>z</string>
+	<key>Rank</key>
+	<string>#</string>
+	<key>Name</key>
+	<string>NOMBRE</string>
+	<key>Date</key>
+	<string>FECHA</string>
+	<key>Score</key>
+	<string>PUNTOS</string>
 </dict>
 </plist>
