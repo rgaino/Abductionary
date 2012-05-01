@@ -87,7 +87,7 @@
     
     
     float fontSize = 25;
-    CGSize maxSize = { 500, 2000 };
+    CGSize maxSize = { 530, 3000 };
     NSString *message_1 = [[I18nManager getInstance] getLocalizedStringFor:@"IntroMessageLine1"];
     NSString *message_2 = [[I18nManager getInstance] getLocalizedStringFor:@"IntroMessageLine2"];
     
