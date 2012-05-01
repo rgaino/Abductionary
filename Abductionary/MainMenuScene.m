@@ -470,11 +470,17 @@
 
     
 
-    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Change Language"] fontName:kCommonFontName fontSize:20];
-    [changeLanguageLabel setColor:ccc3(136, 117, 82)];
-    CCMenuItemLabel *changeLanguageButton = [CCMenuItemLabel itemWithLabel:changeLanguageLabel target:self selector:@selector(pushChangeLanguageScene)];
-    [changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 500)];
-    [mainMenu addChild:changeLanguageButton];
+    CCMenuItemImage *changeLanguageButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialUp.png"] target:self selector:@selector(pushChangeLanguageScene)];
+	[changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 400)];
+	[mainMenu addChild:changeLanguageButton];
+    
+    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Change Language"] dimensions:CGSizeMake(107, 18) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
+    CCMenuItemLabel *changeLanguageMenuItemLabel = [CCMenuItemLabel itemWithLabel:changeLanguageLabel target:self selector:@selector(pushChangeLanguageScene)];
+	[changeLanguageMenuItemLabel setPosition:ccp(winSize.width+(winSize.width/2)+20, 398)];
+    [changeLanguageMenuItemLabel setColor:ccc3(255, 188, 12)];
+	[mainMenu addChild:changeLanguageMenuItemLabel];
+
+
 
     
     [self addChild:mainMenu z:10];
