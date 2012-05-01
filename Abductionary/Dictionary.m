@@ -330,25 +330,28 @@ static Dictionary *_dictionary = nil;
     NSString *letter = [NSString stringWithFormat:@"%C", charLetter];
     int value=0;
     
-    if ([kOnePointLetters rangeOfString:letter].location != NSNotFound)
+    if ([[[I18nManager getInstance] getLocalizedStringFor:@"OnePointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 1;
-    } else if ([kTwoPointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"TwoPointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 2;
-    } else if ([kThreePointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"ThreePointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 3;
-    } else if ([kFourPointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"FourPointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 4;
-    } else if ([kFivePointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"FivePointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 5;
-    } else if ([kEightPointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"SixPointLetters"] rangeOfString:letter].location != NSNotFound)
+    {
+        value = 6;
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"EightPointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 8;
-    } else if ([kTenPointLetters rangeOfString:letter].location != NSNotFound)
+    } else if ([[[I18nManager getInstance] getLocalizedStringFor:@"TenPointLetters"] rangeOfString:letter].location != NSNotFound)
     {
         value = 10;
     }
