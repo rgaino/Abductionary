@@ -248,7 +248,7 @@
 
     mediumButtonLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Medium"] fontName:kCommonFontName fontSize:40];
     [mediumButtonLabel setPosition:ccp((winSize.width*-1)+509, 346)];
-    [mediumButtonLabel setColor:ccc3(147, 113, 6)];
+    [mediumButtonLabel setColor:ccc3(255, 234, 36)];
     [self addChild:mediumButtonLabel z:12];
 
     hardButtonLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Hard"] fontName:kCommonFontName fontSize:40];
