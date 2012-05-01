@@ -17,6 +17,7 @@
     NSMutableArray *scoreLabels;
 }
 
+-(void) setupTableTitles;
 -(void) setupScoreLabels;
 -(void) updateScoreLabelsWithScores:(NSMutableArray*) leaderboardResults;
 

@@ -11,6 +11,7 @@
 #import "GameCenterPlayerScore.h"
 #import "NSDate+Helper.h"
 #import "NSString+NSString_Helper.h"
+#import "I18nManager.h"
 
 @implementation LeaderboardsLayer
 
@@ -18,9 +19,36 @@
 {
     if( (self=[super initWithColor:ccc4(255,100,100,0) width:550 height:290 ] )) 
     {
+        [self setupTableTitles];
         [self setupScoreLabels];
     }
     return self;
+}
+
+-(void) setupTableTitles
+{
+    float y = 295;
+    float fontSize = 23;
+ 
+    CCLabelTTF *rankingLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Rank"] dimensions:CGSizeMake(30, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    [rankingLabel setPosition:ccp(55, y)];
+    [rankingLabel setColor:ccc3(25, 153, 173)];
+    [self addChild:rankingLabel];
+
+    CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Name"] dimensions:CGSizeMake(150, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    [nameLabel setPosition:ccp(205, y)];
+    [nameLabel setColor:ccc3(25, 153, 173)];
+    [self addChild:nameLabel];
+
+    CCLabelTTF *dateLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Date"] dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    [dateLabel setPosition:ccp(350, y)];
+    [dateLabel setColor:ccc3(25, 153, 173)];
+    [self addChild:dateLabel];
+
+    CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Score"] dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:fontSize];
+    [scoreLabel setPosition:ccp(470, y)];
+    [scoreLabel setColor:ccc3(25, 153, 173)];
+    [self addChild:scoreLabel];
 }
 
 -(void) setupScoreLabels
