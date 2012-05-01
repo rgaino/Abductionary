@@ -69,6 +69,10 @@
     
     LeaderboardsLayer *leaderboardsLayer;
     
+    CCLabelTTF *easyButtonLabel;
+    CCLabelTTF *mediumButtonLabel;
+    CCLabelTTF *hardButtonLabel;
+    
     CCMenuItemImage *leaderboardsEasyButton; 
     CCMenuItemImage *leaderboardsMediumButton; 
     CCMenuItemImage *leaderboardsHardButton; 

@@ -237,16 +237,35 @@
     [soundFXKnobLabel setPosition:ccp( winSize.width + 747 , 634)];
     [self addChild:soundFXKnobLabel];
     
+    
+    
+    
+    
+    easyButtonLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Easy"] fontName:kCommonFontName fontSize:40];
+    [easyButtonLabel setPosition:ccp((winSize.width*-1)+326, 346)];
+    [easyButtonLabel setColor:ccc3(73, 136, 0)];
+    [self addChild:easyButtonLabel z:12];
 
+    mediumButtonLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Medium"] fontName:kCommonFontName fontSize:40];
+    [mediumButtonLabel setPosition:ccp((winSize.width*-1)+509, 346)];
+    [mediumButtonLabel setColor:ccc3(147, 113, 6)];
+    [self addChild:mediumButtonLabel z:12];
+
+    hardButtonLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Hard"] fontName:kCommonFontName fontSize:40];
+    [hardButtonLabel setPosition:ccp((winSize.width*-1)+690, 346)];
+    [hardButtonLabel setColor:ccc3(146, 23, 14)];
+    [self addChild:hardButtonLabel z:12];
+
+    
     
     CCMenu *leaderboardsMenu = [CCMenu menuWithItems:nil];
     [leaderboardsMenu setPosition:ccp(winSize.width*-1,0)];
-    
     
     leaderboardsEasyButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsEasyButtonUp.png"] target:self selector:@selector(loadEasyLeaderboards)];
 	[leaderboardsEasyButton setPosition:ccp(326, 346)];
     [leaderboardsEasyButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsEasyButton];
+    
     
     leaderboardsMediumButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"leaderboardsMediumButtonUp.png"] target:self selector:@selector(loadMediumLeaderboards)];
 	[leaderboardsMediumButton setPosition:ccp(509, 346)];
@@ -920,6 +939,10 @@
 -(void) loadEasyLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
+    
+    [easyButtonLabel setColor:ccc3(150, 248, 38)];
+    [mediumButtonLabel setColor:ccc3(147, 113, 6)];
+    [hardButtonLabel setColor:ccc3(146, 23, 14)];
 
     [leaderboardsEasyButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsMediumButton opacity] > 0) { [leaderboardsMediumButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -933,6 +956,10 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
+    [easyButtonLabel setColor:ccc3(73, 136, 0)];
+    [mediumButtonLabel setColor:ccc3(255, 234, 36)];
+    [hardButtonLabel setColor:ccc3(146, 23, 14)];
+
     [leaderboardsMediumButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsEasyButton opacity] > 0) { [leaderboardsEasyButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
     if([leaderboardsHardButton opacity] > 0) { [leaderboardsHardButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -944,6 +971,10 @@
 -(void) loadHardLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
+
+    [easyButtonLabel setColor:ccc3(73, 136, 0)];
+    [mediumButtonLabel setColor:ccc3(147, 113, 6)];
+    [hardButtonLabel setColor:ccc3(	249, 86, 62)];
 
     [leaderboardsHardButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsEasyButton opacity] > 0) { [leaderboardsEasyButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
