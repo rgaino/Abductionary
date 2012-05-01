@@ -62,5 +62,9 @@
 	<string>FRIENDS</string>
 	<key>ResetTutorial</key>
 	<string>RESET TUTORIAL</string>
+	<key>Music</key>
+	<string>MUSIC</string>
+	<key>Sound FX</key>
+	<string>SOUND FX</string>
 </dict>
 </plist>

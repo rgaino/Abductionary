@@ -227,12 +227,12 @@
     [self addChild:soundFXVolumeKnob z:5];
     
     
-    CCLabelTTF *musicKnobLabel = [CCLabelTTF labelWithString:@"MUSIC" fontName:kCommonFontName fontSize:30];		
+    CCLabelTTF *musicKnobLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Music"] fontName:kCommonFontName fontSize:30];		
     [musicKnobLabel setColor:ccc3(162, 209, 73)];
     [musicKnobLabel setPosition:ccp( winSize.width + 275 , 634)];
     [self addChild:musicKnobLabel];
     
-    CCLabelTTF *soundFXKnobLabel = [CCLabelTTF labelWithString:@"SOUND FX" fontName:kCommonFontName fontSize:30];		
+    CCLabelTTF *soundFXKnobLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Sound FX"] fontName:kCommonFontName fontSize:30];		
     [soundFXKnobLabel setColor:ccc3(162, 209, 73)];
     [soundFXKnobLabel setPosition:ccp( winSize.width + 747 , 634)];
     [self addChild:soundFXKnobLabel];
