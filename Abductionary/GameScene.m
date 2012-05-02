@@ -1117,10 +1117,8 @@
     switch (tapCount) {
         case 0:
         case 1:
+            [self tapToReturnLetter:[NSValue valueWithCGPoint:touchLocation]];
             [self placeDraggingScrollingLetterInSlot];
-            break;
-        case 2:
-            [self doubleTapToReturnLetter:[NSValue valueWithCGPoint:touchLocation]];
             break;
         default:
             break;
@@ -1183,11 +1181,13 @@
 
 
 
--(void) doubleTapToReturnLetter:(NSValue*) touchPoint
+-(void) tapToReturnLetter:(NSValue*) touchPoint
 {
+    if( draggingScrollingLetter != nil ) { return; }
+    
     CGPoint point = [touchPoint CGPointValue];	
     
-    if(point.x<=kScrollAreaWidth)
+    if(point.x>=kScrollAreaWidth)
     {
         return;
     }

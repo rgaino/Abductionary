@@ -120,7 +120,7 @@
 -(void) discardHuman;
 -(void) bringNewHuman;
 -(void) startNextLevel;
--(void) doubleTapToReturnLetter:(NSValue*) touchPoint;
+-(void) tapToReturnLetter:(NSValue*) touchPoint;
 -(void) placeDraggingScrollingLetterInSlot;
 -(void) dragLetterInSlot:(UITouch*) touch;
 -(BOOL) isPaused;
