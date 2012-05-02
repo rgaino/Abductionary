@@ -24,6 +24,7 @@
 #import "HumanSprite.h"
 #import "TubeDoorSprite.h"
 #import "TutorialLayer.h"
+#import "I18nManager.h"
 
 @implementation GameScene
 
@@ -68,6 +69,8 @@
         [self updateTemperatureGauge];
         
         [self performSelector:@selector(showTutorialNumber:) withObject:[NSNumber numberWithInt:1] afterDelay:2.5f];
+        
+        [self performSelector:@selector(gameOver) withObject:nil afterDelay:1.0f];
 	}
 	return self;
 }
@@ -329,11 +332,40 @@
     [gameOverMainMenuButton setAnchorPoint:ccp(0, 0)];
     [gameOverMainMenuButton setPosition:ccp(306, -3160)];
     [gameOverMenu addChild:gameOverMainMenuButton];
+
+    
+    CCLabelTTF *gameOverMainMenuLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu Line 1"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
+    CCMenuItemLabel *gameOverMainMenuItemLabel = [CCMenuItemLabel itemWithLabel:gameOverMainMenuLabel target:self selector:@selector(mainMenuButtonPressed)];
+    [gameOverMainMenuItemLabel setAnchorPoint:ccp(0, 0)];
+	[gameOverMainMenuItemLabel setPosition:ccp(302, -3090)];
+    [gameOverMainMenuItemLabel setRotation:-2.0f];
+    [gameOverMainMenuItemLabel setColor:ccc3(0, 0, 0)];
+	[gameOverMenu addChild:gameOverMainMenuItemLabel];
+
+    CCLabelTTF *gameOverMainMenuLabel2 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu Line 2"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
+    CCMenuItemLabel *gameOverMainMenuItemLabel2 = [CCMenuItemLabel itemWithLabel:gameOverMainMenuLabel2 target:self selector:@selector(mainMenuButtonPressed)];
+    [gameOverMainMenuItemLabel2 setAnchorPoint:ccp(0, 0)];
+	[gameOverMainMenuItemLabel2 setPosition:ccp(302, -3135)];
+    [gameOverMainMenuItemLabel2 setRotation:-2.0f];
+    [gameOverMainMenuItemLabel2 setColor:ccc3(0, 0, 0)];
+	[gameOverMenu addChild:gameOverMainMenuItemLabel2];
+
+    
     
     CCMenuItemImage *gameOverReplayButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] target:self selector:@selector(replayGame)];	
     [gameOverReplayButton setAnchorPoint:ccp(0, 0)];
     [gameOverReplayButton setPosition:ccp(150, -2930)];
     [gameOverMenu addChild:gameOverReplayButton];
+    
+    CCLabelTTF *gameOverReplayLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Replay?"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
+    CCMenuItemLabel *gameOverReplayItemLabel = [CCMenuItemLabel itemWithLabel:gameOverReplayLabel target:self selector:@selector(replayGame)];
+    [gameOverReplayItemLabel setAnchorPoint:ccp(0, 0)];
+	[gameOverReplayItemLabel setPosition:ccp(212, -2924)];
+    [gameOverReplayItemLabel setRotation:-2.5f];
+    [gameOverReplayItemLabel setColor:ccc3(255, 250, 174)];
+	[gameOverMenu addChild:gameOverReplayItemLabel];
+
+    
     
     [self addChild:gameOverMenu z:1];
     
@@ -346,6 +378,27 @@
 	[self addChild:gameOverScoreLabel z:2];
     [gameOverScoreLabel setString:[NSString stringWithFormat:@"%lld", score]];
     
+    CCLabelTTF *gameOverScoreTitleLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Score"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
+    [gameOverScoreTitleLabel setAnchorPoint:ccp(0, 0)];
+	[gameOverScoreTitleLabel setPosition:ccp(60, -3090)];
+    [gameOverScoreTitleLabel setRotation:-2.0f];
+    [gameOverScoreTitleLabel setColor:ccc3(0, 0, 0)];
+	[self addChild:gameOverScoreTitleLabel];
+
+
+    CCLabelTTF *gameOverPanelLabel_1 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Game Over 1"] dimensions:CGSizeMake(300, 250) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:110];
+    [gameOverPanelLabel_1 setAnchorPoint:ccp(0, 0)];
+	[gameOverPanelLabel_1 setPosition:ccp(160, -2745)];
+    [gameOverPanelLabel_1 setRotation:-3.0f];
+    [gameOverPanelLabel_1 setColor:ccc3(0, 0, 0)];
+	[self addChild:gameOverPanelLabel_1];
+
+    CCLabelTTF *gameOverPanelLabel_2 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Game Over 2"] dimensions:CGSizeMake(300, 250) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:110];
+    [gameOverPanelLabel_2 setAnchorPoint:ccp(0, 0)];
+	[gameOverPanelLabel_2 setPosition:ccp(160, -2840)];
+    [gameOverPanelLabel_2 setRotation:-3.0f];
+    [gameOverPanelLabel_2 setColor:ccc3(0, 0, 0)];
+	[self addChild:gameOverPanelLabel_2];
 }
 
 -(void) setupButtons 
@@ -955,7 +1008,7 @@
     [humanSprite runDropAndFallAnimation];
     
     id delayPan = [CCDelayTime actionWithDuration:1.5f];
-    id panGameOver = [CCMoveTo actionWithDuration:kPanGameOverAnimationDuration position:ccp(0, (screenSize.height*5)-256)];
+    id panGameOver = [CCMoveTo actionWithDuration:kPanGameOverAnimationDuration position:ccp(0, (screenSize.height*1.5)-256)];  ///ERA *5
     
     [self runAction:[CCSequence actions:delayPan, panGameOver, nil]];   
     

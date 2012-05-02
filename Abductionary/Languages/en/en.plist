@@ -66,5 +66,15 @@
 	<string>MUSIC</string>
 	<key>Sound FX</key>
 	<string>SOUND FX</string>
+	<key>Main Menu Line 1</key>
+	<string>MAIN</string>
+	<key>Main Menu Line 2</key>
+	<string>MENU</string>
+	<key>Replay?</key>
+	<string>REPLAY?</string>
+	<key>Game Over 1</key>
+	<string>GAME</string>
+	<key>Game Over 2</key>
+	<string>OVER</string>
 </dict>
 </plist>
