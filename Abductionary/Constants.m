@@ -10,11 +10,11 @@
 
 @implementation Constants
 
-float const kScrollingLettersInitialSpeedEasy = 30;
+float const kScrollingLettersInitialSpeedEasy = 20;
 float const kScrollingLettersInitialSpeedMedium = 40;
 float const kScrollingLettersInitialSpeedHard = 60;
 
-float const kScrollingLettersSpeedIncreaseTick = 12.0f;      //increase letter speed this much every level
+float const kScrollingLettersSpeedIncreaseTick = 10.0f;      //increase letter speed this much every level
 
 float const kLetterWidth = 55;								//width of the letter image
 float const kLetterHeight = 55;								//height of the letter image
@@ -67,14 +67,14 @@ float const kScorePointsLabelAnimationOffset = 40;
 //Power Ups
 int const kScrambledWordLength = 5;
 float const kScrollingLettersSpeedModifierPowerUp = 0.4f;
-float const kScrollingLettersSpeedModifierPowerUpDuration = 15.0f;
+float const kScrollingLettersSpeedModifierPowerUpDuration = 20.0f;
 float const kStreakPowerUpDuration = 20.0f;
 float const kPowerUpButtonsX = 104;
 float const kPowerUpButtonsFirstY = 313;
 float const kPowerUpButtonsYSpacing = 52;
 float const kPowerUpsCount = 5;                               //how many power ups we have
 float const kPowerUpBarAnimationDuration = 0.2f;
-int const kTemperatureGaugeBeginOverheat = 25;
+int const kTemperatureGaugeBeginOverheat = 21;
 
 
 //Game Over
