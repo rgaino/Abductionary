@@ -68,8 +68,8 @@ float const kScorePointsLabelAnimationOffset = 40;
 //Power Ups
 int const kScrambledWordLength = 5;
 float const kScrollingLettersSpeedModifierPowerUp = 0.4f;
-float const kScrollingLettersSpeedModifierPowerUpDuration = 10.0f;
-float const kStreakPowerUpDuration = 15.0f;
+float const kScrollingLettersSpeedModifierPowerUpDuration = 15.0f;
+float const kStreakPowerUpDuration = 20.0f;
 float const kPowerUpButtonsX = 104;
 float const kPowerUpButtonsFirstY = 313;
 float const kPowerUpButtonsYSpacing = 52;
