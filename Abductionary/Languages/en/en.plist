@@ -76,5 +76,7 @@
 	<string>GAME</string>
 	<key>Game Over 2</key>
 	<string>OVER</string>
+	<key>Skip Tutorial</key>
+	<string>SKIP TUTORIAL</string>
 </dict>
 </plist>

@@ -9,6 +9,7 @@
 #import "TutorialLayer.h"
 #import "Constants.h"
 #import "SimpleAudioEngine.h"
+#import "I18nManager.h"
 
 @implementation TutorialLayer
 
@@ -38,22 +39,36 @@
 
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    NSString *tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_%d-%d.png",tutorialNumber,part];
+    NSString *tutorialMessageFileName;
+    
+    if( tutorialNumber < 4 ) 
+    {
+        tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_1.png"];
+    } else {
+        tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_%d-%d.png",tutorialNumber,part];
+    }
     NSLog(@"Tutorial file is %@", tutorialMessageFileName);
+    
     tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
     [tutorialMessage setPosition:ccp( winSize.width/2, winSize.height/2)];
     [self addChild:tutorialMessage z:2];
     
     closeButton = [CCSprite spriteWithSpriteFrameName:@"closeTutorialButtonOn.png"];
     [closeButton setPosition:ccp(670, 263)];
-    [self addChild:closeButton z:3];
+    [self addChild:closeButton z:3]; 
     
+    
+    CCLabelTTF *skipTutorialLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Skip Tutorial"] fontName:kCommonFontName fontSize:13];
+    [skipTutorialLabel setColor:ccc3(255, 68, 0)];
+    [skipTutorialLabel setPosition:ccp(387,255)];
+    [self addChild:skipTutorialLabel z:3];
     
     tutorialsOnOffLabel = [CCLabelTTF labelWithString:@"X" fontName:kCommonFontName fontSize:20];
     [tutorialsOnOffLabel setColor:ccc3(255, 68, 0)];
     [tutorialsOnOffLabel setPosition:ccp(320,255)];
     [tutorialsOnOffLabel setVisible:NO];
-    [self addChild:tutorialsOnOffLabel z:3];}
+    [self addChild:tutorialsOnOffLabel z:3];
+}
 
 -(void) showTutorial
 {
@@ -61,8 +76,16 @@
 
     [tutorialMessage removeFromParentAndCleanup:YES];
     
-    NSString *tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_%d-%d.png",tutorialNumber,part];
+    NSString *tutorialMessageFileName;
+    
+    if( tutorialNumber < 4 ) 
+    {
+        tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_1.png"];
+    } else {
+        tutorialMessageFileName = [NSString stringWithFormat:@"tutorialScreen_%d-%d.png",tutorialNumber,part];
+    }
     NSLog(@"Tutorial file is %@", tutorialMessageFileName);
+
     tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
     tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
     [tutorialMessage setPosition:ccp( winSize.width/2, winSize.height/2)];
