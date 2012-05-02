@@ -56,7 +56,6 @@
         [self beamUpNewHuman];
 
 		[self scheduleUpdate];
-        [self schedule:@selector(increaseLevelSpeed:) interval:kScrollingLettersSpeedIncreaseTime];
         [self schedule:@selector(updateLevelTime:) interval:kUpdateLevelTimeFrequency];
         [self schedule:@selector(updateScrollingLetters:) interval:kUpdateScrollingLettersFrequency];
         [self schedule:@selector(alienMovement:) interval:kAlienMovementFrequency];
@@ -508,10 +507,10 @@
     
 }
 
--(void) increaseLevelSpeed:(ccTime)deltaTime
+-(void) increaseLevelSpeed
 {
     scrollingLettersSpeed += kScrollingLettersSpeedIncreaseTick;
-    //    NSLog(@"Speed increased to %.1f", scrollingLettersSpeed);
+    NSLog(@"Speed increased to %.1f", scrollingLettersSpeed);
 }
 
 -(void) updateScrollingLetters:(ccTime)deltaTime 
@@ -819,6 +818,7 @@
 -(void) startNextLevel
 {
     level++;
+    [self increaseLevelSpeed];
     NSLog(@"Starting level %d with speed %f", level, scrollingLettersSpeed);
     isTransitioningLevels = NO;
     elapsedLevelTime = 0;
@@ -872,7 +872,6 @@
     [pauseButton setVisible:YES];
     
     [self scheduleUpdate];
-    [self schedule:@selector(increaseLevelSpeed:) interval:kScrollingLettersSpeedIncreaseTime];
     [self schedule:@selector(updateLevelTime:) interval:kUpdateLevelTimeFrequency];
     [self schedule:@selector(updateScrollingLetters:) interval:kUpdateScrollingLettersFrequency];
     

@@ -82,7 +82,7 @@
 
 -(void) updateScrollingLetters:(ccTime)deltaTime;
 -(void) updateLevelTime:(ccTime)deltaTime;
--(void) increaseLevelSpeed:(ccTime)deltaTime;
+-(void) increaseLevelSpeed;
 -(void) setupSprites_RGBA4444;
 -(void) setupLayers;
 -(void) setupButtons;
