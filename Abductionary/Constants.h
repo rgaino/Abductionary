@@ -47,7 +47,6 @@ extern float const kScrollingLettersInitialSpeedEasy;
 extern float const kScrollingLettersInitialSpeedMedium;
 extern float const kScrollingLettersInitialSpeedHard;
 extern float const kScrollingLettersSpeedIncreaseTick;
-extern float const kScrollingLettersSpeedIncreaseTime;
 extern float const kLetterWidth;
 extern float const kLetterHeight;
 extern float const kFirstLetterSlotX;

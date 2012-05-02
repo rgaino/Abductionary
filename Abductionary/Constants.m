@@ -14,8 +14,7 @@ float const kScrollingLettersInitialSpeedEasy = 30;
 float const kScrollingLettersInitialSpeedMedium = 40;
 float const kScrollingLettersInitialSpeedHard = 60;
 
-float const kScrollingLettersSpeedIncreaseTick = 0.5f;      //increase letter speed this much every kScrollingLettersSpeedIncreaseTime seconds
-float const kScrollingLettersSpeedIncreaseTime = 5.0f;      //frequency with which speed increases in each level
+float const kScrollingLettersSpeedIncreaseTick = 12.0f;      //increase letter speed this much every level
 
 float const kLetterWidth = 55;								//width of the letter image
 float const kLetterHeight = 55;								//height of the letter image
