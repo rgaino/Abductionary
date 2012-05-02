@@ -24,7 +24,7 @@ float const kFirstLetterSlotY = 700;						// y position of the first letter slot
 float const kLetterSlotXSpacing = 6;                        // X space between slot letters
 float const kScrollAreaWidth = 500;
 float const kMoveLetterToSlotAnimationSpeed = 0.2;			//speed that the letters are animated to the slot
-float const kMaxLives = 21;									//max letters you can fail
+float const kMaxLives = 31;									//max letters you can fail
 float const kShiftPanelLettersDelay = .01;                  // delay to shift letters to left or right after dragging one letter in the word panel and hovering another letter
 float const kPointsAwardedLabelFadeOutDuration = 3.0f;         // fade out duration of the points awarded label
 int const kLetterChuteCount = 8;
@@ -75,7 +75,7 @@ float const kPowerUpButtonsFirstY = 313;
 float const kPowerUpButtonsYSpacing = 52;
 float const kPowerUpsCount = 5;                               //how many power ups we have
 float const kPowerUpBarAnimationDuration = 0.2f;
-int const kTemperatureGaugeBeginOverheat = 14;
+int const kTemperatureGaugeBeginOverheat = 25;
 
 
 //Game Over

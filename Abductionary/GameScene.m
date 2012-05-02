@@ -101,7 +101,7 @@
     
     NSLog(@"Initial speed is %.2f", scrollingLettersSpeed);
     
-    failCounter = floor(kMaxLives/2);
+    failCounter = floor(kMaxLives/3);
     scrollingLettersSpeedModifier = 1.0f;
 	score = 0;
     powerUpMeterValue = 0;
