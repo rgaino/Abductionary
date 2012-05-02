@@ -377,7 +377,7 @@
     gameOverScoreLabel = [CCLabelTTF labelWithString:@"0" dimensions:CGSizeMake(105.0f, 35.0f) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:30];
 	[gameOverScoreLabel setPosition:ccp(120, -3375)];
     [gameOverScoreLabel setColor:ccc3(39, 20, 10)];
-    [gameOverScoreLabel setRotation:2.0f];
+    [gameOverScoreLabel setRotation:-2.0f];
 	[self addChild:gameOverScoreLabel z:2];
     [gameOverScoreLabel setString:[NSString stringWithFormat:@"%lld", score]];
     
