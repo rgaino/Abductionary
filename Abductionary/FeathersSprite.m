@@ -22,7 +22,7 @@
     FeathersSprite *feathersSprite = [self spriteWithSpriteFrame:frame];
     [spriteSheet addChild:feathersSprite z:11];
     
-    [feathersSprite setPosition:ccp(342, -3300)];
+    [feathersSprite setPosition:ccp(342, -3555)];
 	return feathersSprite;
 }
 

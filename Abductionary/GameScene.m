@@ -69,9 +69,7 @@
         [self updateTemperatureGauge];
         
         [self performSelector:@selector(showTutorialNumber:) withObject:[NSNumber numberWithInt:1] afterDelay:2.5f];
-        
-        [self performSelector:@selector(gameOver) withObject:nil afterDelay:1.0f];
-	}
+    }
 	return self;
 }
 
@@ -140,7 +138,13 @@
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"alphabet.plist"];
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameBackground.plist"];
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameScreen.plist"];
-    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameOverBackground_01.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameOverBackground_02.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameOverBackground_03.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameOverBackground_04.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"gameOverBackground_05.plist"];
+
+
     CCSprite *backgroundImage = [CCSprite spriteWithSpriteFrameName:@"gameBackground.png"];
     [backgroundImage setPosition:ccp(0, 57)];
     [backgroundImage setAnchorPoint:ccp(0,0)];
@@ -162,28 +166,28 @@
     [self addChild: trapDoorHoleImage z:1];
     
     
-    CCSprite *gameOverBackgroundImage_01 = [CCSprite spriteWithFile:@"gameOverBackground_01.pvr.ccz"];
-    [gameOverBackgroundImage_01 setPosition:ccp(0, 1024*-1)];
+    CCSprite *gameOverBackgroundImage_01 = [CCSprite spriteWithSpriteFrameName:@"gameOverBackground_01.png"];
+    [gameOverBackgroundImage_01 setPosition:ccp(0, 768*-1)];
     [gameOverBackgroundImage_01 setAnchorPoint:ccp(0,0)];
     [self addChild: gameOverBackgroundImage_01 z:0];
     
-    CCSprite *gameOverBackgroundImage_02 = [CCSprite spriteWithFile:@"gameOverBackground_02.pvr.ccz"];
-    [gameOverBackgroundImage_02 setPosition:ccp(0, (1024-256)*-2)];
+    CCSprite *gameOverBackgroundImage_02 = [CCSprite spriteWithSpriteFrameName:@"gameOverBackground_02.png"];
+    [gameOverBackgroundImage_02 setPosition:ccp(0, (768)*-2)];
     [gameOverBackgroundImage_02 setAnchorPoint:ccp(0,0)];
     [self addChild: gameOverBackgroundImage_02 z:0];
     
-    CCSprite *gameOverBackgroundImage_03 = [CCSprite spriteWithFile:@"gameOverBackground_03.pvr.ccz"];
-    [gameOverBackgroundImage_03 setPosition:ccp(0, (1024-256)*-3)];
+    CCSprite *gameOverBackgroundImage_03 = [CCSprite spriteWithSpriteFrameName:@"gameOverBackground_03.png"];
+    [gameOverBackgroundImage_03 setPosition:ccp(0, (768)*-3)];
     [gameOverBackgroundImage_03 setAnchorPoint:ccp(0,0)];
     [self addChild: gameOverBackgroundImage_03 z:0];
     
-    CCSprite *gameOverBackgroundImage_04 = [CCSprite spriteWithFile:@"gameOverBackground_04.pvr.ccz"];
-    [gameOverBackgroundImage_04 setPosition:ccp(0, (1024-256)*-4)];
+    CCSprite *gameOverBackgroundImage_04 = [CCSprite spriteWithSpriteFrameName:@"gameOverBackground_04.png"];
+    [gameOverBackgroundImage_04 setPosition:ccp(0, (768)*-4)];
     [gameOverBackgroundImage_04 setAnchorPoint:ccp(0,0)];
     [self addChild: gameOverBackgroundImage_04 z:0];
     
-    CCSprite *gameOverBackgroundImage_05 = [CCSprite spriteWithFile:@"gameOverBackground_05.pvr.ccz"];
-    [gameOverBackgroundImage_05 setPosition:ccp(0, (1024-256)*-5)];
+    CCSprite *gameOverBackgroundImage_05 = [CCSprite spriteWithSpriteFrameName:@"gameOverBackground_05.png"];
+    [gameOverBackgroundImage_05 setPosition:ccp(0, (768)*-5)];
     [gameOverBackgroundImage_05 setAnchorPoint:ccp(0,0)];
     [self addChild: gameOverBackgroundImage_05 z:0];
     
@@ -330,14 +334,14 @@
     
     CCMenuItemImage *gameOverMainMenuButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverMainMenuButton.png"] target:self selector:@selector(mainMenuButtonPressed)];
     [gameOverMainMenuButton setAnchorPoint:ccp(0, 0)];
-    [gameOverMainMenuButton setPosition:ccp(306, -3160)];
+    [gameOverMainMenuButton setPosition:ccp(306, -3415)];
     [gameOverMenu addChild:gameOverMainMenuButton];
 
     
     CCLabelTTF *gameOverMainMenuLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu Line 1"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
     CCMenuItemLabel *gameOverMainMenuItemLabel = [CCMenuItemLabel itemWithLabel:gameOverMainMenuLabel target:self selector:@selector(mainMenuButtonPressed)];
     [gameOverMainMenuItemLabel setAnchorPoint:ccp(0, 0)];
-	[gameOverMainMenuItemLabel setPosition:ccp(302, -3090)];
+	[gameOverMainMenuItemLabel setPosition:ccp(302, -3345)];
     [gameOverMainMenuItemLabel setRotation:-2.0f];
     [gameOverMainMenuItemLabel setColor:ccc3(0, 0, 0)];
 	[gameOverMenu addChild:gameOverMainMenuItemLabel];
@@ -345,7 +349,7 @@
     CCLabelTTF *gameOverMainMenuLabel2 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu Line 2"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
     CCMenuItemLabel *gameOverMainMenuItemLabel2 = [CCMenuItemLabel itemWithLabel:gameOverMainMenuLabel2 target:self selector:@selector(mainMenuButtonPressed)];
     [gameOverMainMenuItemLabel2 setAnchorPoint:ccp(0, 0)];
-	[gameOverMainMenuItemLabel2 setPosition:ccp(302, -3135)];
+	[gameOverMainMenuItemLabel2 setPosition:ccp(302, -3390)];
     [gameOverMainMenuItemLabel2 setRotation:-2.0f];
     [gameOverMainMenuItemLabel2 setColor:ccc3(0, 0, 0)];
 	[gameOverMenu addChild:gameOverMainMenuItemLabel2];
@@ -354,13 +358,13 @@
     
     CCMenuItemImage *gameOverReplayButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"gameOverReplayButton.png"] target:self selector:@selector(replayGame)];	
     [gameOverReplayButton setAnchorPoint:ccp(0, 0)];
-    [gameOverReplayButton setPosition:ccp(150, -2930)];
+    [gameOverReplayButton setPosition:ccp(150, -3185)];
     [gameOverMenu addChild:gameOverReplayButton];
     
     CCLabelTTF *gameOverReplayLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Replay?"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
     CCMenuItemLabel *gameOverReplayItemLabel = [CCMenuItemLabel itemWithLabel:gameOverReplayLabel target:self selector:@selector(replayGame)];
     [gameOverReplayItemLabel setAnchorPoint:ccp(0, 0)];
-	[gameOverReplayItemLabel setPosition:ccp(212, -2924)];
+	[gameOverReplayItemLabel setPosition:ccp(212, -3179)];
     [gameOverReplayItemLabel setRotation:-2.5f];
     [gameOverReplayItemLabel setColor:ccc3(255, 250, 174)];
 	[gameOverMenu addChild:gameOverReplayItemLabel];
@@ -372,7 +376,7 @@
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];        
     
     gameOverScoreLabel = [CCLabelTTF labelWithString:@"0" dimensions:CGSizeMake(105.0f, 35.0f) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:30];
-	[gameOverScoreLabel setPosition:ccp(120, -3120)];
+	[gameOverScoreLabel setPosition:ccp(120, -3375)];
     [gameOverScoreLabel setColor:ccc3(39, 20, 10)];
     [gameOverScoreLabel setRotation:2.0f];
 	[self addChild:gameOverScoreLabel z:2];
@@ -380,7 +384,7 @@
     
     CCLabelTTF *gameOverScoreTitleLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Score"] dimensions:CGSizeMake(190, 38) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:35];
     [gameOverScoreTitleLabel setAnchorPoint:ccp(0, 0)];
-	[gameOverScoreTitleLabel setPosition:ccp(60, -3090)];
+	[gameOverScoreTitleLabel setPosition:ccp(60, -3345)];
     [gameOverScoreTitleLabel setRotation:-2.0f];
     [gameOverScoreTitleLabel setColor:ccc3(0, 0, 0)];
 	[self addChild:gameOverScoreTitleLabel];
@@ -388,14 +392,14 @@
 
     CCLabelTTF *gameOverPanelLabel_1 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Game Over 1"] dimensions:CGSizeMake(300, 250) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:110];
     [gameOverPanelLabel_1 setAnchorPoint:ccp(0, 0)];
-	[gameOverPanelLabel_1 setPosition:ccp(160, -2745)];
+	[gameOverPanelLabel_1 setPosition:ccp(160, -3000)];
     [gameOverPanelLabel_1 setRotation:-3.0f];
     [gameOverPanelLabel_1 setColor:ccc3(0, 0, 0)];
 	[self addChild:gameOverPanelLabel_1];
 
     CCLabelTTF *gameOverPanelLabel_2 = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Game Over 2"] dimensions:CGSizeMake(300, 250) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:110];
     [gameOverPanelLabel_2 setAnchorPoint:ccp(0, 0)];
-	[gameOverPanelLabel_2 setPosition:ccp(160, -2840)];
+	[gameOverPanelLabel_2 setPosition:ccp(160, -3095)];
     [gameOverPanelLabel_2 setRotation:-3.0f];
     [gameOverPanelLabel_2 setColor:ccc3(0, 0, 0)];
 	[self addChild:gameOverPanelLabel_2];
@@ -999,7 +1003,7 @@
     
     id delayDropHumanGameOver = [CCDelayTime actionWithDuration:1.0f];
     id playHumanFallingSound = [CCCallFuncND actionWithTarget:gameSoundManager selector:@selector(playHumanSoundWithId:data:) data:[NSNumber numberWithInt:[humanSprite getHumanId]]];
-    id dropHumanGameOver = [CCMoveBy actionWithDuration:kDropHumanGameOverAnimationDuration position:ccp(0, -3750)];
+    id dropHumanGameOver = [CCMoveBy actionWithDuration:kDropHumanGameOverAnimationDuration position:ccp(0, -3950)];
     id playFeatherSound = [CCCallFunc actionWithTarget:gameSoundManager selector:@selector(playFeathersSound)];
     id humanSequence =[CCSequence actions:delayDropHumanGameOver, playHumanFallingSound, dropHumanGameOver, playFeatherSound, [CCCallFuncN actionWithTarget:feathersSprite selector:@selector(runFeathersAnimation)],[CCCallFuncN actionWithTarget:humanSprite selector:@selector(hide)],nil];
     [[humanSprite humanSprite] runAction:humanSequence];
@@ -1008,7 +1012,7 @@
     [humanSprite runDropAndFallAnimation];
     
     id delayPan = [CCDelayTime actionWithDuration:1.5f];
-    id panGameOver = [CCMoveTo actionWithDuration:kPanGameOverAnimationDuration position:ccp(0, (screenSize.height*1.5)-256)];  ///ERA *5
+    id panGameOver = [CCMoveTo actionWithDuration:kPanGameOverAnimationDuration position:ccp(0, (screenSize.height*5))];
     
     [self runAction:[CCSequence actions:delayPan, panGameOver, nil]];   
     

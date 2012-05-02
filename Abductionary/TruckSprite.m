@@ -21,7 +21,7 @@
     TruckSprite *truckSprite = [self spriteWithSpriteFrame:frame];
     [spriteSheet addChild:truckSprite z:11];
 
-    [truckSprite setPosition:ccp(1050, -3300)];
+    [truckSprite setPosition:ccp(1050, -3555)];
 	return truckSprite;
 }
 
