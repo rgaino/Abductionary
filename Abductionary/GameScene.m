@@ -463,10 +463,10 @@
     [tubeDoorMainMenu setAnchorPoint:ccp(0,0)];
     [self addChild: tubeDoorMainMenu z:16];
     
-    CCLabelTTF *mainMenuLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu"] fontName:kCommonFontName fontSize:20];
+    CCLabelTTF *mainMenuLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Main Menu"] dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:20];
     [mainMenuLabel setColor:ccc3(162, 209, 73)];
     mainMenuButton = [CCMenuItemLabel itemWithLabel:mainMenuLabel target:self selector:@selector(mainMenuButtonPressed)];
-    [mainMenuButton setPosition: ccp(730, 403)];
+    [mainMenuButton setPosition: ccp(707, 377)];
 	[mainMenuButton setOpacity:0];
 	[mainMenuButton setVisible:NO];
     [mainMenuButton setAnchorPoint:ccp(0,0)];

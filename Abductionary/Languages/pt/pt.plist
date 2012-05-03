@@ -66,6 +66,8 @@
 	<string>MÚSICA</string>
 	<key>Sound FX</key>
 	<string>EFEITOS</string>
+	<key>Main Menu</key>
+	<string>MENU PRINCIPAL</string>
 	<key>Main Menu Line 1</key>
 	<string>MENU</string>
 	<key>Main Menu Line 2</key>
