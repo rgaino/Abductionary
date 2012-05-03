@@ -501,7 +501,6 @@
 	if( elapsedLevelTime >= totalLevelTime && !isTransitioningLevels ) 
     {
         isTransitioningLevels = YES;
-//        [self performSelector:@selector(completeLevel) withObject:nil afterDelay:5.0f];
         [self completeLevel];
     }
     
@@ -1508,18 +1507,6 @@
     PowerUpButton *powerUpButton = [powerUpButtons objectAtIndex:powerUpLevelReset];
     [powerUpButton setVisible:NO];
     
-    currentPowerUpFilling = 1;
-    powerUpMeterValue = 0;
-    
-    for(PowerUpButton *powerUpButton in powerUpButtons)
-    {
-        if( ![powerUpButton visible] )
-        {
-            break;
-        }
-        currentPowerUpFilling++;
-    }
-    
     [self updatePowerUpMeter];
 }
 
@@ -1536,28 +1523,20 @@
         NSLog(@"Power up %d filled", currentPowerUpFilling);
         [gameSoundManager playPowerUpBarFillSound];
         
-        PowerUpButton *powerUpButton = [powerUpButtons objectAtIndex:currentPowerUpFilling-1];
-        [powerUpButton setVisible:YES];
-        
-        currentPowerUpFilling++;
-        
-        if( currentPowerUpFilling > kPowerUpsCount) 
+        if (currentPowerUpFilling<=5) {
+            PowerUpButton *powerUpButton = [powerUpButtons objectAtIndex:currentPowerUpFilling-1];
+            [powerUpButton setVisible:YES];
+        }
+
+        powerUpMeterValue=0;          
+        currentPowerUpFilling = 1;
+        for(PowerUpButton *powerUpButton in powerUpButtons)
         {
-            currentPowerUpFilling = kPowerUpsCount;
-        } else 
-        {
-            
-            while(currentPowerUpFilling<kPowerUpsCount)
+            if( ![powerUpButton visible] )
             {
-                powerUpButton = [powerUpButtons objectAtIndex:currentPowerUpFilling-1];
-                if( [powerUpButton visible] ) 
-                {
-                    currentPowerUpFilling++;
-                } else {
-                    break;
-                }
+                break;
             }
-            powerUpMeterValue=0;          
+            currentPowerUpFilling++;
         }
         
         [self performSelector:@selector(showTutorialNumber:) withObject:[NSNumber numberWithInt:4] afterDelay:0.5f];
