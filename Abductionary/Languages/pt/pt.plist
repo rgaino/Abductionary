@@ -78,5 +78,47 @@
 	<string>OVER</string>
 	<key>Skip Tutorial</key>
 	<string>PULAR TUTORIAL</string>
+	<key>Tutorial_1-1</key>
+	<string>Este é o Extrator de Idiomas 6000™.
+
+Sua missão é escolher as letras que caem no tubo e formar palavras no painel da máquina.
+
+Apenas palavras com no mínimo 3 letras serão aceitas.</string>
+	<key>Tutorial_1-2</key>
+	<string>Cada letra não utilizada aumenta um pouco a temperatura da máquina.
+
+Aprenda novas palavras para manter a máquina funcionado.
+
+Usar a mesma palavra 2 vezes lhe dá pontos, mas não diminui a temperatura.
+
+Se a máquina superaquecer, o jogo acaba.</string>
+	<key>Tutorial_2-1</key>
+	<string>Você formou sua primeira palavra!
+
+Aperte o botão verde para aprendê-la e ganhar os pontos.
+
+Cada letra tem seu valor e quanto maior a palavra, mais pontos extras você ganha.
+
+Para devolver todas as letras ao tubo, aperte o botão vermelho.</string>
+	<key>Tutorial_3-1</key>
+	<string>Quando a máquina está na temperatura mínima, cada palavra enche um pouco sua barra de energia.
+
+Quando a barra estiver cheia, você ativa o primeiro poder.</string>
+	<key>Tutorial_4-1-1</key>
+	<string>Parabéns, o primeiro poder está ativado!</string>
+	<key>Tutorial_4-1-2</key>
+	<string>Este poder lhe dá uma letra curinga que pode ser colocada em qualquer palavra. Coloque o &quot;?&quot; e a máquina saberá se aquela palavra existe ou não.
+
+O botão verde acenderá se a palavra existir.</string>
+	<key>Tutorial_4-2-1</key>
+	<string>Mas atenção, se você guardar este poder e continuar a ganhar energia, poderá ativar poderes ainda maiores!</string>
+	<key>Tutorial_4-2-2</key>
+	<string>Este poder diminui a velocidade da máquina por um certo tempo.</string>
+	<key>Tutorial_4-2-3</key>
+	<string>Este poder enviará uma palavra inteira, mas embaralhada. Descubra a palavra e ganhe o dobro de pontos!</string>
+	<key>Tutorial_4-3-1</key>
+	<string>Enquanto este poder estiver ativo, as palavras valem pontos acumulados.</string>
+	<key>Tutorial_4-3-2</key>
+	<string>Por último, este poder salvará sua vida. Ele faz com que a temperatura da máquina caia imediatamente para zero!</string>
 </dict>
 </plist>
