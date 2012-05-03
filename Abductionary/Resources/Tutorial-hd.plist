@@ -7,11 +7,11 @@
             <key>closeTutorialButtonOff.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{224,1855},{222,158}}</string>
+                <string>{{1855,224},{222,158}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{222,158}}</string>
                 <key>sourceSize</key>
@@ -20,63 +20,24 @@
             <key>closeTutorialButtonOn.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1855},{222,158}}</string>
+                <string>{{1855,1},{222,158}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{222,158}}</string>
                 <key>sourceSize</key>
                 <string>{222,158}</string>
             </dict>
-            <key>tutorialScreen_1-1.png</key>
+            <key>tutorialScreen_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2074,1},{926,690}}</string>
+                <string>{{692,692},{926,690}}</string>
                 <key>offset</key>
                 <string>{-6,0}</string>
                 <key>rotated</key>
                 <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,9},{926,690}}</string>
-                <key>sourceSize</key>
-                <string>{942,708}</string>
-            </dict>
-            <key>tutorialScreen_1-2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1383,928},{926,690}}</string>
-                <key>offset</key>
-                <string>{-6,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{2,9},{926,690}}</string>
-                <key>sourceSize</key>
-                <string>{942,708}</string>
-            </dict>
-            <key>tutorialScreen_2-1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1383,1},{926,690}}</string>
-                <key>offset</key>
-                <string>{-6,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{2,9},{926,690}}</string>
-                <key>sourceSize</key>
-                <string>{942,708}</string>
-            </dict>
-            <key>tutorialScreen_3-1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{692,928},{926,690}}</string>
-                <key>offset</key>
-                <string>{-6,0}</string>
-                <key>rotated</key>
-                <true/>
                 <key>sourceColorRect</key>
                 <string>{{2,9},{926,690}}</string>
                 <key>sourceSize</key>
@@ -85,7 +46,7 @@
             <key>tutorialScreen_4-1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{692,1},{926,690}}</string>
+                <string>{{1,692},{926,690}}</string>
                 <key>offset</key>
                 <string>{-6,0}</string>
                 <key>rotated</key>
@@ -98,11 +59,11 @@
             <key>tutorialScreen_4-2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,928},{926,690}}</string>
+                <string>{{928,1},{926,690}}</string>
                 <key>offset</key>
                 <string>{-6,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{2,9},{926,690}}</string>
                 <key>sourceSize</key>
@@ -115,7 +76,7 @@
                 <key>offset</key>
                 <string>{-6,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{2,9},{926,690}}</string>
                 <key>sourceSize</key>
@@ -129,9 +90,9 @@
             <key>realTextureFileName</key>
             <string>Tutorial-hd.pvr.ccz</string>
             <key>size</key>
-            <string>{4096,2048}</string>
+            <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:8a9b45b8a162c4b10aea2b8cd96805c7$</string>
+            <string>$TexturePacker:SmartUpdate:70f9aa9e7a76a25a9740c90bae89274a$</string>
             <key>textureFileName</key>
             <string>Tutorial-hd.pvr.ccz</string>
         </dict>
