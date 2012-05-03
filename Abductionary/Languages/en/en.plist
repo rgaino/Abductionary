@@ -78,5 +78,45 @@
 	<string>OVER</string>
 	<key>Skip Tutorial</key>
 	<string>SKIP TUTORIAL</string>
+	<key>Tutorial_1-1</key>
+	<string>This is the Language Extractor 6000™.
+
+Your job is to tap the falling letters in the tube and arrange them into words on the panel.
+
+Only three letter words or more will be counted.</string>
+	<key>Tutorial_1-2</key>
+	<string>Each letter that you let escape down the tube overheats the machine a little.
+
+Keep learning new words to keep it cool and working.
+
+Using the same word twice will give you points, but won&apos;t cool down the machine.
+
+Once it overheats, it&apos;s game over.</string>
+	<key>Tutorial_2-1</key>
+	<string>Looks like you have your first word!
+
+Press the green button to learn it and score points.
+
+Each letter has a value and the longer the word, the points you earn.
+
+To send the letters back to the tube, press the red button.</string>
+	<key>Tutorial_3-1</key>
+	<string>When the machine is cool, each word you learn is filling up the power up meter.
+
+Fill the bar completely to earn your first power up.</string>
+	<key>Tutorial_4-1-1</key>
+	<string>Great, you&apos;ve activated your first power up!</string>
+	<key>Tutorial_4-1-2</key>
+	<string>This power up gives you a wildcard letter that works as any letter. Just throw it in the right place and the machine will find out if that makes a human word. The green button will light up if it does.</string>
+	<key>Tutorial_4-2-1</key>
+	<string>But be aware, if you save this power up and keep filling up the bar, you will earn more valuable power ups!</string>
+	<key>Tutorial_4-2-2</key>
+	<string>This power up slows down the machine for a short time.</string>
+	<key>Tutorial_4-2-3</key>
+	<string>This one will throw a whole word at you, but scrambled. Figure out the word and earn twice the points!</string>
+	<key>Tutorial_4-3-1</key>
+	<string>This power up will activate a score multiplier. Each new word you learn while it&apos;s active will earn points on top of the points from the last word.</string>
+	<key>Tutorial_4-3-2</key>
+	<string>Finally, this power up is a lifesaver. It will bring the machine&apos;s temperature to zero, so it doesn&apos;t blow up in your face.</string>
 </dict>
 </plist>
