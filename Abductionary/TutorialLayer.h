@@ -12,9 +12,14 @@
 {
     int tutorialNumber;
     int part;
+    float tutorialFontSize;
+    
     CCSprite *closeButton;
-    CCSprite *tutorialMessage;
+    CCSprite *tutorialMessageSprite;
     CCLabelTTF *tutorialsOnOffLabel;
+    CCLabelTTF *tutorialMessageLabel;
+    CCLabelTTF *tutorialMessageLabel_2;
+    CCLabelTTF *tutorialMessageLabel_3;
 }
 
 -(id)initWithTutorialNumber:(int) _tutorialNumber;

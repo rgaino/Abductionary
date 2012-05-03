@@ -30,7 +30,8 @@
     self.isTouchEnabled = YES;
     
     part=1;
-
+    tutorialFontSize = 18.0f;
+    
     CCLayerColor *colorLayer = [CCLayerColor layerWithColor:ccc4(50, 50, 50, 210)];
     [self addChild:colorLayer z:-1];
         
@@ -49,32 +50,64 @@
     }
     NSLog(@"Tutorial file is %@", tutorialMessageFileName);
     
-    tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
-    [tutorialMessage setPosition:ccp( winSize.width/2, winSize.height/2)];
-    [self addChild:tutorialMessage z:2];
+    tutorialMessageSprite = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
+    [tutorialMessageSprite setPosition:ccp( winSize.width/2, winSize.height/2)];
+    [self addChild:tutorialMessageSprite z:2];
     
     closeButton = [CCSprite spriteWithSpriteFrameName:@"closeTutorialButtonOn.png"];
     [closeButton setPosition:ccp(670, 263)];
     [self addChild:closeButton z:3]; 
     
     
-    CCLabelTTF *skipTutorialLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Skip Tutorial"] fontName:kCommonFontName fontSize:13];
+    CCLabelTTF *skipTutorialLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Skip Tutorial"]dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:13];
     [skipTutorialLabel setColor:ccc3(255, 68, 0)];
-    [skipTutorialLabel setPosition:ccp(387,255)];
+    [skipTutorialLabel setPosition:ccp(393,238)];
     [self addChild:skipTutorialLabel z:3];
     
-    tutorialsOnOffLabel = [CCLabelTTF labelWithString:@"X" fontName:kCommonFontName fontSize:20];
+    tutorialsOnOffLabel = [CCLabelTTF labelWithString:@"X" fontName:kCommonFontName fontSize:tutorialFontSize];
     [tutorialsOnOffLabel setColor:ccc3(255, 68, 0)];
     [tutorialsOnOffLabel setPosition:ccp(320,255)];
     [tutorialsOnOffLabel setVisible:NO];
     [self addChild:tutorialsOnOffLabel z:3];
+    
+    if (tutorialNumber < 4) {
+        
+        NSString *tutorialTextKey = [NSString stringWithFormat:@"Tutorial_%d-%d",tutorialNumber,part];
+        NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:tutorialTextKey];
+        
+        CGSize containerSize = CGSizeMake(370, 190);    
+        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel setPosition: ccp(525, 415)];	
+        [self addChild:tutorialMessageLabel z:5];                                   
+    } else if (tutorialNumber == 4 )
+    {
+        if( part == 1)
+        {
+            NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-1-1"];
+            
+            CGSize containerSize = CGSizeMake(380, 190);    
+            tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+            [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
+            [tutorialMessageLabel setPosition: ccp(515, 415)];	
+            [self addChild:tutorialMessageLabel z:5];     
+            
+            tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-1-2"];
+            containerSize = CGSizeMake(340, 190);
+            tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+            [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
+            [tutorialMessageLabel_2 setPosition:ccp(538, 365)];	
+            [self addChild:tutorialMessageLabel_2 z:5];     
+        }
+   
+    }
 }
 
 -(void) showTutorial
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
 
-    [tutorialMessage removeFromParentAndCleanup:YES];
+    [tutorialMessageSprite removeFromParentAndCleanup:YES];
     
     NSString *tutorialMessageFileName;
     
@@ -86,10 +119,63 @@
     }
     NSLog(@"Tutorial file is %@", tutorialMessageFileName);
 
-    tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
-    tutorialMessage = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
-    [tutorialMessage setPosition:ccp( winSize.width/2, winSize.height/2)];
-    [self addChild:tutorialMessage z:2];
+    tutorialMessageSprite = [CCSprite spriteWithSpriteFrameName:tutorialMessageFileName];
+    [tutorialMessageSprite setPosition:ccp( winSize.width/2, winSize.height/2)];
+    [self addChild:tutorialMessageSprite z:2];
+    
+    
+    if (tutorialNumber < 4) {
+        
+        NSString *tutorialTextKey = [NSString stringWithFormat:@"Tutorial_%d-%d",tutorialNumber,part];
+        [tutorialMessageLabel setString:[[I18nManager getInstance] getLocalizedStringFor:tutorialTextKey]];
+    }  
+    if( tutorialNumber == 4 && part == 2)
+    {
+        [tutorialMessageLabel removeFromParentAndCleanup:YES];
+        [tutorialMessageLabel_2 removeFromParentAndCleanup:YES];
+        
+        NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-1"];
+        
+        CGSize containerSize = CGSizeMake(380, 190);    
+        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel setPosition: ccp(515, 418)];	
+        [self addChild:tutorialMessageLabel z:5];     
+        
+        tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-2"];
+        containerSize = CGSizeMake(340, 190);
+        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel_2 setPosition:ccp(538, 340)];	
+        [self addChild:tutorialMessageLabel_2 z:5];     
+        
+        tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-3"];
+        containerSize = CGSizeMake(340, 190);
+        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel_3 setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel_3 setPosition:ccp(538, 290)];	
+        [self addChild:tutorialMessageLabel_3 z:5];     
+    } 
+    if( tutorialNumber == 4 && part == 3)
+    {
+        [tutorialMessageLabel removeFromParentAndCleanup:YES];
+        [tutorialMessageLabel_2 removeFromParentAndCleanup:YES];
+        [tutorialMessageLabel_3 removeFromParentAndCleanup:YES];
+        
+        NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-3-1"];
+        CGSize containerSize = CGSizeMake(340, 190);
+        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel_2 setPosition:ccp(538, 418)];	
+        [self addChild:tutorialMessageLabel_2 z:5];     
+        
+        tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-3-2"];
+        containerSize = CGSizeMake(340, 190);
+        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        [tutorialMessageLabel_3 setColor:ccc3(164, 185, 0)];
+        [tutorialMessageLabel_3 setPosition:ccp(538, 310)];	
+        [self addChild:tutorialMessageLabel_3 z:5];     
+    } 
 }
 
 
