@@ -286,7 +286,7 @@
     [leaderboardsAllTimeButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsAllTimeButton];
     
-    CCLabelTTF *leaderboardsAllTimeLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"AllTime"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCLabelTTF *leaderboardsAllTimeLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"AllTime"] dimensions:CGSizeMake(105, 34) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
     CCMenuItemLabel *leaderboardsAllTimeMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsAllTimeLabel target:self selector:@selector(loadAllTimeLeaderboards)];
 	[leaderboardsAllTimeMenuItemLabel setPosition:ccp(95, 604)];
     [leaderboardsAllTimeMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -298,7 +298,7 @@
     [leaderboardsWeekButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsWeekButton];
 
-    CCLabelTTF *leaderboardsWeekLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Week"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCLabelTTF *leaderboardsWeekLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Week"] dimensions:CGSizeMake(105, 34) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
     CCMenuItemLabel *leaderboardsWeekMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsWeekLabel target:self selector:@selector(loadWeekLeaderboards)];
 	[leaderboardsWeekMenuItemLabel setPosition:ccp(95, 553)];
     [leaderboardsWeekMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -310,7 +310,7 @@
     [leaderboardsTodayButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsTodayButton];
     
-    CCLabelTTF *leaderboardsTodayLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Today"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCLabelTTF *leaderboardsTodayLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Today"] dimensions:CGSizeMake(105, 34) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
     CCMenuItemLabel *leaderboardsTodayMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsTodayLabel target:self selector:@selector(loadTodayLeaderboards)];
 	[leaderboardsTodayMenuItemLabel setPosition:ccp(95, 503)];
     [leaderboardsTodayMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -323,7 +323,7 @@
     [leaderboardsGlobalButton setOpacity:255];
 	[leaderboardsMenu addChild:leaderboardsGlobalButton];
     
-    CCLabelTTF *leaderboardsGlobalLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Global"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCLabelTTF *leaderboardsGlobalLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Global"] dimensions:CGSizeMake(105, 34) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
     CCMenuItemLabel *leaderboardsGlobalMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsGlobalLabel target:self selector:@selector(loadGlobalLeaderboards)];
 	[leaderboardsGlobalMenuItemLabel setPosition:ccp(922, 604)];
     [leaderboardsGlobalMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -335,7 +335,7 @@
     [leaderboardsFriendsButton setOpacity:0];
 	[leaderboardsMenu addChild:leaderboardsFriendsButton];
     
-    CCLabelTTF *leaderboardsFriendsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Friends"] dimensions:CGSizeMake(105, 34) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
+    CCLabelTTF *leaderboardsFriendsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Friends"] dimensions:CGSizeMake(105, 34) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:labelFontSize];
     CCMenuItemLabel *leaderboardsFriendsMenuItemLabel = [CCMenuItemLabel itemWithLabel:leaderboardsFriendsLabel target:self selector:@selector(loadFriendsLeaderboards)];
 	[leaderboardsFriendsMenuItemLabel setPosition:ccp(922, 553)];
     [leaderboardsFriendsMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -381,7 +381,7 @@
     [self addChild:newGameConsoleBottom z:22];
 
     
-	gameModeLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Medium"] dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
+	gameModeLabel = [CCLabelTTF labelWithString:[i18nManager getLocalizedStringFor:@"Medium"] dimensions:CGSizeMake(147, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:30];
 	[gameModeLabel setPosition:ccp(510, 180-500)];
     [gameModeLabel setColor:ccc3(255, 255, 255)];
     [self addChild:gameModeLabel z:20];
@@ -462,7 +462,7 @@
 	[resetTutorialsButton setPosition:ccp(winSize.width+(winSize.width/2), 300)];
 	[mainMenu addChild:resetTutorialsButton];
     
-    CCLabelTTF *resetTutorialsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"ResetTutorial"] dimensions:CGSizeMake(107, 18) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
+    CCLabelTTF *resetTutorialsLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"ResetTutorial"] dimensions:CGSizeMake(107, 18) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
     CCMenuItemLabel *resetTutorialsMenuItemLabel = [CCMenuItemLabel itemWithLabel:resetTutorialsLabel target:self selector:@selector(loadFriendsLeaderboards)];
 	[resetTutorialsMenuItemLabel setPosition:ccp(winSize.width+(winSize.width/2)+20, 298)];
     [resetTutorialsMenuItemLabel setColor:ccc3(255, 188, 12)];
@@ -474,7 +474,7 @@
 	[changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 400)];
 	[mainMenu addChild:changeLanguageButton];
     
-    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Change Language"] dimensions:CGSizeMake(107, 18) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
+    CCLabelTTF *changeLanguageLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Change Language"] dimensions:CGSizeMake(107, 18) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:12];
     CCMenuItemLabel *changeLanguageMenuItemLabel = [CCMenuItemLabel itemWithLabel:changeLanguageLabel target:self selector:@selector(pushChangeLanguageScene)];
 	[changeLanguageMenuItemLabel setPosition:ccp(winSize.width+(winSize.width/2)+20, 398)];
     [changeLanguageMenuItemLabel setColor:ccc3(255, 188, 12)];

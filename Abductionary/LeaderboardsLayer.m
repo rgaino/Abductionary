@@ -30,22 +30,22 @@
     float y = 295;
     float fontSize = 23;
  
-    CCLabelTTF *rankingLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Rank"] dimensions:CGSizeMake(30, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *rankingLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Rank"] dimensions:CGSizeMake(30, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
     [rankingLabel setPosition:ccp(55, y)];
     [rankingLabel setColor:ccc3(25, 153, 173)];
     [self addChild:rankingLabel];
 
-    CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Name"] dimensions:CGSizeMake(150, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *nameLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Name"] dimensions:CGSizeMake(150, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
     [nameLabel setPosition:ccp(205, y)];
     [nameLabel setColor:ccc3(25, 153, 173)];
     [self addChild:nameLabel];
 
-    CCLabelTTF *dateLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Date"] dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *dateLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Date"] dimensions:CGSizeMake(120, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:fontSize];
     [dateLabel setPosition:ccp(350, y)];
     [dateLabel setColor:ccc3(25, 153, 173)];
     [self addChild:dateLabel];
 
-    CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Score"] dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Score"] dimensions:CGSizeMake(120, 50) hAlignment:kCCTextAlignmentRight fontName:kCommonFontName fontSize:fontSize];
     [scoreLabel setPosition:ccp(470, y)];
     [scoreLabel setColor:ccc3(25, 153, 173)];
     [self addChild:scoreLabel];
@@ -64,25 +64,25 @@
     
     for(int i=0;i<10;i++)
     {
-        CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(30, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+        CCLabelTTF *rankLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(30, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
 		rankLabel.position =  ccp(55, y);
         rankLabel.color = ccc3(0, 167, 255);
         [rankLabels addObject:rankLabel];
         [self addChild:rankLabel];
 
-        CCLabelTTF *playerNameLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(150, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+        CCLabelTTF *playerNameLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(150, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
 		playerNameLabel.position =  ccp(205, y);
         playerNameLabel.color = ccc3(0, 167, 255);
         [playerNameLabels addObject:playerNameLabel];
         [self addChild:playerNameLabel];
 
-        CCLabelTTF *dateLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+        CCLabelTTF *dateLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(120, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
 		dateLabel.position =  ccp(350, y);
         dateLabel.color = ccc3(0, 167, 255);
         [dateLabels addObject:dateLabel];
         [self addChild:dateLabel];
 
-        CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(120, 50) alignment:CCTextAlignmentRight fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+        CCLabelTTF *scoreLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(120, 50) hAlignment:kCCTextAlignmentRight fontName:kCommonFontName fontSize:kLeaderboardFontSize];
 		scoreLabel.position =  ccp(470, y);
         scoreLabel.color = ccc3(0, 167, 255);
         [scoreLabels addObject:scoreLabel];

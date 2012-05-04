@@ -96,12 +96,12 @@
     CGSize actualSize_1 = [message_1 sizeWithFont:[UIFont fontWithName:kCommonFontName size:fontSize] constrainedToSize:maxSize lineBreakMode:UILineBreakModeWordWrap];
     CGSize containerSize_1 = { actualSize_1.width, actualSize_1.height };
     
-    CCLabelTTF *descriptionMessage_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *descriptionMessage_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
     [descriptionMessage_1 setColor:ccc3(107, 205, 255)];
     [descriptionMessage_1 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 + 45)];
     [descriptionWindowLayer addChild:descriptionMessage_1 z:3];
 
-    CCLabelTTF *shadow_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *shadow_1 = [CCLabelTTF labelWithString:message_1 dimensions:containerSize_1 hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
     [shadow_1 setColor:ccc3(0, 0, 0)];
     [shadow_1 setOpacity:191];
     [shadow_1 setPosition:ccp(descriptionMessage_1.position.x+shadowOffset, descriptionMessage_1.position.y-shadowOffset)];
@@ -111,12 +111,12 @@
     CGSize actualSize_2 = [message_2 sizeWithFont:[UIFont fontWithName:kCommonFontName size:fontSize] constrainedToSize:maxSize lineBreakMode:UILineBreakModeWordWrap];
     CGSize containerSize_2 = { actualSize_2.width, actualSize_2.height };
     
-    CCLabelTTF *descriptionMessage_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *descriptionMessage_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
     [descriptionMessage_2 setColor:ccc3(107, 205, 255)];
     [descriptionMessage_2 setPosition:ccp(screenSize.width/2, alienShip.contentSize.height/-2 - descriptionWindow.contentSize.height/2 - 110)];
     [descriptionWindowLayer addChild:descriptionMessage_2 z:3];
                                         
-    CCLabelTTF *shadow_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
+    CCLabelTTF *shadow_2 = [CCLabelTTF labelWithString:message_2 dimensions:containerSize_2 hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:fontSize];
     [shadow_2 setColor:ccc3(0, 0, 0)];
     [shadow_2 setOpacity:191];
     [shadow_2 setPosition:ccp(descriptionMessage_2.position.x+shadowOffset, descriptionMessage_2.position.y-shadowOffset)];

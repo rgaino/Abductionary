@@ -225,7 +225,7 @@
         position.y += 10;
         
 
-        humanWordLabel = [CCLabelTTF labelWithString:text dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:25];
+        humanWordLabel = [CCLabelTTF labelWithString:text dimensions:CGSizeMake(147, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:25];
         [humanWordLabel setPosition:position];
         [_scene addChild:humanWordLabel z:21];
 

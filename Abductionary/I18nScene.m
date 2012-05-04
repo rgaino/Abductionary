@@ -46,7 +46,6 @@
     [changeIdiomBackground setAnchorPoint:ccp(0,0)];
     [changeIdiomBackground setPosition:ccp(0,0)];
     [self addChild:changeIdiomBackground z:0];
-
 }
 
 -(void) setupMenu
@@ -58,21 +57,21 @@
     CCMenu *languagesMenu = [CCMenu menuWithItems:nil];
     [languagesMenu setPosition:CGPointZero];
     
-    CCLabelTTF *englishLabel = [CCLabelTTF labelWithString:@"ENGLISH" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *englishLabel = [CCLabelTTF labelWithString:@"ENGLISH" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [englishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *englishButton = [CCMenuItemLabel itemWithLabel:englishLabel target:self selector:@selector(switchToLanguage:)];
     [englishButton setPosition: ccp(xPosition, 508)];	
     [englishButton setTag:1];
     [languagesMenu addChild:englishButton];
 
-    CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [spanishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *spanishButton = [CCMenuItemLabel itemWithLabel:spanishLabel target:self selector:@selector(switchToLanguage:)];
     [spanishButton setPosition: ccp(xPosition, 422)];	
     [spanishButton setTag:2];
     [languagesMenu addChild:spanishButton];
 
-    CCLabelTTF *portugueseLabel = [CCLabelTTF labelWithString:@"PORTUGUÊS" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *portugueseLabel = [CCLabelTTF labelWithString:@"PORTUGUÊS" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [portugueseLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *portugueseButton = [CCMenuItemLabel itemWithLabel:portugueseLabel target:self selector:@selector(switchToLanguage:)];
     [portugueseButton setTag:3];

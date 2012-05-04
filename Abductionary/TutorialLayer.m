@@ -59,7 +59,7 @@
     [self addChild:closeButton z:3]; 
     
     
-    CCLabelTTF *skipTutorialLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Skip Tutorial"]dimensions:CGSizeMake(147, 50) alignment:CCTextAlignmentCenter fontName:kCommonFontName fontSize:13];
+    CCLabelTTF *skipTutorialLabel = [CCLabelTTF labelWithString:[[I18nManager getInstance] getLocalizedStringFor:@"Skip Tutorial"]dimensions:CGSizeMake(147, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:13];
     [skipTutorialLabel setColor:ccc3(255, 68, 0)];
     [skipTutorialLabel setPosition:ccp(393,238)];
     [self addChild:skipTutorialLabel z:3];
@@ -76,7 +76,7 @@
         NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:tutorialTextKey];
         
         CGSize containerSize = CGSizeMake(370, 190);    
-        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel setPosition: ccp(525, 415)];	
         [self addChild:tutorialMessageLabel z:5];                                   
@@ -87,14 +87,14 @@
             NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-1-1"];
             
             CGSize containerSize = CGSizeMake(380, 190);    
-            tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+            tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
             [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
             [tutorialMessageLabel setPosition: ccp(515, 415)];	
             [self addChild:tutorialMessageLabel z:5];     
             
             tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-1-2"];
             containerSize = CGSizeMake(340, 190);
-            tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+            tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
             [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
             [tutorialMessageLabel_2 setPosition:ccp(538, 365)];	
             [self addChild:tutorialMessageLabel_2 z:5];     
@@ -137,21 +137,21 @@
         NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-1"];
         
         CGSize containerSize = CGSizeMake(380, 190);    
-        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel setPosition: ccp(515, 418)];	
         [self addChild:tutorialMessageLabel z:5];     
         
         tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-2"];
         containerSize = CGSizeMake(340, 190);
-        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel_2 setPosition:ccp(538, 340)];	
         [self addChild:tutorialMessageLabel_2 z:5];     
         
         tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-2-3"];
         containerSize = CGSizeMake(340, 190);
-        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel_3 setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel_3 setPosition:ccp(538, 290)];	
         [self addChild:tutorialMessageLabel_3 z:5];     
@@ -164,14 +164,14 @@
         
         NSString *tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-3-1"];
         CGSize containerSize = CGSizeMake(340, 190);
-        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel_2 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel_2 setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel_2 setPosition:ccp(538, 418)];	
         [self addChild:tutorialMessageLabel_2 z:5];     
         
         tutorialTextString = [[I18nManager getInstance] getLocalizedStringFor:@"Tutorial_4-3-2"];
         containerSize = CGSizeMake(340, 190);
-        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
+        tutorialMessageLabel_3 = [CCLabelTTF labelWithString:tutorialTextString dimensions:containerSize hAlignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:tutorialFontSize];
         [tutorialMessageLabel_3 setColor:ccc3(164, 185, 0)];
         [tutorialMessageLabel_3 setPosition:ccp(538, 310)];	
         [self addChild:tutorialMessageLabel_3 z:5];     
