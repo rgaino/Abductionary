@@ -177,7 +177,6 @@
 -(CGRect) letterSpriteBoundingBox
 {
     CGRect box = CGRectMake(self.position.x - (_letterSprite.contentSize.width/2), self.position. y- (_letterSprite.contentSize.height/2), _letterSprite.contentSize.width, _letterSprite.contentSize.height);
-    NSLog(@"Bounding box for letter %C is x=%.1f y=%.1f w=%.1f h=%.1f", _letter, box.origin.x, box.origin.y, box.size.width, box.size.height);
     return box;
 }
 
