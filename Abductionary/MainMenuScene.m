@@ -470,7 +470,7 @@
 
     
 
-    CCMenuItemImage *changeLanguageButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"resetTutorialUp.png"] target:self selector:@selector(pushChangeLanguageScene)];
+    CCMenuItemImage *changeLanguageButton = [CCMenuItemImage itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"changeLanguageButtonDown.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"changeLanguageButtonUp.png"] target:self selector:@selector(pushChangeLanguageScene)];
 	[changeLanguageButton setPosition:ccp(winSize.width+(winSize.width/2), 400)];
 	[mainMenu addChild:changeLanguageButton];
     
