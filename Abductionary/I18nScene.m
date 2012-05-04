@@ -30,6 +30,7 @@
     {
         [[SimpleAudioEngine sharedEngine] preloadEffect:kSoundMainMenuClick];
         [self setIsTouchEnabled:YES];
+        [self setupSprites];
         [self setupMenu];
         
     }
@@ -37,58 +38,54 @@
 	return self;
 }
 
+-(void) setupSprites
+{
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"I18n_Screen.plist"];
+    
+    CCSprite *changeIdiomBackground = [CCSprite spriteWithSpriteFrameName:@"changeIdiomBackground.png"];
+    [changeIdiomBackground setAnchorPoint:ccp(0,0)];
+    [changeIdiomBackground setPosition:ccp(0,0)];
+    [self addChild:changeIdiomBackground z:0];
+
+}
 
 -(void) setupMenu
 {
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-    float xPosition = 700;
-    float spacing = 100;
+    CGSize containerSize = CGSizeMake(300, 50);
+    float xPosition = winSize.width/2;
     
     CCMenu *languagesMenu = [CCMenu menuWithItems:nil];
     [languagesMenu setPosition:CGPointZero];
     
-    CCLabelTTF *englishLabel = [CCLabelTTF labelWithString:@"ENGLISH" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *englishLabel = [CCLabelTTF labelWithString:@"ENGLISH" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [englishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *englishButton = [CCMenuItemLabel itemWithLabel:englishLabel target:self selector:@selector(switchToLanguage:)];
-    [englishButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
+    [englishButton setPosition: ccp(xPosition, 508)];	
     [englishButton setTag:1];
     [languagesMenu addChild:englishButton];
 
-    CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [spanishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *spanishButton = [CCMenuItemLabel itemWithLabel:spanishLabel target:self selector:@selector(switchToLanguage:)];
-    [spanishButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
+    [spanishButton setPosition: ccp(xPosition, 422)];	
     [spanishButton setTag:2];
     [languagesMenu addChild:spanishButton];
 
-    CCLabelTTF *portugueseLabel = [CCLabelTTF labelWithString:@"PORTUGUÊS" fontName:kCommonFontName fontSize:30];
+    CCLabelTTF *portugueseLabel = [CCLabelTTF labelWithString:@"PORTUGUÊS" dimensions:containerSize alignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [portugueseLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *portugueseButton = [CCMenuItemLabel itemWithLabel:portugueseLabel target:self selector:@selector(switchToLanguage:)];
     [portugueseButton setTag:3];
-    [portugueseButton setPosition: ccp(winSize.width/2, xPosition-=spacing)];	
+    [portugueseButton setPosition: ccp(xPosition, 338)];	
     [languagesMenu addChild:portugueseButton];
 
     
-    CCLabelTTF *okLabel = [CCLabelTTF labelWithString:@"OK" fontName:kCommonFontName fontSize:30];
-    [okLabel setColor:ccc3(162, 209, 73)];
-    CCMenuItemLabel *okButton = [CCMenuItemLabel itemWithLabel:okLabel target:self selector:@selector(okButtonPressed)];
-    [okButton setPosition: ccp(800, 150)];	
+    CCMenuItemSprite *okButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"okButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"okButton.png"] target:self selector:@selector(okButtonPressed)];
+    [okButton setPosition: ccp(878, 300)];	
     [languagesMenu addChild:okButton];
     
-    [self addChild:languagesMenu z:2];  
-
-    //Message label below "OK"
-    NSString *messageText = @"(you can change the language later \n on the SETTINGS menu)";
-    float fontSize = 20;
-    CGSize maxSize = { 450, 2000 };
     
-    CGSize actualSize = [messageText sizeWithFont:[UIFont fontWithName:kCommonFontName size:fontSize] constrainedToSize:maxSize lineBreakMode:UILineBreakModeWordWrap];
-    CGSize containerSize = { actualSize.width, actualSize.height };
-
-    messageLabel = [CCLabelTTF labelWithString:messageText dimensions:containerSize alignment:UITextAlignmentLeft fontName:kCommonFontName fontSize:20];
-    [messageLabel setColor:ccc3(162, 209, 73)];
-    [messageLabel setPosition: ccp(okButton.position.x, 100)];	
-    [self addChild:messageLabel];
+    [self addChild:languagesMenu z:2];  
 }
 
 
@@ -126,11 +123,13 @@
 
 -(void) dealloc
 {
-    CCLOG(@"Dealloc IntroAnimationScene: %@", self); 
+    CCLOG(@"Dealloc I18nScene: %@", self); 
     
     [[SimpleAudioEngine sharedEngine] unloadEffect:kSoundMainMenuClick];
-    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"I18n_Screen.plist"];
+
     [super dealloc];
 }
+
 
 @end

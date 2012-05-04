@@ -17,6 +17,7 @@
 }
 
 +(CCScene *) scene;
+-(void) setupSprites;
 -(void) setupMenu;
 -(void) switchToLanguage:(id) sender;
 -(void) okButtonPressed;

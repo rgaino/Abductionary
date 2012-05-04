@@ -235,6 +235,10 @@
 		53A5BCFC1517F10900C05FE8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A5BCFB1517F10900C05FE8 /* MediaPlayer.framework */; };
 		53A5BD031517F28800C05FE8 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BD021517F28700C05FE8 /* IntroScene.m */; };
 		53A5BD061517F52700C05FE8 /* abd_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BD051517F52700C05FE8 /* abd_intro.mov */; };
+		53A6B4B71554795B00FE9EE4 /* I18n_Screen-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53A6B4B31554795B00FE9EE4 /* I18n_Screen-hd.plist */; };
+		53A6B4B81554795B00FE9EE4 /* I18n_Screen-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53A6B4B41554795B00FE9EE4 /* I18n_Screen-hd.pvr.ccz */; };
+		53A6B4B91554795B00FE9EE4 /* I18n_Screen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53A6B4B51554795B00FE9EE4 /* I18n_Screen.plist */; };
+		53A6B4BA1554795B00FE9EE4 /* I18n_Screen.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53A6B4B61554795B00FE9EE4 /* I18n_Screen.pvr.ccz */; };
 		53A8D85E153207A100761467 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D85D153207A100761467 /* I18nManager.m */; };
 		53A8D862153208BE00761467 /* I18nScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D861153208BE00761467 /* I18nScene.m */; };
 		53CB565E1538FBEC003CDB1C /* en in Resources */ = {isa = PBXBuildFile; fileRef = 53CB565D1538FBEC003CDB1C /* en */; };
@@ -657,6 +661,10 @@
 		53A5BD011517F23400C05FE8 /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
 		53A5BD021517F28700C05FE8 /* IntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroScene.m; sourceTree = "<group>"; };
 		53A5BD051517F52700C05FE8 /* abd_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = abd_intro.mov; sourceTree = "<group>"; };
+		53A6B4B31554795B00FE9EE4 /* I18n_Screen-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "I18n_Screen-hd.plist"; path = "Resources/I18n_Screen-hd.plist"; sourceTree = "<group>"; };
+		53A6B4B41554795B00FE9EE4 /* I18n_Screen-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I18n_Screen-hd.pvr.ccz"; path = "Resources/I18n_Screen-hd.pvr.ccz"; sourceTree = "<group>"; };
+		53A6B4B51554795B00FE9EE4 /* I18n_Screen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = I18n_Screen.plist; path = Resources/I18n_Screen.plist; sourceTree = "<group>"; };
+		53A6B4B61554795B00FE9EE4 /* I18n_Screen.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = I18n_Screen.pvr.ccz; path = Resources/I18n_Screen.pvr.ccz; sourceTree = "<group>"; };
 		53A8D85C153207A100761467 /* I18nManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nManager.h; sourceTree = "<group>"; };
 		53A8D85D153207A100761467 /* I18nManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
 		53A8D860153208BE00761467 /* I18nScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nScene.h; sourceTree = "<group>"; };
@@ -1654,6 +1662,7 @@
 		53A5BCA31517E57400C05FE8 /* SpriteSheets */ = {
 			isa = PBXGroup;
 			children = (
+				53A6B4B11554794100FE9EE4 /* I18n Screen */,
 				53F51EA61523B090005F9CD8 /* Intro Animation */,
 				537AFC54151A8EE200B78F19 /* Tutorials */,
 				537AFC4B151A8DA000B78F19 /* Truck Animation */,
@@ -1857,6 +1866,17 @@
 				53A5BD051517F52700C05FE8 /* abd_intro.mov */,
 			);
 			name = Videos;
+			sourceTree = "<group>";
+		};
+		53A6B4B11554794100FE9EE4 /* I18n Screen */ = {
+			isa = PBXGroup;
+			children = (
+				53A6B4B31554795B00FE9EE4 /* I18n_Screen-hd.plist */,
+				53A6B4B41554795B00FE9EE4 /* I18n_Screen-hd.pvr.ccz */,
+				53A6B4B51554795B00FE9EE4 /* I18n_Screen.plist */,
+				53A6B4B61554795B00FE9EE4 /* I18n_Screen.pvr.ccz */,
+			);
+			name = "I18n Screen";
 			sourceTree = "<group>";
 		};
 		53A8D85A1532077200761467 /* i18n Manager */ = {
@@ -2557,6 +2577,10 @@
 				530E3995153DF3E5002A732C /* smokeParticles.plist in Resources */,
 				531884A3154F0B14004A4C5E /* es in Resources */,
 				531884A4154F0B14004A4C5E /* pt in Resources */,
+				53A6B4B71554795B00FE9EE4 /* I18n_Screen-hd.plist in Resources */,
+				53A6B4B81554795B00FE9EE4 /* I18n_Screen-hd.pvr.ccz in Resources */,
+				53A6B4B91554795B00FE9EE4 /* I18n_Screen.plist in Resources */,
+				53A6B4BA1554795B00FE9EE4 /* I18n_Screen.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
