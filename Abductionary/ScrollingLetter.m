@@ -41,11 +41,26 @@
     }
     
     
-	if( (self=[super initWithSpriteFrameName:filename])) {
-
-		[self setPosition: [self getRandomPosition] ];
+	if( (self=[super init])) 
+    {
+        [self setPosition:[self getRandomPosition]];
 		[self setScrolling:YES];
 	}
+    
+    _letterSprite = [CCSprite spriteWithSpriteFrameName:filename];
+    [_letterSprite setPosition:ccp(0,0)];
+    [self addChild:_letterSprite z:2];
+    
+    _dropShadowSprite = [CCSprite spriteWithSpriteFrameName:@"letterDropShadow.png"];
+    float shadowPosOffsetX = 14;
+    float shadowPosOffsetY = 10;
+    CGPoint shadowPos = ccp(_letterSprite.position.x-shadowPosOffsetX, _letterSprite.position.y+shadowPosOffsetY);
+    [_dropShadowSprite setPosition:shadowPos];
+    [self addChild:_dropShadowSprite z:1];
+    
+
+    self.isTouchEnabled = NO;
+    [self setContentSize:[_dropShadowSprite contentSize]];
         
 	return self;
 }
@@ -113,6 +128,8 @@
 	id moveToAction = [CCMoveTo actionWithDuration:kMoveLetterToSlotAnimationSpeed position:_originalPositionOnScrollingArea];
 	[self runAction:moveToAction];
 	[self setScrolling:YES];
+    
+    [self fadeInDropShadow];
 }
 
 -(BOOL) hasOverlappingFrame:(CGRect) frame inArray:(NSMutableArray *) scrollingLetters 
@@ -121,7 +138,7 @@
 	for(ScrollingLetter *scrollingLetter in scrollingLetters) {
 		if( scrollingLetter != self ) {
 
-            CGRect scrollingLetterFrame = [scrollingLetter boundingBox];
+            CGRect scrollingLetterFrame = [scrollingLetter letterSpriteBoundingBox];
         
             if(	CGRectIntersectsRect(frame, scrollingLetterFrame) ) {
                 return YES;
@@ -138,23 +155,37 @@
 }
 
 
+-(void) setOpacity: (GLubyte) o
+{
+    [_letterSprite setOpacity:o];
+    [_dropShadowSprite setOpacity:o];
+}
+
+-(void) fadeInDropShadow
+{
+    id fadeIn = [CCFadeIn actionWithDuration:0.5f];
+    [_dropShadowSprite runAction:fadeIn];
+}
+
+-(void) fadeOutDropShadow
+{
+    id fadeOut = [CCFadeOut actionWithDuration:0.5f];
+    [_dropShadowSprite runAction:fadeOut];
+}
+
+
+-(CGRect) letterSpriteBoundingBox
+{
+    CGRect box = CGRectMake(self.position.x - (_letterSprite.contentSize.width/2), self.position. y- (_letterSprite.contentSize.height/2), _letterSprite.contentSize.width, _letterSprite.contentSize.height);
+    NSLog(@"Bounding box for letter %C is x=%.1f y=%.1f w=%.1f h=%.1f", _letter, box.origin.x, box.origin.y, box.size.width, box.size.height);
+    return box;
+}
+
 - (void) dealloc
 {
 	[super dealloc];
 }
 
 
-/*
--(id) initWithTexture:(CCTexture2D*)texture rect:(CGRect)rect
-{
-	if( (self=[super initWithTexture:texture rect:rect]))
-	{
-//        ivar1 = xxx;
-//        ivar2 = yyy;
-//        ivar3 = zzz;
-	}
-	return self;
-}
-*/
 
 @end

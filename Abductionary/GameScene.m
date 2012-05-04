@@ -1153,7 +1153,7 @@
     
     for(LetterSlot *letterSlot in letterSlots) 
     {
-        if( CGRectIntersectsRect([letterSlot boundingBox], [draggingScrollingLetter boundingBox])) 
+        if( CGRectIntersectsRect([letterSlot boundingBox], [draggingScrollingLetter letterSpriteBoundingBox])) 
         {
             if( [letterSlot scrollingLetterInSlot] == nil ) 
             {
@@ -1283,13 +1283,14 @@
 }
 
 
-
 -(void) scrollingLetterTapped {
     
+    NSLog(@"Tap at %.1f, %.1f", gestureStartPoint.x, gestureStartPoint.y);
+
     for(ScrollingLetter *scrollingLetter in scrollingLetters) {
         
-        if( CGRectContainsPoint([scrollingLetter boundingBox], gestureStartPoint) ) {
-            
+        if( CGRectContainsPoint([scrollingLetter letterSpriteBoundingBox], gestureStartPoint) ) 
+        {
             if( [scrollingLetter scrolling] ) {
 				[scrollingLetter rememberOriginalPositionOnScrollingArea];
 			}
@@ -1302,8 +1303,9 @@
                     [gameSoundManager playTapLetterSound];
                     
                     id moveToAction = [CCMoveTo actionWithDuration:kMoveLetterToSlotAnimationSpeed position:[letterSlot position]];
-                    //id easeOut = [CCEaseOut actionWithAction:moveToAction rate:20];
                     [scrollingLetter runAction:moveToAction];
+                    [scrollingLetter fadeOutDropShadow];
+
                     [self performSelectorInBackground:@selector(evaluateWord) withObject:nil];
                     
                     return;				
@@ -1311,7 +1313,7 @@
             }
         }
     }
-    
+    NSLog(@"Tap point has no scrolling letters");
 }
 
 #pragma mark Dictionary methods

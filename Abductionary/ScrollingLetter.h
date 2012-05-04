@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface ScrollingLetter : CCSprite {
+@interface ScrollingLetter : CCLayer 
+{
+    CCSprite *_letterSprite;
+    CCSprite *_dropShadowSprite;
 
 	BOOL _scrolling;
     BOOL _isScrambledWord;
@@ -32,5 +35,9 @@
 -(float) getChuteXPositionForIndexInWord;
 -(BOOL) isScrambledWord;
 -(void) scrollBy:(float) letterScrollOffsetY;
+-(void) setOpacity: (GLubyte) o;
+-(CGRect) letterSpriteBoundingBox;
+-(void) fadeInDropShadow;
+-(void) fadeOutDropShadow;
 
 @end

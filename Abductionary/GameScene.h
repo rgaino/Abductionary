@@ -136,6 +136,7 @@
 -(void) discardLetters;
 -(void) removeAllScrollingLetters;
 
+
 @property (nonatomic, retain) NSDate *lastTimeTouchMoved;
 
 @end
