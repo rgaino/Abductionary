@@ -7,6 +7,7 @@
 //
 
 #import "GameCenterManager.h"
+#import "I18nManager.h"
 
 @implementation GameCenterManager
 
@@ -115,24 +116,9 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
 
 - (void) reportScore: (int64_t) score forCategory: (kGameMode) gameMode
 {
-    NSString *leaderboardCategory;
     
-    switch( gameMode )
-    {
-        case kGameModeEasy:
-            NSLog(@"reporting score for category easy");
-            leaderboardCategory = kLeaderboardCategoryEasy;
-            break;
-        case kGameModeMedium:
-            NSLog(@"reporting score for category medium");
-            leaderboardCategory = kLeaderboardCategoryMedium;
-            break;
-        default:
-            NSLog(@"reporting score for category hard");
-            leaderboardCategory = kLeaderboardCategoryHard;
-            break;     
-    }
-    
+    NSString *leaderboardCategory = [self getLeaderboardCategoryForGameMode:gameMode];    
+    NSLog(@"Reporting scores for category %@", leaderboardCategory);
     
     
     GKScore *scoreReporter = [[[GKScore alloc] initWithCategory:leaderboardCategory] autorelease];
@@ -157,32 +143,19 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
 //    [leaderboardResults release];
     leaderboardResults = [[NSMutableArray alloc] init];
     
-    NSString *leaderboardCategory;
     GKLeaderboardPlayerScope playerScope;
     GKLeaderboardTimeScope timeScope;
-    
-    switch( leaderboardGameMode )
-    {
-        case kLeaderboardGameModeEasy:
-            leaderboardCategory = kLeaderboardCategoryEasy;
-            break;
-        case kLeaderboardGameModeMedium:
-            leaderboardCategory = kLeaderboardCategoryMedium;
-            break;
-        case kLeaderboardGameModeHard:
-            leaderboardCategory = kLeaderboardCategoryHard;
-            break;     
-    }
-    NSLog(@"retrieving scores for category %@", leaderboardCategory);
+    NSString *leaderboardCategory = [self getLeaderboardCategoryForGameMode:leaderboardGameMode];    
+    NSLog(@"Retrieving scores for category %@", leaderboardCategory);
     
     switch( leaderboardScope )
     {
         case kLeaderboardScopeGlobal:
-            NSLog(@"retrieving scores for scope Global");
+            NSLog(@"Retrieving scores for scope Global");
             playerScope = GKLeaderboardPlayerScopeGlobal;
             break;
         case kLeaderboardScopeFriends:
-            NSLog(@"retrieving scores for scope Friends");
+            NSLog(@"Retrieving scores for scope Friends");
             playerScope = GKLeaderboardPlayerScopeFriendsOnly;
             break;
     }
@@ -190,15 +163,15 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
     switch( leaderboardTimePeriod )
     {
         case kLeaderboardTimePeriodAllTime:
-            NSLog(@"retrieving scores for period All Time");
+            NSLog(@"Retrieving scores for period All Time");
             timeScope = GKLeaderboardTimeScopeAllTime;
             break;
         case kLeaderboardTimePeriodWeek:
-            NSLog(@"retrieving scores for period Week");
+            NSLog(@"Retrieving scores for period Week");
             timeScope = GKLeaderboardTimeScopeWeek;
             break;
         case kLeaderboardTimePeriodToday:
-            NSLog(@"retrieving scores for period Today");
+            NSLog(@"Retrieving scores for period Today");
             timeScope = GKLeaderboardTimeScopeToday;
             break;
     }
@@ -366,6 +339,34 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
     return savedFailedScores;
 }
 
+-(NSString*) getLeaderboardCategoryForGameMode:(kLeaderboardGameMode)leaderboardGameMode
+{
+    NSString *leaderboardCategory;
+    
+    switch( leaderboardGameMode )
+    {
+        case kLeaderboardGameModeEasy:
+            leaderboardCategory = kLeaderboardCategoryEasy;
+            break;
+        case kLeaderboardGameModeMedium:
+            leaderboardCategory = kLeaderboardCategoryMedium;
+            break;
+        case kLeaderboardGameModeHard:
+            leaderboardCategory = kLeaderboardCategoryHard;
+            break;     
+    }
+
+    
+    //append language suffix for localized leaderboards. English has no suffix to preserve old scores before i18n.
+    
+    if ( [[[I18nManager getInstance] currentLanguage] isEqualToString:@"en"] ) {
+        return leaderboardCategory;
+    }
+    
+    NSString *localizedLeaderboardCategory = [NSString stringWithFormat:@"%@_%@", leaderboardCategory, [[I18nManager getInstance] currentLanguage]];
+    
+    return localizedLeaderboardCategory;
+}
 
 
 -(void) dealloc

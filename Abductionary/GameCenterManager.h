@@ -30,5 +30,6 @@
 -(NSMutableArray*) getSavedFailedScores;
 -(void) retrySavedFailedScores;
 -(void) removeScoreFromSavedFailedScores:(GKScore*) score;
+-(NSString*) getLeaderboardCategoryForGameMode:(kLeaderboardGameMode)leaderboardGameMode;
 
 @end
