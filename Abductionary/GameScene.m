@@ -1285,8 +1285,6 @@
 
 -(void) scrollingLetterTapped {
     
-    NSLog(@"Tap at %.1f, %.1f", gestureStartPoint.x, gestureStartPoint.y);
-
     for(ScrollingLetter *scrollingLetter in scrollingLetters) {
         
         if( CGRectContainsPoint([scrollingLetter letterSpriteBoundingBox], gestureStartPoint) ) 
