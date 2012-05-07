@@ -25,9 +25,9 @@
 	<key>Tap to Continue</key>
 	<string>TOQUE PARA CONTINUAR</string>
 	<key>IntroMessageLine1</key>
-	<string>Flotando en algún sitio no muy lejos de la tierra, el maligno emperador extraterrestre contaba los días antes de que empezara su invasión a la tierra. La única cosa que se interponía entre él y la total esclavitud humana era el idioma.</string>
+	<string>Flotando en algún sitio no muy lejos de la tierra, el maligno emperador extraterrestre contaba los días antes de que empezara su invasión a la tierra. La única barrera entre él y su objetivo de esclavizar a la raza humana, era el idioma.</string>
 	<key>IntroMessageLine2</key>
-	<string>El recién patentado Language Extractor 6000™ pronto está para tomar sagazmente el siguiente nivel. Haciendo el aprendizaje del idioma fácil y la total destrucción de la tierra inminente.</string>
+	<string>El recién patentado Language Extractor 6000™ está listo para llevar la exploración planetaria al siguiente nivel. Haciendo el aprendizaje del idioma fácil y la destrucción total de la tierra inminente.</string>
 	<key>OnePointLetters</key>
 	<string>aeoisnlrut</string>
 	<key>TwoPointLetters</key>
@@ -80,5 +80,36 @@
 	<string>OVER</string>
 	<key>Skip Tutorial</key>
 	<string>SIN TUTORIAL</string>
+	<key>Tutorial_1-1</key>
+	<string>Este es el Language Extractor 6000™.
+Tu misión es pulsar las letras que caen en el tubo y organizarlas en palabras.
+Solo se contarán palabras de tres letras o más.</string>
+	<key>Tutorial_1-2</key>
+	<string>Cada letra que dejas escapar por el tubo recalienta la máquina un poco.
+Sigue aprendiendo palabras para mantener la máquina fria y funcionando.
+Usar la misma palabra dos veces te dará puntos, pero no enfriará la máquina.
+Cuando se sobrecaliente, game over.</string>
+	<key>Tutorial_2-1</key>
+	<string>Has conseguido tu primera palabra!
+Pulsa el botón verde para aprenderla y sumar puntos.
+Cada letra tiene una puntuación y cuantas más letras tenga la palabra, más puntos ganas.
+Para devolver las letras al tubo, pulsa el botón rojo.</string>
+	<key>Tutorial_3-1</key>
+	<string>Cuando la máquina está fría, cada palabra que aprendes aumenta el medidor de poder.
+Llénalo del todo para conseguir tu primer poder especial.</string>
+	<key>Tutorial_4-1-1</key>
+	<string>¡Bien, has activado tu primer poder especial!</string>
+	<key>Tutorial_4-1-2</key>
+	<string>Ese poder te da una letra comodín, que puedes usar en lugar de cualquier otra. Simplemente ponla en el lugar adecuado y deja que la máquina compruebe la palabra. El botón verde se iluminará si la palabra es correcta.</string>
+	<key>Tutorial_4-2-1</key>
+	<string>Pero atención, si te guardas el poder especial y sigues rellenado la barra, ganarás más poderes especiales!</string>
+	<key>Tutorial_4-2-2</key>
+	<string>Este poder especial ralentiza la máquina durante un rato.</string>
+	<key>Tutorial_4-2-3</key>
+	<string>Este te enviará una palabra completa, pero desordenada. ¡Si descubres la palabra puntuará doble!</string>
+	<key>Tutorial_4-3-1</key>
+	<string>Este poder especial activa el multiplicador de puntuación. Cada nueva palabra que aprenda te dará sus puntos más los de la última palabra.</string>
+	<key>Tutorial_4-3-2</key>
+	<string>Por último, este poder especial es un salvavidas. Baja la temperatura de la máquina a cero, para que no te explote en la cara.</string>
 </dict>
 </plist>
