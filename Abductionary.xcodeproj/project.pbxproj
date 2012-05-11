@@ -241,6 +241,7 @@
 		53A6B4BA1554795B00FE9EE4 /* I18n_Screen.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53A6B4B61554795B00FE9EE4 /* I18n_Screen.pvr.ccz */; };
 		53A8D85E153207A100761467 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D85D153207A100761467 /* I18nManager.m */; };
 		53A8D862153208BE00761467 /* I18nScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8D861153208BE00761467 /* I18nScene.m */; };
+		53C9125D155DB75800B3E725 /* CCLabelTTF+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C9125C155DB75800B3E725 /* CCLabelTTF+extension.m */; };
 		53CB565E1538FBEC003CDB1C /* en in Resources */ = {isa = PBXBuildFile; fileRef = 53CB565D1538FBEC003CDB1C /* en */; };
 		53D8192A1517D97800B63DEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D819291517D97800B63DEC /* QuartzCore.framework */; };
 		53D8192C1517D97800B63DEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D8192B1517D97800B63DEC /* OpenGLES.framework */; };
@@ -669,6 +670,8 @@
 		53A8D85D153207A100761467 /* I18nManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
 		53A8D860153208BE00761467 /* I18nScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nScene.h; sourceTree = "<group>"; };
 		53A8D861153208BE00761467 /* I18nScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nScene.m; sourceTree = "<group>"; };
+		53C9125B155DB75800B3E725 /* CCLabelTTF+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCLabelTTF+extension.h"; sourceTree = "<group>"; };
+		53C9125C155DB75800B3E725 /* CCLabelTTF+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCLabelTTF+extension.m"; sourceTree = "<group>"; };
 		53CB565D1538FBEC003CDB1C /* en */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en; path = Languages/en; sourceTree = "<group>"; };
 		53D819251517D97800B63DEC /* Abductionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abductionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D819291517D97800B63DEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1781,6 +1784,7 @@
 		53A5BCDD1517F05400C05FE8 /* Categories and Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				53C91256155DB70200B3E725 /* CCLabelTTF */,
 				53A5BCE51517F0BF00C05FE8 /* CCVideoPlayer */,
 				53A5BCE01517F08300C05FE8 /* CCSprite */,
 				53A5BCDF1517F07600C05FE8 /* NSString */,
@@ -1895,6 +1899,15 @@
 				53A8D861153208BE00761467 /* I18nScene.m */,
 			);
 			name = "I18n Screen";
+			sourceTree = "<group>";
+		};
+		53C91256155DB70200B3E725 /* CCLabelTTF */ = {
+			isa = PBXGroup;
+			children = (
+				53C9125B155DB75800B3E725 /* CCLabelTTF+extension.h */,
+				53C9125C155DB75800B3E725 /* CCLabelTTF+extension.m */,
+			);
+			name = CCLabelTTF;
 			sourceTree = "<group>";
 		};
 		53D8191A1517D97800B63DEC = {
@@ -2750,6 +2763,7 @@
 				53F51EA51523ABBC005F9CD8 /* IntroAnimationScene.m in Sources */,
 				53A8D85E153207A100761467 /* I18nManager.m in Sources */,
 				53A8D862153208BE00761467 /* I18nScene.m in Sources */,
+				53C9125D155DB75800B3E725 /* CCLabelTTF+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
