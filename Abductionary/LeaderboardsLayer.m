@@ -12,6 +12,7 @@
 #import "NSDate+Helper.h"
 #import "NSString+NSString_Helper.h"
 #import "I18nManager.h"
+#import "CCLabelTTF+extension.h"
 
 @implementation LeaderboardsLayer
 
@@ -70,8 +71,9 @@
         [rankLabels addObject:rankLabel];
         [self addChild:rankLabel];
 
-        CCLabelTTF *playerNameLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(150, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
-		playerNameLabel.position =  ccp(205, y);
+//        CCLabelTTF *playerNameLabel = [CCLabelTTF labelWithString:@"" dimensions:CGSizeMake(150, 50) hAlignment:kCCTextAlignmentCenter fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+        CCLabelTTF *playerNameLabel = [CCLabelTTF labelWithString:@"" fontName:kCommonFontName fontSize:kLeaderboardFontSize];
+		playerNameLabel.position =  ccp(205, y+13);
         playerNameLabel.color = ccc3(0, 167, 255);
         [playerNameLabels addObject:playerNameLabel];
         [self addChild:playerNameLabel];
@@ -110,9 +112,9 @@
             GameCenterPlayerScore *gameCenterPlayerScore = [leaderboardResults objectAtIndex:i];
             
             NSLog(@"%d %@ %@ %@",gameCenterPlayerScore.rank, gameCenterPlayerScore.alias, gameCenterPlayerScore.formattedValue, [gameCenterPlayerScore.date stringDaysAgo]);
-            //[label setString:[NSString stringWithFormat:@"%d %@ %@ %@",gameCenterPlayerScore.rank, gameCenterPlayerScore.alias, gameCenterPlayerScore.formattedValue, [gameCenterPlayerScore.date stringDaysAgo]]];
             [rankLabel setString:[NSString stringWithFormat:@"%d", gameCenterPlayerScore.rank]];
             [playerNameLabel setString:gameCenterPlayerScore.alias];
+            [playerNameLabel shrinkFontSizeToFitWidth:150];
             [dateLabel setString:[gameCenterPlayerScore.date stringDaysAgo]];
             [scoreLabel setString:gameCenterPlayerScore.formattedValue];
         } else
