@@ -931,6 +931,9 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
+     
+     
     [leaderboardsGlobalButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsFriendsButton opacity] > 0) { [leaderboardsFriendsButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
 
@@ -941,6 +944,8 @@
 -(void) loadFriendsLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
+
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
 
     [leaderboardsFriendsButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsGlobalButton opacity] > 0) { [leaderboardsGlobalButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -954,6 +959,8 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
+
     [leaderboardsAllTimeButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsWeekButton opacity] > 0) { [leaderboardsWeekButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
     if([leaderboardsTodayButton opacity] > 0) { [leaderboardsTodayButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -965,6 +972,8 @@
 -(void) loadWeekLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
+
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
 
     [leaderboardsWeekButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsAllTimeButton opacity] > 0) { [leaderboardsAllTimeButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -978,6 +987,8 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
+
     [leaderboardsTodayButton runAction:[CCFadeIn actionWithDuration:0.3f]];
     if([leaderboardsAllTimeButton opacity] > 0) { [leaderboardsAllTimeButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
     if([leaderboardsWeekButton opacity] > 0) { [leaderboardsWeekButton runAction:[CCFadeOut actionWithDuration:0.3f]]; }
@@ -989,7 +1000,9 @@
 -(void) loadEasyLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
-    
+
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
+
     [easyButtonLabel setColor:ccc3(150, 248, 38)];
     [mediumButtonLabel setColor:ccc3(147, 113, 6)];
     [hardButtonLabel setColor:ccc3(146, 23, 14)];
@@ -1006,6 +1019,8 @@
 {
     [mainMenuSoundManager playMainMenuClickSound];
 
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
+
     [easyButtonLabel setColor:ccc3(73, 136, 0)];
     [mediumButtonLabel setColor:ccc3(255, 234, 36)];
     [hardButtonLabel setColor:ccc3(146, 23, 14)];
@@ -1021,6 +1036,8 @@
 -(void) loadHardLeaderboards
 {
     [mainMenuSoundManager playMainMenuClickSound];
+
+    if( [[GameCenterManager getInstance] isRetrievingScores] ) { return; }
 
     [easyButtonLabel setColor:ccc3(73, 136, 0)];
     [mediumButtonLabel setColor:ccc3(147, 113, 6)];

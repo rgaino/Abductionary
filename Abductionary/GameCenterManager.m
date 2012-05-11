@@ -11,6 +11,8 @@
 
 @implementation GameCenterManager
 
+@synthesize isRetrievingScores;
+
 static GameCenterManager *_gameCenterManagerInstance = nil;
 
 
@@ -49,9 +51,11 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
             NSNotificationCenter *nc = 
             [NSNotificationCenter defaultCenter];
             [nc addObserver:self 
-                   selector:@selector(authenticationChanged) 
+                       selector:@selector(authenticationChanged) 
                        name:GKPlayerAuthenticationDidChangeNotificationName 
-                     object:nil];
+                       object:nil];
+            
+            isRetrievingScores = NO;
         }
 	}
 
@@ -140,7 +144,10 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
 
 - (void) retrieveScoresForGameMode:(kLeaderboardGameMode)leaderboardGameMode scope:(kLeaderboardScope)leaderboardScope period:(kLeaderboardTimePeriod)leaderboardTimePeriod withCallback:(id<GameCenterManagerDelegate>) callbackDelegate
 {
-//    [leaderboardResults release];
+    if(leaderboardResults != nil) { return; }
+
+    isRetrievingScores = YES;
+    
     leaderboardResults = [[NSMutableArray alloc] init];
     
     GKLeaderboardPlayerScope playerScope;
@@ -190,7 +197,9 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
             {
                 NSLog(@"Failed to retrieve leaderboards with error [%@]", [error localizedDescription]);
                 [leaderboardResults release];
+                leaderboardResults = nil;
                 [callbackDelegate errorLoadingScores:error];
+                isRetrievingScores = NO;
                 return;
             }
 
@@ -237,6 +246,7 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
                          NSLog(@"Leaderboards loaded successfully");
                          [callbackDelegate didFinishLoadingScores:leaderboardResults];
                          [leaderboardResults release];
+                         leaderboardResults = nil;
                      }
                  }]; 
             } else 
@@ -244,12 +254,14 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
                 NSLog(@"no scores reported, passing empty array");
                 [callbackDelegate didFinishLoadingScores:leaderboardResults];
                 [leaderboardResults release];
+                leaderboardResults = nil;
             }
         }];
         
         [leaderboardRequest release];
     }
 
+    isRetrievingScores = NO;
 }
 
 
@@ -372,6 +384,8 @@ static GameCenterManager *_gameCenterManagerInstance = nil;
 -(void) dealloc
 {
     [leaderboardResults release];
+    leaderboardResults = nil;
+
     [super dealloc];
 }
 

@@ -17,7 +17,10 @@
 {
     BOOL userAuthenticated;
     NSMutableArray *leaderboardResults;
+    BOOL isRetrievingScores;
 }
+
+@property (nonatomic, readonly) BOOL isRetrievingScores;
 
 +(GameCenterManager*) getInstance;
 
