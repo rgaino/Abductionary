@@ -11,7 +11,7 @@
 	<key>you can change the language later on the SETTINGS menu</key>
 	<string>(you can change the language later on the SETTINGS menu)</string>
 	<key>scrabble alphabet</key>
-	<string>eeeeeeeeeeeeaaaaaaaaaaaaiiiiiiiiiioooooooooonnnnnnrrrrrrttttttllllssssssuuuuuudddddgggbbbbbcccccmmmpppppffffhhhhvvwwwyyykkjxqz</string>
+	<string>eeeeeeeeeeeeeeeaaaaaaaaaiiiiiiiinnnnnnoooooorrrrrrssssssttttttuuuuuullllldddggmmmbbccppffhhvvjqkwxyz</string>
 	<key>Medium</key>
 	<string>MEDIUM</string>
 	<key>Easy</key>
@@ -29,19 +29,19 @@
 	<key>IntroMessageLine2</key>
 	<string>The newly patented Language Extractor 6000™ is about to take probing to the next level. Making learning the language easy and the total destruction of Earth - imminent.</string>
 	<key>OnePointLetters</key>
-	<string>eaionrtlsu</string>
+	<string>eainorstul</string>
 	<key>TwoPointLetters</key>
-	<string>dg</string>
+	<string>dgm</string>
 	<key>ThreePointLetters</key>
-	<string>bcmp</string>
+	<string>bcp</string>
 	<key>FourPointLetters</key>
-	<string>fhvwy</string>
+	<string>fhv</string>
 	<key>FivePointLetters</key>
-	<string>k</string>
+	<string></string>
 	<key>EightPointLetters</key>
-	<string>jx</string>
+	<string>jq</string>
 	<key>TenPointLetters</key>
-	<string>qz</string>
+	<string>kwxyz</string>
 	<key>Rank</key>
 	<string>#</string>
 	<key>Name</key>
