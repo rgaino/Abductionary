@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New Game</key>
+	<string>NEW GAME</string>
+	<key>Settings</key>
+	<string>SETTINGS</string>
+	<key>Leaderboards</key>
+	<string>LEADERBOARDS</string>
+	<key>you can change the language later on the SETTINGS menu</key>
+	<string>(you can change the language later on the SETTINGS menu)</string>
+	<key>scrabble alphabet</key>
+	<string>eeeeeeeeeeeeaaaaaaaaaaaaiiiiiiiiiioooooooooonnnnnnrrrrrrttttttllllssssssuuuuuudddddgggbbbbbcccccmmmpppppffffhhhhvvwwwyyykkjxqz</string>
+	<key>Medium</key>
+	<string>MEDIUM</string>
+	<key>Easy</key>
+	<string>EASY</string>
+	<key>Hard</key>
+	<string>HARD</string>
+	<key>Start</key>
+	<string>START</string>
+	<key>Change Language</key>
+	<string>CHANGE LANGUAGE</string>
+	<key>Tap to Continue</key>
+	<string>TAP TO CONTINUE</string>
+	<key>IntroMessageLine1</key>
+	<string>Floating somewhere not far from Earth, the evil alien overlord counts down the days until he can begin his invasion of Earth. The only thing standing between him and total human enslavement is the language barrier.</string>
+	<key>IntroMessageLine2</key>
+	<string>The newly patented Language Extractor 6000™ is about to take probing to the next level. Making learning the language easy and the total destruction of Earth - imminent.</string>
+	<key>OnePointLetters</key>
+	<string>eaionrtlsu</string>
+	<key>TwoPointLetters</key>
+	<string>dg</string>
+	<key>ThreePointLetters</key>
+	<string>bcmp</string>
+	<key>FourPointLetters</key>
+	<string>fhvwy</string>
+	<key>FivePointLetters</key>
+	<string>k</string>
+	<key>EightPointLetters</key>
+	<string>jx</string>
+	<key>TenPointLetters</key>
+	<string>qz</string>
+	<key>Rank</key>
+	<string>#</string>
+	<key>Name</key>
+	<string>NAME</string>
+	<key>Date</key>
+	<string>DATE</string>
+	<key>Score</key>
+	<string>SCORE</string>
+	<key>AllTime</key>
+	<string>ALL TIME</string>
+	<key>Week</key>
+	<string>WEEK</string>
+	<key>Today</key>
+	<string>TODAY</string>
+	<key>Global</key>
+	<string>GLOBAL</string>
+	<key>Friends</key>
+	<string>FRIENDS</string>
+	<key>ResetTutorial</key>
+	<string>RESET TUTORIAL</string>
+	<key>Music</key>
+	<string>MUSIC</string>
+	<key>Sound FX</key>
+	<string>SOUND FX</string>
+	<key>Main Menu</key>
+	<string>MAIN MENU</string>
+	<key>Main Menu Line 1</key>
+	<string>MAIN</string>
+	<key>Main Menu Line 2</key>
+	<string>MENU</string>
+	<key>Replay?</key>
+	<string>REPLAY?</string>
+	<key>Game Over 1</key>
+	<string>GAME</string>
+	<key>Game Over 2</key>
+	<string>OVER</string>
+	<key>Skip Tutorial</key>
+	<string>SKIP TUTORIAL</string>
+	<key>Tutorial_1-1</key>
+	<string>This is the Language Extractor 6000™.
+
+Your job is to tap the falling letters in the tube and arrange them into words on the panel.
+
+Only three letter words or more will be counted.</string>
+	<key>Tutorial_1-2</key>
+	<string>Each letter that you let escape down the tube overheats the machine a little.
+
+Keep learning new words to keep it cool and working.
+
+Using the same word twice will give you points, but won&apos;t cool down the machine.
+
+Once it overheats, it&apos;s game over.</string>
+	<key>Tutorial_2-1</key>
+	<string>Looks like you have your first word!
+
+Press the green button to learn it and score points.
+
+Each letter has a value and the longer the word, the points you earn.
+
+To send the letters back to the tube, press the red button.</string>
+	<key>Tutorial_3-1</key>
+	<string>When the machine is cool, each word you learn is filling up the power up meter.
+
+Fill the bar completely to earn your first power up.</string>
+	<key>Tutorial_4-1-1</key>
+	<string>Great, you&apos;ve activated your first power up!</string>
+	<key>Tutorial_4-1-2</key>
+	<string>This power up gives you a wildcard letter that works as any letter. Just throw it in the right place and the machine will find out if that makes a human word. The green button will light up if it does.</string>
+	<key>Tutorial_4-2-1</key>
+	<string>But be aware, if you save this power up and keep filling up the bar, you will earn more valuable power ups!</string>
+	<key>Tutorial_4-2-2</key>
+	<string>This power up slows down the machine for a short time.</string>
+	<key>Tutorial_4-2-3</key>
+	<string>This one will throw a whole word at you, but scrambled. Figure out the word and earn twice the points!</string>
+	<key>Tutorial_4-3-1</key>
+	<string>This power up will activate a score multiplier. Each new word you learn while it&apos;s active will earn points on top of the points from the last word.</string>
+	<key>Tutorial_4-3-2</key>
+	<string>Finally, this power up is a lifesaver. It will bring the machine&apos;s temperature to zero, so it doesn&apos;t blow up in your face.</string>
+</dict>
+</plist>
