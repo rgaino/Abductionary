@@ -60,14 +60,14 @@
     CCLabelTTF *englishLabel = [CCLabelTTF labelWithString:@"ENGLISH" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [englishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *englishButton = [CCMenuItemLabel itemWithLabel:englishLabel target:self selector:@selector(switchToLanguage:)];
-    [englishButton setPosition: ccp(xPosition, 508)];	
+    [englishButton setPosition: ccp(xPosition, 573)];	
     [englishButton setTag:1];
     [languagesMenu addChild:englishButton];
 
     CCLabelTTF *spanishLabel = [CCLabelTTF labelWithString:@"ESPAÑOL" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
     [spanishLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *spanishButton = [CCMenuItemLabel itemWithLabel:spanishLabel target:self selector:@selector(switchToLanguage:)];
-    [spanishButton setPosition: ccp(xPosition, 422)];	
+    [spanishButton setPosition: ccp(xPosition, 495)];	
     [spanishButton setTag:2];
     [languagesMenu addChild:spanishButton];
 
@@ -75,12 +75,19 @@
     [portugueseLabel setColor:ccc3(162, 209, 73)];
     CCMenuItemLabel *portugueseButton = [CCMenuItemLabel itemWithLabel:portugueseLabel target:self selector:@selector(switchToLanguage:)];
     [portugueseButton setTag:3];
-    [portugueseButton setPosition: ccp(xPosition, 338)];	
+    [portugueseButton setPosition: ccp(xPosition, 420)];	
     [languagesMenu addChild:portugueseButton];
+
+    CCLabelTTF *frenchLabel = [CCLabelTTF labelWithString:@"FRANÇAISE" dimensions:containerSize hAlignment:UITextAlignmentCenter fontName:kCommonFontName fontSize:30];
+    [frenchLabel setColor:ccc3(162, 209, 73)];
+    CCMenuItemLabel *frenchButton = [CCMenuItemLabel itemWithLabel:frenchLabel target:self selector:@selector(switchToLanguage:)];
+    [frenchButton setTag:4];
+    [frenchButton setPosition: ccp(xPosition, 345)];	
+    [languagesMenu addChild:frenchButton];
 
     
     CCMenuItemSprite *okButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"okButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"okButton.png"] target:self selector:@selector(okButtonPressed)];
-    [okButton setPosition: ccp(878, 300)];	
+    [okButton setPosition: ccp(928, 303)];	
     [languagesMenu addChild:okButton];
     
     
@@ -104,6 +111,9 @@
             break;
         case 3:
             language = @"pt";
+            break;
+        case 4:
+            language = @"fr";
             break;
         default:
             language = @"en";
