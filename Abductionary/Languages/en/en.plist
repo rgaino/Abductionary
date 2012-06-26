@@ -120,5 +120,15 @@ Fill the bar completely to earn your first power up.</string>
 	<string>This power up will activate a score multiplier. Each new word you learn while it&apos;s active will earn points on top of the points from the last word.</string>
 	<key>Tutorial_4-3-2</key>
 	<string>Finally, this power up is a lifesaver. It will bring the machine&apos;s temperature to zero, so it doesn&apos;t blow up in your face.</string>
+	<key>Intro_subtitles_01</key>
+	<string>Minion, I&apos;m counting on you to ensure that the invasion of Earth goes as planned.</string>
+	<key>Intro_subtitles_02</key>
+	<string>We will lull the humans into submission using their own language and then I will rule over them with absolute power.</string>
+	<key>Intro_subtitles_03</key>
+	<string>The creatures of Earth will feel the villany of Strnfjsugh and live as my slaves forever!</string>
+	<key>Intro_subtitles_04</key>
+	<string>If only there was some way to learn the language quickly...</string>
+	<key>Intro_subtitles_05</key>
+	<string>Sir?</string>
 </dict>
 </plist>
