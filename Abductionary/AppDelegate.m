@@ -31,12 +31,14 @@
 
 	// Create an CCGLView with a RGB565 color buffer, and a depth buffer of 0-bits
 	CCGLView *glView = [CCGLView viewWithFrame:[window_ bounds]
-								   pixelFormat:kEAGLColorFormatRGB565	//kEAGLColorFormatRGBA8
+								   pixelFormat:kEAGLColorFormatRGBA8   //kEAGLColorFormatRGB565	//kEAGLColorFormatRGBA8
 								   depthFormat:0	//GL_DEPTH_COMPONENT24_OES
 							preserveBackbuffer:NO
 									sharegroup:nil
 								 multiSampling:NO
 							   numberOfSamples:0];
+    
+    [glView setOpaque:NO];
 
 	director_ = (CCDirectorIOS*) [CCDirector sharedDirector];
 
@@ -132,7 +134,7 @@
     {
         [director_ pushScene: [I18nScene scene]]; 
     } else {
-        [director_ pushScene: [IntroAnimationScene scene]]; 
+        [director_ pushScene: [IntroScene scene]]; 
     }    
 
 //	[director_ pushScene: [IntroScene scene]]; 
