@@ -11,10 +11,12 @@
 #import "CCVideoPlayer.h"
 
 
-@interface IntroScene : CCLayer <CCVideoPlayerDelegate> {
-    
+@interface IntroScene : CCLayer <CCVideoPlayerDelegate> 
+{
+    CCLabelTTF *subtitleLabel;
 }
 
 +(CCScene *) scene;
+-(void) scheduleAllSubtitles;
 
 @end
