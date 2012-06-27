@@ -6,14 +6,16 @@
 //  Copyright 2012 DOJO. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "CCVideoPlayer.h"
+//#import "CCVideoPlayer.h"
 
+@class MPMoviePlayerController;
 
-@interface IntroScene : CCLayer <CCVideoPlayerDelegate> 
+@interface IntroScene : CCLayer //<CCVideoPlayerDelegate> 
 {
     CCLabelTTF *subtitleLabel;
+    MPMoviePlayerController *moviePlayer;
 }
 
 +(CCScene *) scene;

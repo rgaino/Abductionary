@@ -26,9 +26,11 @@
 {
 	if( (self=[super init])) 
     {
+        [self setIsTouchEnabled:YES];
+        
         NSString *path = [[NSBundle mainBundle] pathForResource:@"abductionary" ofType:@"mov"];
         NSURL *url = [NSURL fileURLWithPath:path];
-        MPMoviePlayerController *moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+        moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(moviePlaybackFinished)
@@ -39,34 +41,29 @@
         if ([moviePlayer respondsToSelector:@selector(setFullscreen:animated:)]) {
             moviePlayer.controlStyle = MPMovieControlStyleNone;
             moviePlayer.shouldAutoplay = YES;
-            moviePlayer.repeatMode = MPMovieRepeatModeOne;
+            moviePlayer.repeatMode = MPMovieRepeatModeNone;
             CGRect win = [[UIScreen mainScreen] bounds];
             
             float width = 825;
             float height = 480;
-            float xPosition = (win.size.height -  width) / 2; 
+            float xPosition = (win.size.height -  width) / 2;
             float yPosition = (win.size.width -  height) / 2; 
             
-            
-//            moviePlayer.view.frame = CGRectMake(0, 0, win.size.height, win.size.width);
-              moviePlayer.view.frame = CGRectMake(xPosition, yPosition, width, height);
+            moviePlayer.view.frame = CGRectMake(xPosition, yPosition, width, height);
             
             [[[CCDirector sharedDirector] view] addSubview:moviePlayer.view];
             [[[CCDirector sharedDirector] view] sendSubviewToBack:moviePlayer.view];
-            
 //            [viewController.view  addSubview:moviePlayer.view];
 //            [viewController.view  sendSubviewToBack:moviePlayer.view];        
-        } else {
+//        } else {
 //            moviePlayer.movieControlMode = MPMovieControlModeHidden;
 //            [moviePlayer play];
         }	
+  
+        
         [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 
 
-        
-
-//        [CCVideoPlayer setDelegate: self]; 
-//        [CCVideoPlayer playMovieWithFile: @"abductionary.mov"];
         
         CGSize winSize = [[CCDirector sharedDirector] winSize];
         
@@ -82,15 +79,23 @@
 	return self;
 }
 
+-(void) ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Touch detected");
+    [self moviePlaybackFinished];
+}
+
 - (void) moviePlaybackFinished
 {
+//    [[[CCDirector sharedDirector] view] addSubview:moviePlayer.view];
+    [moviePlayer.view removeFromSuperview];
+    [moviePlayer release];
+
+    NSLog(@"Movie completed");
     [[CCDirector sharedDirector] replaceScene:[MainMenuScene scene]];
 }
 
-- (void) movieStartsPlaying
-{
-//    [[CCDirector sharedDirector] stopAnimation];
-}
+
 
 -(void) scheduleAllSubtitles
 {
@@ -113,7 +118,6 @@
 
 -(void) dealloc
 {
-    [CCVideoPlayer setDelegate:nil];
     [super dealloc];
 }
 
