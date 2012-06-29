@@ -14,7 +14,8 @@
 
 @interface IntroScene : CCLayer //<CCVideoPlayerDelegate> 
 {
-    CCLabelTTF *subtitleLabel;
+//    CCLabelTTF *subtitleLabel;
+    UILabel *subtitleLabel;
     MPMoviePlayerController *moviePlayer;
 }
 
