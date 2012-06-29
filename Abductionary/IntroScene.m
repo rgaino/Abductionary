@@ -33,14 +33,15 @@
         moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlaybackFinished)     name:MPMoviePlayerPlaybackDidFinishNotification  object:moviePlayer];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieReadyToPlayCallback:) name:MPMoviePlayerLoadStateDidChangeNotification object:moviePlayer];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieReadyToPlayCallback:) name:MPMoviePlayerLoadStateDidChangeNotification object:moviePlayer];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieReadyToPlayCallback:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:moviePlayer];
 
         
         
         if ([moviePlayer respondsToSelector:@selector(setFullscreen:animated:)]) {
             moviePlayer.controlStyle = MPMovieControlStyleNone;
 //            moviePlayer.shouldAutoplay = YES;
-            moviePlayer.repeatMode = MPMovieRepeatModeNone;
+//            moviePlayer.repeatMode = MPMovieRepeatModeNone;
             CGRect win = [[UIScreen mainScreen] bounds];
             
             float width = 825;
@@ -90,13 +91,27 @@
 -(void)movieReadyToPlayCallback:(NSNotification*)aNotification {
     
     MPMoviePlayerController *mp = [aNotification object];
-    
-    NSLog(@"Movie ready to play. Status %d", [mp loadState]);
-    if( [mp loadState] == MPMovieLoadStatePlayable || [mp loadState] == MPMovieLoadStatePlaythroughOK ) {
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:mp] ;
+
+    if( [mp playbackState] == MPMoviePlaybackStatePlaying) {
+        NSLog(@"Movie ready to play. Status %d", [mp playbackState]);
+        //        [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:mp] ;
         [self scheduleAllSubtitles];
+    } else {
+        NSLog(@"Movie not ready to play. Status %d", [mp playbackState]);
     }
+
     
+    
+    
+/*
+    if( [mp loadState] == MPMovieLoadStatePlayable || [mp loadState] == MPMovieLoadStatePlaythroughOK ) {
+        NSLog(@"Movie ready to play. Status %d", [mp loadState]);
+//        [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:mp] ;
+        [self scheduleAllSubtitles];
+    } else {
+        NSLog(@"Movie not ready to play. Status %d", [mp loadState]);
+    }
+*/    
 }
 
 
@@ -146,7 +161,7 @@
 {
     NSString *subtitleText = [[I18nManager getInstance] getLocalizedStringFor:subtitleKey];
     
-    NSLog(@"Displaying subtitle for key %@: %@", subtitleKey, subtitleText);
+    NSLog(@"Displaying subtitle for key %@: %@ at %.2f", subtitleKey, subtitleText, [moviePlayer currentPlaybackTime]);
     
     [subtitleLabel setText:subtitleText];
 }
