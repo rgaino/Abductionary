@@ -97,10 +97,13 @@
 
 -(void) switchToLanguage:(id) sender
 {
-    CCMenuItemLabel *senderButton = (CCMenuItemLabel*) sender;
     [[SimpleAudioEngine sharedEngine] playEffect:kSoundMainMenuClick];
-    
+
+    CCMenuItemLabel *senderButton = (CCMenuItemLabel*) sender;
     NSString *language;
+
+    NSLog(@"Button with tag %d pressed", senderButton.tag);
+    
     switch(senderButton.tag)
     {
         case 1:
@@ -118,8 +121,9 @@
         default:
             language = @"en";
     }
-    
+
     [[I18nManager getInstance] setLanguageTo:language];
+    NSLog(@"Language changed to %@", language);
     
     [messageLabel setString:[[I18nManager getInstance] getLocalizedStringFor:@"you can change the language later on the SETTINGS menu"]];    
 }
